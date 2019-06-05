@@ -1,0 +1,48 @@
+Needed Electrical components list
+
+The exact components (except MCU and DSP and FSR stuff) are just suggestions and starting points for what I think the specs for each should be.  This list does not cover any circuitry of the BMS.
+
+2x  BLDC 3phase motor pre driver ICs with current sense ampliers for each phase and integrated buck converter( DRV8302)
+
+12x N-channel power mosfets (irfs7730) 
+
+3x CAN transceivers (SN65HVD232DR)
+
+1x IMU (LSM303CTR)
+
+10x Force Sensitive resistor (FSR01CE) or 1x XFSR material
+
+2x STM32F205RBt6 (MCU)
+
+1x stm32f765VI (DSP)
+
+2x 4 channel Op-amp (OPA4376AQPWRQ1)
+
+2x 3.6 volt linear voltage regulator for logic (MIC5209)
+
+1x voltage detection ic (BD4142HFV)
+
+2x temperature sensor/thremoresistor (NCP18XH103F03RB)
+
+3x swd connector (855-M50-3600542R)
+
+1x lcd screen	(LCD-10168)
+
+2x DAC (MCP4728)
+
+1x ST-Link STM8/STM32 v2 Programmer & Emulator
+
+some number of LEDs (potentially with controller inside)
+
+assorted resistors, capacitors, inductors
+
+
+
+
+
+
+
+
+
+
+

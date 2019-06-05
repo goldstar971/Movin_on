@@ -1,0 +1,155 @@
+Your website should document your journey through MSD, so include work-in-progress as well as latest results.  Use pdf's for display whenever possible so that information is easily viewable without the need to download files and open applications.  (Your EDGE file repository should still contain original editable files).
+
+Content related to this node should go in the [[Project Management]] directory.  Several templates have been posted there for your reference.
+
+'''All template text and instructions must be removed prior to the Week 3 Problem Definition Review'''
+
+== Intellectual Property Considerations ==
+Is your team considering filing for a provisional or non-provisional patent?  Does your project's financial support carry any IP requirements?  Are there select elements of your project that your customer has required that you keep confidential?
+
+There is an excellent set of short videos for reference at
+[https://www.youtube.com/playlist?list=PLmNrnoyQ30KvvBuMJXaPjdFjq-Jm6ghqE]
+
+== Team Setup ==
+
+==== Purpose ====
+# Facilitate team coordination and identify lacking capabilities.
+# Establish good practice of structured, coordinated documentation.
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the Problem Definition Review.
+# The team should arrive at consensus on a leader.
+# Assign responsibility for other important non-design roles and functions, such as facilitator, purchasing, EDGE help, customer PIC, etc. One member should take ownership of this document and ensure it is completed and loaded on EDGE.
+# Capture relevant skills and experiences of each team member.
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+
+==== Inputs and Source ====
+# Skills - team and guides.
+# Expertise - SMEs.
+
+==== Outputs and Destination ====
+Document of team capabilities and resources that can be accessed later.
+
+
+== Team Values and Norms ==
+==== Purpose ====
+Define the team's expectations of its members and used as the basis for peer reviews.
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the Problem Definition Review.
+# Identify an owner for this document.
+# Team must identify and define their [[Project Management/teamwork/Team Values and Norms | Values and Norms]]
+# Define escalation process for addressing issues.
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+==== Inputs and Source ====
+# Team members.
+# Reference doc.
+# Guide.
+==== Outputs and Destination ====
+Incorporate when considering team plus/delta recommendations during Peer Review
+
+
+== Project Plans & Schedules ==
+==== Purpose ====
+Ensure timely delivery of all required work products, identify prerequisite tasks with owners, ensure special resource needs are met.
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the Problem Definition Review.
+# Identify an owner for this document.
+# This document will be inspected at all project reviews.
+# MSD I & II: Work breakdown structure should be used to construct Gantt charts, schedule, etc. Each revision is numbered and dated.
+# Each milestone/Project Review is enabled by a listing of all of the required prerequisite deliverables. These enablers each have owners, due dates and a common understanding of how good is "good enough" for each deliverable.
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+
+==== Inputs and Source ====
+# Team members.
+# Template and Example.
+# Reference doc.
+# Guide.
+==== Outputs and Destination ====
+# Team task assignments and deadlines.
+# Project review.
+
+
+== Risk Assessment and Growth Curves ==
+==== Purpose ====
+# Facilitate anticipation, avoidance, abatement and accommodation of problems.
+# Assess team process capability to drive risk importance total to zero by project end.
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the System-Level Design Review.
+# Identify an owner for this document.
+# This document will be inspected at all project reviews.
+# Consider technical, logistical, and resource related risks.
+# Importance is calculated as the product of likelihood and severity.
+# Create a projection graph of the total importance over time showing how that approaches zero near the end of MSD2.
+# Update this chart and graph at the end of each cycle.
+# Considering the purpose, the team should anticipate potential failure modes associated withe construction and use of this document.
+==== Inputs and Source ====
+# Team members.
+# Template and Example.
+# Reference doc.
+# Customer Requirements.
+# Engineering Requirements.
+# System and Detail Designs.
+# Procurement, Production, and Assembly plans.
+# Test plans.
+# Overall Process.
+==== Outputs and Destination ====
+Completed form to be revisited at all project reviews.
+
+
+[[Image:Photo Gallery/riskmanagementtemplate.JPG|frame|center|800px|Risk Management Template]]
+
+
+==Other Team Resources==
+Your team may have other resource requirements.  With your customer and guide, your team should identify:
+* Planned meeting space (default is MSD Design Center)
+* Planned build & test space (e.g., Design Center, EE Senior Design Lab, CE Projects Lab, ME Machine Shop, Brinkman Lab, other faculty lab on campus, onsite at customer location, etc.)
+*Any RIT or customer safety training required to use the space.
+**RIT Training may include, for example: lab/studio safety, fire safety, laser safety, hazardous waste management, radiation safety, gas cylinder training, shop safety
+** [https://www.rit.edu/fa/grms/ehs/ Full list of available RIT courses is available here].  If you have an external customer, they may require additional training.
+== Meeting Minutes, Notes, & Actions ==
+MSD I & II.  Maintain a record of team/guide meetings.  This includes discussion, action items, decisions made, and work assigned.
+
+== Peer Reviews ==
+==== Purpose ====
+Provide feedback that enables improvements in effectiveness and efficiency of individuals and the whole team.
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the Problem Definition Review.
+# Identify an owner for this document.
+# Each team member will assess each of their team mate per the criteria established in the Values and Norms section.
+# Each member will acknowledge excellent behaviors of their fellow team members and provide constructive recommendations to improve the team effectiveness and/or efficiency. (plus/delta recommendations)
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+==== Inputs and Source ====
+# Team members.
+# Template and Example.
+# Reference doc.
+# Guide.
+==== Outputs and Destination ====
+Review form that is shared with Guide at the end of each cycle.  All peer reviews are done using the myCourses peer2peer tool, and teams will discuss the results with their guide after each phase.
+
+==Communication==
+
+* Establish customer point of contact
+** Establish preferred method of communication
+** Establish expected frequency of communication
+** Determine customer availability for each of the 5 reviews
+* Identify a team member to handle customer communication
+** Establish team expectations for cc on customer emails
+** Set expectations for how/when pre-read documentation will be shared with customer
+* Establish expectations for within-team communication
+** Establish preferred method of communication
+** Establish expectations for how/when to include guide in communication
+** Establish team expectations for cc on within-team messages
+
+
+== Project Reviews ==
+Preparation, notes and actions, etc.  Refer to [[Gate Reviews]] page, as well.
+
+----
+
+[[Home]] | [[Planning & Execution]] | [[Imagine RIT]]
+
+[[Problem Definition]] | [[Systems Design]] | [[Preliminary Detailed Design]] | [[Detailed Design]]
+
+[[Build & Test Prep]] | [[Subsystem Build & Test]] | [[Integrated System Build & Test]] | [[Customer Handoff & Final Project Documentation]]
+

@@ -1,0 +1,111 @@
+Your website should document your journey through MSD, so include work-in-progress as well as latest results.  Use pdf's for display whenever possible so that information is easily viewable without the need to download files and open applications.  (Your EDGE file repository should still contain original editable files).
+
+Content related to this node should go in the [[Detailed Design Documents]] directory unless you have made other arrangements with your guide ahead of time.
+
+'''All template text must be removed prior to your Detailed Design Review'''
+
+==Team Vision for Detailed Design Phase==
+Summarize:
+*What did your team plan to do during this phase?
+*What did your team actually accomplish during this phase?
+
+==Progress Report==
+By the end of your assigned class period during the week of Thanksgiving break, each team is responsible for sending their customer and guide an update on progress toward the detailed design review:
+* What does the team plan to accomplish by the Detailed Design Review?
+* What tasks have been accomplished so far?
+* What tasks remain, and who is the owner of each?
+* What decisions have been made so far?
+* What questions does the team have for the customer and/or guide in order to continue moving forward?
+
+Team progress reports will also be posted here
+
+== Prototyping, Engineering Analysis, Simulation ==
+Iterative activities to demonstrate feasibility, including assumptions you made in your analyses or simulations.  Have you completed sufficient analysis to ensure that your design will satisfy requirements?  Have you included all usage scenarios in your modeling?  
+
+== Drawings, Schematics, Flow Charts, Simulations ==
+Describe your design in enough detail for someone else to recreate it.  Have you included assembly plans and user manuals?  Your team may want to create separate nodes and directories within the Detailed Design Documents directory for CAD, schematics, or software
+
+==== Purpose ====
+Define instructions that will enable fabrication of the elements required to build and operate the entire system.
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the Detailed Design Review AND Identify an owner for this document.
+# This document will be inspected at all project reviews until the system is assembled and debugged.
+# Define all geometries of interfaced subsystems
+# Define detailed fabrication instructions for all unique parts.
+# Call out all purchased parts
+# Develop a software design that reflects operating flow charts and timing diagrams
+# Adhere to all required design standards.
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+==== Input and Source ====
+# Selected Concepts
+# Feasibility Models
+# System design and interface definitions
+
+==== Output and Destination ====
+# Complete hierarchy of design files from system level down to components
+# Parts list
+# Software design that specifies coding requirements
+# Test plans, including expected performance vs. requirement and any applicable test standards (e.g., ASTM). The RIT library maintains an [http://infoguides.rit.edu/standards infoguide with links to standards databases], many of which provide industry-standard test procedures for a variety of components and systems.
+
+== Bill of Material (BOM) ==
+==== Purpose ====
+Confirm that all expenses and contingencies are afforded by the project financial allocation
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the first Detailed Design Review AND Identify an owner for this document.
+# This document will be inspected at all project reviews until the system is assembled and debugged.
+# Define all components to be fabricated or purchased.
+# Define all other purchases to enable completion of the project, including operating supplies, with contingencies.
+# Complete BoM template.
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+==== Input and Source ====
+# PRP.
+# Design Files.
+==== Output and Destination ====
+Completed BoM and Budget
+
+== Test Plans ==
+==== Purpose ====
+Demonstrate objectively the degree to which the Engineering Requirements are satisfied
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the first Detailed Design Review AND Identify an owner for this document.
+# Complete test plans specifying the data to be collected, instrumentation to be used, testing procedures and personnel who will conduct the tests.
+# Plans should use data collected to define the accuracy of models generated during feasibility analysis.
+# Tests demonstrate that you met engineering requirements, which map back to your customer requirements.  You should include a snapshot of your test plans here, but maintain the continuity of using your team's master [[Problem Definition Documents/Requirements and Testing.xlsx | requirements and testing document]].
+# If your team's testing will involve human subjects, you must [https://www.rit.edu/research/hsro/protecting_human_subjects_rit review the RIT Human Subjects Research Office "Protecting Human Subjects" page for details on securing approval for work with human subjects]
+==== Inputs and Source ====
+# Engineering Requirements.
+# Test standards (e.g., ASTM). The RIT library maintains an [http://infoguides.rit.edu/standards infoguide with links to standards databases], many of which provide industry-standard test procedures for a variety of components and systems.
+# Feasibility Models.
+==== Outputs and Destination ====
+# Report that summarized the degree to which Eng Reqs are satisfied.
+# Assessment of accuracy of feasibility models.
+
+== Design and Flowcharts ==
+This section should continue to be updated from your systems level design documentation.
+
+== Risk Assessment ==
+*Updated assessment from Preliminary Detailed Design or link to other location.  Have you driven the likelihood and/or severity down as you worked through the details of your design?
+
+*Include a snapshot of your current risk assessment as well as a link to the [https://edge.rit.edu/edge/PTemplate/public/Project%20Management/risk%20and%20problem%20management/Risk%20Management%20template.xlsx live document].
+
+== Design Review Materials ==
+Include links to:
+* Pre-read
+* Presentation and/or handouts
+* Notes from review
+* Action Items
+
+==Plans for next phase==
+*As a team, what do you need to accomplish between now and the end of the semester? 
+*As a team, what do you need to do to prepare for MSD II?
+
+*As an individual on the team, what are you doing to help your team achieve these goals? (Use the [https://edge.rit.edu/edge/PTemplate/public/Project%20Management/planning/Three-Week%20Plan%20Template.docx  individual 3-week plan template] for this)
+
+
+----
+
+[[Home]] | [[Planning & Execution]] | [[Imagine RIT]]
+
+[[Problem Definition]] | [[Systems Design]] | [[Preliminary Detailed Design]] | [[Detailed Design]]
+
+[[Build & Test Prep]] | [[Subsystem Build & Test]] | [[Integrated System Build & Test]] | [[Customer Handoff & Final Project Documentation]]

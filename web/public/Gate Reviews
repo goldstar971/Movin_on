@@ -1,0 +1,102 @@
+Your team will hold a gate review with your guide at the end of each semester.  This page should document any information needed for the review, as well as outcomes.  
+
+==MSD I: Readiness to move to Build & Test==
+* Use this space to organize information for your review.  Key elements are listed [[Project Management/MSD I Gate Review.docx | here]]
+* Your team should complete a [[Project Management/MSD I Self-critique.xlsx | self-critique]] and report the results here.
+
+===Expectations===
+* All team members present and prepared to report on team and individual status.
+* All team MSD deliverables are complete and uploaded, and ready to be graded.
+* Guide is present and prepared to evaluate all items included in the review.
+* Review should take about an hour.
+
+
+===Status Review===
+'''Current state of the project'''
+
+* Summarize expected performance vs. requirements (include snapshot of current requirements document here, along with a link to the live document.)
+
+* Address any issues raised during your Detailed Design Review. These will generally fall into one of three categories
+** Issues that have been addressed and the team is closing them out. (GREEN, team is ready to proceed to build and test)
+** Issues that have not been addressed yet, but the team has a clear path to a solution. (YELLOW, team expects to be ready for build and test, and a Critical Design Review may be held in MSD II Week 2)
+** Issues where the team has not been able to identify a solution or a clear path to a solution.  (RED, team is not ready for build and test, and a Critical Design Review will be held in MSD II Week 2)
+
+* Compare your current project plan/schedule to your original plan/schedule. 
+** Has the scope of your project changed?  
+** How and why did your schedule change? 
+** What have you learned from these changes?
+
+* Review individual team member status.
+** Did you deliver on your personal responsibilities? 
+** Did you use your MSD I plan effectively?  Was it realistic?  If not already addressed above, what did you learn from this and how have you applied this toward a meaningful and realistic MSD II plan?
+
+*Compare your current risk assessment to your original.
+** Have you closed out your most important risks?
+** Do you have remediation plans for remaining risks?
+** Have any of these risks manifested themselves as problems?
+** How did your risk assessment change?  What can you learn from this?
+
+'''Review your team's MSD II schedule (if not done during DDR)''' 
+* Your schedule demonstrates that you can deliver a functional prototype to your customer by your final phase demo.
+* Your schedule incorporates lessons learned from your MSD I reflection.
+* Spring-finish teams should include a vision for their Imagine RIT exhibit.
+
+'''Deliverables Checklist and Website Status'''
+*All documents must be uploaded to your website in advance of the Gate Review.  
+* The team should not use gate review time to conduct a detailed examination of specific deliverables unless related to discussion items in the status review. 
+
+
+
+
+==MSD II: Project close-out==
+* Use this space to organize information for your review.  Key elements are listed [[Project Management/MSD II Gate Review.docx | here]]
+
+===Expectations===
+* All team members present and prepared to report on team and individual status.
+* All team MSD deliverables are complete and uploaded, and ready to be graded.
+* Guide is present and prepared to evaluate all items included in the review.
+* Review should take about an hour.
+
+
+===Status Review===
+'''Current state of the project'''
+
+* Summarize actual performance vs. requirements (include snapshot of current requirements document here, along with a link to the live document.).  
+** Which requirements were unmet, and why? 
+** How robust is your final design?
+** Did you meet your project budget?
+** What was your customer's assessment of the work you delivered to them?  Were they satisfied?
+
+* Compare your current project plan/schedule to your original plan/schedule. 
+** Did the scope of your project change during MSD II?  
+** How and why did your schedule change during MSD II? 
+** What have you learned from these changes that you can apply to future projects?
+
+* Review individual team member status.
+** Did you deliver on your personal responsibilities? 
+** Did you use your MSD II plan effectively?  Was it realistic?  If not already addressed above, what did you learn from this and how can you apply it to future projects?
+
+*Review your current risk assessment and problem solving status.
+** Have you closed out your most important risks?
+** Were there risks that you did not anticipate? If so, what do you think the reason is?
+** Did any anticipated risks manifest themselves as problems?
+** How did you use your problem solving process during the semester?
+
+'''Deliverables Checklist and Website Status'''
+*All documents must be uploaded to your website in advance of the Gate Review.  
+* The team should not use gate review time to conduct a detailed examination of specific deliverables unless related to discussion items in the status review. 
+* Is prototype hand-off complete, is the team's workspace cleaned up, and have all tools been returned?
+
+'''Lessons learned, etc.'''
+* Does the team have any other lessons learned that were not addressed above?
+* What advice would you give to future teams?
+
+----
+
+[[Home]] | [[Planning & Execution]] | [[Imagine RIT]]
+
+[[Problem Definition]] | [[Systems Design]] | [[Preliminary Detailed Design]] | [[Detailed Design]]
+
+[[Build & Test Prep]] | [[Subsystem Build & Test]] | [[Integrated System Build & Test]] | [[Customer Handoff & Final Project Documentation]]
+
+

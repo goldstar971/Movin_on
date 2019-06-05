@@ -1,0 +1,215 @@
+==Step 1. Prepare the List of Metrics ==
+
+The table below presents the metrics, or engineering specifications, that will be used by the team to design against.
+
+{| class="wikitable"
+|+ '''List of Metrics '''
+! Metric No.
+! Metric
+! Importance
+! Units
+|-
+| 1
+|
+|
+|
+|-
+| 2
+|
+|
+|
+|-
+| 3
+|
+|
+|
+|-
+| 4
+|
+|
+|
+|-
+| 5
+|
+|
+|
+|-
+| 6
+|
+|
+|
+|}
+
+The metrics, or engineering specifications, that you created in the preceding list should be directly related to the customer needs. In other words, if you have created an engineering specification, it should have some relationship to a need imposed by the customer or the marketplace. Use the table below to map your  customer needs against the metrics (or engineering specifications). In many design and product development circles, the rows along the left is often referred to as the voice of the customer, while the columns across the top are often referred to as the voice of the engineer.
+
+{| class="wikitable"
+|+ '''Customer Needs as Related to Engineering Metrics Matrix '''
+! Needs and Metrics
+! Engineering Metric 1
+! Engineering Metric 2
+! Engineering Metric 3
+! Engineering Metric 4
+! Engineering Metric 5, etc.
+|-
+! Customer Need 1       || x || x ||   ||   || 
+|-
+! Customer Need 2       ||   || x ||   ||   || 
+|-
+! Customer Need 3       ||   ||   || x || x || 
+|-
+! Customer Need 4, etc. ||   || x || x ||   || x
+|}
+
+==Step 2. Collect Competitive Benchmarking Information ==
+
+Relatively few Sr. design projects start from a clean  sheet of paper. In most cases, there are some baseline solutions or products that could meet the vast majority of the customer's needs. 
+
+Write one or two paragraphs about each benchmark solution from the market place. Include a picture of the product, preferably illustrating the product in use or operation. 
+
+;Benchmark 1
+: Describe the first benchmark solution here.
+; Benchmark 2
+: Describe the second benchmark solution here.
+; Benchmark 3
+: Describe the third benchmark solution here.
+
+Use this table below to compare how pre-existing solutions should compare 
+against the design team's efforts.  See the example Table 5-6 on Page 80 of the text by Ulrich and Eppinger.
+
+
+{| class="wikitable"
+|+ '''Competitive Benchmarking Matrix '''
+! Metric No.
+! Need Nos.
+! Metric
+! Importance
+! Units
+! Benchmark 1 Value
+! Benchmark 2 Value
+! Benchmark 3 Value
+|-
+| 1
+| Need 1,3
+|
+|
+| 
+|
+|
+|
+|-
+| 2
+| Need 2,6
+|
+| 
+|
+|
+|
+| 
+|-
+| 3
+| Need 1,3
+|
+| 
+|
+|
+|
+| 
+|-
+| 4
+| Need 1,3
+|
+| 
+|
+|
+|
+| 
+|-
+| 5
+| Need 4
+|
+|
+|
+|
+|
+| 
+|-
+| 6
+| Need 5
+| 
+|
+|
+|
+| 
+|}
+
+==Step 3. Set Ideal and Marginally Acceptable Target Values ==
+
+Given the customer needs, awareness of the marketplace, and resource limitations of the current project, assign preliminary engineering specifications on each of the metrics. In addition to setting the nominal or target value or each specification, provide guidance to the team on the ideal value or direction that the team should strive for, once the nominal target values have been realized.
+
+
+{| class="wikitable"
+|+ '''List of Metrics '''
+! Metric No.
+! Need Nos.
+! Metric
+! Importance
+! Units
+! Marginal value
+! Ideal Value
+|-
+| 1
+| Need 1,2
+|
+| 
+| 
+|
+|
+|-
+| 2
+| Need 2,4
+|
+|
+|
+| 
+| 
+|-
+| 3
+| Need 5
+|
+|
+|
+| 
+| 
+|-
+| 4
+| Need 6
+|
+|
+|
+| 
+| 
+|-
+| 5
+| Need 5,1
+|
+|
+|
+|
+| 
+|-
+| 6
+| Need 6,2
+|
+|
+| 
+| 
+|
+|}
+
+
+==Step 4. Reflect on the Results and the Process ==
+
+
+
+----
+[[Home]] | [[Planning & Execution]] | [[Problem Definition]] | [[Systems Design]] | [[Detailed Design]] | [[Build, Test, Document]] | [[Final Project Documentation]] | [[Photo Gallery]]

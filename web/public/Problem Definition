@@ -1,0 +1,138 @@
+Your website should document your journey through MSD, so include work-in-progress as well as latest results.  Use snapshots for display whenever possible so that information is easily viewable without the need to download files and open applications.  Any time you post a snapshot of a document for a phase review, you should also provide a link to the live document (Your EDGE file repository should still contain original editable files).
+
+You should use the [[Problem Definition Documents|]] directory to store this information.  Some templates are available there for your use.  
+
+'''All template text must be removed from this page prior to your Week 3 Problem Definition Review'''
+
+==Team Vision for Problem Definition Phase==
+Summarize:
+*What did your team plan to do during this phase?
+*What did your team actually accomplish during this phase?
+
+== Project Summary ==
+Problem statement goes here.  Link to 1-page project summary or project charter
+
+== Use Cases ==
+Your team will identify the different scenarios in which your project will be used.  This will help inform your requirements and set bounds on specifications.
+
+== Project Goals and Key Deliverables ==
+Expected end result of the project, what the customer can expect to receive at the end of the project.
+
+== Customer Requirements (Needs) ==
+
+==== Purpose ====
+Decompose the Problem Statement into functions of elements needed to satisfy the customer. 
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the Problem Definition Review.
+# Identify an owner for this document.
+# Include this document in all project reviews during MSD1.
+# Have you sought input from all the relevant stakeholders? How will you confirm this?
+# Have you converted customer-generated solutions into needs statements?
+# Describe why each requirement has been requested.
+# Have you confirmed this list  with your customer? 
+# Customer requirements often evolve over the first several weeks of the MSD. Understanding  the customer’s overall objective (Problem Statement) and the levels of each requirement needed to achieve that objective will help you get to a final requirements document more quickly.
+# Functional requirements (e.g.  capabilities,  performance,  robustness, etc.)  typically denote the purpose of the project.  Constraints  (e.g. cost , safety,  size & weight , etc.) typically denote conditions for acceptance of the solution.
+http://edge.rit.edu/edge/P15001/public/MSDI/Problem%20Definition%20Documents/Edge_Pictures/P15001_Customer_Requirements.png 
+
+# In addition to a snapshot, include a link to the live document [[Problem Definition Documents/Requirements and Testing.xlsx | here]]
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+
+==== Inputs and Source ====
+# PRP.
+# Problem Statement.
+# Customer Interviews. ([[Problem Definition Documents/Stakeholder Interaction Guidelines.docx | Interview guidelines]] and [[Problem Definition Documents/Customer Interview Outcomes.pdf | expected outcomes]] are available for your reference)
+# Customer's customer if possible.
+# Standards, regulations, or other industry guidelines (e.g., ADA, EPA, OSHA, IEEE, ASME; IRB approval; etc.) that your customer or your customer's organization is required to address. The RIT library maintains an [http://infoguides.rit.edu/standards infoguide with links to standards databases]
+# Template and Example.
+# Guide & other stakeholders.
+
+==== Outputs and Destination ====
+A completed form matching the supplied template to be used as input to define the Engineering Requirements.
+
+== Engineering Requirements (Metrics & Specifications) ==
+
+==== Purpose ====
+Create a contract between the engineer and the customer where indisputable satisfaction of the engineering requirements  equates to customer satisfaction
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the Problem Definition Review.
+# Identify an owner for this document.
+# Include this document in all project reviews during MSD.
+# The Engineering Requirements (often called Specs.) must; cover all of the Customer Requirements, be as unambiguous as possible, and be confirmed by the customer, with signature if possible.
+# System-level and function-level engineering requirements define the intended capabilities and performance of your system. Are your engineering requirements measurable and testable? Can they all be traced back to customer requirements?
+# Constraints are factors, usually system-level, that limit your design space (e.g., cost, total weight, total footprint, total power available). Are your constraints measurable and testable, and can they be traced back to customer requirements? Have you considered economic, environmental, social, political, ethical, health and safety, manufacturability, and sustainability constraints, for example?
+
+[[Image:Photo Gallery/EngineeringRequirementsTemplate.JPG|frame|center|800px|Engineering Requirements Template]]
+
+# References:
+https://edge.rit.edu/edge/PTemplate/public/Establish%20Engineering%20Requirements
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+
+==== Inputs and Source ====
+# Customer Requirements
+# Customer
+# Phase I benchmarking
+# Standards, regulations, or other industry guidelines (e.g., ADA, EPA, OSHA, IEEE, ASME, etc.) The RIT library maintains an [http://infoguides.rit.edu/standards infoguide with links to standards databases].
+# Selected concept list
+# System Design
+# Template and Example 
+# Guide & other stakeholders
+==== Outputs and Destination ====
+# Function Decomposition.
+# Concept Generation & Development.
+# HoQ.
+# System & Detail Design.
+# Test Plans.
+# Poster & Final Report.
+
+== Constraints ==
+Factors, usually system-level, that limit your design space (e.g., cost, total weight, total footprint, total power available).  Are your constraints measurable and testable, and can they be traced back to customer requirements?  Have you considered economic, environmental, social, political, ethical, health and safety, manufacturability, and sustainability constraints and engineering standards, for example?
+
+== House of Quality==
+
+==== Purpose ====
+# Confirm that satisfaction of the Engineering Requirements implies that all of the Customer Requirements are met.
+# Facilitate design trade off decisions
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the Problem Definition Review.
+# Identify an owner for this document.
+# This document will be inspected at all project reviews during MSD1.
+# Array customer requirements in the first column and the Engineering Requirements across the top row.
+# Evaluate the correlations between Customer and Engineering Requirements to ensure all of the Customer Requirements will be satisfied if the Engineering Requirements are satisfied.
+# Evaluate the potential conflicts between the Engineering Requirements.
+# Evaluate targets set for Engineering Requirements verses best benchmarking results.
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+
+==== Inputs and Source ====
+# Template and Example.
+# Customer Requirements.
+# Engineering Requirements.
+# Benchmarking Data.
+
+==== Outputs and Destination ====
+Provide input to the risk management process.
+
+== Design Review Materials ==
+Include links to:
+* Pre-read
+* Presentation and/or handouts
+* Notes from review
+* Action Items
+
+It is appropriate for you to send your customer and guide a link to this page in preparation for the review. This will ensure that they know what you will be presenting and how to view all of your work.  Any EDGE link should start with '''http://'''edge.rit.edu/edge/P1xxxx.....  Using "http" instead of "https" will ensure that non-RIT stakeholders can view the content without being prompted for a DCE login and password.
+
+==Plans for next phase==
+*As a team, where do you want to be in three weeks at your next review? 
+
+*As an individual on the team, what are you doing to help your team achieve these goals? (Use the [https://edge.rit.edu/edge/PTemplate/public/Project%20Management/planning/Three-Week%20Plan%20Template.docx  individual 3-week plan template] for this)
+
+
+----
+
+[[Home]] | [[Planning & Execution]] | [[Imagine RIT]]
+
+[[Problem Definition]] | [[Systems Design]] | [[Preliminary Detailed Design]] | [[Detailed Design]]
+
+[[Build & Test Prep]] | [[Subsystem Build & Test]] | [[Integrated System Build & Test]] | [[Customer Handoff & Final Project Documentation]]

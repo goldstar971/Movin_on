@@ -1,0 +1,78 @@
+Your website should document your journey through MSD, so include work-in-progress as well as latest results.  Use pdf's for display whenever possible so that information is easily viewable without the need to download files and open applications.  (Your EDGE file repository should still contain original editable files).
+
+Content related to this node should go in the [[Detailed Design Documents]] directory unless you have made other arrangements with your guide ahead of time.  From this point on to the end of MSD I, you will be making progress toward your detailed design.  This page should contain snapshots of your progress toward a final detailed design, with the live documents and supporting information contained with the rest of your detailed design information.
+
+'''All template text must be removed prior to your Subsystem-Level Design Review'''
+
+==Team Vision for Subsystem-Level Design Phase==
+Summarize:
+*What did your team plan to do during this phase?
+*What did your team actually accomplish during this phase?
+
+== Feasibility: Prototyping, Analysis, Simulation ==
+
+Between now and the end of the semester, your team will continue to add detail to your design, which will require more detailed analysis and prototyping to answer feasibility questions. Consider:
+*Iterative activities to demonstrate feasibility, including assumptions you made in your analyses, simulations, or prototypes.  
+*Have you completed sufficient preliminary analysis or prototyping to ensure that your design is likely to satisfy requirements?  
+*Have you included all usage scenarios in your modeling?  
+
+==== Purpose ====
+# Confirm that the selected concepts can deliver functionality defined by the System Architecture.
+# Define the optimal values of the most sensitive design parameters.
+# Support the evaluation of your team's concepts with quantitative information.
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the System-Level Design Review AND Identify an owner for this document.
+# This document will be inspected at all project reviews during MSD1.
+# At the system design level, feasibility analysis and prototyping will be relatively coarse.  First order analysis, estimation, and rough physical mockups are to be expected.
+# Select the concepts that are expected to be most sensitive and/or problematic. These are usually concepts that will not be satisfied by COTS components.
+# Define the transfer function that converts the concept/subsystem inputs into the desired outputs as a function of specific design parameters. This can be done via theoretical analysis or empirical prototyping. it is often useful for two or more team members to work together so that the work is checked and a clear understanding of these models is captured. Get help here from SMEs who should be able to alert your team to potential difficulties and possible solutions.
+# Use the models to quantitatively specify the design parameter targets and acceptable ranges.
+# Confirm that the concepts selected and the designs anticipated will generate the desired performance. 
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+
+==== Inputs and Source ====
+# Engineering Requirements
+# Concept Selection
+
+==== Outputs and Destination ====
+# A list of Design Parameters, Quantified Targets, and acceptable tolerances
+# Sensitivity analysis
+# Concept Selection
+
+== Drawings, Schematics, Flow Charts, etc. ==
+*Describe your design at this stage.  You should have added detail to your system-level design.
+*Define interfaces between subsystems
+*Identify and analyze/prototype high-risk subsystems
+
+
+== Bill of Materials (BOM) ==
+Begin building a BOM based on design work to this point.
+
+== Risk Assessment ==
+*Updated assessment from Systems Design or link to other location.  Have you driven the likelihood and/or severity down as you worked through the details of your design?
+
+*Include a snapshot of your current risk assessment as well as a link to the [https://edge.rit.edu/edge/PTemplate/public/Project%20Management/risk%20and%20problem%20management/Risk%20Management%20template.xlsx live document].
+
+== Design Review Materials ==
+Include links to:
+* Pre-read
+* Presentation and/or handouts
+* Notes from review
+* Action Items
+
+It is appropriate for you to send your customer and guide a link to this page in preparation for the review. This will ensure that they know what you will be presenting and how to view all of your work.  Any EDGE link should start with '''http://'''edge.rit.edu/edge/P1xxxx.....  Using "http" instead of "https" will ensure that non-RIT stakeholders can view the content without being prompted for a DCE login and password.
+
+==Plans for next phase==
+*As a team, where do you want to be in three weeks at your next review? 
+
+*As an individual on the team, what are you doing to help your team achieve these goals? (Use the [https://edge.rit.edu/edge/PTemplate/public/Project%20Management/planning/Three-Week%20Plan%20Template.docx  individual 3-week plan template] for this)
+
+
+----
+
+[[Home]] | [[Planning & Execution]] | [[Imagine RIT]]
+
+[[Problem Definition]] | [[Systems Design]] | [[Subsystem Design]] | [[Preliminary Detailed Design]] | [[Detailed Design]]
+
+[[Build & Test Prep]] | [[Subsystem Build & Test]] | [[Integrated System Build & Test]] | [[Integrated System Build & Test with Customer Demo]] | [[Customer Handoff & Final Project Documentation]]

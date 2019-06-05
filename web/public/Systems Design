@@ -1,0 +1,213 @@
+Your website should document your journey through MSD, so include work-in-progress as well as latest results.  Use pdf's for display whenever possible so that information is easily viewable without the need to download files and open applications.  (Your EDGE file repository should still contain original editable files).
+
+Content linked here should go in the [[Systems Level Design Documents]] directory.  This directory is pre-populated with a variety of templates that are designed to help you through this phase of the design.
+
+'''All template text must be removed from this page prior to your System Level Design Review'''
+
+==Team Vision for System-Level Design Phase==
+Summarize:
+*What did your team plan to do during this phase?
+*What did your team actually accomplish during this phase?
+
+== Functional Decomposition ==
+
+==== Purpose ====
+Define the total list of functions and subfunctions, based on the Customer and Engineering Requirements, that must be delivered by the final design. This will establish the need for specific concepts necessary to deliver the overall objectives of the project
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the System-Level Design Review AND  Identify an owner for this document.
+# This document will be inspected at all project reviews during MSD1.
+# Begin with the Project Problem Statement and identify the functions and constraints necessary to adequately address that problem.
+# Identify the subfunctions necessary to deliver all of the stated functions. Repeat with sub-sub functions as needed until the team agrees that they know how they can be delivered.  Note that you may have to revisit this step if the team assessment proves inaccurate.
+# Benchmarking will provide existing elements that can satisfy many of the needed functions.
+# Capture potential concepts that might deliver the required functionality for evaluation later.
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+
+==== Inputs and Source ====
+# Template and Example.
+# Project Objectives.
+# Engineering Requirements.
+# Benchmarking Data.
+
+==== Outputs and Destination ====
+# Complete list of functions that must be provided in order to satisfy the functional requirements of the entire project.
+# Engineering Requirements are written to measure how well the functions are performed.
+# Concepts are generated around functions identified here.
+
+== Benchmarking ==
+
+==== Purpose ====
+Avoid redundant work by identifying already available solutions and concept options
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the System-Level Design Review AND Identify an owner for this document.
+# Begin with the customer's objective or problem statement and identify the best available solution that the customer could access. How will you determine what is the""best available solution""?  These are often earlier projects or commercially available systems that do not fully address the customer's needs.  Sometimes these are a mix of elements plus manual tasks that are integrated to approximate a full customer solution.
+# Use the Function Decomposition to set concept requirements that must be satisfied by concepts found via benchmarking.
+# Consider analogous functions in nature and evaluate how evolution has addressed the need.
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+
+==== Inputs and Source ====
+# PRP.
+# Project Objective.
+# Function Decomposition.
+# Prior MSD EDGE sites.
+# Customers.
+# Vendors and users of existing or similar solutions.
+# Literature search.
+# Friends and associates.
+
+==== Output and Destination ====
+# List of best available concepts and embodiments.
+# Criteria used for selection of best.
+
+== Concept Development ==
+
+==== Purpose ====
+Generate new concept options or combinations that can potentially exceed the benchmark concepts
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the System-Level Design Review.
+# Begin with the Function Decomposition and capture multiple concepts to provide each function.
+# Select most promising options from benchmarking, then generate concepts that improve their weaknesses and extend their advantages. Brainstorming is a useful technique.
+# Explore concepts that address subsets of the required function as well as those that encompass multiple functions.
+# High level (e.g. free body) analyses often lead to improvement options.
+# Crude concept prototyping also provides insights into improvement options.
+# Assess the strengths and weaknesses of each concept considering their likelihood to satisfy the functions, violate constraints or present delivery/demonstration difficulties.
+# Do the best job you can within the time allowed but remember that the team may have to revisit this work when the system interfaces are better understood.
+
+==== Input and Source ====
+# Function Decomposition.
+# Results of Benchmarking.
+# Analysis and prototyping.
+
+==== Outputs and Destination ====
+List of multiple viable concept options to provide each function.
+
+
+== Feasibility: Prototyping, Analysis, Simulation ==
+
+==== Purpose ====
+# Confirm that the selected concepts can deliver functionality defined by the System Architecture.
+# Define the optimal values of the most sensitive design parameters.
+# Support the evaluation of your team's concepts with quantitative information.
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the System-Level Design Review AND Identify an owner for this document.
+# This document will be inspected at all project reviews during MSD1.
+# At the system design level, feasibility analysis and prototyping will be relatively coarse.  First order analysis, estimation, and rough physical mockups are to be expected.
+# Select the concepts that are expected to be most sensitive and/or problematic. These are usually concepts that will not be satisfied by COTS components.
+# Define the transfer function that converts the concept/subsystem inputs into the desired outputs as a function of specific design parameters. This can be done via theoretical analysis or empirical prototyping. it is often useful for two or more team members to work together so that the work is checked and a clear understanding of these models is captured. Get help here from SMEs who should be able to alert your team to potential difficulties and possible solutions.
+# Use the models to quantitatively specify the design parameter targets and acceptable ranges.
+# Confirm that the concepts selected and the designs anticipated will generate the desired performance. 
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+
+==== Inputs and Source ====
+# Engineering Requirements
+# Concept Selection
+
+==== Outputs and Destination ====
+# A list of Design Parameters, Quantified Targets, and acceptable tolerances
+# Sensitivity analysis
+# Concept Selection
+
+
+== Morphological Chart and Concept Selection ==
+
+==== Purpose ====
+# Develop multiple  concept options to deliver the required list of functions.
+# Ensure that concepts (means) are available to deliver every required function.
+# Select the optimal set of concepts that can be integrated to meet the project objectives.
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the System-Level Design Review AND Identify an owner for this document.
+# This document will be inspected at all project reviews during MSD1.
+# Begin with the Function Decomposition and identify concepts that can deliver the function and are expected to comply with the project constraints.
+# Identify the best available solution that the customer could access.  These are often earlier projects or commercially available systems that do not fully address the customer's needs.  Sometimes these are a mix of elements plus manual that integrate and complete them to approximate a full customer solution.This best existing system will become the datum.
+# Generate new concepts as well.  The team should be considering at least 50 different concepts to cover all of the required functionality. In many cases, 100 is a better target. Try to avoid redundant efforts by teammates BUT don't leave gaps.
+# Consider the Engineering Requirements and overall project objectives to construct a list of selection criteria. Remember that the concepts must be integrated by the team within the expected system envelope, the project constraints, the available schedule and budget.
+# Use a systematic selection process, e.g.Pugh, to evaluate, recombine and add new concepts, by comparing them to the datum. Select the best combination of concepts.
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+
+==== Inputs and Source ====
+# Project Objectives.
+# Engineering Requirements.
+# Function Decomposition.
+# Concept Development.
+# Benchmarking criteria.
+# System Architecture.
+
+==== Outputs and Destination ====
+# A complete set of concepts that provide all of the functionality required.
+# Fall back options to substitute for the most risky concepts.
+
+==Concept Selection==
+This consists of two elements:
+
+*''Concept Screening'': Identify 6-10 useful system-level selection criteria, and evaluate the system designs objectively.  Compare your system concepts to a single datum concept.  Run your selection analysis multiple times to uncover saturated scores.  
+*''Concept Improvement'': Look for opportunities to combine two or more promising system concepts to create an even better solution.  You may need to repeat these steps several times in order to converge on an optimal solution.
+
+The real value in this step of the process is not the comparison matrix you generate to compare your concepts, but the analysis and discussion you do to support your evaluation.
+
+== Systems Architecture ==
+
+==== Purpose ====
+# Ensure flow of energy, info, material and structural forces as intended.
+# Define subsystem functions, envelopes and interfaces.
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the System-Level Design Review Identify an owner for this document.
+# This document will be inspected at all project reviews during MSD1.
+# Begin with the Function Decomposition.  The top level function is provided by the total system. The next level of functionality is generally provided by subsystems.  Lower levels of functionality are delivered by sub-subsystems, assemblies and sub assemblies on down to individual parts.  System Architecture generally addresses subsystems.
+# Define the functional system architecture by assessing how material, energy, information and forces are transmitted from the total system inputs to the outputs.  Define the condition and timing of these at the subsystem interfaces.
+# Next describe the physical system by considering how envelopes of the various subsystems (the concepts and expected designs that embody these) and how they will interface with each other.
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+
+==== Inputs and Source ====
+# Engineering Requirements.
+# Functional Decomposition.
+# Concept Development.
+
+==== Outputs and Destination ====
+# High level description of the total system that support concept selection.
+# Interface definition for subsystem design.
+
+== Designs and Flowcharts ==
+
+==== Purpose ====
+Define a high-level view of the elements required to build and operate the entire system
+
+==== Instructions ====
+# Instructions and EXAMPLE must be deleted before the next Project Review AND Identify an owner for this document.
+# This document will be inspected at all project reviews until the system is assembled and debugged.
+# Identify subsystem interfaces.
+# Define projected system operation.
+# Considering the purpose, the team should anticipate potential failure modes associated with construction and use of this document.
+# Reference: http://edge.rit.edu/edge/P15571/public/Detailed%20Design%20Documents/Data_Flow_Chart_Rev_2_0.pdf
+# Note: This section should be started during systems design, and continued through detailed design.
+
+
+== Risk Assessment ==
+Have you updated your risk list (started during Problem Definition) to include new items specific to your chosen concept?
+
+== Design Review Materials ==
+Include links to:
+* Pre-read
+* Presentation and/or handouts
+* Notes from review
+* Action Items
+
+It is appropriate for you to send your customer and guide a link to this page in preparation for the review. This will ensure that they know what you will be presenting and how to view all of your work.  Any EDGE link should start with '''http://'''edge.rit.edu/edge/P1xxxx.....  Using "http" instead of "https" will ensure that non-RIT stakeholders can view the content without being prompted for a DCE login and password.
+
+==Plans for next phase==
+*As a team, where do you want to be at your next review? What questions will you answer during the next phase?
+
+*As an individual on the team, what are you doing to help your team achieve this vision? (Use the [https://edge.rit.edu/edge/PTemplate/public/Project%20Management/planning/Three-Week%20Plan%20Template.docx  individual 3-week plan template] for this).
+
+
+----
+
+[[Home]] | [[Planning & Execution]] | [[Imagine RIT]]
+
+[[Problem Definition]] | [[Systems Design]] | [[Preliminary Detailed Design]] | [[Detailed Design]]
+
+[[Build & Test Prep]] | [[Subsystem Build & Test]] | [[Integrated System Build & Test]] | [[Customer Handoff & Final Project Documentation]]

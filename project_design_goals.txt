@@ -1,0 +1,16 @@
+Customer Requirements:
+Importance	requirement
+
+10		Collapsible, 
+9               relatively light-weight
+		Electric powered longboard.  
+10		Handsfree, fully integrated control system.  
+8		Must have a break, preferably regeneratively.  
+9		Must have stability over the full range of speeds (maybe speed govenor).
+9		Setup times measured in seconds
+7               weather proofing
+
+
+Use Scinerio:
+
+Transportation to run errands at places closeby. 

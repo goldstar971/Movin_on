@@ -1,0 +1,19 @@
+* Simply enter the Edit mode for the page you are interested in posting a file to by 'clicking' on the 'Edit Page' link at the bottom of the page.
+
+* You will be brought into a so-called 'wiki editor' screen with an editing window on top, some quick tips on editing wiki nodes in the middle, and a rendition of what the current page looks like.  
+
+* It is a good idea to read the [https://edge.rit.edu/content/Resources/public/Help/About%20Wiki wiki guide] if you have not yet.
+
+* On the edit page, you can place a link to the file you are interested in by typing in the name surrounded by pairs of square brackets as you will see if you edit this page.
+
+* <!-- [[TestFile.pdf | Test File]]  -->  Use this to practice adding files.  Replace "TestFile.pdf" with the appropriate file name, including extension (i.e., include .doc or .pdf or .dwg and don't rely on the web browser to interpret file type)
+
+* You will need to enter some sort of description in the Change summary field at the bottom of the editor window and preview your changes.  If all goes well, your link will show up in red in the bottom preview screen.  If that is ok, go ahead and save the changes using the button in the editing screen.  
+
+* If you have not already uploaded the file at this point, it will now show your edited page with your link in red.  We recommend that you upload all files to the EDGE server using SVN, for several reasons.  First, the web interface will not allow upload of a file > 2 MB.  Second, the SVN interface will allow you to upload many files and folders at once, rather than one at a time.  Finally, experience has shown that users are more likely to retain file extensions (.doc, .pdf, etc...) if they use the SVN interface.  If you do choose to use the web interface to upload:
+
+** When you click on the new link, it will ask you if you want to create a new wiki page or upload a file.  Choose to upload your file.  You can upload the file at this point or, if you have uploaded the file to the EDGE server using SVN (recommended), the file will already exist on the server.  In either case, your file will now reside on the EDGE server and will be available for download by individuals who have access your website.
+** After you upload the file, EDGE will return you to a page with a list of files that are in the directory on EDGE that you uploaded your file to.  At this point, you can chose to Display, Edit or Delete those files.  If you want to display the page that you were making changes to, find the name of the page in the file list (e.g., this page is named How to Add A Simple Document to your website) and click on the Display option.  If you want to display the contents of the file you just uploaded, find it in the list and click on the Display option.
+
+----
+[[Home]] | [[Planning & Execution]] | [[Problem Definition]] | [[Systems Design]] | [[Detailed Design]] | [[Build, Test, Document]] | [[Final Project Documentation]] | [[Photo Gallery]]

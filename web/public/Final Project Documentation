@@ -1,0 +1,78 @@
+Your website should document your journey through MSD, so include work-in-progress as well as latest results.  Use pdf's for display whenever possible so that information is easily viewable without the need to download files and open applications.  (Your EDGE file repository should still contain original editable files).
+
+Sample categories are listed below, but feel free to delete, change, or add nodes and files to better correspond to your project and your Guide’s expectations.
+
+You may want to consider putting content related to this node in the [[Final Documents]] directory.  There are several templates pre-loaded there that may be useful for you.
+
+== Build Plans and Assembly Instructions ==
+==== Purpose ====
+Enable the target users or follow on teams to duplicate the system.
+==== Instructions ====
+# Define sequence by which components are integrated.
+# In-process testing to be done that can confirm integration is proceeding as expected.
+# Define tactics to be employed if/when rework is required to achieve required functionality.
+==== Inputs and Source ====
+# Engineering Requirements.
+# Design Files.
+# Test Plans.
+==== Outputs and Destination ====
+# Component inspection plans.
+# Assembly Instructions.
+# Plans for full function inspection and debug.
+
+== Operation and Service Manuals ==
+==== Purpose ====
+Enable the target users operate and service the completed system.
+==== Instructions ====
+# Complete instructions to operate the system  including power up, initialization, operation and shut down.
+# Full description of monitoring and maintenance activities.
+==== Inputs and Source ====
+# Operation instruction set.
+# Service instruction set.
+==== Outputs and Destination ====
+# Operation instruction set.
+# Service instruction set.
+
+== Imagine RIT System Demo ==
+==== Purpose ====
+Demonstrate satisfaction of the functional engineering requirements and generate enthusiasm among other students.
+==== Instructions ====
+# Script for operation and demonstration of system functionality.
+# Plan for any data collection. 
+# Reference to EDGE site.
+==== Inputs and Sources ====
+# Operating system Hardware/Software.
+# Summary of Objective, key components of the system, obstacles overcome, data collected.
+==== Output and Destination ====
+# Working Hardware.
+# Poster.
+# Presentation script.
+
+== Final Technical Paper ==
+==== Purpose ====
+Capture the progress made in support of the customer or future teams.
+==== Instructions ====
+# Complete report and submit to competitions as expected.
+==== Inputs and Sources ====
+Template Outline.
+==== Outputs and Destination ====
+# Completed Report.
+# Copyright Release Form.
+
+== Final Poster ==
+==== Purpose ====
+Generate interest of future teams to further this work.
+==== Instructions ====
+# Complete poster.
+# Develop script of information to be shared when presenting the poster.
+==== Inputs and Sources ====
+# Customer requirements.
+# System diagrams.
+# Test results.
+==== Outputs and Destination ====
+# Complete poster.
+# Completed script.
+
+----
+
+[[Home]] | [[Planning & Execution]] | [[Problem Definition]] | [[Systems Design]] | [[Detailed Design]] | [[Build, Test, Document]] | [[Final Project Documentation]] | [[Photo Gallery]]
