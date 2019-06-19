@@ -1,0 +1,649 @@
+Motor control PCB
+
+General notes:
+
+
+Suggestions for general layout (feel free to do things differently if you think something works better):  
+
+4 layers: power plane divided into a 3.3V sections, 2 5V sections, and a V_supply(output of battery) sections, a unified ground plane, and two signal planes in the order of S-GnD-Pwr-S from top to bottom.  The reason there are 2 5v sections is because each pre motor driver has a buck converter with a 1.5 amp output, in order to make use of both, they must be attached to different power planes.  This is because it is impossible to get the exact same voltage on each output pin and any voltage difference would cause a large current surge through the pin with the lower potential potentially damaging the device.
+Try to ensure that digital signals do not cross over the different power planes (a way to make this easier is to fill in all the areas of the power plane you don't need with copper that is connected to the GND plane).  
+On the board analog ground and power ground should be kept seperate only connecting at a single point. Signal ground should be subdivided into analog and digital grounds and connected only at one point
+Without violating any of these other criteria traces between components should be as short as possible.
+
+There is no need to avoid right angles because at the frequencies we are working at the difference in EMI between 45 and 90 degree angles is unmeasureable.
+In fact that's true for the frequencies any PCB is working at, even in multiple GHZ range.
+
+
+Pinouts and Connections Between Components (there are alternative pins for all functionality on the DSC that we are using, listed on the datasheet, 
+so feel free to select those if it makes routing easier, but let me know if you do so and refer.) 
+
+Names in paranthesis are the component labels which can be found on the electrical BOM. If you see a part reference in a connection and want to know what it is just search in this document for label
+in parenthisis e.g., "(R4)" and that'll get you to where it is listed.
+
+part number is the manufacturer part number which is also the name of component model and footprint you select
+
+The circuit description is broken up into sections by function.  If there are multiple of the same component, there will be a line listing with the component is and then
+	a line(s) listing what their pinouts and connections are.
+
+
+ Digital signal controller 
+	1x Digital signal controller 144 LPFQ part name STM32F767ZIT6 (DSC)
+	pinout:
+		pin 6: connected to 3.3 volt plane 
+		pin 7: connected to pin 1 of R52
+		pin 8: connected to pin 1 of R53
+		pin 13: connected to pin 2 of R37
+		pin 14: connected to pin 2 of R38
+		pin 15: connected to pin 2 of R39
+		pin 16: connected to 3.3 volt plane 
+		pin 17: connected to digital GND
+		pin 18: connected to pin 2 of R40
+		pin 19: connected to pin 2 of R41
+		pin 20: connected to pin 2 of R42
+		pin 21: connnected to P9
+		pin 22: connected to P10
+		pin 25: connected to pin 1 of SWD1
+		pin 26: connected to pin 2 of R33
+		pin 27: connected to pin 2 of R34
+		pin 28: connected to pin 2 of R35
+		pin 29: connected to pin 2 of R36
+		pin 30: connected to 3.3 volt plane 
+		pin 31: connected to analog GND
+		pin 32: connected to 3.3 volt plane
+		pin 33: connected to VDD and pin 32 of DSC
+		pin 34: connected to pin 2 of R30
+		pin 35: connected to pin 2 of R31
+		pin 36: connected to pin 2 of R32
+		pin 37: connected to pin 2 of RTS1
+		pin 38: connected to digital GND
+		pin 39: connected to 3.3 volt plane
+		pin 43: connected to pin 22 of DVR2
+		pin 46: connected to pin 20 of DVR2
+		pin 47: connected to pin 18 of DVR2
+		pin 51: connected to digital GND
+		pin 52: connected to 3.3 volt plane
+		pin 59: connected to pin 22 of DRV1
+		pin 60: connected to pin 21 of DRV1
+		pin 61: connected to digital GND
+		pin 62: connected to 3.3 volt plane
+		pin 63: connected to pin 20 of DRV1
+		pin 64: connected to pin 19 of DRV1
+		pin 65: connected to pin 18 of DRV1
+		pin 66: connected to pin 17 of DRV1
+		pin 67: connected to pin 6 of DRV1
+		pin 68: connected to pin 16 of DRV1
+		pin 69: connected to pin 6 of DRV2
+		pin 70: connected to pin 16 of DRV2
+		pin 71: connected to pin 1 of C6
+		pin 72: connected to 3.3 volt plane
+		pin 91: connected to pin 1 of CAN_TR1
+		pin 92: connected to pin 4 of CAN_TR4
+		pin 93: connected to pin 3 of BUSCNT1
+		pin 94: connected to digital GND
+		pin 95: connected to 3.3 volt plane
+		pin 96: connected to pin 21 of DRV2
+		pin 97: connected to pin 19 of DRV2
+		pin 98: connected to pin 17 of DRV2
+		pin 105: connected to pin 4 of SWD1
+		pin 106: connected to pin 1 of C7
+		pin 107: connected to digital GND
+		pin 108: connected to 3.3 volt plane
+		pin 109: connected to pin 2 of SWD1
+		pin 120: connected to digital GND
+		pin 121: connected to 3.3 volt plane
+		pin 130: connected to digital GND
+		pin 131: connected to 3.3 volt plane			
+		pin 138: connected to digital GND		
+		pin 143: connected to pin 144 of DSC
+		Pin 144: connected to 3.3 volt plane 
+		
+		
+	3x 1 uf ceramic capacitors part number GRM155C81C105ME11J
+		1x connected between pin 33 and pin 31 as close as possible (C87)
+		1x connected between pin 95 and pin 94 as close as possible (C86)
+		1x connected between pin 121 and pin 120 as close as possible (C85)
+	2x 2.2 uf ceramic capacitors part number C3216X7R1H225K160AE 
+		1x connected between pin 106 and 107 as close as possible (C6)
+		1x connected between pin 71 and digital GND as close as possible (C7)
+	1x 4.7 uf ceramic capacitors part number CGA6M3X7S2A475K200AB
+		1x connected between pin 17 and digital GND as close as possible (C88)
+	7x 2.2 kohm resistors part number RK73H1JTTD2201F
+		1x connected between DSC pin 30 and analog GND (R18)
+		1x connected between DSC pin 31 and analog GND (R19)
+		1x connected between DSC pin 32 and analog GND (R20)
+		1x connected between DSC pin 33 and analog GND (R21)
+		1x connected between DSC pin 34 and analog GND (R22)
+		1x connected between DSC pin 35 and analog GND (R23)
+		1x connected between DSC pin 36 and analog GND (R51) 
+	14x .1 uf capacitors part number AS0805KKX7R0BB104
+		1x connected between DSC pin 6 and digital GND (C8)
+		1x connected between DSC pin 16 and DSC pin 17 (C9)
+		1x connected between DSC pin 83 and DSC pin 84 (C10)
+		1x connected between DSC pin 30 and DSC pin 31  (C74)
+		1x connected between DSC pin 38 and DSC pin 39 (C75)
+		1x connected between DSC pin 51 and DSC pin 52 (C76)
+		1x connected between DSC pin 61 and DSC pin 62 (C77)
+		1x connected between DSC pin 94 and DSC pin 95 (C78)
+		1x connected between DSC pin 107 and DSC pin 108 (C79)
+		1x connected between DSC pin 120 and DSC pin 121 (C80)
+		1x connected between DSC pin 130 and DSC pin 131 (C81)
+		1x connected between DSC pin 144 and digital GND (C82)
+		1x connected between DSC pin 72 and digital GND (C83)
+		1x connected between DSC pin 25 and digital GND (C84)
+		
+	7x 39 kohm resistors part number ERJ-3EKF3902V
+		1x connected between DSC pin 34 and Q1 pin 3 (R30)
+		1x connected between DSC pin 35 and Q3 pin 3 (R31)
+		1x connected between DSC pin 36 and Q5 pin 3 (R32)
+		1x connected between DSC pin 26 and Q7 pin 3 (R33)
+		1x connected between DSC pin 27 and Q9 pin 3 (R34)
+		1x connected between DSC pin 28 and Q11 pin 3 (R35)
+		1x connected between DSC pin 29 and supply plane (R36)
+
+ LEDs
+	1x green LED part number LTST-C191KGKT (D3)
+	pinout:
+		pin 1: Anode, connected to pin 2 of R52
+		pin 2: Cathode, connected to digital GND
+		
+	1x red LED part number LTST-C191KRKT (D4)
+	pinout:
+		pin 1: Anode, connected to pin 2 of R53
+		pin 2: Cathode, connected to digital GND
+	2x 100 ohm resistors part number part number RK73H1JTTD1000F
+		1x connected betweem pin 7 of DSC and pin 1 of D3 (R52)
+		1x connected between pin 8 of DSC and pin 1 of D4 (R53)
+		
+
+ Board to wire connectors:
+	 Place all connectors on the edges of the board, preferably away from the Power MOSFETs
+
+	1x 5 pin connector for debugging/ programming part number SM05B-PASS-TBT(LF)(SN) (SWD1)
+	pinout:
+
+		pin 1: VCC connect to 3.3 volt plane 
+		pin 2: SWCLK connect to pin 109 on DSC
+		pin 3: GND connect to dig ground
+		pin 4: SWDIO connected to pin 105 on DSC
+		pin 5: NRST connected to pin 25 on DSC
+	
+
+	1x  5 pin connector  for connecting CAN and wakeup wires between each PCB part number SM05B-PASS-TBT(LF)(SN) (BUSCNT1)
+	pinout:
+		pin 1 CANH, connected to pin 7 of CAN_TR1
+		pin 2 GND, connected to dig GND
+		pin 3 V-wakeup connected to pin 93 of DSC 
+		pin 4 CANL, connected to pin 2 of CAN_TR1
+		pin 5 connect to 5-volt power plane #2
+
+	 1 4 pin header connector to potential wireless reciever part number SM04B-PASS-TBT(LF)(SN) (RECV)
+	 pinout: 
+		pin 1: connected to DSC 136
+		pin 2: connected to DSC 137
+		pin 4: connected to digital GND		
+		pin 3: connected to 5 volt plane #1
+ Wire solder Pads:
+
+	2x 18 AWG small pads to solder wire from each temperature sensor embedded in the hub motors
+		1x connected to pin 21 of DSC (P9)
+		1x connected to pin 22 of DSC (P10) 
+
+	8x 10 AWG large pads for soldering low gauge wire 
+		1x connected to pin 1 of R24 (P1)
+		1x connected to pin 1 of R25 (P2)
+		1x connected to pin 1 of R26 (P3)
+		1x connected to pin 1 of R27 (P4)
+		1x connected to pin 1 of R28 (P5)
+		1x connected to pin 1 of R29 (P6)
+		1x connected to supply plane (P7)
+		1x connected to pwr ground plane (P8)
+
+
+	
+		
+ CANBUS:
+	1x can transceiver part number SN65HVD232DR (CAN_TR1)
+	pinout:
+		pin 1: Transmit data input pin connected to pin 92 on DSC
+		pin 2: Connected to GND
+		pin 3: Connected to 3.3 volt plane
+		pin 4: Recieved data output pin, connected to pin 91 on DSC
+		pin 5: not connected
+		pin 6: CANL, connected to pin 7 of BUSCNT1
+		pin 7: CANH, connected to pin 2 of BUSCNT1
+		pin 8: not connected
+		
+	1x 120 ohm termination resistor part number ERA-3AEB121V connecting pin 6 and 7 of CAN_TR1 (RTERM_1)
+	1x .1 uf capacitor part number AS0805KKX7R0BB104 connected between pin 2 and pin 3 of CAN_TR1 (C1) 
+
+	
+
+
+ Voltage regulation:
+	1x 3.3 volt voltage regulator part number TC2117-3.3VDBTR (Reg1)
+	pintout:
+		pin 1: connected to dig GND 
+		pin 2: Vin, connected to 3.3 Volt power plane and pin 1 of C2
+		pin 3: Vin, connected to 5 volt power plane #2 and pin 1 of C2
+	2x 1 uf ceramic capacitor part number GRM155C81C105ME11J 
+		1x  connected between pin 2 of Reg1 and the dig GND plane (C2)
+		1x  connected between pin 3 of Reg1 and the dig GND plane (C3) 
+
+
+ Power fets:
+	12x NMOS power fets part number IRFS7730TRLPBF.
+	fet structure: On one end of the board, six on the top layler, six on the bottom layer, each with 3 on the left and right side 
+		All fets are To-252-3 packages.  Pinouts are with respect to the chip facing at you, pin 1 is the leg on the left, pin 2 is the long bar on the opposite site of the chip 
+		and pin 3 is the leg on the right. 
+	(Q1) pinout:
+		pin 1: gate, connected to pin 2 of R6 
+		pin 2: drain connected to supply plane
+		pin 3: source connected to pin 1 of R23 , pin 46 of DVR1, and pin 1 of R31
+	(Q2) pinout:
+		pin 1: gate, connected to pin 2 of R7
+		pin 2: drain connected to pin 3 of Q1
+		pin 3: source connected to dig GND 
+	(Q3) pinout:
+		pin 1: gate, connected to pin 2 of R8 
+		pin 2: drain connected to supply plane
+		pin 3: source connected to pin 1 of R25,  pin 41 of DVR1, and pin 1 of R32
+	(Q4) pinout:
+		pin 1: gate, connected to pin 2 of R9
+		pin 2: drain connected to pin 3 of Q3
+		pin 3: source connected to dig GND
+	(Q5) pinout:
+		pin 1: gate, connected to pin 2 of R10
+		pin 2: drain connected to supply plane
+		pin 3: source connected to pin 1 of R27, pin 36 of DVR1, and pin 1 of R33
+	(Q6) pinout:
+		pin 1: gate, connected to pin 2 of R11
+		pin 2: drain connected to pin 3 of Q5
+		pin 3: source connected to dig GND
+	(Q7) pinout:
+		pin 1: gate, connected to pin 2 of R12
+		pin 2: drain connected to supply plane
+		pin 3: source connected to pin 1 of R29, pin 46 of DVR2, and pin 1 of R34
+	(Q8) pinout:
+		pin 1: gate, connected to pin 2 of R13
+		pin 2: drain connected to pin 3 of Q7
+		pin 3: source connected to dig GND
+	(Q9) pinout:
+		pin 1: gate, connected to pin 2 of R14
+		pin 2: drain connected to supply plane
+		pin 3: source connected to pin 1 of R31, pin 41 of DVR2, and pin 1 of R35
+	(Q10) pinout:
+		pin 1: gate, connected to pin 2 of R15
+		pin 2: drain connected to pin 3 of Q9
+		pin 3: source connected to dig GND 
+	(Q11) pinout:
+		pin 1: gate, connected to pin 2 of R16
+		pin 2: drain connected to supply plane
+		pin 3: source connected to pin 1 of R33, pin 36 of DVR2, and pin 1 of R36
+	(Q12) pinout:
+		pin 1: gate, onnected to pin 2 of R17
+		pin 2: drain connected to pin 3 of Q11
+		pin 3: source connected to dig GND 
+	
+	12x 4.7 uf capacitors, part number CGA6M3X7S2A475K200AB
+		2x connected in parallel between pin 2 of Q1 and pin 3 of Q2 (C14),(C15)
+		2x connected in parallel between pin 2 of Q3 and pin 3 of Q4 (C17),(C16)
+		2x connected in parallel between pin 2 of Q5 and pin 3 of Q6 (C18),(C19)
+		2x connected in parallel between pin 2 of Q7 and pin 3 of Q8 (C21),(C20)
+		2x connected in parallel between pin 2 of Q9 and pin 3 of Q10 (C22),(C23)
+		2x connected in parallel between pin 2 of Q11 and pin 3 of Q12 (C24),(C25)
+	
+	12x 4.7 ohm resistors, part number RK73H1JTTD4R70F
+		1x connected between pin 1 of Q1 and pin 47 of DVR1 (R6)
+		1x connected between pin 1 of Q2 and pin 45 of DVR1 (R7)
+		1x connected between pin 1 of Q3 and pin 42 of DVR1 (R8)
+		1x connected between pin 1 of Q4 and pin 40 of DVR1 (R9)
+		1x connected between pin 1 of Q5 and pin 37 of DVR1 (R10)
+		1x connected between pin 1 of Q6 and pin 35 of DVR1 (R11)
+		1x connected between pin 1 of Q7 and pin 47 of DVR2 (R12)
+		1x connected between pin 1 of Q8 and pin 45 of DVR2 (R13)
+		1x connected between pin 1 of Q9 and pin 42 of DVR2 (R14)
+		1x connected between pin 1 of Q10 and pin 40 of DVR2 (R15)
+		1x connected between pin 1 of Q11 and pin 37 of DVR2 (R16)
+		1x connected between pin 1 of Q12 and pin 35 of DVR2 (R17)
+
+
+ Current sensing circuitry
+	6x 1 milliohm shunt resistors part number WSLP27261L000FEA 
+	(R24) pinout:
+		pin 1: connected to P1
+		pin 2: connected to pin	3 of Q1
+		pin 3: pin 1 of CS1
+		pin 4: connected to pin 8 of CS1
+	(R25) pinout:
+		pin 1: connected to P2
+		pin 2: connected to pin	3 of Q3
+		pin 3: pin 1 of CS2
+		pin 4: connected to pin 8 of CS2
+	(R26) pinout:
+		pin 1: connected to P3
+		pin 2: connected to pin	3 of Q5
+		pin 3: pin 1 of CS3
+		pin 4: connected to pin 8 of CS3
+	(R27) pinout:
+		pin 1: connected to P4
+		pin 2: connected to pin	3 of Q7
+		pin 3: pin 1 of CS4
+		pin 4: connected to pin 8 of CS4
+	(R28) pinout:
+		pin 1: connected to P5
+		pin 2: connected to pin	3 of Q9
+		pin 3: pin 1 of CS5
+		pin 4: connected to pin 8 of CS5
+	(R29) pinout:
+		pin 1: connected to P6
+		pin 2: connected to pin	3 of Q11
+		pin 3: pin 1 of CS6
+		pin 4: connected to pin 8 of CS6
+	
+	6x current sense amplifiers part number AD8418ABRMZ 
+	(CS1) pinout:
+		pin 1: connected to pin 3 of R24
+		pin 2: connected to GND
+		pin 3: connected to pin 2 of CS1 and pin 2 of C26
+		pin 4: Not connected
+		pin 5: connected to pin 1 of R37
+		pin 6: connected to pin 7 of CS1
+		pin 7: connected to 5 volt power plane and pin 1 of C26
+		pin 8: connected to pin 4 of R24
+	(CS2) pinout:
+		pin 1: connected to pin 3 of R25
+		pin 2: connected to GND
+		pin 3: connected to pin 2 of CS2 and pin 2 of C27
+		pin 4: Not connected
+		pin 5: connected to pin 1 of R38
+		pin 6: connected to pin 7 of CS2
+		pin 7: connected to 5 volt power plane and pin 1 of C27
+		pin 8: connected to pin 4 of R25
+	(CS3) pinout:
+		pin 1: connected to pin 3 of R26
+		pin 2: connected to GND
+		pin 3: connected to pin 2 of CS3 and pin 2 of C28
+		pin 4: Not connected
+		pin 5: connected to pin 1 of R39
+		pin 6: connected to pin 7 of CS3
+		pin 7: connected to 5 volt power plane and pin 1 of C28
+		pin 8: connected to pin 4 of R26
+	(CS4) pinout:
+		pin 1: connected to pin 3 of R27
+		pin 2: connected to GND
+		pin 3: connected to pin 2 of CS4 and pin 2 of C29
+		pin 4: Not connected
+		pin 5: connected to pin 1 of R40
+		pin 6: connected to pin 7 of CS4
+		pin 7: connected to 5 volt power plane and pin 1 of C29
+		pin 8: connected to pin 4 of R27
+	(CS5) pinout:
+		pin 1: connected to pin 3 of R28
+		pin 2: connected to GND
+		pin 3: connected to pin 2 of CS5 and pin 2 of C30
+		pin 4: Not connected
+		pin 5: connected to pin 1 of R41
+		pin 6: connected to pin 7 of CS5
+		pin 7: connected to 5 volt power plane and pin 1 of C30
+		pin 8: connected to pin 4 of R28
+	(CS6) pinout:
+		pin 1: connected to pin 3 of R29
+		pin 2: connected to GND
+		pin 3: connected to pin 2 of CS6 and pin 2 of C31
+		pin 4: Not connected
+		pin 5: connected to pin 1 of R42
+		pin 6: connected to pin 7 of CS6
+		pin 7: connected to 5 volt power plane and pin 1 of C31
+		pin 8: connected to pin 4 of R29
+
+	6x 100 ohm resistors part number RK73H1JTTD1000F
+		1x connected between pin 13 of DSC and pin 5 of CS1 (R37)
+ 		1x connected between pin 14 of DSC and pin 5 of CS2 (R38)
+		1x connected between pin 15 of DSC and pin 5 of CS3 (R39)
+		1x connected between pin 18 of DSC and pin 5 of CS4 (R40)
+		1x connected between pin 19 of DSC and pin 5 of CS5 (R41)
+		1x connected between pin 20 of DSC and pin 5 of CS6 (R42)
+
+	6x 4.7nf capacitors part number GCM155R71H472KA37D 
+ 		1x connected between pin 2 of R37 and analog GND (C32)
+		1x connected between pin 2 of R38 and analog GND (C33)
+		1x connected between pin 2 of R39 and analog GND (C34)
+		1x connected between pin 2 of R40 and analog GND (C35)
+		1x connected between pin 2 of R41 and analog GND (C36)
+		1x connected between pin 2 of R42 and analog GND (C37)
+ Temperature sensing for MOSFETS
+
+	1x NTC resistor part number NCP18XH103F03RB connected between 5 volt power plane and pin 37 of DSC and placed next to one of the powerfets (RTS1)
+	1x 2.2 uf capacitor part number C1608X5R1C225M080AB connected between DSC pin 37 and analog GND (C38)
+	1x 10 kohm resistor part number RK73H1JTTD1002F connected betweeen DSC pin 37 and analog GND (R43)
+
+ Temperature sensing for motors
+	2x 2.2 uf capacitor part number C1608X5R1C225M080AB 
+		1x connected betweeen DSC pin 21 and analog GND (C39)
+		1x connected betweeen DSC pin 22 and analog GND (C40)
+
+	2x 10 kohm resistor part number RK73H1JTTD1002F 
+		1x connected between DSC pin 21 and analog GND (R3)
+		1x connected between DSC pin 22 and analog GND (R4)
+
+ Power supply decoupling (place as close to P7 as possible, can be on one or both sides)
+	2x 680uf 63 volt aluminum electrolytic capacitors part number EEV-FK1J681M  
+		2x in parallel with positive ends connected to the supply plane and negative, side with bar, ends connected to dig GND (C41),(C42)
+
+
+ Motor driver:
+
+	2x  premotor drivers part number  DRV8302. integrated buck converter output is five volts for each driver and each attached to a seperate 5 volt powerplane 
+	(DRV1) pinout:
+		pin 1: connected to pin 1 of R1
+		pin 2: connected to pin 1 of C43 and pin 1 of R5
+		pin 3: connected between pin 2 of R46 and pin 1 of R44
+		pin 4: connected to digital GND (unused input)
+		pin 5: not connected (unused output)
+		pin 6: connected to pin 67 of DSC
+		pin 7: connected to pin 1 of R49
+		pin 8: connected to signal GND
+		pin 9: connected to 3.3 volt plane
+		pin 10: connected to analog ground
+		pin 11: connected to pin 23 of DVR1
+		pin 12: connected to digital GND (unused input)
+		pin 13: connected to pin 1 of C5
+		pin 14: connected to pin 1 of C47
+		pin 15: connected to pin 2 of C47
+		pin 16: connected to pin 68 of DSC
+		pin 17: connected to pin 66 of DSC
+		pin 18: connected to pin 65 of DSC
+		pin 19: connected to pin 64 of DSC
+		pin 20: connected to pin 63 of DSC
+		pin 21: connected to pin 60 of DSC
+		pin 22: connected to pin 59  of DSC
+ 		pin 23: connected to pin 1 of C50 and pin 1 of C51
+		pin 24: connected to 3.3 volt plane
+		pin 25: not connected (unused output)
+		pin 26: not connected (unused output)
+		pin 27: connected to pin 1 of C55 
+		pin 28: connected to analog GND
+		pin 29: connected to pin of C67
+		pin 30: connected to digital gnd
+		pin 31: connected to digital gnd
+		pin 32: connected to digital gnd
+		pin 33: connected to digital gnd
+		pin 34: S_L3 connected to pin 3 of Q6
+		pin 35: G_L3 connected to pin 1 of R11
+		pin 36: S_H3 connected to pin 3 of Q5 and pin 2 of C58
+		pin 37: G_H3 connected to pin 1 of R10
+		pin 38: connected to pin 1 of C58 
+		pin 39: S_L2 connected to pin 3 of Q3
+		pin 40: G_L2 connected to pin 1 of R9
+		pin 41: S_H2 connected to pin 3 of Q4 and pin 2 of C59
+		pin 42: G_H2 connected to pin 1 of R8
+		pin 43: connected to pin 1 of C59
+		pin 44: S_L1 connected to pin 3 of Q2
+		pin 45: G_L1 connected to pin 1 of R7
+		pin 46: S_H1 connected to pin 3 of Q1 and pin 2 of C60
+		pin 47: G_H1 connected to pin 1 of R6 
+		pin 48: connected to pin 1 of C60
+		pin 49: connected to pin 1 of R49
+		pin 50: connected to pin 51 of DVR1
+		pin 51: connected to cathode end of D1, pin 2 of C64 and pin 1 of L1 
+		pin 52: connected to pin 1 of C64
+		pin 53: connected to pin 54 of DVR1
+		pin 54: connected to supply plane 
+		pin 55: not connected (float means always enabled)
+		pin 56: connected to pin 1 of C70
+		pin 57: Is a pad on the bottom of the device that should be connected to digital GND 
+
+	(DRV2) pinout:
+		pin 1: connected to pin 1 of R2
+		pin 2: connected to pin 1 of C44 and pin 1 of R48
+		pin 3: connected between pin 2 of R47 and pin 1 of R45
+		pin 4: connect to digital ground (unused input)
+		pin 5: not connected (unused output)
+		pin 6: connect to pin 69 of DSC
+		pin 7: connected to pin 1 of R50
+		pin 8: connected to analog ground
+		pin 9: connected to 3.3 volt plane
+		pin 10: connected to digital ground
+		pin 11: connected to pin 23 of DVR2
+		pin 12: connect to digital ground (unused input)
+		pin 13: connect to pin 1 of C49
+		pin 14: connect to pin 1 of C48
+		pin 15: connect to pin 2 of C48
+		pin 16: connect to pin 70 of DSC	
+		pin 17: connected to pin 98 of DSC
+		pin 18: connected to pin 47 of DSC
+		pin 19: connected to pin 97 of DSC
+		pin 20: connected to pin 46 of DSC
+		pin 21: connected to pin 96 of DSC
+		pin 22: connected to pin 43 of DSC
+		pin 23: connected to pin 1 of C52 and pin 1 of C53
+		pin 24: connected to pin 27 of DVR2
+		pin 25: not connected (unused output)
+		pin 26: not connected (unused output)
+		pin 27: connected to pin 1 of C54
+		pin 28: connected to analog GND (as short as possible trace)
+		pin 29: connected to pin of C66
+		pin 30: connected to digital gnd
+		pin 31: connected to digital gnd
+		pin 32: connected to digital gnd
+		pin 33: connected to digital gnd
+		pin 34: S_L3 connected to pin 3 of Q6
+		pin 35: G_L3 connected to pin 1 of R17
+		pin 36: S_H3 connected to pin 3 of Q5 and pin 2 of C63
+		pin 37: G_H3 connected to pin 1 of R16
+		pin 38: connected to pin 1 of C63 
+		pin 39: S_L2 connected to pin 3 of Q4
+		pin 40: G_L2 connected to pin 1 of R15
+		pin 41: S_H2 connected to pin 3 of Q3 and pin 2 of C62
+		pin 42: G_H2 connected to pin 1 of R14
+		pin 43: connected to pin 1 of C62
+		pin 44: S_L1 connected to pin 3 of Q2
+		pin 45: G_L1 connected to pin 1 of R13
+		pin 46: S_H1 connected to pin 3 of Q1 and pin 2 of C61
+		pin 47: G_H1 connected to pin 1 of R12 
+		pin 48: connected to pin 1 of C61
+		pin 49: connected to pin 1 of R50
+		pin 50: connected to pin 51 of DVR2
+		pin 51: connected to cathode end of D2, pin 2 of C65 and pin 1 of L2 
+		pin 52: connected to pin 1 of C65
+		pin 53: connected to pin 54 of DVR2
+		pin 54: connected to supply plane 
+		pin 55: not connected (float means always enabled)
+		pin 56: connected to pin 1 of C71
+		pin 57: Is a pad on the bottom of the device that should be connected to digital GND 
+
+	2x 3.3 kohm resistors part number RK73H1JTTD3301F
+		1x connected between digital GND and pin 2 of R46 (R44)
+		1x connected between digital GND and pin 2 of R47 (R45)
+
+	2x 18 kohm resistors  part number RK73H1JTTD1802F
+		1x connected between 5 volt plane #1 and pin 1 of R44 (R46)
+		1x connected between 5 volt plane #2 and pin 1 of R45 (R47)
+
+	2x 15 kohm resistors part number RK73H1JTTD1502F
+		1x connected between pin 2 of DVR1 and pin 1 of C45 (R5)
+		1x connected between pin 2 of DVR2 and pin 1 of C46 (R48)
+
+	2x 220 kohm resistors part number RK73H1JTTD2203F
+		1x connected between pin 1 of DVR1 and digital GND (R1)
+		1x connected between pin 1 of DVR2 and digital GND (R2)
+
+	2x 6.8 nf ceramic capacitors part number CGA3E2C0G1H682JD
+		1x connected between pin 2 of R5 and digital GND (C45)
+		1x connected between pin 2 of R48 and digital GND (C46)
+
+ 	2x 120 pf ceramic capacitors part number C0603C121J5GACTU
+		1x connected between pin 2 of DVR1 and digital GND (C43)
+		1x connected between pin 2 of DVR2 and digital GND (C44)
+
+	2x 10 kohm resistors part number RK73H1JTTD1002F
+		1x connected between pin 7 of DVR1 and analog GND (R49)
+		1x connected between pin 7 of DVR2 and analog GND (R50)
+
+	2x 22 nf ceramic capacitors part number CGA3E2X7R1H223K080AA
+		1x connected between pin 14 and pin 15 of DVR1 (C47)
+		1x connected between pin 14 and pin 15 of DVR1 (C48)
+
+	10x 2.2 uf ceramic capacitors part number C1608X5R1C225M080AB
+		2x connected in parallel between digital GND and pin 23 of DVR1 (C50),(C51)
+		2x connected in parallel between digital GND and pin 23 of DVR2 (C52,(C53)
+		1x connected between pin 13 of DVR1 and digital GND (C5)
+		1x connected between pin 13 of DVR2 and digital GND (C49)
+		1x connected between pin 27 and pin 28 of DVR1 (C54)
+		1x connected between pin 28 and pin 29 of DVR1 (C55)
+		1x connected in parallel with C72 with pin 1 also connected to pin 2 of L1 (C55)
+		1x connected in parallel with C73 with pin 1 also connected to pin 2 of L2 (C56)
+	
+	6x 220 nf ceramic capacitors part number CGA2B3X7R1E224K050BE
+		1x connected between pin 38 and pin 36 of DVR1 (C58)
+		1x connected between pin 43 and pin 41 of DVR1 (C59) 
+		1x connected between pin 48 and pin 46 of DVR1 (C60)
+		1x connected between pin 38 and pin 36 of DVR1 (C61)
+		1x connected between pin 43 and pin 41 of DVR1 (C62)
+		1x connected between pin 48 and pin 46 of DVR1 (C63)	
+
+	2x 100 nf ceramic capacitors part number AS0805KKX7R0BB104
+		1x connected between pin 52 and 51 of DRV1 (C64)
+		1x connected between pin 52 and 51 of DRV1 (C65)
+
+	2x 15 nf ceramic capacitors part number C0603C153J3GACTU 
+		1x connected between digital gnd and pin 56 of DVR1 (C70)
+		1x connected between digital gnd and pin 56 of DVR2 (C71)
+
+	4x 4.7 uf ceramic capacitors part number CGA6M3X7S2A475K200AB
+		1x connected between pin 54 of DVR1 and digital GND, placed as close as possible (C68)
+		1x connected between pin 54 of DVR2 and digital GND, placed as close as possible (C69)
+
+	2x 22 uh power inductors part number SDR0805-220ML 
+		1x connected between pin 51 of DVR1 and 5v plane #1 (L1)
+		1x connected between pin 51 of DVR2 and 5v plane #2 (L2)
+	
+	2x 60V 2A shtocky diode part number 771-PMEG6020ER-115 
+		1x connected between pin 51 of DVR1 and digital GND (D1)
+		1x connected between pin 51 of DVR2 and digital GND (D2)		
+
+	2x 100 uf ceramic capacitors part number LMK325ABJ107MM-t
+		1x connected between 5 volt plane #1 and digital GND in parallel with C55 (C72)
+		1x connected between 5 volt plane #2 and digital GND in parallel with C56 (C73)
+
+
+
+
+
+
+	 
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+

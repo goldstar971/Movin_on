@@ -1,0 +1,17 @@
+Notes:
+
+1x STM32F205RBt6
+1x can transciever
+1x quad channel op-amps
+1x quad channel DAC
+1x lighting controller header
+1x 5 pin header
+4x traces for force resistive pads
+4x 47 pf ceramic capacitors
+4x 1000 kohm resistors
+4x 20 kohm resistors
+4x 100 kohm resistors
+4x 50 kohm resistors
+1x 3.3 volt regulator
+assorted decoupling capacitors
+1x IMU
