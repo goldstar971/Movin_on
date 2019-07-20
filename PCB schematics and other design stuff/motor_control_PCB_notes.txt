@@ -156,8 +156,6 @@ The circuit description is broken up into sections by function.  If there are mu
 		1x connected to Battery Supply (P4)
 		1x connected to pwr ground plane (P5)
 
-
-	
 		
  CANBUS:
 	1x can transceiver part number SN65HVD232DR (CAN_TR)
@@ -190,7 +188,7 @@ The circuit description is broken up into sections by function.  If there are mu
 
  Power fets:
 	6x NMOS power fets part number IRFS7730TRLPBF.
-	fet structure: On one end of the board, 3 on the top layler, 3 on the bottom layer
+	fet structure: On one end of the board, all on the top layer
 		All fets are To-252-3 packages.  Pinouts are with respect to the chip facing at you, pin 1 is the leg on the left, pin 2 is the long bar on the opposite site of the chip 
 		and pin 3 is the leg on the right. 
 	(Q1) pinout:
@@ -305,8 +303,8 @@ The circuit description is broken up into sections by function.  If there are mu
 
 
  Power supply decoupling (place as close to P7 as possible, can be on one or both sides)
-	2x 680uf 63 volt aluminum electrolytic capacitors part number EEV-FK1J681M  
-		2x in parallel with positive ends connected to the Battery Supply and negative, side with bar, ends connected to dig GND (C17),(C18)
+	4x 330uf 50 volt aluminum electrolytic capacitors part number EEV-FK1J681M  
+		4x in parallel with positive ends connected to the Battery Supply and negative, side with bar, ends connected to dig GND (C17),(C18),(C46),(C47)
 
 
  Motor driver:
