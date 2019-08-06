@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'IRFS7730TRLPBF'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "ALLIED_NUMBER", "ALLIED_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "Infineon", "IRFS7730TRLPBF" (!) = "", "D2PAK(TO-263AB)", "Other", "942-IRFS7730TRLPBF", "https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7730TRLPBF", "1301007P", "http://uk.rs-online.com/web/p/products/1301007P", "70425753", "https://www.alliedelec.com/infineon-irfs7730trlpbf/70425753/", "Infineon IRFS7730TRLPBF N-Channel MOSFET, 246 A, 75 V HEXFET, 3-Pin D2PAK", "https://componentsearchengine.com/Datasheets/2/IRFS7730TRLPBF.pdf"
+END_PART
+
+END.

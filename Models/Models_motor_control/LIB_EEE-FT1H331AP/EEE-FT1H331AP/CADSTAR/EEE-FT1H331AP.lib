@@ -1,0 +1,16 @@
+.EEE-FT1H331AP :1 ;Aluminum Electrolytic Capacitors - SMD 330uF 50volts 10x10.2mm SMD
+CAPAE1030X1050N
+*STM C
+*NGS
+*PLB 1="+" 2="-"
+*MXP 2
+*DFN EEE-FT1H331AP
+~!Mouser Part Number (667-EEE-FT1H331AP)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FT1H331AP)
+~!Manufacturer_Name (Panasonic)
+~!Manufacturer_Part_Number (EEE-FT1H331AP)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/EEE-FT1H331AP.pdf)
+~!Height (10.5mm)
+~!3D_Model (EEE-FT1H331AP)
+EEE-FT1H331AP
+1.1!U 2.1!U 

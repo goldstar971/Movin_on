@@ -1,0 +1,18 @@
+.AD8418ABRMZ :1 ;ANALOG DEVICES - AD8418ABRMZ - CURRENT SENSE AMPLIFIER, 250KHZ, MSOP-8
+SOP65P490X110-8N
+*STM IC
+*NGS
+*PLB 1="-IN" 2="GND" 3="VREF2" 4="NC" 5="OUT" 6="VS" 7="VREF1" 8="+IN"
+*MXP 8
+*DFN AD8418ABRMZ
+~!Manufacturer_Name (Analog Devices)
+~!Manufacturer_Part_Number (AD8418ABRMZ)
+~!Mouser Part Number (584-AD8418ABRMZ)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=584-AD8418ABRMZ)
+~!RS Part Number (1831929)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/1831929)
+~!Link Datasheet (http://www.analog.com/media/en/technical-documentation/data-sheets/AD8418A.pdf)
+~!Height (1.1mm)
+~!3D_Model (AD8418ABRMZ)
+AD8418ABRMZ
+1.1!I 2.1!G 3.1!I 4.1!I 8.1!I 7.1!I 6.1!P 5.1!Y 

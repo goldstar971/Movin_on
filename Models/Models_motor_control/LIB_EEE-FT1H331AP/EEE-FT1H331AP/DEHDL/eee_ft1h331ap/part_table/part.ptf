@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'EEE_FT1H331AP'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Panasonic", "EEE-FT1H331AP" (!) = "", "CAPAE1030X1050N", "Capacitor Al Electrolytic", "667-EEE-FT1H331AP", "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FT1H331AP", "Aluminum Electrolytic Capacitors - SMD 330uF 50volts 10x10.2mm SMD", "https://componentsearchengine.com/Datasheets/1/EEE-FT1H331AP.pdf", "10.5 mm"
+END_PART
+
+END.

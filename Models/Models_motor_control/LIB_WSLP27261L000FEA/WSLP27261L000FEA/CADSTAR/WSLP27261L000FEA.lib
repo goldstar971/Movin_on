@@ -1,0 +1,17 @@
+.WSLP27261L000FEA :1 ;VISHAY - WSLP27261L000FEA - RES, METAL STRIP, 0.001OHM, 1%, 2726
+WSLP2726
+*STM R
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4"
+*MXP 4
+*DFN WSLP27261L000FEA
+~!Manufacturer_Name (Vishay)
+~!Manufacturer_Part_Number (WSLP27261L000FEA)
+~!Mouser Part Number (71-WSLP27261L000FEA)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=71-WSLP27261L000FEA)
+~!RS Part Number (-)
+~!RS Price/Stock (-)
+~!Link Datasheet (http://www.vishay.com/docs/30179/wslp2726.pdf)
+~!Height (-)
+WSLP27261L000FEA
+1.1!U 2.1!U 3.1!U 4.1!U 

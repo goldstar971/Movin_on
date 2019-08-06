@@ -1,0 +1,18 @@
+.ERJ3EKF3902V :1 ;Thick Film Chip Resistor 0.1W 0603 39K Panasonic E96 Series Precision Thick Film Surface Mount Resistor 0603 Case 39k +/-1% 0.1W +/-100ppm/C
+RESC1608X55N
+*STM R
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN ERJ3EKF3902V
+~!Manufacturer_Name (Panasonic)
+~!Manufacturer_Part_Number (ERJ3EKF3902V)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!RS Part Number (8085080)
+~!Link RS Price/Stock (https://uk.rs-online.com/web/p/products/8085080)
+~!Link Datasheet (http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C86.pdf)
+~!Height (0.55mm)
+~!3D_Model (ERJ3EKF3902V)
+ERJ3EKF3902V
+1.1!U 2.1!U 

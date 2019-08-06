@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_805477"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-01-26-11:29:35)
+    (utime 2019-05-08-06:47:25)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "PMEG6020ER_115")
+)
+
+
+(pinAssign "ECS_805477"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-01-26-11:29:35)
+    (utime 2019-05-08-06:47:25)
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_805477")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "PMEG6020ER_115")
+)
+
+
+(part "PMEG6020ER_115"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-01-26-11:29:35)
+    (utime 2019-05-08-06:47:25)
+    (packageRef "PMEG6020ER_115")
+    (pinAssignRef "ECS_805477")
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "D")
+    (property "description" "Nexperia PMEG6020ER,115 SMT Schottky Diode, 60V 2A, 2-Pin SOD-123W")
+    (property "Manufacturer_Name" "Nexperia")
+    (property "Manufacturer_Part_Number" "PMEG6020ER,115")
+    (property "Mouser_Part_Number" "771-PMEG6020ER-115")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=771-PMEG6020ER-115")
+    (property "RS_Part_Number" "7805414")
+    (property "RS_Price/Stock" "https://uk.rs-online.com/web/p/products/7805414")
+    (property "Datasheet_Link" "https://componentsearchengine.com/Datasheets/1/PMEG6020ER,115.pdf")
+    (property "compAreaTopHeight" 1.1)
+)
+
+

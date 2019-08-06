@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_674032"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-03-15-00:19:20)
+    (utime 2018-05-23-06:31:57)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "ERJ3EKF3902V")
+)
+
+
+(pinAssign "ECS_674032"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-03-15-00:19:20)
+    (utime 2018-05-23-06:31:57)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_674032")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "ERJ3EKF3902V")
+)
+
+
+(part "ERJ3EKF3902V"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-03-15-00:19:20)
+    (utime 2018-05-23-06:31:57)
+    (packageRef "ERJ3EKF3902V")
+    (pinAssignRef "ECS_674032")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "R")
+    (property "description" "Thick Film Chip Resistor 0.1W 0603 39K Panasonic E96 Series Precision Thick Film Surface Mount Resistor 0603 Case 39k +/-1% 0.1W +/-100ppm/C")
+    (property "Manufacturer_Name" "Panasonic")
+    (property "Manufacturer_Part_Number" "ERJ3EKF3902V")
+    (property "Mouser_Part_Number" "")
+    (property "Mouser_Price/Stock" "")
+    (property "RS_Part_Number" "8085080")
+    (property "RS_Price/Stock" "https://uk.rs-online.com/web/p/products/8085080")
+    (property "Datasheet_Link" "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C86.pdf")
+    (property "compAreaTopHeight" 0.55)
+)
+
+

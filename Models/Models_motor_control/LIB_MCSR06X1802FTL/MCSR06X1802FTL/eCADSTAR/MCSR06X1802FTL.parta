@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_967592"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-10-24-08:20:27)
+    (utime 2018-06-06-06:36:12)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "MCSR06X1802FTL")
+)
+
+
+(pinAssign "ECS_967592"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-10-24-08:20:27)
+    (utime 2018-06-06-06:36:12)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_967592")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "MCSR06X1802FTL")
+)
+
+
+(part "MCSR06X1802FTL"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-10-24-08:20:27)
+    (utime 2018-06-06-06:36:12)
+    (packageRef "MCSR06X1802FTL")
+    (pinAssignRef "ECS_967592")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "R")
+    (property "description" "MULTICOMP - MCSR06X1802FTL - RES, CERAMIC, 18K, 1%, 0.1W, 0603")
+    (property "Manufacturer_Name" "MULTICOMP")
+    (property "Manufacturer_Part_Number" "MCSR06X1802FTL")
+    (property "Mouser_Part_Number" "")
+    (property "Mouser_Price/Stock" "")
+    (property "RS_Part_Number" "")
+    (property "RS_Price/Stock" "")
+    (property "Datasheet_Link" "http://www.farnell.com/datasheets/1716710.pdf?_ga=1.256651403.1411154270.1472651675")
+    (property "compAreaTopHeight" 0.6)
+)
+
+

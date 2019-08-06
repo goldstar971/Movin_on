@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TC2117-3.3VDBTR
+D Microchip TC2117-3.3VDBTR, LDO Voltage Regulator, 800mA, 3.3 V +/-0.5%, 2.7  6 Vin, 3-Pin SOT-223
+K
+F https://componentsearchengine.com/Datasheets/2/TC2117-3.3VDBTR.pdf
+$ENDCMP
+#
+#End Doc Library

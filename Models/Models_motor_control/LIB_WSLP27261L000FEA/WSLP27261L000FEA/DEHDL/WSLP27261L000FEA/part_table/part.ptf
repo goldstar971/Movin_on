@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'WSLP27261L000FEA'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "Vishay", "WSLP27261L000FEA" (!) = "", "WSLP2726", "Other", "71-WSLP27261L000FEA", "https://www.mouser.com/Search/Refine.aspx?Keyword=71-WSLP27261L000FEA", "", "", "VISHAY - WSLP27261L000FEA - RES, METAL STRIP, 0.001OHM, 1%, 2726", "http://www.vishay.com/docs/30179/wslp2726.pdf"
+END_PART
+
+END.

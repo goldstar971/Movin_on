@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AD8418ABRMZ
+D ANALOG DEVICES - AD8418ABRMZ - CURRENT SENSE AMPLIFIER, 250KHZ, MSOP-8
+K
+F http://www.analog.com/media/en/technical-documentation/data-sheets/AD8418A.pdf
+$ENDCMP
+#
+#End Doc Library

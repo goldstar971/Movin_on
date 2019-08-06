@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "D2PAK_TO-263AB_"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "D2PAK_TO-263AB_")
+        (spec "default")
+    )
+)

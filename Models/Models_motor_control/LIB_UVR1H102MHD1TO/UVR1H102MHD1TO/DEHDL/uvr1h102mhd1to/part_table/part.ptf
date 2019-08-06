@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'UVR1H102MHD1TO'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Nichicon", "UVR1H102MHD1TO" (!) = "", "CAPPRD500W60D1275H2700", "Capacitor, Polarized Radial Diameter", "647-UVR1H102MHD1T0", "https://www.mouser.com/Search/Refine.aspx?Keyword=647-UVR1H102MHD1T0", "Nichicon 1000uF 50 V Aluminium Electrolytic Capacitor, VR Series 2000h 12.5 x 25mm", "https://componentsearchengine.com/Datasheets/1/UVR1H102MHD1TO.pdf", "27 mm"
+END_PART
+
+END.

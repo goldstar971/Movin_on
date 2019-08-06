@@ -1,0 +1,18 @@
+.RK73H1JTTD3301F :1 ;Thick Film Resistors - SMD 1/10watt 3.3Kohms 1%
+RESC1608X55N
+*STM R
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN RK73H1JTTD3301F
+~!Manufacturer_Name (KOA Speer)
+~!Manufacturer_Part_Number (RK73H1JTTD3301F)
+~!Mouser Part Number (660-RK73H1JTTD3301F)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD3301F)
+~!RS Part Number (6316519P)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/6316519P)
+~!Link Datasheet (http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf)
+~!Height (0.55mm)
+~!3D_Model (RK73H1JTTD3301F)
+RK73H1JTTD3301F
+1.1!U 2.1!U 

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "DRV8302DCAR"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2018-10-28-12:51:15)
+    (mountForm default
+        (footprintRef "SOP50P810X120-57N")
+        (spec "System")
+    )
+)

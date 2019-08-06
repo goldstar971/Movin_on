@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'ERJ3RQF4R7V'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "ALLIED_NUMBER", "ALLIED_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Panasonic", "ERJ3RQF4R7V" (!) = "", "RESC1608X55N", "Resistor Chip", "", "", "7220986", "https://uk.rs-online.com/web/p/products/7220986", "70260738", "https://www.alliedelec.com/panasonic-erj-3rqf4r7v/70260738/", "Panasonic ERJ3R Series Thick Film Low Ohmic Surface Mount Resistor 603 Case 4.7 +/-1% 0.1W +/-200ppm/C", "http://docs-emea.rs-online.com/webdocs/13ba/0900766b813ba21b.pdf", "0.55 mm"
+END_PART
+
+END.

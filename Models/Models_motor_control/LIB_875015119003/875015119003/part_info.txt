@@ -1,0 +1,5 @@
+Manufacturer=Würth Elektronik
+PartNumber=875015119003
+Version=1.1
+Released=2019-05-08 12:53:44
+3D=Y

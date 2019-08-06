@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "SDR0805-121KL"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "SDR0805-121KL")
+        (spec "default")
+    )
+)

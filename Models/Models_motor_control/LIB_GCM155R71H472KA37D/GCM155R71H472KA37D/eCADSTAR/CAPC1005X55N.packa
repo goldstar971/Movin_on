@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "GCM155R71H472KA37D"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2018-08-21-06:48:04)
+    (mountForm default
+        (footprintRef "CAPC1005X55N")
+        (spec "System")
+    )
+)

@@ -1,0 +1,16 @@
+.UVR1H102MHD1TO :1 ;Nichicon 1000uF 50 V Aluminium Electrolytic Capacitor, VR Series 2000h 12.5 x 25mm
+CAPPRD500W60D1275H2700
+*STM C
+*NGS
+*PLB 1="+" 2="-"
+*MXP 2
+*DFN UVR1H102MHD1TO
+~!Mouser Part Number (647-UVR1H102MHD1T0)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=647-UVR1H102MHD1T0)
+~!Manufacturer_Name (Nichicon)
+~!Manufacturer_Part_Number (UVR1H102MHD1TO)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/UVR1H102MHD1TO.pdf)
+~!Height (27mm)
+~!3D_Model (UVR1H102MHD1TO)
+UVR1H102MHD1TO
+1.1!U 2.1!U 

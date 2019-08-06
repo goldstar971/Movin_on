@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_664369"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-08-03-12:16:54)
+    (utime 2018-08-04-06:29:29)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "NCP18XH103F03RB")
+)
+
+
+(pinAssign "ECS_664369"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-08-03-12:16:54)
+    (utime 2018-08-04-06:29:29)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_664369")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "NCP18XH103F03RB")
+)
+
+
+(part "NCP18XH103F03RB"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-08-03-12:16:54)
+    (utime 2018-08-04-06:29:29)
+    (packageRef "NCP18XH103F03RB")
+    (pinAssignRef "ECS_664369")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "RT")
+    (property "description" "Thermistor NTC 10K Ohm 1% 2-Pin 0603 Surface Mount Solder Pad 3434K T/R")
+    (property "Manufacturer_Name" "Murata Electronics")
+    (property "Manufacturer_Part_Number" "NCP18XH103F03RB")
+    (property "Mouser_Part_Number" "81-NCP18XH103F03RB")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=81-NCP18XH103F03RB")
+    (property "RS_Part_Number" "7259050P")
+    (property "RS_Price/Stock" "http://uk.rs-online.com/web/p/products/7259050P")
+    (property "Datasheet_Link" "https://componentsearchengine.com/Datasheets/2/NCP18XH103F03RB.pdf")
+    (property "compAreaTopHeight" 0.95)
+)
+
+

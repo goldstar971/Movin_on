@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_933648"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-10-03-15:18:43)
+    (utime 2018-10-25-12:44:53)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "CGA3E2X7R1H223K080AA")
+)
+
+
+(pinAssign "ECS_933648"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-10-03-15:18:43)
+    (utime 2018-10-25-12:44:53)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_933648")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "CGA3E2X7R1H223K080AA")
+)
+
+
+(part "CGA3E2X7R1H223K080AA"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-10-03-15:18:43)
+    (utime 2018-10-25-12:44:53)
+    (packageRef "CGA3E2X7R1H223K080AA")
+    (pinAssignRef "ECS_933648")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "TDK 22nF Multilayer Ceramic Capacitor MLCC 50 V dc +/-10% X7R Dielectric 1608 Solder Max. Op. Temp. +125C")
+    (property "Manufacturer_Name" "TDK")
+    (property "Manufacturer_Part_Number" "CGA3E2X7R1H223K080AA")
+    (property "Mouser_Part_Number" "810-CGA3E2X7R1H223K")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA3E2X7R1H223K")
+    (property "RS_Part_Number" "1447372")
+    (property "RS_Price/Stock" "http://uk.rs-online.com/web/p/products/1447372")
+    (property "Datasheet_Link" "http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf")
+    (property "compAreaTopHeight" 0.9)
+)
+
+

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'CGA2B3X7R1E224K050BE'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "TDK", "CGA2B3X7R1E224K050BE" (!) = "", "CAPC1005X55N", "Capacitor Chip Non-polarised", "810-CG2B3X7R1E224KBE", "https://www.mouser.com/Search/Refine.aspx?Keyword=810-CG2B3X7R1E224KBE", "", "", "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 0.22uF 25volts X7R 10% Soft Term", "http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf", "0.55 mm"
+END_PART
+
+END.

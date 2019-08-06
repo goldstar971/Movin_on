@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "NCP18XH103F03RB"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2018-08-03-12:16:54)
+    (mountForm default
+        (footprintRef "THRMC1608X95N")
+        (spec "System")
+    )
+)

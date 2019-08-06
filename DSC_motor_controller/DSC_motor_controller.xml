@@ -1,0 +1,3493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/matthew/Senior design/DSC_motor_controller/DSC_motor_controller.sch</source>
+    <date>Sat 03 Aug 2019 01:52:42 PM CDT</date>
+    <tool>Eeschema 5.0.2+dfsg1-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>DSC_motor_controller.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/Motor_controller/" tstamps="/5D33B4C0/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Motor_controller.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/CAN/" tstamps="/5D34747F/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>CAN.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/Motor_Driver/" tstamps="/5D34E5A4/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Motor_Driver.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/Power/" tstamps="/5D34E5C0/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Power.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D2">
+      <value>Green</value>
+      <footprint>LTST-C191KRKT:LEDC1608X55N</footprint>
+      <datasheet>http://www.mouser.com/ds/2/239/S_110_LTST-C191KGKT-369560.pdf</datasheet>
+      <fields>
+        <field name="Description">LED,SMD,0603,Green,35mcd,130deg Lite-On LTST-C191KGKT Green LED, 571 nm 1608 (0603), Rectangle Lens SMD package</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Lite-On</field>
+        <field name="Manufacturer_Part_Number">LTST-C191KGKT</field>
+        <field name="Mouser Part Number">859-LTST-C191KGKT</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=859-LTST-C191KGKT</field>
+        <field name="RS Part Number">6921010P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6921010P</field>
+      </fields>
+      <libsource lib="LTST-C191KGKT" part="LTST-C191KGKT" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D340915</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>Red</value>
+      <footprint>LTST-C191KRKT:LEDC1608X55N</footprint>
+      <datasheet>http://www.mouser.com/ds/2/239/S_110_LTST-C191KRKT-539838.pdf</datasheet>
+      <fields>
+        <field name="Description">Standard LEDs - SMD Red Clear 631nm</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Lite-On</field>
+        <field name="Manufacturer_Part_Number">LTST-C191KRKT</field>
+        <field name="Mouser Part Number">859-LTST-C191KRKT</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=859-LTST-C191KRKT</field>
+        <field name="RS Part Number">1278415P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1278415P</field>
+      </fields>
+      <libsource lib="LTST-C191KRKT" part="LTST-C191KRKT" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D340BA2</tstamp>
+    </comp>
+    <comp ref="RECV1">
+      <value>ALT_Control</value>
+      <footprint>SM04B-PASS-TBT(LF)(SN):SM04B-PASS-TBT</footprint>
+      <datasheet>http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf</datasheet>
+      <fields>
+        <field name="Description">JST (JAPAN SOLDERLESS TERMINALS) - SM04B-PASS-TBT(LF)(SN) - CONNECTOR, HEADER, 4POS, 1ROW, 2MM</field>
+        <field name="Manufacturer_Name">JST (JAPAN SOLDERLESS TERMINALS)</field>
+        <field name="Manufacturer_Part_Number">SM04B-PASS-TBT(LF)(SN)</field>
+      </fields>
+      <libsource lib="SM04B-PASS-TBT(LF)(SN)" part="SM04B-PASS-TBT(LF)(SN)" description="JST (JAPAN SOLDERLESS TERMINALS) - SM04B-PASS-TBT(LF)(SN) - CONNECTOR, HEADER, 4POS, 1ROW, 2MM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D341E7B</tstamp>
+    </comp>
+    <comp ref="BUSCNT1">
+      <value>CAN</value>
+      <footprint>SM04B-PASS-TBT(LF)(SN):SM04B-PASS-TBT</footprint>
+      <datasheet>http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf</datasheet>
+      <fields>
+        <field name="Description">JST (JAPAN SOLDERLESS TERMINALS) - SM04B-PASS-TBT(LF)(SN) - CONNECTOR, HEADER, 4POS, 1ROW, 2MM</field>
+        <field name="Manufacturer_Name">JST (JAPAN SOLDERLESS TERMINALS)</field>
+        <field name="Manufacturer_Part_Number">SM04B-PASS-TBT(LF)(SN)</field>
+      </fields>
+      <libsource lib="SM04B-PASS-TBT(LF)(SN)" part="SM04B-PASS-TBT(LF)(SN)" description="JST (JAPAN SOLDERLESS TERMINALS) - SM04B-PASS-TBT(LF)(SN) - CONNECTOR, HEADER, 4POS, 1ROW, 2MM"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D341F88</tstamp>
+    </comp>
+    <comp ref="SWD1">
+      <value>SWD</value>
+      <footprint>SM05B-PASS-TBT(LF)(SN):SM05BPASSTBTLFSN</footprint>
+      <datasheet>http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf</datasheet>
+      <fields>
+        <field name="Description">CONN HEADER PA 5POS SIDE SMD</field>
+        <field name="Manufacturer_Name">JST (JAPAN SOLDERLESS TERMINALS)</field>
+        <field name="Manufacturer_Part_Number">SM05B-PASS-TBT(LF)(SN)</field>
+      </fields>
+      <libsource lib="SM05B-PASS-TBT(LF)(SN)" part="SM05B-PASS-TBT(LF)(SN)" description="CONN HEADER PA 5POS SIDE SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D34214C</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>100R</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 100ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1000F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1000F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1000F</field>
+        <field name="RS Part Number">6316159P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316159P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD1000F" part="RK73H1JTTD1000F" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4CBDAD</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>100R</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 100ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1000F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1000F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1000F</field>
+        <field name="RS Part Number">6316159P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316159P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD1000F" part="RK73H1JTTD1000F" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5D4CBE5B</tstamp>
+    </comp>
+    <comp ref="DSC1">
+      <value>STM32F765VIT6</value>
+      <footprint>STM32F765VIT6:QFP50P1600X1600X160-100N</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/stm32f765vi.pdf</datasheet>
+      <fields>
+        <field name="Description">STMICROELECTRONICS - STM32F765VIT6 - MCU, ARM CORTEX-M7, 216MHZ, LQFP-100</field>
+        <field name="Height">1.6</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">STM32F765VIT6</field>
+        <field name="Mouser Part Number">511-STM32F765VIT6</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=511-STM32F765VIT6</field>
+      </fields>
+      <libsource lib="STM32F765VIT6" part="STM32F765VIT6" description=""/>
+      <sheetpath names="/Motor_controller/" tstamps="/5D33B4C0/"/>
+      <tstamp>5D33B539</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>1u</value>
+      <footprint>GRM155C81C105ME11J:CAPC1005X55N</footprint>
+      <datasheet>http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">GRM155C81C105ME11J</field>
+        <field name="Mouser Part Number">81-GRM155C81C105ME1J</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM155C81C105ME1J</field>
+      </fields>
+      <libsource lib="GRM155C81C105ME11J" part="GRM155C81C105ME11J" description=""/>
+      <sheetpath names="/Motor_controller/" tstamps="/5D33B4C0/"/>
+      <tstamp>5D33BFEE</tstamp>
+    </comp>
+    <comp ref="C37">
+      <value>2.2u</value>
+      <footprint>C3216X7R1H225K160AE:CAPC3216X180N</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">C3216X7R1H225K160AE</field>
+        <field name="Mouser Part Number">810-C3216X7R1H225KST</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST</field>
+      </fields>
+      <libsource lib="C3216X7R1H225K160AE" part="C3216X7R1H225K160AE" description=""/>
+      <sheetpath names="/Motor_controller/" tstamps="/5D33B4C0/"/>
+      <tstamp>5D33FBF9</tstamp>
+    </comp>
+    <comp ref="C36">
+      <value>2.2u</value>
+      <footprint>C3216X7R1H225K160AE:CAPC3216X180N</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">C3216X7R1H225K160AE</field>
+        <field name="Mouser Part Number">810-C3216X7R1H225KST</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST</field>
+      </fields>
+      <libsource lib="C3216X7R1H225K160AE" part="C3216X7R1H225K160AE" description=""/>
+      <sheetpath names="/Motor_controller/" tstamps="/5D33B4C0/"/>
+      <tstamp>5D33FC4F</tstamp>
+    </comp>
+    <comp ref="C38">
+      <value>4.7u</value>
+      <footprint>CGA6M3X7S2A475K200AB:CAPC3225X200N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/CGA6M3X7S2A475K200AB.pdf</datasheet>
+      <fields>
+        <field name="Description">TDK 4.7uF Multilayer Ceramic Capacitor MLCC 100V dc +/-10% X7S Dielectric 1210 (3225M) SMD, Max. Temp. +125C</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA6M3X7S2A475K200AB</field>
+        <field name="Mouser Part Number">810-CGA6M3X7S2A475K</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA6M3X7S2A475K</field>
+        <field name="RS Part Number">9155415P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/9155415P</field>
+      </fields>
+      <libsource lib="CGA6M3X7S2A475K200AB" part="CGA6M3X7S2A475K200AB" description=""/>
+      <sheetpath names="/Motor_controller/" tstamps="/5D33B4C0/"/>
+      <tstamp>5D341643</tstamp>
+    </comp>
+    <comp ref="C45">
+      <value>100n</value>
+      <footprint>AS0805KKX7R0BB104:CAPC2012X145N</footprint>
+      <datasheet>https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">YAGEO (PHYCOMP)</field>
+        <field name="Manufacturer_Part_Number">AS0805KKX7R0BB104</field>
+        <field name="Mouser Part Number">603-AS0805KKX70BB104</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104</field>
+      </fields>
+      <libsource lib="AS0805KKX7R0BB104" part="AS0805KKX7R0BB104" description=""/>
+      <sheetpath names="/Motor_controller/" tstamps="/5D33B4C0/"/>
+      <tstamp>5D341A3F</tstamp>
+    </comp>
+    <comp ref="C44">
+      <value>100n</value>
+      <footprint>AS0805KKX7R0BB104:CAPC2012X145N</footprint>
+      <datasheet>https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">YAGEO (PHYCOMP)</field>
+        <field name="Manufacturer_Part_Number">AS0805KKX7R0BB104</field>
+        <field name="Mouser Part Number">603-AS0805KKX70BB104</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104</field>
+      </fields>
+      <libsource lib="AS0805KKX7R0BB104" part="AS0805KKX7R0BB104" description=""/>
+      <sheetpath names="/Motor_controller/" tstamps="/5D33B4C0/"/>
+      <tstamp>5D341B54</tstamp>
+    </comp>
+    <comp ref="C43">
+      <value>100n</value>
+      <footprint>AS0805KKX7R0BB104:CAPC2012X145N</footprint>
+      <datasheet>https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">YAGEO (PHYCOMP)</field>
+        <field name="Manufacturer_Part_Number">AS0805KKX7R0BB104</field>
+        <field name="Mouser Part Number">603-AS0805KKX70BB104</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104</field>
+      </fields>
+      <libsource lib="AS0805KKX7R0BB104" part="AS0805KKX7R0BB104" description=""/>
+      <sheetpath names="/Motor_controller/" tstamps="/5D33B4C0/"/>
+      <tstamp>5D341BAB</tstamp>
+    </comp>
+    <comp ref="C40">
+      <value>100n</value>
+      <footprint>AS0805KKX7R0BB104:CAPC2012X145N</footprint>
+      <datasheet>https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">YAGEO (PHYCOMP)</field>
+        <field name="Manufacturer_Part_Number">AS0805KKX7R0BB104</field>
+        <field name="Mouser Part Number">603-AS0805KKX70BB104</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104</field>
+      </fields>
+      <libsource lib="AS0805KKX7R0BB104" part="AS0805KKX7R0BB104" description=""/>
+      <sheetpath names="/Motor_controller/" tstamps="/5D33B4C0/"/>
+      <tstamp>5D341BDE</tstamp>
+    </comp>
+    <comp ref="C39">
+      <value>100n</value>
+      <footprint>AS0805KKX7R0BB104:CAPC2012X145N</footprint>
+      <datasheet>https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">YAGEO (PHYCOMP)</field>
+        <field name="Manufacturer_Part_Number">AS0805KKX7R0BB104</field>
+        <field name="Mouser Part Number">603-AS0805KKX70BB104</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104</field>
+      </fields>
+      <libsource lib="AS0805KKX7R0BB104" part="AS0805KKX7R0BB104" description=""/>
+      <sheetpath names="/Motor_controller/" tstamps="/5D33B4C0/"/>
+      <tstamp>5D341C13</tstamp>
+    </comp>
+    <comp ref="C41">
+      <value>100n</value>
+      <footprint>AS0805KKX7R0BB104:CAPC2012X145N</footprint>
+      <datasheet>https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">YAGEO (PHYCOMP)</field>
+        <field name="Manufacturer_Part_Number">AS0805KKX7R0BB104</field>
+        <field name="Mouser Part Number">603-AS0805KKX70BB104</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104</field>
+      </fields>
+      <libsource lib="AS0805KKX7R0BB104" part="AS0805KKX7R0BB104" description=""/>
+      <sheetpath names="/Motor_controller/" tstamps="/5D33B4C0/"/>
+      <tstamp>5D341CBA</tstamp>
+    </comp>
+    <comp ref="C42">
+      <value>100n</value>
+      <footprint>AS0805KKX7R0BB104:CAPC2012X145N</footprint>
+      <datasheet>https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">YAGEO (PHYCOMP)</field>
+        <field name="Manufacturer_Part_Number">AS0805KKX7R0BB104</field>
+        <field name="Mouser Part Number">603-AS0805KKX70BB104</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104</field>
+      </fields>
+      <libsource lib="AS0805KKX7R0BB104" part="AS0805KKX7R0BB104" description=""/>
+      <sheetpath names="/Motor_controller/" tstamps="/5D33B4C0/"/>
+      <tstamp>5D341D0D</tstamp>
+    </comp>
+    <comp ref="CAN_TR1">
+      <value>SN65HVD232DR</value>
+      <footprint>SN65HVD232DR:SOIC127P600X175-8N</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn65hvd232</datasheet>
+      <fields>
+        <field name="Description">3.3 V CAN Transceiver</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">SN65HVD232DR</field>
+        <field name="Mouser Part Number">595-SN65HVD232DR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=595-SN65HVD232DR</field>
+      </fields>
+      <libsource lib="SN65HVD232DR" part="SN65HVD232DR" description=""/>
+      <sheetpath names="/CAN/" tstamps="/5D34747F/"/>
+      <tstamp>5D347533</tstamp>
+    </comp>
+    <comp ref="RTERM1">
+      <value>120R</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C237.pdf</datasheet>
+      <fields>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/panasonic-era3aeb121v/70348670/</field>
+        <field name="Allied_Number">70348670</field>
+        <field name="Description">Panasonic ERA Series Thin Film Surface Mount Fixed Resistor 0603 Case 120 +/-0.1% 0.1W +/-25ppm/C</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">ERA3AEB121V</field>
+        <field name="RS Part Number">7419870</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/7419870</field>
+      </fields>
+      <libsource lib="ERA3AEB121V" part="ERA3AEB121V" description=""/>
+      <sheetpath names="/CAN/" tstamps="/5D34747F/"/>
+      <tstamp>5D347776</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>AS0805KKX7R0BB104:CAPC2012X145N</footprint>
+      <datasheet>https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">YAGEO (PHYCOMP)</field>
+        <field name="Manufacturer_Part_Number">AS0805KKX7R0BB104</field>
+        <field name="Mouser Part Number">603-AS0805KKX70BB104</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104</field>
+      </fields>
+      <libsource lib="AS0805KKX7R0BB104" part="AS0805KKX7R0BB104" description=""/>
+      <sheetpath names="/CAN/" tstamps="/5D34747F/"/>
+      <tstamp>5D347B38</tstamp>
+    </comp>
+    <comp ref="Reg1">
+      <value>TC2117</value>
+      <footprint>TC2117-3.3VDBTR:SOT230P700X180-4N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/2/TC2117-3.3VDBTR.pdf</datasheet>
+      <fields>
+        <field name="Description">Microchip TC2117-3.3VDBTR, LDO Voltage Regulator, 800mA, 3.3 V +/-0.5%, 2.7  6 Vin, 3-Pin SOT-223</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">Microchip</field>
+        <field name="Manufacturer_Part_Number">TC2117-3.3VDBTR</field>
+        <field name="Mouser Part Number">579-TC2117-3.3VDBTR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC2117-3.3VDBTR</field>
+        <field name="RS Part Number">8234434</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/8234434</field>
+      </fields>
+      <libsource lib="TC2117-3.3VDBTR" part="TC2117-3.3VDBTR" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D34C356</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>1u</value>
+      <footprint>GRM155C81C105ME11J:CAPC1005X55N</footprint>
+      <datasheet>http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">GRM155C81C105ME11J</field>
+        <field name="Mouser Part Number">81-GRM155C81C105ME1J</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM155C81C105ME1J</field>
+      </fields>
+      <libsource lib="GRM155C81C105ME11J" part="GRM155C81C105ME11J" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D34C7D9</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1u</value>
+      <footprint>GRM155C81C105ME11J:CAPC1005X55N</footprint>
+      <datasheet>http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">GRM155C81C105ME11J</field>
+        <field name="Mouser Part Number">81-GRM155C81C105ME1J</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM155C81C105ME1J</field>
+      </fields>
+      <libsource lib="GRM155C81C105ME11J" part="GRM155C81C105ME11J" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D34C879</tstamp>
+    </comp>
+    <comp ref="DRV1">
+      <value>DRV8302</value>
+      <footprint>DRV8302DCAR:SOP50P810X120-57N</footprint>
+      <libsource lib="BLDC_4-cache" part="DRV8302" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D363539</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>18k</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Resistor Thick Film 18K 1% SMD 0603</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1802F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1802F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1802F</field>
+        <field name="RS Part Number">6316698P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316698P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD1802F" part="RK73H1JTTD1802F" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D363C64</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>6.8n</value>
+      <footprint>CGA3E2X7R1H223K080AA:CAPC1608X90N</footprint>
+      <datasheet>http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 6800pF 50volts C0G 5%</field>
+        <field name="Height">0.9</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA3E2C0G1H682J080AD</field>
+        <field name="Mouser Part Number">810-CGA3E2C0G1H682JD</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA3E2C0G1H682JD</field>
+      </fields>
+      <libsource lib="CGA3E2C0G1H682J080AD" part="CGA3E2C0G1H682J080AD" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D363ED7</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>120p</value>
+      <footprint>C0603C121J5GACTU:CAPC1608X87N</footprint>
+      <datasheet>https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf</datasheet>
+      <fields>
+        <field name="Description">Kemet 0603 C 120pF Ceramic Multilayer Capacitor, 50 V dc, +125C, C0G Dielectric, +/-5%</field>
+        <field name="Height">0.87</field>
+        <field name="Manufacturer_Name">Kemet</field>
+        <field name="Manufacturer_Part_Number">C0603C121J5GACTU</field>
+        <field name="Mouser Part Number">80-C0603C121J5G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0603C121J5G</field>
+        <field name="RS Part Number">0147897P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/0147897P</field>
+      </fields>
+      <libsource lib="C0603C121J5GACTU" part="C0603C121J5GACTU" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D3640D5</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>15k</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 15Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1502F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1502F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1502F</field>
+        <field name="RS Part Number">6316676P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316676P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD1502F" part="RK73H1JTTD1502F" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D364780</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>220k</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watt 220Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD2203F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD2203F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD2203F</field>
+        <field name="RS Part Number">6355665</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/6355665</field>
+      </fields>
+      <libsource lib="RK73H1JTTD2203F" part="RK73H1JTTD2203F" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D3652F1</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>3.3K</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watt 3.3Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD3301F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD3301F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD3301F</field>
+        <field name="RS Part Number">6316519P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316519P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD3301F" part="RK73H1JTTD3301F" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D36586D</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>1M</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">KOA SPEER ELECTRONICS - RK73H1JTTD1004F - RES, THICK FILM, 1M, 1%, 0.1W, 0603</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1004F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1004F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1004F</field>
+        <field name="RS Part Number">6317118P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6317118P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD1004F" part="RK73H1JTTD1004F" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D36A842</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>10k</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 10Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1002F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1002F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1002F</field>
+        <field name="RS Part Number">6316632P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316632P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD1002F" part="RK73H1JTTD1002F" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D36BE7E</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>22n</value>
+      <footprint>CGA3E2X7R1H223K080AA:CAPC1608X90N</footprint>
+      <datasheet>http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf</datasheet>
+      <fields>
+        <field name="Description">TDK 22nF Multilayer Ceramic Capacitor MLCC 50 V dc +/-10% X7R Dielectric 1608 Solder Max. Op. Temp. +125C</field>
+        <field name="Height">0.9</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA3E2X7R1H223K080AA</field>
+        <field name="Mouser Part Number">810-CGA3E2X7R1H223K</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA3E2X7R1H223K</field>
+        <field name="RS Part Number">1447372</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1447372</field>
+      </fields>
+      <libsource lib="CGA3E2X7R1H223K080AA" part="CGA3E2X7R1H223K080AA" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D36E996</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>2.2u</value>
+      <footprint>C3216X7R1H225K160AE:CAPC3216X180N</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">C3216X7R1H225K160AE</field>
+        <field name="Mouser Part Number">810-C3216X7R1H225KST</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST</field>
+      </fields>
+      <libsource lib="C3216X7R1H225K160AE" part="C3216X7R1H225K160AE" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D3728B6</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>2.2u</value>
+      <footprint>C3216X7R1H225K160AE:CAPC3216X180N</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">C3216X7R1H225K160AE</field>
+        <field name="Mouser Part Number">810-C3216X7R1H225KST</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST</field>
+      </fields>
+      <libsource lib="C3216X7R1H225K160AE" part="C3216X7R1H225K160AE" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D3731EB</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>2.2u</value>
+      <footprint>C3216X7R1H225K160AE:CAPC3216X180N</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">C3216X7R1H225K160AE</field>
+        <field name="Mouser Part Number">810-C3216X7R1H225KST</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST</field>
+      </fields>
+      <libsource lib="C3216X7R1H225K160AE" part="C3216X7R1H225K160AE" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D373849</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>2.2u</value>
+      <footprint>C3216X7R1H225K160AE:CAPC3216X180N</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">C3216X7R1H225K160AE</field>
+        <field name="Mouser Part Number">810-C3216X7R1H225KST</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST</field>
+      </fields>
+      <libsource lib="C3216X7R1H225K160AE" part="C3216X7R1H225K160AE" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D373EA3</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>2.2u</value>
+      <footprint>C3216X7R1H225K160AE:CAPC3216X180N</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">C3216X7R1H225K160AE</field>
+        <field name="Mouser Part Number">810-C3216X7R1H225KST</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST</field>
+      </fields>
+      <libsource lib="C3216X7R1H225K160AE" part="C3216X7R1H225K160AE" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D374535</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>220n</value>
+      <footprint>GRM155C81C105ME11J:CAPC1005X55N</footprint>
+      <datasheet>http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 0.22uF 25volts X7R 10% Soft Term</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA2B3X7R1E224K050BE</field>
+        <field name="Mouser Part Number">810-CG2B3X7R1E224KBE</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CG2B3X7R1E224KBE</field>
+      </fields>
+      <libsource lib="CGA2B3X7R1E224K050BE" part="CGA2B3X7R1E224K050BE" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D383FF6</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>220n</value>
+      <footprint>GRM155C81C105ME11J:CAPC1005X55N</footprint>
+      <datasheet>http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 0.22uF 25volts X7R 10% Soft Term</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA2B3X7R1E224K050BE</field>
+        <field name="Mouser Part Number">810-CG2B3X7R1E224KBE</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CG2B3X7R1E224KBE</field>
+      </fields>
+      <libsource lib="CGA2B3X7R1E224K050BE" part="CGA2B3X7R1E224K050BE" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D3840F8</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>220n</value>
+      <footprint>GRM155C81C105ME11J:CAPC1005X55N</footprint>
+      <datasheet>http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 0.22uF 25volts X7R 10% Soft Term</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA2B3X7R1E224K050BE</field>
+        <field name="Mouser Part Number">810-CG2B3X7R1E224KBE</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CG2B3X7R1E224KBE</field>
+      </fields>
+      <libsource lib="CGA2B3X7R1E224K050BE" part="CGA2B3X7R1E224K050BE" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D384189</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>100n</value>
+      <footprint>AS0805KKX7R0BB104:CAPC2012X145N</footprint>
+      <datasheet>https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">YAGEO (PHYCOMP)</field>
+        <field name="Manufacturer_Part_Number">AS0805KKX7R0BB104</field>
+        <field name="Mouser Part Number">603-AS0805KKX70BB104</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104</field>
+      </fields>
+      <libsource lib="AS0805KKX7R0BB104" part="AS0805KKX7R0BB104" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D38472C</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>15n</value>
+      <footprint>C0603C121J5GACTU:CAPC1608X87N</footprint>
+      <datasheet>https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf</datasheet>
+      <fields>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/kemet-c0603c153j3gactu/70610853/</field>
+        <field name="Allied_Number">70610853</field>
+        <field name="Description">Capacitor Ceramic C0G 0603 25V 15nF KEMET 15nF Multilayer Ceramic Capacitor (MLCC) 25 V +/-5% C0G dielectric C SMD max op. temp. +125C</field>
+        <field name="Height">0.87</field>
+        <field name="Manufacturer_Name">Kemet</field>
+        <field name="Manufacturer_Part_Number">C0603C153J3GACTU</field>
+        <field name="Mouser Part Number">80-C0603C153J3G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0603C153J3G</field>
+        <field name="RS Part Number">8015233P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/8015233P</field>
+      </fields>
+      <libsource lib="C0603C153J3GACTU" part="C0603C153J3GACTU" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D38487F</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>22u</value>
+      <footprint>SDR0805-220ML:SDR0805-121KL</footprint>
+      <datasheet>http://www.bourns.com/docs/Product-Datasheets/SDR0805.pdf</datasheet>
+      <fields>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/bourns-sdr0805-220ml/70153836/</field>
+        <field name="Allied_Number">70153836</field>
+        <field name="Description">Bourns SDR0805 Series Wire-wound SMD Inductor with a Ferrite Core, 22 uH +/-20% 2.3A Idc Q:20</field>
+        <field name="Manufacturer_Name">Bourns</field>
+        <field name="Manufacturer_Part_Number">SDR0805-220ML</field>
+        <field name="Mouser Part Number">652-SDR0805-220ML</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=652-SDR0805-220ML</field>
+        <field name="RS Part Number">7361270</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/7361270</field>
+      </fields>
+      <libsource lib="SDR0805-220ML" part="SDR0805-220ML" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D3849DB</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>PMEG6020ER,115</value>
+      <footprint>PMEG6020ER_115:SODFL3517X110N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/PMEG6020ER,115.pdf</datasheet>
+      <fields>
+        <field name="Description">Nexperia PMEG6020ER,115 SMT Schottky Diode, 60V 2A, 2-Pin SOD-123W</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Nexperia</field>
+        <field name="Manufacturer_Part_Number">PMEG6020ER,115</field>
+        <field name="Mouser Part Number">771-PMEG6020ER-115</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=771-PMEG6020ER-115</field>
+        <field name="RS Part Number">7805414</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/7805414</field>
+      </fields>
+      <libsource lib="PMEG6020ER_115" part="PMEG6020ER,115" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D385096</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>4.7u</value>
+      <footprint>CGA6M3X7S2A475K200AB:CAPC3225X200N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/CGA6M3X7S2A475K200AB.pdf</datasheet>
+      <fields>
+        <field name="Description">TDK 4.7uF Multilayer Ceramic Capacitor MLCC 100V dc +/-10% X7S Dielectric 1210 (3225M) SMD, Max. Temp. +125C</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA6M3X7S2A475K200AB</field>
+        <field name="Mouser Part Number">810-CGA6M3X7S2A475K</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA6M3X7S2A475K</field>
+        <field name="RS Part Number">9155415P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/9155415P</field>
+      </fields>
+      <libsource lib="CGA6M3X7S2A475K200AB" part="CGA6M3X7S2A475K200AB" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D384454</tstamp>
+    </comp>
+    <comp ref="C34">
+      <value>100u</value>
+      <footprint>875015119003:CAPPM7343X200N</footprint>
+      <datasheet>https://katalog.we-online.com/pbs/datasheet/875015119003.pdf</datasheet>
+      <fields>
+        <field name="Description">Wurth Elektronik 100uF 6.3V dc Aluminium Polymer Capacitor, Surface Mount 7.3 x 4.3 x 1.9mm +105C 7.3mm</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">Wurth Elektronik</field>
+        <field name="Manufacturer_Part_Number">875015119003</field>
+        <field name="Mouser Part Number">710-875015119003</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=710-875015119003</field>
+        <field name="RS Part Number">1855760</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/1855760</field>
+      </fields>
+      <libsource lib="875015119003" part="875015119003" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D3AF060</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>4.7u</value>
+      <footprint>CGA6M3X7S2A475K200AB:CAPC3225X200N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/CGA6M3X7S2A475K200AB.pdf</datasheet>
+      <fields>
+        <field name="Description">TDK 4.7uF Multilayer Ceramic Capacitor MLCC 100V dc +/-10% X7S Dielectric 1210 (3225M) SMD, Max. Temp. +125C</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA6M3X7S2A475K200AB</field>
+        <field name="Mouser Part Number">810-CGA6M3X7S2A475K</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA6M3X7S2A475K</field>
+        <field name="RS Part Number">9155415P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/9155415P</field>
+      </fields>
+      <libsource lib="CGA6M3X7S2A475K200AB" part="CGA6M3X7S2A475K200AB" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D3BA05E</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>39k</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C86.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Chip Resistor 0.1W 0603 39K Panasonic E96 Series Precision Thick Film Surface Mount Resistor 0603 Case 39k +/-1% 0.1W +/-100ppm/C</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">ERJ3EKF3902V</field>
+        <field name="RS Part Number">8085080</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/8085080</field>
+      </fields>
+      <libsource lib="ERJ3EKF3902V" part="ERJ3EKF3902V" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D417FBD</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>39k</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C86.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Chip Resistor 0.1W 0603 39K Panasonic E96 Series Precision Thick Film Surface Mount Resistor 0603 Case 39k +/-1% 0.1W +/-100ppm/C</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">ERJ3EKF3902V</field>
+        <field name="RS Part Number">8085080</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/8085080</field>
+      </fields>
+      <libsource lib="ERJ3EKF3902V" part="ERJ3EKF3902V" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D41EDD3</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>39k</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C86.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Chip Resistor 0.1W 0603 39K Panasonic E96 Series Precision Thick Film Surface Mount Resistor 0603 Case 39k +/-1% 0.1W +/-100ppm/C</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">ERJ3EKF3902V</field>
+        <field name="RS Part Number">8085080</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/8085080</field>
+      </fields>
+      <libsource lib="ERJ3EKF3902V" part="ERJ3EKF3902V" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D421F74</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>39k</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C86.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Chip Resistor 0.1W 0603 39K Panasonic E96 Series Precision Thick Film Surface Mount Resistor 0603 Case 39k +/-1% 0.1W +/-100ppm/C</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">ERJ3EKF3902V</field>
+        <field name="RS Part Number">8085080</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/8085080</field>
+      </fields>
+      <libsource lib="ERJ3EKF3902V" part="ERJ3EKF3902V" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D425119</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>2k2</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watt 2.2Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD2201F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD2201F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD2201F</field>
+        <field name="RS Part Number">6316474P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316474P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD2201F" part="RK73H1JTTD2201F" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D44D9FA</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>2k2</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watt 2.2Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD2201F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD2201F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD2201F</field>
+        <field name="RS Part Number">6316474P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316474P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD2201F" part="RK73H1JTTD2201F" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D450BB7</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>2k2</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watt 2.2Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD2201F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD2201F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD2201F</field>
+        <field name="RS Part Number">6316474P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316474P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD2201F" part="RK73H1JTTD2201F" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D453D66</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>2k2</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watt 2.2Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD2201F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD2201F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD2201F</field>
+        <field name="RS Part Number">6316474P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316474P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD2201F" part="RK73H1JTTD2201F" description=""/>
+      <sheetpath names="/Motor_Driver/" tstamps="/5D34E5A4/"/>
+      <tstamp>5D456F1B</tstamp>
+    </comp>
+    <comp ref="Q5">
+      <value>IRFS7730TRLPBF</value>
+      <footprint>IRFS7730TRLPBF:D2PAK(TO-263AB)</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/2/IRFS7730TRLPBF.pdf</datasheet>
+      <fields>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/infineon-irfs7730trlpbf/70425753/</field>
+        <field name="Allied_Number">70425753</field>
+        <field name="Description">Infineon IRFS7730TRLPBF N-Channel MOSFET, 246 A, 75 V HEXFET, 3-Pin D2PAK</field>
+        <field name="Manufacturer_Name">Infineon</field>
+        <field name="Manufacturer_Part_Number">IRFS7730TRLPBF</field>
+        <field name="Mouser Part Number">942-IRFS7730TRLPBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7730TRLPBF</field>
+        <field name="RS Part Number">1301007P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1301007P</field>
+      </fields>
+      <libsource lib="IRFS7730TRLPBF" part="IRFS7730TRLPBF" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D3559AE</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>4.7u</value>
+      <footprint>CGA6M3X7S2A475K200AB:CAPC3225X200N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/CGA6M3X7S2A475K200AB.pdf</datasheet>
+      <fields>
+        <field name="Description">TDK 4.7uF Multilayer Ceramic Capacitor MLCC 100V dc +/-10% X7S Dielectric 1210 (3225M) SMD, Max. Temp. +125C</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA6M3X7S2A475K200AB</field>
+        <field name="Mouser Part Number">810-CGA6M3X7S2A475K</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA6M3X7S2A475K</field>
+        <field name="RS Part Number">9155415P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/9155415P</field>
+      </fields>
+      <libsource lib="CGA6M3X7S2A475K200AB" part="CGA6M3X7S2A475K200AB" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D3564BF</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>4.7u</value>
+      <footprint>CGA6M3X7S2A475K200AB:CAPC3225X200N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/CGA6M3X7S2A475K200AB.pdf</datasheet>
+      <fields>
+        <field name="Description">TDK 4.7uF Multilayer Ceramic Capacitor MLCC 100V dc +/-10% X7S Dielectric 1210 (3225M) SMD, Max. Temp. +125C</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA6M3X7S2A475K200AB</field>
+        <field name="Mouser Part Number">810-CGA6M3X7S2A475K</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA6M3X7S2A475K</field>
+        <field name="RS Part Number">9155415P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/9155415P</field>
+      </fields>
+      <libsource lib="CGA6M3X7S2A475K200AB" part="CGA6M3X7S2A475K200AB" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D35650A</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>4.7R</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 4.7ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD4R70F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD4R70F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD4R70F</field>
+        <field name="RS Part Number">6315831P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6315831P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD4R70F" part="RK73H1JTTD4R70F" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D356E89</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>4.7R</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 4.7ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD4R70F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD4R70F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD4R70F</field>
+        <field name="RS Part Number">6315831P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6315831P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD4R70F" part="RK73H1JTTD4R70F" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D356EC4</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>.001R</value>
+      <footprint>WSLP27261L000FEA:WSLP2726</footprint>
+      <datasheet>http://www.vishay.com/docs/30179/wslp2726.pdf</datasheet>
+      <fields>
+        <field name="Description">VISHAY - WSLP27261L000FEA - RES, METAL STRIP, 0.001OHM, 1%, 2726</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">WSLP27261L000FEA</field>
+        <field name="Mouser Part Number">71-WSLP27261L000FEA</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=71-WSLP27261L000FEA</field>
+      </fields>
+      <libsource lib="WSLP27261L000FEA" part="WSLP27261L000FEA" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D3575AC</tstamp>
+    </comp>
+    <comp ref="CS3">
+      <value>AD8418ABRMZ</value>
+      <footprint>AD8418ABRMZ:SOP65P490X110-8N</footprint>
+      <datasheet>http://www.analog.com/media/en/technical-documentation/data-sheets/AD8418A.pdf</datasheet>
+      <fields>
+        <field name="Description">ANALOG DEVICES - AD8418ABRMZ - CURRENT SENSE AMPLIFIER, 250KHZ, MSOP-8</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">AD8418ABRMZ</field>
+        <field name="Mouser Part Number">584-AD8418ABRMZ</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=584-AD8418ABRMZ</field>
+        <field name="RS Part Number">1831929</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1831929</field>
+      </fields>
+      <libsource lib="AD8418ABRMZ" part="AD8418ABRMZ" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D3579E6</tstamp>
+    </comp>
+    <comp ref="Q6">
+      <value>IRFS7730TRLPBF</value>
+      <footprint>IRFS7730TRLPBF:D2PAK(TO-263AB)</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/2/IRFS7730TRLPBF.pdf</datasheet>
+      <fields>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/infineon-irfs7730trlpbf/70425753/</field>
+        <field name="Allied_Number">70425753</field>
+        <field name="Description">Infineon IRFS7730TRLPBF N-Channel MOSFET, 246 A, 75 V HEXFET, 3-Pin D2PAK</field>
+        <field name="Manufacturer_Name">Infineon</field>
+        <field name="Manufacturer_Part_Number">IRFS7730TRLPBF</field>
+        <field name="Mouser Part Number">942-IRFS7730TRLPBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7730TRLPBF</field>
+        <field name="RS Part Number">1301007P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1301007P</field>
+      </fields>
+      <libsource lib="IRFS7730TRLPBF" part="IRFS7730TRLPBF" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D35853D</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>2.2u</value>
+      <footprint>C3216X7R1H225K160AE:CAPC3216X180N</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">C3216X7R1H225K160AE</field>
+        <field name="Mouser Part Number">810-C3216X7R1H225KST</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST</field>
+      </fields>
+      <libsource lib="C3216X7R1H225K160AE" part="C3216X7R1H225K160AE" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D35C7FA</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>IRFS7730TRLPBF</value>
+      <footprint>IRFS7730TRLPBF:D2PAK(TO-263AB)</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/2/IRFS7730TRLPBF.pdf</datasheet>
+      <fields>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/infineon-irfs7730trlpbf/70425753/</field>
+        <field name="Allied_Number">70425753</field>
+        <field name="Description">Infineon IRFS7730TRLPBF N-Channel MOSFET, 246 A, 75 V HEXFET, 3-Pin D2PAK</field>
+        <field name="Manufacturer_Name">Infineon</field>
+        <field name="Manufacturer_Part_Number">IRFS7730TRLPBF</field>
+        <field name="Mouser Part Number">942-IRFS7730TRLPBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7730TRLPBF</field>
+        <field name="RS Part Number">1301007P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1301007P</field>
+      </fields>
+      <libsource lib="IRFS7730TRLPBF" part="IRFS7730TRLPBF" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D36E867</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>4.7u</value>
+      <footprint>CGA6M3X7S2A475K200AB:CAPC3225X200N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/CGA6M3X7S2A475K200AB.pdf</datasheet>
+      <fields>
+        <field name="Description">TDK 4.7uF Multilayer Ceramic Capacitor MLCC 100V dc +/-10% X7S Dielectric 1210 (3225M) SMD, Max. Temp. +125C</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA6M3X7S2A475K200AB</field>
+        <field name="Mouser Part Number">810-CGA6M3X7S2A475K</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA6M3X7S2A475K</field>
+        <field name="RS Part Number">9155415P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/9155415P</field>
+      </fields>
+      <libsource lib="CGA6M3X7S2A475K200AB" part="CGA6M3X7S2A475K200AB" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D36E876</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>4.7u</value>
+      <footprint>CGA6M3X7S2A475K200AB:CAPC3225X200N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/CGA6M3X7S2A475K200AB.pdf</datasheet>
+      <fields>
+        <field name="Description">TDK 4.7uF Multilayer Ceramic Capacitor MLCC 100V dc +/-10% X7S Dielectric 1210 (3225M) SMD, Max. Temp. +125C</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA6M3X7S2A475K200AB</field>
+        <field name="Mouser Part Number">810-CGA6M3X7S2A475K</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA6M3X7S2A475K</field>
+        <field name="RS Part Number">9155415P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/9155415P</field>
+      </fields>
+      <libsource lib="CGA6M3X7S2A475K200AB" part="CGA6M3X7S2A475K200AB" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D36E885</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>4.7R</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 4.7ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD4R70F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD4R70F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD4R70F</field>
+        <field name="RS Part Number">6315831P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6315831P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD4R70F" part="RK73H1JTTD4R70F" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D36E894</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>4.7R</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 4.7ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD4R70F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD4R70F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD4R70F</field>
+        <field name="RS Part Number">6315831P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6315831P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD4R70F" part="RK73H1JTTD4R70F" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D36E8A3</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>.001R</value>
+      <footprint>WSLP27261L000FEA:WSLP2726</footprint>
+      <datasheet>http://www.vishay.com/docs/30179/wslp2726.pdf</datasheet>
+      <fields>
+        <field name="Description">VISHAY - WSLP27261L000FEA - RES, METAL STRIP, 0.001OHM, 1%, 2726</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">WSLP27261L000FEA</field>
+        <field name="Mouser Part Number">71-WSLP27261L000FEA</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=71-WSLP27261L000FEA</field>
+      </fields>
+      <libsource lib="WSLP27261L000FEA" part="WSLP27261L000FEA" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D36E8B2</tstamp>
+    </comp>
+    <comp ref="CS2">
+      <value>AD8418ABRMZ</value>
+      <footprint>AD8418ABRMZ:SOP65P490X110-8N</footprint>
+      <datasheet>http://www.analog.com/media/en/technical-documentation/data-sheets/AD8418A.pdf</datasheet>
+      <fields>
+        <field name="Description">ANALOG DEVICES - AD8418ABRMZ - CURRENT SENSE AMPLIFIER, 250KHZ, MSOP-8</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">AD8418ABRMZ</field>
+        <field name="Mouser Part Number">584-AD8418ABRMZ</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=584-AD8418ABRMZ</field>
+        <field name="RS Part Number">1831929</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1831929</field>
+      </fields>
+      <libsource lib="AD8418ABRMZ" part="AD8418ABRMZ" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D36E8C1</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>IRFS7730TRLPBF</value>
+      <footprint>IRFS7730TRLPBF:D2PAK(TO-263AB)</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/2/IRFS7730TRLPBF.pdf</datasheet>
+      <fields>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/infineon-irfs7730trlpbf/70425753/</field>
+        <field name="Allied_Number">70425753</field>
+        <field name="Description">Infineon IRFS7730TRLPBF N-Channel MOSFET, 246 A, 75 V HEXFET, 3-Pin D2PAK</field>
+        <field name="Manufacturer_Name">Infineon</field>
+        <field name="Manufacturer_Part_Number">IRFS7730TRLPBF</field>
+        <field name="Mouser Part Number">942-IRFS7730TRLPBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7730TRLPBF</field>
+        <field name="RS Part Number">1301007P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1301007P</field>
+      </fields>
+      <libsource lib="IRFS7730TRLPBF" part="IRFS7730TRLPBF" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D36E8D2</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>2.2u</value>
+      <footprint>C3216X7R1H225K160AE:CAPC3216X180N</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">C3216X7R1H225K160AE</field>
+        <field name="Mouser Part Number">810-C3216X7R1H225KST</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST</field>
+      </fields>
+      <libsource lib="C3216X7R1H225K160AE" part="C3216X7R1H225K160AE" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D36E8F9</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>IRFS7730TRLPBF</value>
+      <footprint>IRFS7730TRLPBF:D2PAK(TO-263AB)</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/2/IRFS7730TRLPBF.pdf</datasheet>
+      <fields>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/infineon-irfs7730trlpbf/70425753/</field>
+        <field name="Allied_Number">70425753</field>
+        <field name="Description">Infineon IRFS7730TRLPBF N-Channel MOSFET, 246 A, 75 V HEXFET, 3-Pin D2PAK</field>
+        <field name="Manufacturer_Name">Infineon</field>
+        <field name="Manufacturer_Part_Number">IRFS7730TRLPBF</field>
+        <field name="Mouser Part Number">942-IRFS7730TRLPBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7730TRLPBF</field>
+        <field name="RS Part Number">1301007P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1301007P</field>
+      </fields>
+      <libsource lib="IRFS7730TRLPBF" part="IRFS7730TRLPBF" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D370686</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>4.7u</value>
+      <footprint>CGA6M3X7S2A475K200AB:CAPC3225X200N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/CGA6M3X7S2A475K200AB.pdf</datasheet>
+      <fields>
+        <field name="Description">TDK 4.7uF Multilayer Ceramic Capacitor MLCC 100V dc +/-10% X7S Dielectric 1210 (3225M) SMD, Max. Temp. +125C</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA6M3X7S2A475K200AB</field>
+        <field name="Mouser Part Number">810-CGA6M3X7S2A475K</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA6M3X7S2A475K</field>
+        <field name="RS Part Number">9155415P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/9155415P</field>
+      </fields>
+      <libsource lib="CGA6M3X7S2A475K200AB" part="CGA6M3X7S2A475K200AB" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D370695</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>4.7u</value>
+      <footprint>CGA6M3X7S2A475K200AB:CAPC3225X200N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/CGA6M3X7S2A475K200AB.pdf</datasheet>
+      <fields>
+        <field name="Description">TDK 4.7uF Multilayer Ceramic Capacitor MLCC 100V dc +/-10% X7S Dielectric 1210 (3225M) SMD, Max. Temp. +125C</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA6M3X7S2A475K200AB</field>
+        <field name="Mouser Part Number">810-CGA6M3X7S2A475K</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA6M3X7S2A475K</field>
+        <field name="RS Part Number">9155415P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/9155415P</field>
+      </fields>
+      <libsource lib="CGA6M3X7S2A475K200AB" part="CGA6M3X7S2A475K200AB" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D3706A4</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>4.7R</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 4.7ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD4R70F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD4R70F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD4R70F</field>
+        <field name="RS Part Number">6315831P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6315831P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD4R70F" part="RK73H1JTTD4R70F" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D3706B3</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>4.7R</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 4.7ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD4R70F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD4R70F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD4R70F</field>
+        <field name="RS Part Number">6315831P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6315831P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD4R70F" part="RK73H1JTTD4R70F" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D3706C2</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>.001R</value>
+      <footprint>WSLP27261L000FEA:WSLP2726</footprint>
+      <datasheet>http://www.vishay.com/docs/30179/wslp2726.pdf</datasheet>
+      <fields>
+        <field name="Description">VISHAY - WSLP27261L000FEA - RES, METAL STRIP, 0.001OHM, 1%, 2726</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">WSLP27261L000FEA</field>
+        <field name="Mouser Part Number">71-WSLP27261L000FEA</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=71-WSLP27261L000FEA</field>
+      </fields>
+      <libsource lib="WSLP27261L000FEA" part="WSLP27261L000FEA" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D3706D1</tstamp>
+    </comp>
+    <comp ref="CS1">
+      <value>AD8418ABRMZ</value>
+      <footprint>AD8418ABRMZ:SOP65P490X110-8N</footprint>
+      <datasheet>http://www.analog.com/media/en/technical-documentation/data-sheets/AD8418A.pdf</datasheet>
+      <fields>
+        <field name="Description">ANALOG DEVICES - AD8418ABRMZ - CURRENT SENSE AMPLIFIER, 250KHZ, MSOP-8</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">AD8418ABRMZ</field>
+        <field name="Mouser Part Number">584-AD8418ABRMZ</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=584-AD8418ABRMZ</field>
+        <field name="RS Part Number">1831929</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1831929</field>
+      </fields>
+      <libsource lib="AD8418ABRMZ" part="AD8418ABRMZ" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D3706E0</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>IRFS7730TRLPBF</value>
+      <footprint>IRFS7730TRLPBF:D2PAK(TO-263AB)</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/2/IRFS7730TRLPBF.pdf</datasheet>
+      <fields>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/infineon-irfs7730trlpbf/70425753/</field>
+        <field name="Allied_Number">70425753</field>
+        <field name="Description">Infineon IRFS7730TRLPBF N-Channel MOSFET, 246 A, 75 V HEXFET, 3-Pin D2PAK</field>
+        <field name="Manufacturer_Name">Infineon</field>
+        <field name="Manufacturer_Part_Number">IRFS7730TRLPBF</field>
+        <field name="Mouser Part Number">942-IRFS7730TRLPBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7730TRLPBF</field>
+        <field name="RS Part Number">1301007P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1301007P</field>
+      </fields>
+      <libsource lib="IRFS7730TRLPBF" part="IRFS7730TRLPBF" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D3706F1</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>2.2u</value>
+      <footprint>C3216X7R1H225K160AE:CAPC3216X180N</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">C3216X7R1H225K160AE</field>
+        <field name="Mouser Part Number">810-C3216X7R1H225KST</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST</field>
+      </fields>
+      <libsource lib="C3216X7R1H225K160AE" part="C3216X7R1H225K160AE" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D370718</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>100R</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 100ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1000F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1000F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1000F</field>
+        <field name="RS Part Number">6316159P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316159P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD1000F" part="RK73H1JTTD1000F" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D400780</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>4.7n</value>
+      <footprint>GRM155C81C105ME11J:CAPC1005X55N</footprint>
+      <datasheet>https://psearch.en.murata.com/capacitor/product/GCM155R71H472KA37%23.pdf</datasheet>
+      <fields>
+        <field name="Description">Murata 0402 GCM 4.7nF Ceramic Multilayer Capacitor, 50 V dc, +125C, X7R Dielectric, +/-10% SMD</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">GCM155R71H472KA37D</field>
+        <field name="Mouser Part Number">81-GCM155R71H472K37D</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=81-GCM155R71H472K37D</field>
+        <field name="RS Part Number">8151660P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/8151660P</field>
+      </fields>
+      <libsource lib="GCM155R71H472KA37D" part="GCM155R71H472KA37D" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D400A1D</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>4.7n</value>
+      <footprint>GRM155C81C105ME11J:CAPC1005X55N</footprint>
+      <datasheet>https://psearch.en.murata.com/capacitor/product/GCM155R71H472KA37%23.pdf</datasheet>
+      <fields>
+        <field name="Description">Murata 0402 GCM 4.7nF Ceramic Multilayer Capacitor, 50 V dc, +125C, X7R Dielectric, +/-10% SMD</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">GCM155R71H472KA37D</field>
+        <field name="Mouser Part Number">81-GCM155R71H472K37D</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=81-GCM155R71H472K37D</field>
+        <field name="RS Part Number">8151660P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/8151660P</field>
+      </fields>
+      <libsource lib="GCM155R71H472KA37D" part="GCM155R71H472KA37D" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D400BA3</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>4.7n</value>
+      <footprint>GRM155C81C105ME11J:CAPC1005X55N</footprint>
+      <datasheet>https://psearch.en.murata.com/capacitor/product/GCM155R71H472KA37%23.pdf</datasheet>
+      <fields>
+        <field name="Description">Murata 0402 GCM 4.7nF Ceramic Multilayer Capacitor, 50 V dc, +125C, X7R Dielectric, +/-10% SMD</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">GCM155R71H472KA37D</field>
+        <field name="Mouser Part Number">81-GCM155R71H472K37D</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=81-GCM155R71H472K37D</field>
+        <field name="RS Part Number">8151660P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/8151660P</field>
+      </fields>
+      <libsource lib="GCM155R71H472KA37D" part="GCM155R71H472KA37D" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D400C0C</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>wire_pad</value>
+      <footprint>Connector_Wire:SolderWirePad_1x01_SMD_5x10mm</footprint>
+      <libsource lib="BLDC_4-cache" part="wire_pad" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D465A23</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>wire_pad</value>
+      <footprint>Connector_Wire:SolderWirePad_1x01_SMD_5x10mm</footprint>
+      <libsource lib="BLDC_4-cache" part="wire_pad" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D465AE3</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>wire_pad</value>
+      <footprint>Connector_Wire:SolderWirePad_1x01_SMD_5x10mm</footprint>
+      <libsource lib="BLDC_4-cache" part="wire_pad" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D465ECF</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>wire_pad</value>
+      <footprint>Connector_Wire:SolderWirePad_1x01_SMD_5x10mm</footprint>
+      <libsource lib="BLDC_4-cache" part="wire_pad" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D466A1B</tstamp>
+    </comp>
+    <comp ref="P5">
+      <value>wire_pad</value>
+      <footprint>Connector_Wire:SolderWirePad_1x01_SMD_5x10mm</footprint>
+      <libsource lib="BLDC_4-cache" part="wire_pad" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D4671C6</tstamp>
+    </comp>
+    <comp ref="RTEMP1">
+      <value>NTC 10k</value>
+      <footprint>NCP18XH103F03RB:THRMC1608X95N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/2/NCP18XH103F03RB.pdf</datasheet>
+      <fields>
+        <field name="Description">Thermistor NTC 10K Ohm 1% 2-Pin 0603 Surface Mount Solder Pad 3434K T/R</field>
+        <field name="Height">0.95</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">NCP18XH103F03RB</field>
+        <field name="Mouser Part Number">81-NCP18XH103F03RB</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=81-NCP18XH103F03RB</field>
+        <field name="RS Part Number">7259050P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/7259050P</field>
+      </fields>
+      <libsource lib="NCP18XH103F03RB" part="NCP18XH103F03RB" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D46A74B</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>2.2u</value>
+      <footprint>C3216X7R1H225K160AE:CAPC3216X180N</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf</datasheet>
+      <fields>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">C3216X7R1H225K160AE</field>
+        <field name="Mouser Part Number">810-C3216X7R1H225KST</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST</field>
+      </fields>
+      <libsource lib="C3216X7R1H225K160AE" part="C3216X7R1H225K160AE" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D46AA12</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 10Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1002F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1002F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1002F</field>
+        <field name="RS Part Number">6316632P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316632P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD1002F" part="RK73H1JTTD1002F" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D46B47E</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>100R</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 100ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1000F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1000F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1000F</field>
+        <field name="RS Part Number">6316159P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316159P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD1000F" part="RK73H1JTTD1000F" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D4BAFEC</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>100R</value>
+      <footprint>ERJ3RQF4R7V:RESC1608X55N</footprint>
+      <datasheet>http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</datasheet>
+      <fields>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 100ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1000F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1000F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1000F</field>
+        <field name="RS Part Number">6316159P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316159P</field>
+      </fields>
+      <libsource lib="RK73H1JTTD1000F" part="RK73H1JTTD1000F" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D4BFC80</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>330u</value>
+      <footprint>EEE-FT1H331AP:CAPAE1030X1050N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/EEE-FT1H331AP.pdf</datasheet>
+      <fields>
+        <field name="Description">Aluminum Electrolytic Capacitors - SMD 330uF 50volts 10x10.2mm SMD</field>
+        <field name="Height">10.5</field>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">EEE-FT1H331AP</field>
+        <field name="Mouser Part Number">667-EEE-FT1H331AP</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FT1H331AP</field>
+      </fields>
+      <libsource lib="EEE-FT1H331AP" part="EEE-FT1H331AP" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D574977</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>330u</value>
+      <footprint>EEE-FT1H331AP:CAPAE1030X1050N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/EEE-FT1H331AP.pdf</datasheet>
+      <fields>
+        <field name="Description">Aluminum Electrolytic Capacitors - SMD 330uF 50volts 10x10.2mm SMD</field>
+        <field name="Height">10.5</field>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">EEE-FT1H331AP</field>
+        <field name="Mouser Part Number">667-EEE-FT1H331AP</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FT1H331AP</field>
+      </fields>
+      <libsource lib="EEE-FT1H331AP" part="EEE-FT1H331AP" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D574A47</tstamp>
+    </comp>
+    <comp ref="C46">
+      <value>330u</value>
+      <footprint>EEE-FT1H331AP:CAPAE1030X1050N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/EEE-FT1H331AP.pdf</datasheet>
+      <fields>
+        <field name="Description">Aluminum Electrolytic Capacitors - SMD 330uF 50volts 10x10.2mm SMD</field>
+        <field name="Height">10.5</field>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">EEE-FT1H331AP</field>
+        <field name="Mouser Part Number">667-EEE-FT1H331AP</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FT1H331AP</field>
+      </fields>
+      <libsource lib="EEE-FT1H331AP" part="EEE-FT1H331AP" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D574AD5</tstamp>
+    </comp>
+    <comp ref="C47">
+      <value>330u</value>
+      <footprint>EEE-FT1H331AP:CAPAE1030X1050N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/EEE-FT1H331AP.pdf</datasheet>
+      <fields>
+        <field name="Description">Aluminum Electrolytic Capacitors - SMD 330uF 50volts 10x10.2mm SMD</field>
+        <field name="Height">10.5</field>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">EEE-FT1H331AP</field>
+        <field name="Mouser Part Number">667-EEE-FT1H331AP</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FT1H331AP</field>
+      </fields>
+      <libsource lib="EEE-FT1H331AP" part="EEE-FT1H331AP" description=""/>
+      <sheetpath names="/Power/" tstamps="/5D34E5C0/"/>
+      <tstamp>5D574B5B</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="875015119003" part="875015119003">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">875015119003</field>
+        <field name="Footprint">CAPPM7343X200N</field>
+        <field name="Datasheet">https://katalog.we-online.com/pbs/datasheet/875015119003.pdf</field>
+        <field name="Description">Wurth Elektronik 100uF 6.3V dc Aluminium Polymer Capacitor, Surface Mount 7.3 x 4.3 x 1.9mm +105C 7.3mm</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">Wurth Elektronik</field>
+        <field name="Manufacturer_Part_Number">875015119003</field>
+        <field name="Mouser Part Number">710-875015119003</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=710-875015119003</field>
+        <field name="RS Part Number">1855760</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/1855760</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="AD8418ABRMZ" part="AD8418ABRMZ">
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">AD8418ABRMZ</field>
+        <field name="Footprint">SOP65P490X110-8N</field>
+        <field name="Datasheet">http://www.analog.com/media/en/technical-documentation/data-sheets/AD8418A.pdf</field>
+        <field name="Description">ANALOG DEVICES - AD8418ABRMZ - CURRENT SENSE AMPLIFIER, 250KHZ, MSOP-8</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Analog Devices</field>
+        <field name="Manufacturer_Part_Number">AD8418ABRMZ</field>
+        <field name="Mouser Part Number">584-AD8418ABRMZ</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=584-AD8418ABRMZ</field>
+        <field name="RS Part Number">1831929</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1831929</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-IN" type="BiDi"/>
+        <pin num="2" name="GND" type="BiDi"/>
+        <pin num="3" name="VREF2" type="BiDi"/>
+        <pin num="4" name="NC" type="BiDi"/>
+        <pin num="5" name="OUT" type="BiDi"/>
+        <pin num="6" name="VS" type="BiDi"/>
+        <pin num="7" name="VREF1" type="BiDi"/>
+        <pin num="8" name="+IN" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="AS0805KKX7R0BB104" part="AS0805KKX7R0BB104">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">AS0805KKX7R0BB104</field>
+        <field name="Footprint">CAPC2012X145N</field>
+        <field name="Datasheet">https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf</field>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200</field>
+        <field name="Height">1.45</field>
+        <field name="Manufacturer_Name">YAGEO (PHYCOMP)</field>
+        <field name="Manufacturer_Part_Number">AS0805KKX7R0BB104</field>
+        <field name="Mouser Part Number">603-AS0805KKX70BB104</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="BLDC_4-cache" part="DRV8302">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DRV8302</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RT_CLK" type="input"/>
+        <pin num="2" name="COMP" type="output"/>
+        <pin num="3" name="VSENSE" type="input"/>
+        <pin num="4" name="PWRGD" type="input"/>
+        <pin num="5" name="OCTW" type="output"/>
+        <pin num="6" name="FAULT" type="output"/>
+        <pin num="7" name="DTC" type="input"/>
+        <pin num="8" name="M_PWM" type="input"/>
+        <pin num="9" name="M_OC" type="input"/>
+        <pin num="10" name="GAIN" type="input"/>
+        <pin num="11" name="OC_ADJ" type="input"/>
+        <pin num="12" name="DC_CAL" type="input"/>
+        <pin num="13" name="GVDD" type="power_out"/>
+        <pin num="14" name="CP1" type="power_out"/>
+        <pin num="15" name="CP2" type="power_out"/>
+        <pin num="16" name="EN_GATE" type="input"/>
+        <pin num="17" name="INH_A" type="input"/>
+        <pin num="18" name="INL_A" type="input"/>
+        <pin num="19" name="INH_B" type="input"/>
+        <pin num="20" name="INL_B" type="input"/>
+        <pin num="21" name="INH_C" type="input"/>
+        <pin num="22" name="INL_C" type="input"/>
+        <pin num="23" name="DVDD" type="power_out"/>
+        <pin num="24" name="REF" type="input"/>
+        <pin num="25" name="SO1" type="output"/>
+        <pin num="26" name="SO2" type="output"/>
+        <pin num="27" name="AVDD" type="power_out"/>
+        <pin num="28" name="AGND" type="power_in"/>
+        <pin num="29" name="PVDD1" type="power_in"/>
+        <pin num="30" name="SP2" type="input"/>
+        <pin num="31" name="SN2" type="input"/>
+        <pin num="32" name="SP1" type="input"/>
+        <pin num="33" name="SN1" type="input"/>
+        <pin num="34" name="SL_C" type="input"/>
+        <pin num="35" name="GL_C" type="output"/>
+        <pin num="36" name="SH_C" type="input"/>
+        <pin num="37" name="GH_C" type="output"/>
+        <pin num="38" name="BST_C" type="power_out"/>
+        <pin num="39" name="SL_B" type="input"/>
+        <pin num="40" name="GL_B" type="output"/>
+        <pin num="41" name="SH_B" type="input"/>
+        <pin num="42" name="GH_B" type="output"/>
+        <pin num="43" name="BST_B" type="power_out"/>
+        <pin num="44" name="SL_A" type="input"/>
+        <pin num="45" name="GL_A" type="output"/>
+        <pin num="46" name="SH_A" type="input"/>
+        <pin num="47" name="GH_A" type="output"/>
+        <pin num="48" name="BST_A" type="power_out"/>
+        <pin num="49" name="BIAS" type="input"/>
+        <pin num="50" name="PH" type="output"/>
+        <pin num="51" name="PH" type="passive"/>
+        <pin num="52" name="BST_BK" type="power_out"/>
+        <pin num="53" name="PVDD2" type="power_in"/>
+        <pin num="54" name="PVDD2" type="power_in"/>
+        <pin num="55" name="EN_BUCK" type="input"/>
+        <pin num="56" name="SS_TR" type="input"/>
+        <pin num="57" name="GND(POWER_PAD)" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="BLDC_4-cache" part="wire_pad">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">wire_pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="C0603C121J5GACTU" part="C0603C121J5GACTU">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C0603C121J5GACTU</field>
+        <field name="Footprint">CAPC1608X87N</field>
+        <field name="Datasheet">https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf</field>
+        <field name="Description">Kemet 0603 C 120pF Ceramic Multilayer Capacitor, 50 V dc, +125C, C0G Dielectric, +/-5%</field>
+        <field name="Height">0.87</field>
+        <field name="Manufacturer_Name">Kemet</field>
+        <field name="Manufacturer_Part_Number">C0603C121J5GACTU</field>
+        <field name="Mouser Part Number">80-C0603C121J5G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0603C121J5G</field>
+        <field name="RS Part Number">0147897P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/0147897P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="C0603C153J3GACTU" part="C0603C153J3GACTU">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C0603C153J3GACTU</field>
+        <field name="Footprint">CAPC1608X87N</field>
+        <field name="Datasheet">https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf</field>
+        <field name="Description">Capacitor Ceramic C0G 0603 25V 15nF KEMET 15nF Multilayer Ceramic Capacitor (MLCC) 25 V +/-5% C0G dielectric C SMD max op. temp. +125C</field>
+        <field name="Height">0.87</field>
+        <field name="Manufacturer_Name">Kemet</field>
+        <field name="Manufacturer_Part_Number">C0603C153J3GACTU</field>
+        <field name="Mouser Part Number">80-C0603C153J3G</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0603C153J3G</field>
+        <field name="RS Part Number">8015233P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/8015233P</field>
+        <field name="Allied_Number">70610853</field>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/kemet-c0603c153j3gactu/70610853/</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="C3216X7R1H225K160AE" part="C3216X7R1H225K160AE">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C3216X7R1H225K160AE</field>
+        <field name="Footprint">CAPC3216X180N</field>
+        <field name="Datasheet">https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf</field>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">C3216X7R1H225K160AE</field>
+        <field name="Mouser Part Number">810-C3216X7R1H225KST</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="CGA2B3X7R1E224K050BE" part="CGA2B3X7R1E224K050BE">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CGA2B3X7R1E224K050BE</field>
+        <field name="Footprint">CAPC1005X55N</field>
+        <field name="Datasheet">http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf</field>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 0.22uF 25volts X7R 10% Soft Term</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA2B3X7R1E224K050BE</field>
+        <field name="Mouser Part Number">810-CG2B3X7R1E224KBE</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CG2B3X7R1E224KBE</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="CGA3E2C0G1H682J080AD" part="CGA3E2C0G1H682J080AD">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CGA3E2C0G1H682J080AD</field>
+        <field name="Footprint">CAPC1608X90N</field>
+        <field name="Datasheet">http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf</field>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT 6800pF 50volts C0G 5%</field>
+        <field name="Height">0.9</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA3E2C0G1H682J080AD</field>
+        <field name="Mouser Part Number">810-CGA3E2C0G1H682JD</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA3E2C0G1H682JD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="CGA3E2X7R1H223K080AA" part="CGA3E2X7R1H223K080AA">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CGA3E2X7R1H223K080AA</field>
+        <field name="Footprint">CAPC1608X90N</field>
+        <field name="Datasheet">http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf</field>
+        <field name="Description">TDK 22nF Multilayer Ceramic Capacitor MLCC 50 V dc +/-10% X7R Dielectric 1608 Solder Max. Op. Temp. +125C</field>
+        <field name="Height">0.9</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA3E2X7R1H223K080AA</field>
+        <field name="Mouser Part Number">810-CGA3E2X7R1H223K</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA3E2X7R1H223K</field>
+        <field name="RS Part Number">1447372</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1447372</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="CGA6M3X7S2A475K200AB" part="CGA6M3X7S2A475K200AB">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CGA6M3X7S2A475K200AB</field>
+        <field name="Footprint">CAPC3225X200N</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/CGA6M3X7S2A475K200AB.pdf</field>
+        <field name="Description">TDK 4.7uF Multilayer Ceramic Capacitor MLCC 100V dc +/-10% X7S Dielectric 1210 (3225M) SMD, Max. Temp. +125C</field>
+        <field name="Height">2</field>
+        <field name="Manufacturer_Name">TDK</field>
+        <field name="Manufacturer_Part_Number">CGA6M3X7S2A475K200AB</field>
+        <field name="Mouser Part Number">810-CGA6M3X7S2A475K</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA6M3X7S2A475K</field>
+        <field name="RS Part Number">9155415P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/9155415P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="EEE-FT1H331AP" part="EEE-FT1H331AP">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">EEE-FT1H331AP</field>
+        <field name="Footprint">CAPAE1030X1050N</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/EEE-FT1H331AP.pdf</field>
+        <field name="Description">Aluminum Electrolytic Capacitors - SMD 330uF 50volts 10x10.2mm SMD</field>
+        <field name="Height">10.5</field>
+        <field name="Mouser Part Number">667-EEE-FT1H331AP</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FT1H331AP</field>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">EEE-FT1H331AP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="ERA3AEB121V" part="ERA3AEB121V">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">ERA3AEB121V</field>
+        <field name="Footprint">RESC1608X55N</field>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C237.pdf</field>
+        <field name="Description">Panasonic ERA Series Thin Film Surface Mount Fixed Resistor 0603 Case 120 +/-0.1% 0.1W +/-25ppm/C</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">ERA3AEB121V</field>
+        <field name="RS Part Number">7419870</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/7419870</field>
+        <field name="Allied_Number">70348670</field>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/panasonic-era3aeb121v/70348670/</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="ERJ3EKF3902V" part="ERJ3EKF3902V">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">ERJ3EKF3902V</field>
+        <field name="Footprint">RESC1608X55N</field>
+        <field name="Datasheet">http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C86.pdf</field>
+        <field name="Description">Thick Film Chip Resistor 0.1W 0603 39K Panasonic E96 Series Precision Thick Film Surface Mount Resistor 0603 Case 39k +/-1% 0.1W +/-100ppm/C</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Panasonic</field>
+        <field name="Manufacturer_Part_Number">ERJ3EKF3902V</field>
+        <field name="RS Part Number">8085080</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/8085080</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="GCM155R71H472KA37D" part="GCM155R71H472KA37D">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">GCM155R71H472KA37D</field>
+        <field name="Footprint">CAPC1005X55N</field>
+        <field name="Datasheet">https://psearch.en.murata.com/capacitor/product/GCM155R71H472KA37%23.pdf</field>
+        <field name="Description">Murata 0402 GCM 4.7nF Ceramic Multilayer Capacitor, 50 V dc, +125C, X7R Dielectric, +/-10% SMD</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">GCM155R71H472KA37D</field>
+        <field name="Mouser Part Number">81-GCM155R71H472K37D</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=81-GCM155R71H472K37D</field>
+        <field name="RS Part Number">8151660P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/8151660P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="GRM155C81C105ME11J" part="GRM155C81C105ME11J">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">GRM155C81C105ME11J</field>
+        <field name="Footprint">CAPC1005X55N</field>
+        <field name="Datasheet">http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf</field>
+        <field name="Description">Multilayer Ceramic Capacitors MLCC - SMD/SMT</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">GRM155C81C105ME11J</field>
+        <field name="Mouser Part Number">81-GRM155C81C105ME1J</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM155C81C105ME1J</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="IRFS7730TRLPBF" part="IRFS7730TRLPBF">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">IRFS7730TRLPBF</field>
+        <field name="Footprint">D2PAK(TO-263AB)</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/2/IRFS7730TRLPBF.pdf</field>
+        <field name="Description">Infineon IRFS7730TRLPBF N-Channel MOSFET, 246 A, 75 V HEXFET, 3-Pin D2PAK</field>
+        <field name="Manufacturer_Name">Infineon</field>
+        <field name="Manufacturer_Part_Number">IRFS7730TRLPBF</field>
+        <field name="Mouser Part Number">942-IRFS7730TRLPBF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7730TRLPBF</field>
+        <field name="RS Part Number">1301007P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1301007P</field>
+        <field name="Allied_Number">70425753</field>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/infineon-irfs7730trlpbf/70425753/</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+        <pin num="3" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="LTST-C191KGKT" part="LTST-C191KGKT">
+      <fields>
+        <field name="Reference">LED</field>
+        <field name="Value">LTST-C191KGKT</field>
+        <field name="Footprint">LEDC1608X55N</field>
+        <field name="Datasheet">http://www.mouser.com/ds/2/239/S_110_LTST-C191KGKT-369560.pdf</field>
+        <field name="Description">LED,SMD,0603,Green,35mcd,130deg Lite-On LTST-C191KGKT Green LED, 571 nm 1608 (0603), Rectangle Lens SMD package</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Lite-On</field>
+        <field name="Manufacturer_Part_Number">LTST-C191KGKT</field>
+        <field name="Mouser Part Number">859-LTST-C191KGKT</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=859-LTST-C191KGKT</field>
+        <field name="RS Part Number">6921010P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6921010P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="BiDi"/>
+        <pin num="2" name="A" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="LTST-C191KRKT" part="LTST-C191KRKT">
+      <fields>
+        <field name="Reference">LED</field>
+        <field name="Value">LTST-C191KRKT</field>
+        <field name="Footprint">LEDC1608X55N</field>
+        <field name="Datasheet">http://www.mouser.com/ds/2/239/S_110_LTST-C191KRKT-539838.pdf</field>
+        <field name="Description">Standard LEDs - SMD Red Clear 631nm</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">Lite-On</field>
+        <field name="Manufacturer_Part_Number">LTST-C191KRKT</field>
+        <field name="Mouser Part Number">859-LTST-C191KRKT</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=859-LTST-C191KRKT</field>
+        <field name="RS Part Number">1278415P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1278415P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="BiDi"/>
+        <pin num="2" name="A" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="NCP18XH103F03RB" part="NCP18XH103F03RB">
+      <fields>
+        <field name="Reference">RT</field>
+        <field name="Value">NCP18XH103F03RB</field>
+        <field name="Footprint">THRMC1608X95N</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/2/NCP18XH103F03RB.pdf</field>
+        <field name="Description">Thermistor NTC 10K Ohm 1% 2-Pin 0603 Surface Mount Solder Pad 3434K T/R</field>
+        <field name="Height">0.95</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">NCP18XH103F03RB</field>
+        <field name="Mouser Part Number">81-NCP18XH103F03RB</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=81-NCP18XH103F03RB</field>
+        <field name="RS Part Number">7259050P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/7259050P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="BiDi"/>
+        <pin num="2" name="2" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="PMEG6020ER_115" part="PMEG6020ER,115">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">PMEG6020ER,115</field>
+        <field name="Footprint">SODFL3517X110N</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/PMEG6020ER,115.pdf</field>
+        <field name="Description">Nexperia PMEG6020ER,115 SMT Schottky Diode, 60V 2A, 2-Pin SOD-123W</field>
+        <field name="Height">1.1</field>
+        <field name="Manufacturer_Name">Nexperia</field>
+        <field name="Manufacturer_Part_Number">PMEG6020ER,115</field>
+        <field name="Mouser Part Number">771-PMEG6020ER-115</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=771-PMEG6020ER-115</field>
+        <field name="RS Part Number">7805414</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/7805414</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="RK73H1JTTD1000F" part="RK73H1JTTD1000F">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RK73H1JTTD1000F</field>
+        <field name="Footprint">RESC1608X55N</field>
+        <field name="Datasheet">http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</field>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 100ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1000F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1000F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1000F</field>
+        <field name="RS Part Number">6316159P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316159P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="RK73H1JTTD1002F" part="RK73H1JTTD1002F">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RK73H1JTTD1002F</field>
+        <field name="Footprint">RESC1608X55N</field>
+        <field name="Datasheet">http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</field>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 10Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1002F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1002F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1002F</field>
+        <field name="RS Part Number">6316632P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316632P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="RK73H1JTTD1004F" part="RK73H1JTTD1004F">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RK73H1JTTD1004F</field>
+        <field name="Footprint">RESC1608X55N</field>
+        <field name="Datasheet">http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</field>
+        <field name="Description">KOA SPEER ELECTRONICS - RK73H1JTTD1004F - RES, THICK FILM, 1M, 1%, 0.1W, 0603</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1004F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1004F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1004F</field>
+        <field name="RS Part Number">6317118P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6317118P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="RK73H1JTTD1502F" part="RK73H1JTTD1502F">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RK73H1JTTD1502F</field>
+        <field name="Footprint">RESC1608X55N</field>
+        <field name="Datasheet">http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</field>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 15Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1502F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1502F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1502F</field>
+        <field name="RS Part Number">6316676P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316676P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="RK73H1JTTD1802F" part="RK73H1JTTD1802F">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RK73H1JTTD1802F</field>
+        <field name="Footprint">RESC1608X55N</field>
+        <field name="Datasheet">http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</field>
+        <field name="Description">Resistor Thick Film 18K 1% SMD 0603</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD1802F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD1802F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1802F</field>
+        <field name="RS Part Number">6316698P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316698P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="RK73H1JTTD2201F" part="RK73H1JTTD2201F">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RK73H1JTTD2201F</field>
+        <field name="Footprint">RESC1608X55N</field>
+        <field name="Datasheet">http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</field>
+        <field name="Description">Thick Film Resistors - SMD 1/10watt 2.2Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD2201F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD2201F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD2201F</field>
+        <field name="RS Part Number">6316474P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316474P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="RK73H1JTTD2203F" part="RK73H1JTTD2203F">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RK73H1JTTD2203F</field>
+        <field name="Footprint">RESC1608X55N</field>
+        <field name="Datasheet">http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</field>
+        <field name="Description">Thick Film Resistors - SMD 1/10watt 220Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD2203F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD2203F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD2203F</field>
+        <field name="RS Part Number">6355665</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/6355665</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="RK73H1JTTD3301F" part="RK73H1JTTD3301F">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RK73H1JTTD3301F</field>
+        <field name="Footprint">RESC1608X55N</field>
+        <field name="Datasheet">http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</field>
+        <field name="Description">Thick Film Resistors - SMD 1/10watt 3.3Kohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD3301F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD3301F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD3301F</field>
+        <field name="RS Part Number">6316519P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6316519P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="RK73H1JTTD4R70F" part="RK73H1JTTD4R70F">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RK73H1JTTD4R70F</field>
+        <field name="Footprint">RESC1608X55N</field>
+        <field name="Datasheet">http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf</field>
+        <field name="Description">Thick Film Resistors - SMD 1/10watts 4.7ohms 1%</field>
+        <field name="Height">0.55</field>
+        <field name="Manufacturer_Name">KOA Speer</field>
+        <field name="Manufacturer_Part_Number">RK73H1JTTD4R70F</field>
+        <field name="Mouser Part Number">660-RK73H1JTTD4R70F</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD4R70F</field>
+        <field name="RS Part Number">6315831P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6315831P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="SDR0805-220ML" part="SDR0805-220ML">
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">SDR0805-220ML</field>
+        <field name="Footprint">SDR0805-121KL</field>
+        <field name="Datasheet">http://www.bourns.com/docs/Product-Datasheets/SDR0805.pdf</field>
+        <field name="Description">Bourns SDR0805 Series Wire-wound SMD Inductor with a Ferrite Core, 22 uH +/-20% 2.3A Idc Q:20</field>
+        <field name="Manufacturer_Name">Bourns</field>
+        <field name="Manufacturer_Part_Number">SDR0805-220ML</field>
+        <field name="Mouser Part Number">652-SDR0805-220ML</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=652-SDR0805-220ML</field>
+        <field name="RS Part Number">7361270</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/7361270</field>
+        <field name="Allied_Number">70153836</field>
+        <field name="Allied Price/Stock">https://www.alliedelec.com/bourns-sdr0805-220ml/70153836/</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="BiDi"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="SM04B-PASS-TBT(LF)(SN)" part="SM04B-PASS-TBT(LF)(SN)">
+      <description>JST (JAPAN SOLDERLESS TERMINALS) - SM04B-PASS-TBT(LF)(SN) - CONNECTOR, HEADER, 4POS, 1ROW, 2MM</description>
+      <docs>http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">SM04B-PASS-TBT(LF)(SN)</field>
+        <field name="Footprint">SM04B-PASS-TBT</field>
+        <field name="Datasheet">http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf</field>
+        <field name="Description">JST (JAPAN SOLDERLESS TERMINALS) - SM04B-PASS-TBT(LF)(SN) - CONNECTOR, HEADER, 4POS, 1ROW, 2MM</field>
+        <field name="Manufacturer_Name">JST (JAPAN SOLDERLESS TERMINALS)</field>
+        <field name="Manufacturer_Part_Number">SM04B-PASS-TBT(LF)(SN)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="BiDi"/>
+        <pin num="2" name="2" type="BiDi"/>
+        <pin num="3" name="3" type="BiDi"/>
+        <pin num="4" name="4" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="SM05B-PASS-TBT(LF)(SN)" part="SM05B-PASS-TBT(LF)(SN)">
+      <description>CONN HEADER PA 5POS SIDE SMD</description>
+      <docs>http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">SM05B-PASS-TBT(LF)(SN)</field>
+        <field name="Footprint">SM05BPASSTBTLFSN</field>
+        <field name="Datasheet">http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf</field>
+        <field name="Description">CONN HEADER PA 5POS SIDE SMD</field>
+        <field name="Manufacturer_Name">JST (JAPAN SOLDERLESS TERMINALS)</field>
+        <field name="Manufacturer_Part_Number">SM05B-PASS-TBT(LF)(SN)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="BiDi"/>
+        <pin num="2" name="2" type="BiDi"/>
+        <pin num="3" name="3" type="BiDi"/>
+        <pin num="4" name="4" type="BiDi"/>
+        <pin num="5" name="5" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="SN65HVD232DR" part="SN65HVD232DR">
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">SN65HVD232DR</field>
+        <field name="Footprint">SOIC127P600X175-8N</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/sn65hvd232</field>
+        <field name="Description">3.3 V CAN Transceiver</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">SN65HVD232DR</field>
+        <field name="Mouser Part Number">595-SN65HVD232DR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=595-SN65HVD232DR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="BiDi"/>
+        <pin num="2" name="GND_1" type="BiDi"/>
+        <pin num="3" name="GND_2" type="BiDi"/>
+        <pin num="4" name="R" type="BiDi"/>
+        <pin num="5" name="NC_1" type="BiDi"/>
+        <pin num="6" name="CANL" type="BiDi"/>
+        <pin num="7" name="CANH" type="BiDi"/>
+        <pin num="8" name="NC_2" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="STM32F765VIT6" part="STM32F765VIT6">
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">STM32F765VIT6</field>
+        <field name="Footprint">QFP50P1600X1600X160-100N</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/stm32f765vi.pdf</field>
+        <field name="Description">STMICROELECTRONICS - STM32F765VIT6 - MCU, ARM CORTEX-M7, 216MHZ, LQFP-100</field>
+        <field name="Height">1.6</field>
+        <field name="Manufacturer_Name">STMicroelectronics</field>
+        <field name="Manufacturer_Part_Number">STM32F765VIT6</field>
+        <field name="Mouser Part Number">511-STM32F765VIT6</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=511-STM32F765VIT6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PE2" type="BiDi"/>
+        <pin num="2" name="PE3" type="BiDi"/>
+        <pin num="3" name="PE4" type="BiDi"/>
+        <pin num="4" name="PE5" type="BiDi"/>
+        <pin num="5" name="PE6" type="BiDi"/>
+        <pin num="6" name="VBAT" type="BiDi"/>
+        <pin num="7" name="PC13-ANT1_TAMP" type="BiDi"/>
+        <pin num="8" name="PC14-OSC32_IN" type="BiDi"/>
+        <pin num="9" name="PC15-OSC32_OUT" type="BiDi"/>
+        <pin num="10" name="VSS1" type="BiDi"/>
+        <pin num="11" name="VDD1" type="BiDi"/>
+        <pin num="12" name="PH0-OSC_IN" type="BiDi"/>
+        <pin num="13" name="PH1-OSC_OUT" type="BiDi"/>
+        <pin num="14" name="NRST" type="BiDi"/>
+        <pin num="15" name="PC0" type="BiDi"/>
+        <pin num="16" name="PC1" type="BiDi"/>
+        <pin num="17" name="PC2" type="BiDi"/>
+        <pin num="18" name="PC3" type="BiDi"/>
+        <pin num="19" name="VSSA" type="BiDi"/>
+        <pin num="20" name="VREF+" type="BiDi"/>
+        <pin num="21" name="VDDA" type="BiDi"/>
+        <pin num="22" name="PA0-WKUP" type="BiDi"/>
+        <pin num="23" name="PA1" type="BiDi"/>
+        <pin num="24" name="PA2" type="BiDi"/>
+        <pin num="25" name="PA3" type="BiDi"/>
+        <pin num="26" name="VSS2" type="BiDi"/>
+        <pin num="27" name="VDD2" type="BiDi"/>
+        <pin num="28" name="PA4" type="BiDi"/>
+        <pin num="29" name="PA5" type="BiDi"/>
+        <pin num="30" name="PA6" type="BiDi"/>
+        <pin num="31" name="PA7" type="BiDi"/>
+        <pin num="32" name="PC4" type="BiDi"/>
+        <pin num="33" name="PC5" type="BiDi"/>
+        <pin num="34" name="PB0" type="BiDi"/>
+        <pin num="35" name="PB1" type="BiDi"/>
+        <pin num="36" name="PB2" type="BiDi"/>
+        <pin num="37" name="PE7" type="BiDi"/>
+        <pin num="38" name="PE8" type="BiDi"/>
+        <pin num="39" name="PE9" type="BiDi"/>
+        <pin num="40" name="PE10" type="BiDi"/>
+        <pin num="41" name="PE11" type="BiDi"/>
+        <pin num="42" name="PE12" type="BiDi"/>
+        <pin num="43" name="PE13" type="BiDi"/>
+        <pin num="44" name="PE14" type="BiDi"/>
+        <pin num="45" name="PE15" type="BiDi"/>
+        <pin num="46" name="PB10" type="BiDi"/>
+        <pin num="47" name="PB11" type="BiDi"/>
+        <pin num="48" name="VCAP1" type="BiDi"/>
+        <pin num="49" name="VSS3" type="BiDi"/>
+        <pin num="50" name="VDD3" type="BiDi"/>
+        <pin num="51" name="PB12" type="BiDi"/>
+        <pin num="52" name="PB13" type="BiDi"/>
+        <pin num="53" name="PB14" type="BiDi"/>
+        <pin num="54" name="PB15" type="BiDi"/>
+        <pin num="55" name="PD8" type="BiDi"/>
+        <pin num="56" name="PD9" type="BiDi"/>
+        <pin num="57" name="PD10" type="BiDi"/>
+        <pin num="58" name="PD11" type="BiDi"/>
+        <pin num="59" name="PD12" type="BiDi"/>
+        <pin num="60" name="PD13" type="BiDi"/>
+        <pin num="61" name="PD14" type="BiDi"/>
+        <pin num="62" name="PD15" type="BiDi"/>
+        <pin num="63" name="PC6" type="BiDi"/>
+        <pin num="64" name="PC7" type="BiDi"/>
+        <pin num="65" name="PC8" type="BiDi"/>
+        <pin num="66" name="PC9" type="BiDi"/>
+        <pin num="67" name="PA8" type="BiDi"/>
+        <pin num="68" name="PA9" type="BiDi"/>
+        <pin num="69" name="PA10" type="BiDi"/>
+        <pin num="70" name="PA11" type="BiDi"/>
+        <pin num="71" name="PA12" type="BiDi"/>
+        <pin num="72" name="PA13" type="BiDi"/>
+        <pin num="73" name="VCAP2" type="BiDi"/>
+        <pin num="74" name="VSS4" type="BiDi"/>
+        <pin num="75" name="VDD4" type="BiDi"/>
+        <pin num="76" name="PA14" type="BiDi"/>
+        <pin num="77" name="PA15" type="BiDi"/>
+        <pin num="78" name="PC10" type="BiDi"/>
+        <pin num="79" name="PC11" type="BiDi"/>
+        <pin num="80" name="PC12" type="BiDi"/>
+        <pin num="81" name="PD0" type="BiDi"/>
+        <pin num="82" name="PD1" type="BiDi"/>
+        <pin num="83" name="PD2" type="BiDi"/>
+        <pin num="84" name="PD3" type="BiDi"/>
+        <pin num="85" name="PD4" type="BiDi"/>
+        <pin num="86" name="PD5" type="BiDi"/>
+        <pin num="87" name="PD6" type="BiDi"/>
+        <pin num="88" name="PD7" type="BiDi"/>
+        <pin num="89" name="PB3" type="BiDi"/>
+        <pin num="90" name="PB4" type="BiDi"/>
+        <pin num="91" name="PB5" type="BiDi"/>
+        <pin num="92" name="PB6" type="BiDi"/>
+        <pin num="93" name="PB7" type="BiDi"/>
+        <pin num="94" name="BOOT0" type="BiDi"/>
+        <pin num="95" name="PB8" type="BiDi"/>
+        <pin num="96" name="PB9" type="BiDi"/>
+        <pin num="97" name="PE0" type="BiDi"/>
+        <pin num="98" name="PE1" type="BiDi"/>
+        <pin num="99" name="VSS5" type="BiDi"/>
+        <pin num="100" name="VDD5" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC2117-3.3VDBTR" part="TC2117-3.3VDBTR">
+      <fields>
+        <field name="Reference">PS</field>
+        <field name="Value">TC2117-3.3VDBTR</field>
+        <field name="Footprint">SOT230P700X180-4N</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/2/TC2117-3.3VDBTR.pdf</field>
+        <field name="Description">Microchip TC2117-3.3VDBTR, LDO Voltage Regulator, 800mA, 3.3 V +/-0.5%, 2.7  6 Vin, 3-Pin SOT-223</field>
+        <field name="Height">1.8</field>
+        <field name="Manufacturer_Name">Microchip</field>
+        <field name="Manufacturer_Part_Number">TC2117-3.3VDBTR</field>
+        <field name="Mouser Part Number">579-TC2117-3.3VDBTR</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=579-TC2117-3.3VDBTR</field>
+        <field name="RS Part Number">8234434</field>
+        <field name="RS Price/Stock">https://uk.rs-online.com/web/p/products/8234434</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="BiDi"/>
+        <pin num="2" name="VOUT_1" type="BiDi"/>
+        <pin num="3" name="VIN" type="BiDi"/>
+        <pin num="4" name="VOUT_2" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="WSLP27261L000FEA" part="WSLP27261L000FEA">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">WSLP27261L000FEA</field>
+        <field name="Footprint">WSLP2726</field>
+        <field name="Datasheet">http://www.vishay.com/docs/30179/wslp2726.pdf</field>
+        <field name="Description">VISHAY - WSLP27261L000FEA - RES, METAL STRIP, 0.001OHM, 1%, 2726</field>
+        <field name="Manufacturer_Name">Vishay</field>
+        <field name="Manufacturer_Part_Number">WSLP27261L000FEA</field>
+        <field name="Mouser Part Number">71-WSLP27261L000FEA</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=71-WSLP27261L000FEA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="BiDi"/>
+        <pin num="2" name="2" type="BiDi"/>
+        <pin num="3" name="3" type="BiDi"/>
+        <pin num="4" name="4" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="875015119003">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/875015119003.lib</uri>
+    </library>
+    <library logical="AD8418ABRMZ">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/AD8418ABRMZ.lib</uri>
+    </library>
+    <library logical="AS0805KKX7R0BB104">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/AS0805KKX7R0BB104.lib</uri>
+    </library>
+    <library logical="BLDC_4-cache">
+      <uri>/home/matthew/Downloads/bldc-hardware-master/design/BLDC_4-cache.lib</uri>
+    </library>
+    <library logical="C0603C121J5GACTU">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/C0603C121J5GACTU.lib</uri>
+    </library>
+    <library logical="C0603C153J3GACTU">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/C0603C153J3GACTU.lib</uri>
+    </library>
+    <library logical="C3216X7R1H225K160AE">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/C3216X7R1H225K160AE.lib</uri>
+    </library>
+    <library logical="CGA2B3X7R1E224K050BE">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/CGA2B3X7R1E224K050BE.lib</uri>
+    </library>
+    <library logical="CGA3E2C0G1H682J080AD">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/CGA3E2C0G1H682J080AD.lib</uri>
+    </library>
+    <library logical="CGA3E2X7R1H223K080AA">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/CGA3E2X7R1H223K080AA.lib</uri>
+    </library>
+    <library logical="CGA6M3X7S2A475K200AB">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/CGA6M3X7S2A475K200AB.lib</uri>
+    </library>
+    <library logical="EEE-FT1H331AP">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/EEE-FT1H331AP.lib</uri>
+    </library>
+    <library logical="ERA3AEB121V">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/ERA3AEB121V.lib</uri>
+    </library>
+    <library logical="ERJ3EKF3902V">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/ERJ3EKF3902V.lib</uri>
+    </library>
+    <library logical="GCM155R71H472KA37D">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/GCM155R71H472KA37D.lib</uri>
+    </library>
+    <library logical="GRM155C81C105ME11J">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/GRM155C81C105ME11J.lib</uri>
+    </library>
+    <library logical="IRFS7730TRLPBF">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/IRFS7730TRLPBF.lib</uri>
+    </library>
+    <library logical="LTST-C191KGKT">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/LTST-C191KGKT.lib</uri>
+    </library>
+    <library logical="LTST-C191KRKT">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/LTST-C191KRKT.lib</uri>
+    </library>
+    <library logical="NCP18XH103F03RB">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/NCP18XH103F03RB.lib</uri>
+    </library>
+    <library logical="PMEG6020ER_115">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/PMEG6020ER_115.lib</uri>
+    </library>
+    <library logical="RK73H1JTTD1000F">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/RK73H1JTTD1000F.lib</uri>
+    </library>
+    <library logical="RK73H1JTTD1002F">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/RK73H1JTTD1002F.lib</uri>
+    </library>
+    <library logical="RK73H1JTTD1004F">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/RK73H1JTTD1004F.lib</uri>
+    </library>
+    <library logical="RK73H1JTTD1502F">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/RK73H1JTTD1502F.lib</uri>
+    </library>
+    <library logical="RK73H1JTTD1802F">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/RK73H1JTTD1802F.lib</uri>
+    </library>
+    <library logical="RK73H1JTTD2201F">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/RK73H1JTTD2201F.lib</uri>
+    </library>
+    <library logical="RK73H1JTTD2203F">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/RK73H1JTTD2203F.lib</uri>
+    </library>
+    <library logical="RK73H1JTTD3301F">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/RK73H1JTTD3301F.lib</uri>
+    </library>
+    <library logical="RK73H1JTTD4R70F">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/RK73H1JTTD4R70F.lib</uri>
+    </library>
+    <library logical="SDR0805-220ML">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/SDR0805-220ML.lib</uri>
+    </library>
+    <library logical="SM04B-PASS-TBT(LF)(SN)">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/LIB_SM04B-PASS-TBT(LF)(SN)/SM04B-PASS-TBT(LF)(SN)/KiCad/SM04B-PASS-TBT(LF)(SN).lib</uri>
+    </library>
+    <library logical="SM05B-PASS-TBT(LF)(SN)">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/LIB_SM05B-PASS-TBT(LF)(SN)/SM05B-PASS-TBT(LF)(SN)/KiCad/SM05B-PASS-TBT(LF)(SN).lib</uri>
+    </library>
+    <library logical="SN65HVD232DR">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/SN65HVD232DR.lib</uri>
+    </library>
+    <library logical="STM32F765VIT6">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/STM32F765VIT6.lib</uri>
+    </library>
+    <library logical="TC2117-3.3VDBTR">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/TC2117-3.3VDBTR.lib</uri>
+    </library>
+    <library logical="WSLP27261L000FEA">
+      <uri>/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/WSLP27261L000FEA.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/Motor_Driver/Batt_voltage">
+      <node ref="DSC1" pin="18"/>
+      <node ref="R25" pin="2"/>
+      <node ref="R29" pin="1"/>
+    </net>
+    <net code="2" name="/Motor_Driver/SH_B">
+      <node ref="DRV1" pin="41"/>
+      <node ref="C28" pin="2"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="R27" pin="2"/>
+      <node ref="R10" pin="2"/>
+      <node ref="Q4" pin="3"/>
+    </net>
+    <net code="3" name="/Motor_Driver/SH_A">
+      <node ref="Q2" pin="3"/>
+      <node ref="C29" pin="2"/>
+      <node ref="R26" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="DRV1" pin="46"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="4" name="GND">
+      <node ref="R21" pin="2"/>
+      <node ref="DRV1" pin="4"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="DRV1" pin="31"/>
+      <node ref="DRV1" pin="8"/>
+      <node ref="DRV1" pin="57"/>
+      <node ref="DRV1" pin="32"/>
+      <node ref="DRV1" pin="30"/>
+      <node ref="DRV1" pin="33"/>
+      <node ref="DRV1" pin="34"/>
+      <node ref="DRV1" pin="39"/>
+      <node ref="DSC1" pin="94"/>
+      <node ref="C41" pin="2"/>
+      <node ref="C26" pin="2"/>
+      <node ref="DRV1" pin="10"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C24" pin="2"/>
+      <node ref="C23" pin="2"/>
+      <node ref="R16" pin="2"/>
+      <node ref="Reg1" pin="1"/>
+      <node ref="C35" pin="2"/>
+      <node ref="C39" pin="2"/>
+      <node ref="C37" pin="2"/>
+      <node ref="C36" pin="2"/>
+      <node ref="C33" pin="2"/>
+      <node ref="C34" pin="2"/>
+      <node ref="C45" pin="2"/>
+      <node ref="C44" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C43" pin="2"/>
+      <node ref="C40" pin="2"/>
+      <node ref="CAN_TR1" pin="2"/>
+      <node ref="C38" pin="2"/>
+      <node ref="C32" pin="2"/>
+      <node ref="C31" pin="1"/>
+      <node ref="DRV1" pin="44"/>
+      <node ref="DSC1" pin="19"/>
+      <node ref="DSC1" pin="10"/>
+      <node ref="D1" pin="2"/>
+      <node ref="DSC1" pin="99"/>
+      <node ref="DSC1" pin="74"/>
+      <node ref="DSC1" pin="49"/>
+      <node ref="CS3" pin="3"/>
+      <node ref="C15" pin="1"/>
+      <node ref="CS3" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="CS2" pin="3"/>
+      <node ref="CS2" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C14" pin="1"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="Q6" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="R20" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="CS1" pin="3"/>
+      <node ref="CS1" pin="2"/>
+      <node ref="C46" pin="2"/>
+      <node ref="BUSCNT1" pin="4"/>
+      <node ref="C47" pin="2"/>
+      <node ref="SWD1" pin="3"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="RECV1" pin="4"/>
+      <node ref="C13" pin="2"/>
+    </net>
+    <net code="5" name="/Motor_Driver/GL_A">
+      <node ref="DRV1" pin="45"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="6" name="/Motor_Driver/GH_A">
+      <node ref="R3" pin="1"/>
+      <node ref="DRV1" pin="47"/>
+    </net>
+    <net code="7" name="/Motor_Driver/Volt_A">
+      <node ref="DSC1" pin="23"/>
+      <node ref="R22" pin="2"/>
+      <node ref="R26" pin="1"/>
+    </net>
+    <net code="8" name="/Motor_Driver/Volt_B">
+      <node ref="DSC1" pin="24"/>
+      <node ref="R23" pin="2"/>
+      <node ref="R27" pin="1"/>
+    </net>
+    <net code="9" name="/Motor_Driver/Volt_C">
+      <node ref="DSC1" pin="28"/>
+      <node ref="R28" pin="1"/>
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="10" name="/Motor_Driver/PWM_C_H">
+      <node ref="DSC1" pin="39"/>
+      <node ref="DRV1" pin="21"/>
+    </net>
+    <net code="11" name="/Motor_Driver/PWM_C_L">
+      <node ref="DSC1" pin="38"/>
+      <node ref="DRV1" pin="22"/>
+    </net>
+    <net code="12" name="/Motor_Driver/GH_C">
+      <node ref="DRV1" pin="37"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="13" name="/Motor_Driver/GL_C">
+      <node ref="R8" pin="1"/>
+      <node ref="DRV1" pin="35"/>
+    </net>
+    <net code="14" name="/Motor_Driver/SH_C">
+      <node ref="R28" pin="2"/>
+      <node ref="DRV1" pin="36"/>
+      <node ref="R11" pin="2"/>
+      <node ref="Q5" pin="2"/>
+      <node ref="C27" pin="2"/>
+      <node ref="Q6" pin="3"/>
+    </net>
+    <net code="15" name="/Motor_Driver/GH_B">
+      <node ref="DRV1" pin="42"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="16" name="/Motor_controller/SDA">
+      <node ref="RECV1" pin="2"/>
+      <node ref="DSC1" pin="47"/>
+    </net>
+    <net code="17" name="/CAN/CAN_RX">
+      <node ref="CAN_TR1" pin="4"/>
+      <node ref="DSC1" pin="70"/>
+    </net>
+    <net code="18" name="/CAN/CAN_TX">
+      <node ref="CAN_TR1" pin="1"/>
+      <node ref="DSC1" pin="71"/>
+    </net>
+    <net code="19" name="/CAN/CAN_HI">
+      <node ref="CAN_TR1" pin="7"/>
+      <node ref="RTERM1" pin="2"/>
+      <node ref="BUSCNT1" pin="1"/>
+    </net>
+    <net code="20" name="/CAN/CAN_LO">
+      <node ref="RTERM1" pin="1"/>
+      <node ref="CAN_TR1" pin="6"/>
+      <node ref="BUSCNT1" pin="2"/>
+    </net>
+    <net code="21" name="/Motor_Driver/GL_B">
+      <node ref="R6" pin="1"/>
+      <node ref="DRV1" pin="40"/>
+    </net>
+    <net code="22" name="/Motor_Driver/FAULT">
+      <node ref="DRV1" pin="6"/>
+      <node ref="DSC1" pin="45"/>
+    </net>
+    <net code="23" name="/Motor_Driver/EN_GATE">
+      <node ref="DRV1" pin="16"/>
+      <node ref="DSC1" pin="44"/>
+    </net>
+    <net code="24" name="/Motor_Driver/PWM_A_H">
+      <node ref="DRV1" pin="17"/>
+      <node ref="DSC1" pin="43"/>
+    </net>
+    <net code="25" name="/Motor_Driver/PWM_A_L">
+      <node ref="DSC1" pin="42"/>
+      <node ref="DRV1" pin="18"/>
+    </net>
+    <net code="26" name="/Motor_Driver/PWM_B_H">
+      <node ref="DSC1" pin="41"/>
+      <node ref="DRV1" pin="19"/>
+    </net>
+    <net code="27" name="/Motor_Driver/PWM_B_L">
+      <node ref="DRV1" pin="20"/>
+      <node ref="DSC1" pin="40"/>
+    </net>
+    <net code="28" name="SUPPLY">
+      <node ref="Q3" pin="3"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="DRV1" pin="54"/>
+      <node ref="DRV1" pin="29"/>
+      <node ref="R29" pin="2"/>
+      <node ref="C17" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="C47" pin="1"/>
+      <node ref="DRV1" pin="53"/>
+      <node ref="C46" pin="1"/>
+      <node ref="C32" pin="1"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C33" pin="1"/>
+      <node ref="Q5" pin="3"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="29" name="/Motor_controller/Curr_C">
+      <node ref="C12" pin="1"/>
+      <node ref="R14" pin="2"/>
+      <node ref="DSC1" pin="17"/>
+    </net>
+    <net code="30" name="/Motor_controller/Curr_B">
+      <node ref="C11" pin="1"/>
+      <node ref="DSC1" pin="16"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="31" name="/Motor_controller/Curr_A">
+      <node ref="C10" pin="1"/>
+      <node ref="R12" pin="2"/>
+      <node ref="DSC1" pin="15"/>
+    </net>
+    <net code="32" name="/Motor_controller/Temp_sense">
+      <node ref="R15" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="RTEMP1" pin="2"/>
+      <node ref="DSC1" pin="29"/>
+    </net>
+    <net code="33" name="+3V3">
+      <node ref="CS1" pin="6"/>
+      <node ref="CS1" pin="7"/>
+      <node ref="C13" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="Reg1" pin="2"/>
+      <node ref="C44" pin="1"/>
+      <node ref="C45" pin="1"/>
+      <node ref="C38" pin="1"/>
+      <node ref="C41" pin="1"/>
+      <node ref="C42" pin="1"/>
+      <node ref="C14" pin="2"/>
+      <node ref="SWD1" pin="1"/>
+      <node ref="DSC1" pin="11"/>
+      <node ref="DSC1" pin="20"/>
+      <node ref="DSC1" pin="75"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C15" pin="2"/>
+      <node ref="DRV1" pin="9"/>
+      <node ref="C35" pin="1"/>
+      <node ref="CS2" pin="7"/>
+      <node ref="DSC1" pin="6"/>
+      <node ref="CS2" pin="6"/>
+      <node ref="RTEMP1" pin="1"/>
+      <node ref="DSC1" pin="21"/>
+      <node ref="C39" pin="1"/>
+      <node ref="DSC1" pin="27"/>
+      <node ref="CS3" pin="6"/>
+      <node ref="DSC1" pin="100"/>
+      <node ref="CS3" pin="7"/>
+      <node ref="C43" pin="1"/>
+      <node ref="DSC1" pin="50"/>
+      <node ref="C40" pin="1"/>
+      <node ref="CAN_TR1" pin="3"/>
+    </net>
+    <net code="34" name="+5V">
+      <node ref="L1" pin="2"/>
+      <node ref="C34" pin="1"/>
+      <node ref="R17" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="Reg1" pin="3"/>
+      <node ref="BUSCNT1" pin="3"/>
+      <node ref="C26" pin="1"/>
+    </net>
+    <net code="35" name="Net-(D2-Pad1)">
+      <node ref="R1" pin="2"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="36" name="/Motor_controller/LED_Green">
+      <node ref="DSC1" pin="8"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="37" name="Net-(D3-Pad1)">
+      <node ref="R2" pin="2"/>
+      <node ref="D3" pin="1"/>
+    </net>
+    <net code="38" name="/Motor_controller/LED_Red">
+      <node ref="D3" pin="2"/>
+      <node ref="DSC1" pin="9"/>
+    </net>
+    <net code="39" name="/Motor_controller/SCL">
+      <node ref="DSC1" pin="46"/>
+      <node ref="RECV1" pin="1"/>
+    </net>
+    <net code="40" name="/Motor_controller/SWCLK">
+      <node ref="SWD1" pin="2"/>
+      <node ref="DSC1" pin="76"/>
+    </net>
+    <net code="41" name="/Motor_controller/SWDIO">
+      <node ref="SWD1" pin="4"/>
+      <node ref="DSC1" pin="72"/>
+    </net>
+    <net code="42" name="/Motor_controller/NRST">
+      <node ref="DSC1" pin="14"/>
+      <node ref="SWD1" pin="5"/>
+    </net>
+    <net code="43" name="Net-(RECV1-Pad3)">
+      <node ref="RECV1" pin="3"/>
+    </net>
+    <net code="44" name="Net-(C42-Pad2)">
+      <node ref="DSC1" pin="26"/>
+      <node ref="C42" pin="2"/>
+    </net>
+    <net code="45" name="Net-(DSC1-Pad54)">
+      <node ref="DSC1" pin="54"/>
+    </net>
+    <net code="46" name="Net-(DSC1-Pad91)">
+      <node ref="DSC1" pin="91"/>
+    </net>
+    <net code="47" name="Net-(DSC1-Pad92)">
+      <node ref="DSC1" pin="92"/>
+    </net>
+    <net code="48" name="Net-(DSC1-Pad93)">
+      <node ref="DSC1" pin="93"/>
+    </net>
+    <net code="49" name="Net-(DSC1-Pad95)">
+      <node ref="DSC1" pin="95"/>
+    </net>
+    <net code="50" name="Net-(DSC1-Pad96)">
+      <node ref="DSC1" pin="96"/>
+    </net>
+    <net code="51" name="Net-(DSC1-Pad97)">
+      <node ref="DSC1" pin="97"/>
+    </net>
+    <net code="52" name="Net-(DSC1-Pad98)">
+      <node ref="DSC1" pin="98"/>
+    </net>
+    <net code="53" name="Net-(DSC1-Pad52)">
+      <node ref="DSC1" pin="52"/>
+    </net>
+    <net code="54" name="Net-(DSC1-Pad53)">
+      <node ref="DSC1" pin="53"/>
+    </net>
+    <net code="55" name="Net-(DSC1-Pad90)">
+      <node ref="DSC1" pin="90"/>
+    </net>
+    <net code="56" name="Net-(DSC1-Pad55)">
+      <node ref="DSC1" pin="55"/>
+    </net>
+    <net code="57" name="Net-(DSC1-Pad56)">
+      <node ref="DSC1" pin="56"/>
+    </net>
+    <net code="58" name="Net-(DSC1-Pad57)">
+      <node ref="DSC1" pin="57"/>
+    </net>
+    <net code="59" name="Net-(DSC1-Pad58)">
+      <node ref="DSC1" pin="58"/>
+    </net>
+    <net code="60" name="Net-(DSC1-Pad59)">
+      <node ref="DSC1" pin="59"/>
+    </net>
+    <net code="61" name="Net-(DSC1-Pad60)">
+      <node ref="DSC1" pin="60"/>
+    </net>
+    <net code="62" name="Net-(DSC1-Pad61)">
+      <node ref="DSC1" pin="61"/>
+    </net>
+    <net code="63" name="Net-(DSC1-Pad62)">
+      <node ref="DSC1" pin="62"/>
+    </net>
+    <net code="64" name="Net-(DSC1-Pad63)">
+      <node ref="DSC1" pin="63"/>
+    </net>
+    <net code="65" name="Net-(DSC1-Pad81)">
+      <node ref="DSC1" pin="81"/>
+    </net>
+    <net code="66" name="Net-(DSC1-Pad77)">
+      <node ref="DSC1" pin="77"/>
+    </net>
+    <net code="67" name="Net-(DSC1-Pad78)">
+      <node ref="DSC1" pin="78"/>
+    </net>
+    <net code="68" name="Net-(DSC1-Pad79)">
+      <node ref="DSC1" pin="79"/>
+    </net>
+    <net code="69" name="Net-(DSC1-Pad80)">
+      <node ref="DSC1" pin="80"/>
+    </net>
+    <net code="70" name="Net-(DSC1-Pad64)">
+      <node ref="DSC1" pin="64"/>
+    </net>
+    <net code="71" name="Net-(DSC1-Pad82)">
+      <node ref="DSC1" pin="82"/>
+    </net>
+    <net code="72" name="Net-(DSC1-Pad83)">
+      <node ref="DSC1" pin="83"/>
+    </net>
+    <net code="73" name="Net-(DSC1-Pad84)">
+      <node ref="DSC1" pin="84"/>
+    </net>
+    <net code="74" name="Net-(DSC1-Pad85)">
+      <node ref="DSC1" pin="85"/>
+    </net>
+    <net code="75" name="Net-(DSC1-Pad86)">
+      <node ref="DSC1" pin="86"/>
+    </net>
+    <net code="76" name="Net-(DSC1-Pad87)">
+      <node ref="DSC1" pin="87"/>
+    </net>
+    <net code="77" name="Net-(DSC1-Pad88)">
+      <node ref="DSC1" pin="88"/>
+    </net>
+    <net code="78" name="Net-(DSC1-Pad89)">
+      <node ref="DSC1" pin="89"/>
+    </net>
+    <net code="79" name="Net-(DSC1-Pad5)">
+      <node ref="DSC1" pin="5"/>
+    </net>
+    <net code="80" name="Net-(DSC1-Pad4)">
+      <node ref="DSC1" pin="4"/>
+    </net>
+    <net code="81" name="Net-(DSC1-Pad3)">
+      <node ref="DSC1" pin="3"/>
+    </net>
+    <net code="82" name="Net-(DSC1-Pad2)">
+      <node ref="DSC1" pin="2"/>
+    </net>
+    <net code="83" name="Net-(DSC1-Pad1)">
+      <node ref="DSC1" pin="1"/>
+    </net>
+    <net code="84" name="Net-(DSC1-Pad7)">
+      <node ref="DSC1" pin="7"/>
+    </net>
+    <net code="85" name="Net-(DSC1-Pad34)">
+      <node ref="DSC1" pin="34"/>
+    </net>
+    <net code="86" name="Net-(DSC1-Pad65)">
+      <node ref="DSC1" pin="65"/>
+    </net>
+    <net code="87" name="Net-(DSC1-Pad66)">
+      <node ref="DSC1" pin="66"/>
+    </net>
+    <net code="88" name="Net-(DSC1-Pad67)">
+      <node ref="DSC1" pin="67"/>
+    </net>
+    <net code="89" name="Net-(DSC1-Pad68)">
+      <node ref="DSC1" pin="68"/>
+    </net>
+    <net code="90" name="Net-(DSC1-Pad69)">
+      <node ref="DSC1" pin="69"/>
+    </net>
+    <net code="91" name="Net-(DSC1-Pad51)">
+      <node ref="DSC1" pin="51"/>
+    </net>
+    <net code="92" name="Net-(DSC1-Pad37)">
+      <node ref="DSC1" pin="37"/>
+    </net>
+    <net code="93" name="Net-(DSC1-Pad36)">
+      <node ref="DSC1" pin="36"/>
+    </net>
+    <net code="94" name="Net-(DSC1-Pad35)">
+      <node ref="DSC1" pin="35"/>
+    </net>
+    <net code="95" name="Net-(DSC1-Pad33)">
+      <node ref="DSC1" pin="33"/>
+    </net>
+    <net code="96" name="Net-(DSC1-Pad32)">
+      <node ref="DSC1" pin="32"/>
+    </net>
+    <net code="97" name="Net-(DSC1-Pad31)">
+      <node ref="DSC1" pin="31"/>
+    </net>
+    <net code="98" name="Net-(DSC1-Pad30)">
+      <node ref="DSC1" pin="30"/>
+    </net>
+    <net code="99" name="Net-(DSC1-Pad25)">
+      <node ref="DSC1" pin="25"/>
+    </net>
+    <net code="100" name="Net-(DSC1-Pad22)">
+      <node ref="DSC1" pin="22"/>
+    </net>
+    <net code="101" name="Net-(DSC1-Pad13)">
+      <node ref="DSC1" pin="13"/>
+    </net>
+    <net code="102" name="Net-(DSC1-Pad12)">
+      <node ref="DSC1" pin="12"/>
+    </net>
+    <net code="103" name="Net-(C37-Pad1)">
+      <node ref="C37" pin="1"/>
+      <node ref="DSC1" pin="73"/>
+    </net>
+    <net code="104" name="Net-(C36-Pad1)">
+      <node ref="C36" pin="1"/>
+      <node ref="DSC1" pin="48"/>
+    </net>
+    <net code="105" name="Net-(CAN_TR1-Pad8)">
+      <node ref="CAN_TR1" pin="8"/>
+    </net>
+    <net code="106" name="Net-(CAN_TR1-Pad5)">
+      <node ref="CAN_TR1" pin="5"/>
+    </net>
+    <net code="107" name="Net-(C30-Pad2)">
+      <node ref="L1" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C30" pin="2"/>
+      <node ref="DRV1" pin="51"/>
+      <node ref="DRV1" pin="50"/>
+    </net>
+    <net code="108" name="Net-(C30-Pad1)">
+      <node ref="C30" pin="1"/>
+      <node ref="DRV1" pin="52"/>
+    </net>
+    <net code="109" name="Net-(C27-Pad1)">
+      <node ref="DRV1" pin="38"/>
+      <node ref="C27" pin="1"/>
+    </net>
+    <net code="110" name="Net-(C28-Pad1)">
+      <node ref="DRV1" pin="43"/>
+      <node ref="C28" pin="1"/>
+    </net>
+    <net code="111" name="Net-(C29-Pad1)">
+      <node ref="DRV1" pin="48"/>
+      <node ref="C29" pin="1"/>
+    </net>
+    <net code="112" name="GNDA">
+      <node ref="C22" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="R22" pin="1"/>
+      <node ref="R23" pin="1"/>
+      <node ref="R24" pin="1"/>
+      <node ref="DRV1" pin="28"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="R25" pin="1"/>
+    </net>
+    <net code="113" name="Net-(C31-Pad2)">
+      <node ref="DRV1" pin="56"/>
+      <node ref="C31" pin="2"/>
+    </net>
+    <net code="114" name="Net-(DRV1-Pad49)">
+      <node ref="DRV1" pin="49"/>
+      <node ref="R20" pin="1"/>
+    </net>
+    <net code="115" name="Net-(DRV1-Pad3)">
+      <node ref="R16" pin="1"/>
+      <node ref="DRV1" pin="3"/>
+      <node ref="R17" pin="1"/>
+    </net>
+    <net code="116" name="Net-(DRV1-Pad1)">
+      <node ref="R19" pin="2"/>
+      <node ref="DRV1" pin="1"/>
+    </net>
+    <net code="117" name="Net-(C20-Pad1)">
+      <node ref="R18" pin="1"/>
+      <node ref="C20" pin="1"/>
+      <node ref="DRV1" pin="2"/>
+    </net>
+    <net code="118" name="Net-(C19-Pad1)">
+      <node ref="C19" pin="1"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="119" name="Net-(DRV1-Pad26)">
+      <node ref="DRV1" pin="26"/>
+    </net>
+    <net code="120" name="Net-(DRV1-Pad7)">
+      <node ref="DRV1" pin="7"/>
+      <node ref="R21" pin="1"/>
+    </net>
+    <net code="121" name="Net-(DRV1-Pad55)">
+      <node ref="DRV1" pin="55"/>
+    </net>
+    <net code="122" name="Net-(DRV1-Pad5)">
+      <node ref="DRV1" pin="5"/>
+    </net>
+    <net code="123" name="Net-(Reg1-Pad4)">
+      <node ref="Reg1" pin="4"/>
+    </net>
+    <net code="124" name="Net-(C21-Pad2)">
+      <node ref="C21" pin="2"/>
+      <node ref="DRV1" pin="15"/>
+    </net>
+    <net code="125" name="Net-(DRV1-Pad25)">
+      <node ref="DRV1" pin="25"/>
+    </net>
+    <net code="126" name="Net-(C21-Pad1)">
+      <node ref="DRV1" pin="14"/>
+      <node ref="C21" pin="1"/>
+    </net>
+    <net code="127" name="Net-(DRV1-Pad13)">
+      <node ref="DRV1" pin="13"/>
+    </net>
+    <net code="128" name="Net-(DRV1-Pad12)">
+      <node ref="DRV1" pin="12"/>
+    </net>
+    <net code="129" name="Net-(C23-Pad1)">
+      <node ref="C24" pin="1"/>
+      <node ref="C23" pin="1"/>
+      <node ref="C25" pin="1"/>
+      <node ref="DRV1" pin="11"/>
+      <node ref="DRV1" pin="23"/>
+    </net>
+    <net code="130" name="Net-(C22-Pad1)">
+      <node ref="DRV1" pin="24"/>
+      <node ref="C22" pin="1"/>
+      <node ref="DRV1" pin="27"/>
+    </net>
+    <net code="131" name="Net-(CS1-Pad4)">
+      <node ref="CS1" pin="4"/>
+    </net>
+    <net code="132" name="Net-(CS1-Pad1)">
+      <node ref="R9" pin="3"/>
+      <node ref="CS1" pin="1"/>
+    </net>
+    <net code="133" name="Net-(Q2-Pad1)">
+      <node ref="Q2" pin="1"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="134" name="Net-(CS1-Pad8)">
+      <node ref="CS1" pin="8"/>
+      <node ref="R9" pin="4"/>
+    </net>
+    <net code="135" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="136" name="/Power/C_A">
+      <node ref="R12" pin="1"/>
+      <node ref="CS1" pin="5"/>
+    </net>
+    <net code="137" name="/Power/C_C">
+      <node ref="CS3" pin="5"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="138" name="/Power/C_B">
+      <node ref="CS2" pin="5"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="139" name="Net-(P5-Pad1)">
+      <node ref="P5" pin="1"/>
+    </net>
+    <net code="140" name="Net-(P4-Pad1)">
+      <node ref="P4" pin="1"/>
+    </net>
+    <net code="141" name="Net-(P1-Pad1)">
+      <node ref="P1" pin="1"/>
+    </net>
+    <net code="142" name="Net-(P3-Pad1)">
+      <node ref="P3" pin="1"/>
+    </net>
+    <net code="143" name="Net-(P2-Pad1)">
+      <node ref="P2" pin="1"/>
+    </net>
+    <net code="144" name="Net-(CS3-Pad4)">
+      <node ref="CS3" pin="4"/>
+    </net>
+    <net code="145" name="Net-(Q6-Pad1)">
+      <node ref="R8" pin="2"/>
+      <node ref="Q6" pin="1"/>
+    </net>
+    <net code="146" name="Net-(CS3-Pad8)">
+      <node ref="R11" pin="4"/>
+      <node ref="CS3" pin="8"/>
+    </net>
+    <net code="147" name="Net-(CS3-Pad1)">
+      <node ref="R11" pin="3"/>
+      <node ref="CS3" pin="1"/>
+    </net>
+    <net code="148" name="Net-(R11-Pad1)">
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="149" name="Net-(Q5-Pad1)">
+      <node ref="R7" pin="2"/>
+      <node ref="Q5" pin="1"/>
+    </net>
+    <net code="150" name="Net-(CS2-Pad4)">
+      <node ref="CS2" pin="4"/>
+    </net>
+    <net code="151" name="Net-(R9-Pad1)">
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="152" name="Net-(CS2-Pad8)">
+      <node ref="R10" pin="4"/>
+      <node ref="CS2" pin="8"/>
+    </net>
+    <net code="153" name="Net-(CS2-Pad1)">
+      <node ref="CS2" pin="1"/>
+      <node ref="R10" pin="3"/>
+    </net>
+    <net code="154" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="155" name="Net-(Q4-Pad1)">
+      <node ref="Q4" pin="1"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="156" name="Net-(Q3-Pad1)">
+      <node ref="Q3" pin="1"/>
+      <node ref="R5" pin="2"/>
+    </net>
+  </nets>
+</export>

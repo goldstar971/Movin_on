@@ -1,0 +1,18 @@
+.CGA3E2C0G1H682J080AD :1 ;Multilayer Ceramic Capacitors MLCC - SMD/SMT 6800pF 50volts C0G 5%
+CAPC1608X90N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN CGA3E2C0G1H682J080AD
+~!Manufacturer_Name (TDK)
+~!Manufacturer_Part_Number (CGA3E2C0G1H682J080AD)
+~!Mouser Part Number (810-CGA3E2C0G1H682JD)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA3E2C0G1H682JD)
+~!RS Part Number (-)
+~!RS Price/Stock (-)
+~!Link Datasheet (http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf)
+~!Height (0.9mm)
+~!3D_Model (CGA3E2C0G1H682J080AD)
+CGA3E2C0G1H682J080AD
+1.1!U 2.1!U 

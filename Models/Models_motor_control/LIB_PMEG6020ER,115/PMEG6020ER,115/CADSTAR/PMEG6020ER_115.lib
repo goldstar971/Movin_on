@@ -1,0 +1,17 @@
+.PMEG6020ER_115 :1 ;Nexperia PMEG6020ER,115 SMT Schottky Diode, 60V 2A, 2-Pin SOD-123W
+SODFL3517X110N
+*STM D
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN PMEG6020ER_115
+~!Manufacturer_Name (Nexperia)
+~!Manufacturer_Part_Number (PMEG6020ER,115)
+~!Mouser Part Number (771-PMEG6020ER-115)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=771-PMEG6020ER-115)
+~!RS Part Number (7805414)
+~!Link RS Price/Stock (https://uk.rs-online.com/web/p/products/7805414)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/PMEG6020ER,115.pdf)
+~!Height (1.1mm)
+PMEG6020ER_115
+1.1!U 2.1!U 

@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_290775"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-05-01-11:42:29)
+    (utime 2018-06-06-11:10:46)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "LTST-C191KGKT")
+)
+
+
+(pinAssign "ECS_290775"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-05-01-11:42:29)
+    (utime 2018-06-06-11:10:46)
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_290775")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "LTST-C191KGKT")
+)
+
+
+(part "LTST-C191KGKT"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-05-01-11:42:29)
+    (utime 2018-06-06-11:10:46)
+    (packageRef "LTST-C191KGKT")
+    (pinAssignRef "ECS_290775")
+    (interface
+        (port "1" (symbPinId 1) (portName "K") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "A") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "LED")
+    (property "description" "LED,SMD,0603,Green,35mcd,130deg Lite-On LTST-C191KGKT Green LED, 571 nm 1608 (0603), Rectangle Lens SMD package")
+    (property "Manufacturer_Name" "Lite-On")
+    (property "Manufacturer_Part_Number" "LTST-C191KGKT")
+    (property "Mouser_Part_Number" "859-LTST-C191KGKT")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=859-LTST-C191KGKT")
+    (property "RS_Part_Number" "6921010P")
+    (property "RS_Price/Stock" "http://uk.rs-online.com/web/p/products/6921010P")
+    (property "Datasheet_Link" "http://www.mouser.com/ds/2/239/S_110_LTST-C191KGKT-369560.pdf")
+    (property "compAreaTopHeight" 0.55)
+)
+
+

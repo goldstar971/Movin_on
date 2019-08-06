@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'ERA3AEB121V'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "ALLIED_NUMBER", "ALLIED_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Panasonic", "ERA3AEB121V" (!) = "", "RESC1608X55N", "Resistor Chip", "", "", "7419870", "https://uk.rs-online.com/web/p/products/7419870", "70348670", "https://www.alliedelec.com/panasonic-era3aeb121v/70348670/", "Panasonic ERA Series Thin Film Surface Mount Fixed Resistor 0603 Case 120 +/-0.1% 0.1W +/-25ppm/C", "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C237.pdf", "0.55 mm"
+END_PART
+
+END.

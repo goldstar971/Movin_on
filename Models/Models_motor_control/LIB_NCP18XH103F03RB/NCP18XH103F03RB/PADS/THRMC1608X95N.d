@@ -1,0 +1,31 @@
+*PADS-LIBRARY-PCB-DECALS-V9*
+
+THRMC1608X95N M 0 0 0 2 3 0 2 1 0
+TIMESTAMP 2019.06.05.16.06.32
+0 0 0 0 1.27 0.127 1 0 34 "Regular <Romansim Stroke Font>"
+REF-DES
+0 0 0 0 1.27 0.127 1 32 35 "Regular <Romansim Stroke Font>"
+PART-TYPE
+CLOSED 5 0.05 20 -1
+-1.5 0.75
+1.5 0.75
+1.5 -0.75
+-1.5 -0.75
+-1.5 0.75
+CLOSED 5 0.1 27 -1
+-0.8 0.4
+0.8 0.4
+0.8 -0.4
+-0.8 -0.4
+-0.8 0.4
+OPEN 2 0.2 26 -1
+0 0.3
+0 -0.3
+T-0.75 0 -0.75 0 1
+T0.75 0 0.75 0 2
+PAD 0 3 N 0
+-2 1 RF 0 0 1 0
+-1 0 R
+0 0 R
+
+*END*

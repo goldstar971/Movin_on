@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCSR06X1802FTL
+D MULTICOMP - MCSR06X1802FTL - RES, CERAMIC, 18K, 1%, 0.1W, 0603
+K
+F http://www.farnell.com/datasheets/1716710.pdf?_ga=1.256651403.1411154270.1472651675
+$ENDCMP
+#
+#End Doc Library

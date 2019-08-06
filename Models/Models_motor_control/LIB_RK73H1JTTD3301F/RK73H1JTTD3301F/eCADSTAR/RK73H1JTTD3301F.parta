@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_814945"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-07-11-04:18:16)
+    (utime 2018-05-30-06:34:52)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "RK73H1JTTD3301F")
+)
+
+
+(pinAssign "ECS_814945"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-07-11-04:18:16)
+    (utime 2018-05-30-06:34:52)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_814945")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "RK73H1JTTD3301F")
+)
+
+
+(part "RK73H1JTTD3301F"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-07-11-04:18:16)
+    (utime 2018-05-30-06:34:52)
+    (packageRef "RK73H1JTTD3301F")
+    (pinAssignRef "ECS_814945")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "R")
+    (property "description" "Thick Film Resistors - SMD 1/10watt 3.3Kohms 1%")
+    (property "Manufacturer_Name" "KOA Speer")
+    (property "Manufacturer_Part_Number" "RK73H1JTTD3301F")
+    (property "Mouser_Part_Number" "660-RK73H1JTTD3301F")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD3301F")
+    (property "RS_Part_Number" "6316519P")
+    (property "RS_Price/Stock" "http://uk.rs-online.com/web/p/products/6316519P")
+    (property "Datasheet_Link" "http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf")
+    (property "compAreaTopHeight" 0.55)
+)
+
+

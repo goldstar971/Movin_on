@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PMEG6020ER,115
+D Nexperia PMEG6020ER,115 SMT Schottky Diode, 60V 2A, 2-Pin SOD-123W
+K
+F https://componentsearchengine.com/Datasheets/1/PMEG6020ER,115.pdf
+$ENDCMP
+#
+#End Doc Library

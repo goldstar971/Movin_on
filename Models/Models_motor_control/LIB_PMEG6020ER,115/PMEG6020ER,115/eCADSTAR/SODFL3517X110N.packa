@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "PMEG6020ER_115"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-05-07-08:52:27)
+    (mountForm default
+        (footprintRef "SODFL3517X110N")
+        (spec "System")
+    )
+)

@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_315893"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-04-24-02:59:19)
+    (utime 2019-04-24-06:44:47)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "CGA6M3X7S2A475K200AB")
+)
+
+
+(pinAssign "ECS_315893"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-04-24-02:59:19)
+    (utime 2019-04-24-06:44:47)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_315893")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "CGA6M3X7S2A475K200AB")
+)
+
+
+(part "CGA6M3X7S2A475K200AB"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-04-24-02:59:19)
+    (utime 2019-04-24-06:44:47)
+    (packageRef "CGA6M3X7S2A475K200AB")
+    (pinAssignRef "ECS_315893")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "TDK 4.7uF Multilayer Ceramic Capacitor MLCC 100V dc +/-10% X7S Dielectric 1210 (3225M) SMD, Max. Temp. +125C")
+    (property "Manufacturer_Name" "TDK")
+    (property "Manufacturer_Part_Number" "CGA6M3X7S2A475K200AB")
+    (property "Mouser_Part_Number" "810-CGA6M3X7S2A475K")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA6M3X7S2A475K")
+    (property "RS_Part_Number" "9155415P")
+    (property "RS_Price/Stock" "http://uk.rs-online.com/web/p/products/9155415P")
+    (property "Datasheet_Link" "https://componentsearchengine.com/Datasheets/1/CGA6M3X7S2A475K200AB.pdf")
+    (property "compAreaTopHeight" 2)
+)
+
+

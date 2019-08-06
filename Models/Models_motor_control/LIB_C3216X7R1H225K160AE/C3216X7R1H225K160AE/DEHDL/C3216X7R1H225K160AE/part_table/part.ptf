@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'C3216X7R1H225K160AE'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "TDK", "C3216X7R1H225K160AE" (!) = "", "CAPC3216X180N", "Capacitor Chip Non-polarised", "810-C3216X7R1H225KST", "https://www.mouser.com/Search/Refine.aspx?Keyword=810-C3216X7R1H225KST", "", "", "Multilayer Ceramic Capacitors MLCC - SMD/SMT 3216 2.2uF 50volts X7R 10% Soft Term", "https://product.tdk.com/info/en/catalog/datasheets/mlcc_commercial_midvoltage_en.pdf", "1.8 mm"
+END_PART
+
+END.

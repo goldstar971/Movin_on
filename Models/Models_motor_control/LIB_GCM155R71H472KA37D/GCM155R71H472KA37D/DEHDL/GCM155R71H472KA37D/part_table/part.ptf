@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'GCM155R71H472KA37D'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Murata Electronics", "GCM155R71H472KA37D" (!) = "", "CAPC1005X55N", "Capacitor Chip Non-polarised", "81-GCM155R71H472K37D", "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GCM155R71H472K37D", "8151660P", "http://uk.rs-online.com/web/p/products/8151660P", "Murata 0402 GCM 4.7nF Ceramic Multilayer Capacitor, 50 V dc, +125C, X7R Dielectric, +/-10% SMD", "https://psearch.en.murata.com/capacitor/product/GCM155R71H472KA37%23.pdf", "0.55 mm"
+END_PART
+
+END.

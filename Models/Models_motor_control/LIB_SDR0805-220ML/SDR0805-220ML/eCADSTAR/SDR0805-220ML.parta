@@ -1,0 +1,69 @@
+(Japanese_coding: sjis)
+(function "ECS_679519"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-11-13-11:31:49)
+    (utime 2018-06-06-11:10:46)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "SDR0805-220ML")
+)
+
+
+(pinAssign "ECS_679519"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-11-13-11:31:49)
+    (utime 2018-06-06-11:10:46)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_679519")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "SDR0805-220ML")
+)
+
+
+(part "SDR0805-220ML"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-11-13-11:31:49)
+    (utime 2018-06-06-11:10:46)
+    (packageRef "SDR0805-220ML")
+    (pinAssignRef "ECS_679519")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "L")
+    (property "description" "Bourns SDR0805 Series Wire-wound SMD Inductor with a Ferrite Core, 22 uH +/-20% 2.3A Idc Q:20")
+    (property "Manufacturer_Name" "Bourns")
+    (property "Manufacturer_Part_Number" "SDR0805-220ML")
+    (property "Mouser_Part_Number" "652-SDR0805-220ML")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=652-SDR0805-220ML")
+    (property "RS_Part_Number" "7361270")
+    (property "RS_Price/Stock" "https://uk.rs-online.com/web/p/products/7361270")
+    (property "Allied_Number" "70153836")
+    (property "Allied_Price/Stock" "https://www.alliedelec.com/bourns-sdr0805-220ml/70153836/")
+    (property "Datasheet_Link" "http://www.bourns.com/docs/Product-Datasheets/SDR0805.pdf")
+)
+
+

@@ -58,14 +58,13 @@ The circuit description is broken up into sections by function.  If there are mu
 		pin 45: connected to pin 6 of DRV1
 		pin 46: connected to pin 1 of RECV
 		pin 47: connected to pin 2 of RECV
-		pin 48: connected to pin 1 of C38
+		pin 48: connected to pin 1 of C36
 		pin 49: connected to digital GND
 		pin 50: connected to 3.3V
-		pin 61: connected to pin 3 of BUSCNT 
 		pin 70: connected to pin 4 of CAN_tr
 		pin 71: connected to pin 1 of CAN_tr
 		pin 72: connected to pin 4 of SWD
-		pin 73: connected to pin 1 of C38
+		pin 73: connected to pin 1 of C37
 		pin 74: connected to digital GND
 		pin 75: connected to 3.3V
 		pin 76: connected to pin 2 of SWD
@@ -74,33 +73,32 @@ The circuit description is broken up into sections by function.  If there are mu
 		pin 100: connected to 3.3V
 		
 		
-	2x 1 uf ceramic capacitors part number GRM155C81C105ME11J
+	1x 1 uf ceramic capacitors part number GRM155C81C105ME11J
 		1x connected between pin 19 and pin 20 as close as possible (C35)
-		1x connected between pin 95 and pin 94 as close as possible (C36)
 	2x 2.2 uf ceramic capacitors part number C3216X7R1H225K160AE 
-		1x connected between pin 48 and pin 49 as close as possible (C37)
-		1x connected between pin 73 and pin 74 as close as possible (C38)
+		1x connected between pin 48 and pin 49 as close as possible (C36)
+		1x connected between pin 73 and pin 74 as close as possible (C37)
 	1x 4.7 uf ceramic capacitors part number CGA6M3X7S2A475K200AB
-		1x connected between pin 10 and pin 11 as close as possible (C39)
+		1x connected between pin 10 and pin 11 as close as possible (C38)
 	4x 2.2 kohm resistors part number RK73H1JTTD2201F
-		1x connected between DSC pin 15 and analog GND (R22)
-		1x connected between DSC pin 16 and analog GND (R23)
-		1x connected between DSC pin 17 and analog GND (R24)
+		1x connected between DSC pin 23 and analog GND (R22)
+		1x connected between DSC pin 24 and analog GND (R23)
+		1x connected between DSC pin 28 and analog GND (R24)
 		1x connected between DSC pin 18 and analog GND (R25)
 	7x .1 uf capacitors part number AS0805KKX7R0BB104
-		1x connected between DSC pin 6 and digital GND (C40)
-		1x connected between DSC pin 10 and DSC pin 11 (C41)
-		1x connected between DSC pin 19 and DSC pin 20 (C42)
-		1x connected between DSC pin 26 and DSC pin 27  (C43)
-		1x connected between DSC pin 49 and DSC pin 50 (C44)
-		1x connected between DSC pin 74 and DSC pin 75 (C45)
-		1x connected between DSC pin 99 and DSC pin 100 (C46)
+		1x connected between DSC pin 6 and digital GND (C39)
+		1x connected between DSC pin 10 and DSC pin 11 (C40)
+		1x connected between DSC pin 19 and DSC pin 20 (C41)
+		1x connected between DSC pin 26 and DSC pin 27  (C42)
+		1x connected between DSC pin 49 and DSC pin 50 (C43)
+		1x connected between DSC pin 74 and DSC pin 75 (C44)
+		1x connected between DSC pin 99 and DSC pin 100 (C45)
 
 		
 	4x 39 kohm resistors part number ERJ-3EKF3902V
-		1x connected between DSC pin 15 and Q1 pin 3 (R26)
-		1x connected between DSC pin 16 and Q3 pin 3 (R27)
-		1x connected between DSC pin 17 and Q5 pin 3 (R28)
+		1x connected between DSC pin 23 and Q1 pin 3 (R26)
+		1x connected between DSC pin 24 and Q3 pin 3 (R27)
+		1x connected between DSC pin 28 and Q5 pin 3 (R28)
 		1x connected between DSC pin 18 and Battery Supply (R29)
 
  LEDs
@@ -131,20 +129,20 @@ The circuit description is broken up into sections by function.  If there are mu
 		pin 5: NRST connected to pin 14 on DSC
 	
 
-	1x  5 pin connector  for connecting CAN and wakeup wires between each PCB part number SM05B-PASS-TBT(LF)(SN) (BUSCNT)
+	1x  4 pin connector  for connecting CAN and wakeup wires between each PCB part number SM04B-PASS-TBT(LF)(SN) (BUSCNT)
 	pinout:
 		pin 1 CANH, connected to pin 7 of CAN_TR
-		pin 2 GND, connected to dig GND
-		pin 3 V-wakeup connected to pin 61 of DSC 
-		pin 4 CANL, connected to pin 2 of CAN_TR
-		pin 5 connect to 5-volt power section #2
+		pin 2 CANL, connected to pin 6 of CAN_TR
+		pin 3 GND, connected to dig GND
+		pin 4 connect to 5-volt power section
 
-	 1 4 pin header connector to potential wireless reciever part number SM04B-PASS-TBT(LF)(SN) (RECV)
+	 1x 4 pin header connector to potential wireless reciever part number SM04B-PASS-TBT(LF)(SN) (RECV)
 	 pinout: 
-		pin 1: connected to DSC 46
-		pin 2: connected to DSC 47
-		pin 4: connected to digital GND		
+		pin 1: SCL connected to DSC 46
+		pin 2: SDA connected to DSC 47
 		pin 3: connected to 5 volt section #1
+		pin 4: connected to digital GND	
+
  Wire solder Pads:
 
 	
@@ -165,7 +163,7 @@ The circuit description is broken up into sections by function.  If there are mu
 		pin 3: connected to 3.3V
 		pin 4: Recieved data output pin, connected to pin 70 on DSC
 		pin 5: not connected
-		pin 6: CANL, connected to pin 4 of BUSCNT
+		pin 6: CANL, connected to pin 2 of BUSCNT
 		pin 7: CANH, connected to pin 1 of BUSCNT
 		pin 8: not connected
 		
@@ -180,7 +178,8 @@ The circuit description is broken up into sections by function.  If there are mu
 	pintout:
 		pin 1: connected to dig GND 
 		pin 2: Vin, connected to 3.3V and pin 1 of C2
-		pin 3: Vin, connected to 5V and pin 1 of C2
+		pin 3: Vin, connected to 5V and pin 1 of C3
+
 	2x 1 uf ceramic capacitor part number GRM155C81C105ME11J 
 		1x  connected between pin 2 of Reg1 and the dig GND plane (C2)
 		1x  connected between pin 3 of Reg1 and the dig GND plane (C3) 
@@ -248,13 +247,13 @@ The circuit description is broken up into sections by function.  If there are mu
 		pin 1: connected to P3
 		pin 2: connected to pin	3 of Q5
 		pin 3: pin 1 of CS3
-		pin 4: connected to pin 8 of CS3
+		pin 4: connected to p	in 8 of CS3
 
 	
 	3x current sense amplifiers part number AD8418ABRMZ 
 	(CS1) pinout:
 		pin 1: connected to pin 3 of R9
-		pin 2: connected to GND
+		pin 2: connected to digital GND
 		pin 3: connected to pin 2 of CS1 and pin 2 of C13
 		pin 4: Not connected
 		pin 5: connected to pin 1 of R12
@@ -263,7 +262,7 @@ The circuit description is broken up into sections by function.  If there are mu
 		pin 8: connected to pin 4 of R9
 	(CS2) pinout:
 		pin 1: connected to pin 3 of R10
-		pin 2: connected to GND
+		pin 2: connected to digital GND
 		pin 3: connected to pin 2 of CS2 and pin 2 of C14
 		pin 4: Not connected
 		pin 5: connected to pin 1 of R13
@@ -272,7 +271,7 @@ The circuit description is broken up into sections by function.  If there are mu
 		pin 8: connected to pin 4 of R10
 	(CS3) pinout:
 		pin 1: connected to pin 3 of R11
-		pin 2: connected to GND
+		pin 2: connected to digital GND
 		pin 3: connected to pin 2 of CS3 and pin 2 of C15
 		pin 4: Not connected
 		pin 5: connected to pin 1 of R14
@@ -298,13 +297,13 @@ The circuit description is broken up into sections by function.  If there are mu
  Temperature sensing for MOSFETS
 
 	1x NTC resistor part number NCP18XH103F03RB connected between 5V+ and pin 37 of DSC and placed next to one of the powerfets (RTS)
-	1x 2.2 uf capacitor part number C1608X5R1C225M080AB connected between DSC pin 37 and analog GND (C16)
+	1x 2.2 uf capacitor part number C3216X7R1H225K160AE  connected between DSC pin 37 and analog GND (C16)
 	1x 10 kohm resistor part number RK73H1JTTD1002F connected betweeen DSC pin 37 and analog GND (R15)
 
 
  Power supply decoupling (place as close to P7 as possible, can be on one or both sides)
-	4x 330uf 50 volt aluminum electrolytic capacitors part number EEV-FK1J681M  
-		4x in parallel with positive ends connected to the Battery Supply and negative, side with bar, ends connected to dig GND (C17),(C18),(C46),(C47)
+	2x 1000uf 50 volt aluminum electrolytic capacitors part number UVR1H102MHD1TO
+		2x in parallel with positive ends connected to the Battery Supply and negative, side with bar, ends connected to dig GND (C17),(C18)
 
 
  Motor driver:
@@ -318,13 +317,13 @@ The circuit description is broken up into sections by function.  If there are mu
 		pin 5: not connected (unused output)
 		pin 6: connected to pin 67 of DSC
 		pin 7: connected to pin 1 of R21
-		pin 8: connected to signal GND
+		pin 8: connected to digital GND
 		pin 9: connected to 3.3V 
-		pin 10: connected to analog ground
+		pin 10: connected to digital ground
 		pin 11: connected to pin 23 of DVR1
 		pin 12: connected to digital GND (unused input)
 		pin 13: connected to pin 1 of C24
-		pin 14: connected to pin 1 of C21
+		pin 14: connected to pin 1 of C21w
 		pin 15: connected to pin 2 of C21
 		pin 16: connected to pin 44 of DSC
 		pin 17: connected to pin 39 of DSC
@@ -400,7 +399,7 @@ The circuit description is broken up into sections by function.  If there are mu
 		1x connected between pin 14 and pin 15 of DVR1 (C21)
 
 
-	5x 2.2 uf ceramic capacitors part number C1608X5R1C225M080AB
+	5x 2.2 uf ceramic capacitors part number C3216X7R1H225K160AE 
 		2x connected in parallel between digital GND and pin 23 of DVR1 (C22),(C23)		
 		1x connected between pin 13 of DVR1 and digital GND (C24)
 		1x connected between pin 27 and pin 28 of DVR1 (C25)
@@ -413,14 +412,14 @@ The circuit description is broken up into sections by function.  If there are mu
 		1x connected between pin 48 and pin 46 of DVR1 (C29)
 		
 
-	1x 100 nf ceramic capacitors part number AS0805KKX7R0BB104
+	1x 100 nf ceramic capacitors part number
 		1x connected between pin 52 and 51 of DRV1 (C30)
 	
 
 	1x 15 nf ceramic capacitors part number C0603C153J3GACTU 
 		1x connected between digital gnd and pin 56 of DVR1 (C31)
 		
-	1x 4.7 uf ceramic capacitors part number CGA6M3X7S2A475K200AB
+	2x 4.7 uf ceramic capacitors part number CGA6M3X7S2A475K200AB
 		1x connected between pin 54 of DVR1 and digital GND, placed as close as possible (C32)
 		1x connected between pin 29 of DVR1 and digital GND, placed as close as possible (C33)
  		
@@ -432,7 +431,8 @@ The circuit description is broken up into sections by function.  If there are mu
 		1x connected between pin 51 of DVR1 and digital GND (D1)
 		
 
-	1x 100 uf ceramic capacitors part number LMK325ABJ107MM-t
+	1x 100 uf ceramic capacitors part number 875015119003
+
 		1x connected between 5V+ and digital GND in parallel with C26 (C34)
 
 	

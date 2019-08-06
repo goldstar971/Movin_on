@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRFS7730TRLPBF
+D Infineon IRFS7730TRLPBF N-Channel MOSFET, 246 A, 75 V HEXFET, 3-Pin D2PAK
+K
+F https://componentsearchengine.com/Datasheets/2/IRFS7730TRLPBF.pdf
+$ENDCMP
+#
+#End Doc Library

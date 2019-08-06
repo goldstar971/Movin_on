@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'AS0805KKX7R0BB104'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "YAGEO (PHYCOMP)", "AS0805KKX7R0BB104" (!) = "", "CAPC2012X145N", "Capacitor Chip Non-polarised", "603-AS0805KKX70BB104", "https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104", "", "", "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200", "https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf", "1.45 mm"
+END_PART
+
+END.

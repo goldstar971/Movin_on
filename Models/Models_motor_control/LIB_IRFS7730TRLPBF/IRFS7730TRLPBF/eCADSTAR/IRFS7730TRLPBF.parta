@@ -1,0 +1,73 @@
+(Japanese_coding: sjis)
+(function "ECS_929242"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-11-04-17:29:37)
+    (utime 2018-11-05-06:31:55)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 3) (portType INOUT))
+        (port "3" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "IRFS7730TRLPBF")
+)
+
+
+(pinAssign "ECS_929242"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-11-04-17:29:37)
+    (utime 2018-11-05-06:31:55)
+    (interface
+        (port "1" (symbPinId 1) (portName "G") (portType INOUT))
+        (port "2" (symbPinId 3) (portName "S") (portType INOUT))
+        (port "3" (symbPinId 2) (portName "D") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_929242")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+                (port "3" (match "3"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "IRFS7730TRLPBF")
+)
+
+
+(part "IRFS7730TRLPBF"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-11-04-17:29:37)
+    (utime 2018-11-05-06:31:55)
+    (packageRef "IRFS7730TRLPBF")
+    (pinAssignRef "ECS_929242")
+    (interface
+        (port "1" (symbPinId 1) (portName "G") (portType INOUT))
+        (port "2" (symbPinId 3) (portName "S") (portType INOUT))
+        (port "3" (symbPinId 2) (portName "D") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "Q")
+    (property "description" "Infineon IRFS7730TRLPBF N-Channel MOSFET, 246 A, 75 V HEXFET, 3-Pin D2PAK")
+    (property "Manufacturer_Name" "Infineon")
+    (property "Manufacturer_Part_Number" "IRFS7730TRLPBF")
+    (property "Mouser_Part_Number" "942-IRFS7730TRLPBF")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7730TRLPBF")
+    (property "RS_Part_Number" "1301007P")
+    (property "RS_Price/Stock" "http://uk.rs-online.com/web/p/products/1301007P")
+    (property "Allied_Number" "70425753")
+    (property "Allied_Price/Stock" "https://www.alliedelec.com/infineon-irfs7730trlpbf/70425753/")
+    (property "Datasheet_Link" "https://componentsearchengine.com/Datasheets/2/IRFS7730TRLPBF.pdf")
+)
+
+

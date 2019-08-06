@@ -1,0 +1,18 @@
+.875015119003 :1 ;Wurth Elektronik 100uF 6.3V dc Aluminium Polymer Capacitor, Surface Mount 7.3 x 4.3 x 1.9mm +105C 7.3mm
+CAPPM7343X200N
+*STM C
+*NGS
+*PLB 1="+" 2="-"
+*MXP 2
+*DFN 875015119003
+~!Manufacturer_Name (Wurth Elektronik)
+~!Manufacturer_Part_Number (875015119003)
+~!Mouser Part Number (710-875015119003)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=710-875015119003)
+~!RS Part Number (1855760)
+~!Link RS Price/Stock (https://uk.rs-online.com/web/p/products/1855760)
+~!Link Datasheet (https://katalog.we-online.com/pbs/datasheet/875015119003.pdf)
+~!Height (2mm)
+~!3D_Model (875015119003)
+"875015119003"
+1.1!U 2.1!U 

@@ -1,0 +1,38 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model IRFS7730TRLPBF
+#/929242/124476/2.43/3/4/MOSFET (N-Channel)
+DEF IRFS7730TRLPBF Q 0 30 Y Y 1 F N
+F0 "Q" 450 150 50 H V L CNN
+F1 "IRFS7730TRLPBF" 450 50 50 H V L CNN
+F2 "D2PAK(TO-263AB)" 450 -50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/2/IRFS7730TRLPBF.pdf" 450 -150 50 H I L CNN
+F4 "Infineon IRFS7730TRLPBF N-Channel MOSFET, 246 A, 75 V HEXFET, 3-Pin D2PAK" 450 -250 50 H I L CNN "Description"
+F5 "" 450 -350 50 H I L CNN "Height"
+F6 "Infineon" 450 -450 50 H I L CNN "Manufacturer_Name"
+F7 "IRFS7730TRLPBF" 450 -550 50 H I L CNN "Manufacturer_Part_Number"
+F8 "942-IRFS7730TRLPBF" 450 -650 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7730TRLPBF" 450 -750 50 H I L CNN "Mouser Price/Stock"
+F10 "1301007P" 450 -850 50 H I L CNN "RS Part Number"
+F11 "http://uk.rs-online.com/web/p/products/1301007P" 450 -950 50 H I L CNN "RS Price/Stock"
+F12 "70425753" 450 -1050 50 H I L CNN "Allied_Number"
+F13 "https://www.alliedelec.com/infineon-irfs7730trlpbf/70425753/" 450 -1150 50 H I L CNN "Allied Price/Stock"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 B
+X ~ 3 300 400 100 D 50 50 0 0 B
+X ~ 2 300 -200 100 U 50 50 0 0 B
+P 2 0 1 6 300 100 300 -100 N
+P 2 0 1 6 300 200 300 300 N
+P 3 0 1 6 100 0 200 0 200 200 N
+P 2 0 1 6 300 100 230 100 N
+P 2 0 1 6 300 200 230 200 N
+P 2 0 1 6 230 0 300 0 N
+P 2 0 1 6 230 220 230 180 N
+P 2 0 1 6 230 -20 230 20 N
+P 2 0 1 6 230 80 230 120 N
+C 250 100 158 0 1 10 N
+P 4 0 1 10 230 100 270 120 270 80 230 100 F
+ENDDRAW
+ENDDEF
+#
+#End Library

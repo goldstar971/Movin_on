@@ -1,0 +1,88 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "ERA3AEB121V"
+   (description "Panasonic ERA Series Thin Film Surface Mount Fixed Resistor 0603 Case 120 +/-0.1% 0.1W +/-25ppm/C")
+   (family "RES")
+   (package "RESC1608X55N")
+   (attribute "Datasheet Link" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C237.pdf")
+   (attribute "Geometry.Height" "0.55mm")
+   (attribute "Manufacturer_Name" "Panasonic")
+   (attribute "Manufacturer_Part_Number" "ERA3AEB121V")
+   (attribute "Mouser Part Number" "")
+   (attribute "Mouser Price/Stock" "")
+   (attribute "RS Part Number" "7419870")
+   (attribute "RS Price/Stock" "https://uk.rs-online.com/web/p/products/7419870")
+   (attribute "Allied_Number" "70348670")
+   (attribute "Allied Price/Stock" "https://www.alliedelec.com/panasonic-era3aeb121v/70348670/")
+   (gate
+    (symbol "ERA3AEB121V")
+    (pin "1" 1 PS)
+    (pin "2" 2 PS)
+   )
+  )
+  (symbol "ERA3AEB121V"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 50) (pt 500 50) (pt 500 -50) (pt 200 -50) (pt 200 50) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 700 0) (rot 0) (mir X) (visible true))
+    (name (pt 0 -10) (rot 0) (just TOP LEFT) (visible false))
+    (number (pt 0 10) (rot 0) (just BOTTOM LEFT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "RESC1608X55N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -1.525 0.75)
+      (pt 1.525 0.75)
+      (pt 1.525 -0.75)
+      (pt -1.525 -0.75)
+      (pt -1.525 0.75))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -0.8 0.4)
+      (pt 0.8 0.4)
+      (pt 0.8 -0.4)
+      (pt -0.8 -0.4)
+      (pt -0.8 0.4))))
+   (leg 1 (pt -0.8 0) (padstack 0))
+   (leg 2 (pt 0.8 0) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.95 1 0 0 90))
+   )
+   (model "ERA3AEB121V.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

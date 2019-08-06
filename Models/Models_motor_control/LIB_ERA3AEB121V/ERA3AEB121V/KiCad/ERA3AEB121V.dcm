@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ERA3AEB121V
+D Panasonic ERA Series Thin Film Surface Mount Fixed Resistor 0603 Case 120 +/-0.1% 0.1W +/-25ppm/C
+K
+F https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C237.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'PMEG6020ER_115'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Nexperia", "PMEG6020ER,115" (!) = "", "SODFL3517X110N", "Small Outline Diode Flat Lead", "771-PMEG6020ER-115", "https://www.mouser.com/Search/Refine.aspx?Keyword=771-PMEG6020ER-115", "7805414", "https://uk.rs-online.com/web/p/products/7805414", "Nexperia PMEG6020ER,115 SMT Schottky Diode, 60V 2A, 2-Pin SOD-123W", "https://componentsearchengine.com/Datasheets/1/PMEG6020ER,115.pdf", "1.1 mm"
+END_PART
+
+END.

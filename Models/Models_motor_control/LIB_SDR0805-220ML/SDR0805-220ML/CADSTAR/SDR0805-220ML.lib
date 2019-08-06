@@ -1,0 +1,19 @@
+.SDR0805-220ML :1 ;Bourns SDR0805 Series Wire-wound SMD Inductor with a Ferrite Core, 22 uH +/-20% 2.3A Idc Q:20
+SDR0805-121KL
+*STM L
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN SDR0805-220ML
+~!Manufacturer_Name (Bourns)
+~!Manufacturer_Part_Number (SDR0805-220ML)
+~!Mouser Part Number (652-SDR0805-220ML)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=652-SDR0805-220ML)
+~!RS Part Number (7361270)
+~!Link RS Price/Stock (https://uk.rs-online.com/web/p/products/7361270)
+~!Allied_Number (70153836)
+~!Link Allied Price/Stock (https://www.alliedelec.com/bourns-sdr0805-220ml/70153836/)
+~!Link Datasheet (http://www.bourns.com/docs/Product-Datasheets/SDR0805.pdf)
+~!Height (-)
+SDR0805-220ML
+1.1!U 2.1!U 

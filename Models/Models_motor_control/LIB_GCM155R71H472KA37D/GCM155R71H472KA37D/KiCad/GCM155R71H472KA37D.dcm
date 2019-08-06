@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GCM155R71H472KA37D
+D Murata 0402 GCM 4.7nF Ceramic Multilayer Capacitor, 50 V dc, +125C, X7R Dielectric, +/-10% SMD
+K
+F https://psearch.en.murata.com/capacitor/product/GCM155R71H472KA37%23.pdf
+$ENDCMP
+#
+#End Doc Library

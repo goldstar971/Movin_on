@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MCSR06X1802FTL'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "MULTICOMP", "MCSR06X1802FTL" (!) = "", "RESC1608X60N", "Resistor Chip", "", "", "", "", "MULTICOMP - MCSR06X1802FTL - RES, CERAMIC, 18K, 1%, 0.1W, 0603", "http://www.farnell.com/datasheets/1716710.pdf?_ga=1.256651403.1411154270.1472651675", "0.6 mm"
+END_PART
+
+END.

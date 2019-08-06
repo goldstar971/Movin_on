@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_270581"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-02-28-13:52:06)
+    (utime 2019-04-12-06:40:06)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "EEE-FT1H331AP")
+)
+
+
+(pinAssign "ECS_270581"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-02-28-13:52:06)
+    (utime 2019-04-12-06:40:06)
+    (interface
+        (port "1" (symbPinId 1) (portName "+") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "-") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_270581")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "EEE-FT1H331AP")
+)
+
+
+(part "EEE-FT1H331AP"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-02-28-13:52:06)
+    (utime 2019-04-12-06:40:06)
+    (packageRef "EEE-FT1H331AP")
+    (pinAssignRef "ECS_270581")
+    (interface
+        (port "1" (symbPinId 1) (portName "+") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "-") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "Aluminum Electrolytic Capacitors - SMD 330uF 50volts 10x10.2mm SMD")
+    (property "Mouser_Part_Number" "667-EEE-FT1H331AP")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=667-EEE-FT1H331AP")
+    (property "Manufacturer_Name" "Panasonic")
+    (property "Manufacturer_Part_Number" "EEE-FT1H331AP")
+    (property "Datasheet_Link" "https://componentsearchengine.com/Datasheets/1/EEE-FT1H331AP.pdf")
+    (property "compAreaTopHeight" 10.5)
+)
+
+

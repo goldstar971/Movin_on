@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '875015119003'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Wurth Elektronik", "875015119003" (!) = "", "CAPPM7343X200N", "Capacitor Moulded Polarised", "710-875015119003", "https://www.mouser.com/Search/Refine.aspx?Keyword=710-875015119003", "1855760", "https://uk.rs-online.com/web/p/products/1855760", "Wurth Elektronik 100uF 6.3V dc Aluminium Polymer Capacitor, Surface Mount 7.3 x 4.3 x 1.9mm +105C 7.3mm", "https://katalog.we-online.com/pbs/datasheet/875015119003.pdf", "2 mm"
+END_PART
+
+END.

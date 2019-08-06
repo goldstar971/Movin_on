@@ -1,0 +1,19 @@
+.IRFS7730TRLPBF :1 ;Infineon IRFS7730TRLPBF N-Channel MOSFET, 246 A, 75 V HEXFET, 3-Pin D2PAK
+D2PAK_TO-263AB_
+*STM Q
+*NGS
+*PLB 1="G" 2="S" 3="D"
+*MXP 3
+*DFN IRFS7730TRLPBF
+~!Manufacturer_Name (Infineon)
+~!Manufacturer_Part_Number (IRFS7730TRLPBF)
+~!Mouser Part Number (942-IRFS7730TRLPBF)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=942-IRFS7730TRLPBF)
+~!RS Part Number (1301007P)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/1301007P)
+~!Allied_Number (70425753)
+~!Link Allied Price/Stock (https://www.alliedelec.com/infineon-irfs7730trlpbf/70425753/)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/2/IRFS7730TRLPBF.pdf)
+~!Height (-)
+IRFS7730TRLPBF
+1.1!U 2.1!U 3.1!U 

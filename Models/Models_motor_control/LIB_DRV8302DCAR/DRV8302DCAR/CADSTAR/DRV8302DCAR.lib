@@ -1,0 +1,19 @@
+.DRV8302DCAR :1 ;3-Phase Brushless Motor Pre-Driver with Dual Current Sense Amps and Buck Converter (PWM Ctrl)
+SOP50P810X120-57N
+*STM IC
+*NGS
+*PLB 1="RT_CLK" 2="COMP" 3="VSENSE" 4="PWRGD" 5="NOCTW" 6="NFAULT" 7="DTC" 8="M_PWM" 9="M_OC" 10="GAIN" 11="OC_ADJ" 12="DC_CAL" 13="GVDD" 14="CP1" 15="CP2" 16="EN_GATE" 17="INH_A" 18="INL_A" 19="INH_B" 20="INL_B" 21="INH_C" 22="INL_C" 23="DVDD" 24="REF" 25="SO1" 26="SO2" 27="AVDD" 28="AGND" 29="PVDD1" 30="SP2" 31="SN2" 32="SP1" 33="SN1" 34="SL_C" 35="GL_C" 36="SH_C" 37="GH_C" 38="BST_C" 39="SL_B" 40="GL_B" 41="SH_B" 42="GH_B" 43="BST_B" 44="SL_A" 45="GL_A" &
+46="SH_A" 47="GH_A" 48="BST_A" 49="BIAS" 50="PH_1" 51="PH_2" 52="BST_BK" 53="PVDD2_1" 54="PVDD2_2" 55="EN_BUCK" 56="SS_TR" 57="GND"
+*MXP 57
+*DFN DRV8302DCAR
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (DRV8302DCAR)
+~!Mouser Part Number (595-DRV8302DCAR)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=595-DRV8302DCAR)
+~!RS Part Number (-)
+~!RS Price/Stock (-)
+~!Link Datasheet (http://www.ti.com/lit/gpn/drv8302)
+~!Height (1.2mm)
+~!3D_Model (DRV8302DCAR)
+DRV8302DCAR
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 17.1!U 18.1!U 19.1!U 20.1!U 21.1!U 22.1!U 23.1!U 24.1!U 25.1!U 26.1!U 27.1!U 28.1!U 57.1!U 56.1!U 55.1!U 54.1!U 53.1!U 52.1!U 51.1!U 50.1!U 49.1!U 48.1!U 47.1!U 46.1!U 45.1!U 44.1!U 43.1!U 42.1!U 41.1!U 40.1!U 39.1!U 38.1!U 37.1!U 36.1!U 35.1!U 34.1!U 33.1!U 32.1!U 31.1!U 30.1!U 29.1!U 

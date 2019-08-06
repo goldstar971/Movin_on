@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_524329"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-08-09-17:09:08)
+    (utime 2019-05-13-09:49:00)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "C0603C121J5GACTU")
+)
+
+
+(pinAssign "ECS_524329"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-08-09-17:09:08)
+    (utime 2019-05-13-09:49:00)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_524329")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "C0603C121J5GACTU")
+)
+
+
+(part "C0603C121J5GACTU"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-08-09-17:09:08)
+    (utime 2019-05-13-09:49:00)
+    (packageRef "C0603C121J5GACTU")
+    (pinAssignRef "ECS_524329")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "Kemet 0603 C 120pF Ceramic Multilayer Capacitor, 50 V dc, +125C, C0G Dielectric, +/-5%")
+    (property "Manufacturer_Name" "Kemet")
+    (property "Manufacturer_Part_Number" "C0603C121J5GACTU")
+    (property "Mouser_Part_Number" "80-C0603C121J5G")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0603C121J5G")
+    (property "RS_Part_Number" "0147897P")
+    (property "RS_Price/Stock" "http://uk.rs-online.com/web/p/products/0147897P")
+    (property "Datasheet_Link" "https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf")
+    (property "compAreaTopHeight" 0.87)
+)
+
+

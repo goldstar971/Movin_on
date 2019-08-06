@@ -1,0 +1,18 @@
+.C0603C121J5GACTU :1 ;Kemet 0603 C 120pF Ceramic Multilayer Capacitor, 50 V dc, +125C, C0G Dielectric, +/-5%
+CAPC1608X87N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN C0603C121J5GACTU
+~!Manufacturer_Name (Kemet)
+~!Manufacturer_Part_Number (C0603C121J5GACTU)
+~!Mouser Part Number (80-C0603C121J5G)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0603C121J5G)
+~!RS Part Number (0147897P)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/0147897P)
+~!Link Datasheet (https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf)
+~!Height (0.87mm)
+~!3D_Model (C0603C121J5GACTU)
+C0603C121J5GACTU
+1.1!U 2.1!U 

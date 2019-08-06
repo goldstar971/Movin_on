@@ -1,0 +1,146 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "AD8418ABRMZ"
+   (description "ANALOG DEVICES - AD8418ABRMZ - CURRENT SENSE AMPLIFIER, 250KHZ, MSOP-8")
+   (family "ANA")
+   (package "SOP65P490X110-8N")
+   (attribute "Datasheet Link" "http://www.analog.com/media/en/technical-documentation/data-sheets/AD8418A.pdf")
+   (attribute "Geometry.Height" "1.1mm")
+   (attribute "Manufacturer_Name" "Analog Devices")
+   (attribute "Manufacturer_Part_Number" "AD8418ABRMZ")
+   (attribute "Mouser Part Number" "584-AD8418ABRMZ")
+   (attribute "Mouser Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=584-AD8418ABRMZ")
+   (attribute "RS Part Number" "1831929")
+   (attribute "RS Price/Stock" "http://uk.rs-online.com/web/p/products/1831929")
+   (gate
+    (symbol "AD8418ABRMZ")
+    (pin "-IN" 1 IP)
+    (pin "GND" 2 PP)
+    (pin "VREF2" 3 IP)
+    (pin "NC" 4 NC)
+    (pin "+IN" 8 IP)
+    (pin "VREF1" 7 IP)
+    (pin "VS" 6 PP)
+    (pin "OUT" 5 OP)
+   )
+  )
+  (symbol "AD8418ABRMZ"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 1000 100) (pt 1000 -400) (pt 200 -400) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -200) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -300) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -200) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 1200 -300) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SOP65P490X110-8N"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt -3.2 1.85)
+      (pt 3.2 1.85)
+      (pt 3.2 -1.85)
+      (pt -3.2 -1.85)
+      (pt -3.2 1.85))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt -1.5 1.5)
+      (pt 1.5 1.5)
+      (pt 1.5 -1.5)
+      (pt -1.5 -1.5)
+      (pt -1.5 1.5))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed false)
+      (pt -1.5 0.85)
+      (pt -0.85 1.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed true)
+      (pt -1.15 1.5)
+      (pt 1.15 1.5)
+      (pt 1.15 -1.5)
+      (pt -1.15 -1.5)
+      (pt -1.15 1.5))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt -2.95 1.55)
+      (pt -1.5 1.55))))
+   (leg 1 (pt -2.225 0.975) (padstack 0))
+   (leg 2 (pt -2.225 0.325) (padstack 0))
+   (leg 3 (pt -2.225 -0.325) (padstack 0))
+   (leg 4 (pt -2.225 -0.975) (padstack 0))
+   (leg 5 (pt 2.225 -0.975) (padstack 0))
+   (leg 6 (pt 2.225 -0.325) (padstack 0))
+   (leg 7 (pt 2.225 0.325) (padstack 0))
+   (leg 8 (pt 2.225 0.975) (padstack 0))
+   (padstack 0
+    (plated false)
+    (pad (layer TCOP) (rectf 0.45 1.45 0 0 0))
+   )
+   (model "AD8418ABRMZ.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

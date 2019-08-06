@@ -1,0 +1,18 @@
+.CGA3E2X7R1H223K080AA :1 ;TDK 22nF Multilayer Ceramic Capacitor MLCC 50 V dc +/-10% X7R Dielectric 1608 Solder Max. Op. Temp. +125C
+CAPC1608X90N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN CGA3E2X7R1H223K080AA
+~!Manufacturer_Name (TDK)
+~!Manufacturer_Part_Number (CGA3E2X7R1H223K080AA)
+~!Mouser Part Number (810-CGA3E2X7R1H223K)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA3E2X7R1H223K)
+~!RS Part Number (1447372)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/1447372)
+~!Link Datasheet (http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf)
+~!Height (0.9mm)
+~!3D_Model (CGA3E2X7R1H223K080AA)
+CGA3E2X7R1H223K080AA
+1.1!U 2.1!U 

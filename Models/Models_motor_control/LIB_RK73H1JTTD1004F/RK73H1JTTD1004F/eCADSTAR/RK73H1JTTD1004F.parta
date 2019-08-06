@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_715535"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-04-23-13:19:12)
+    (utime 2018-05-25-06:35:49)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "RK73H1JTTD1004F")
+)
+
+
+(pinAssign "ECS_715535"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-04-23-13:19:12)
+    (utime 2018-05-25-06:35:49)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_715535")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "RK73H1JTTD1004F")
+)
+
+
+(part "RK73H1JTTD1004F"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2017-04-23-13:19:12)
+    (utime 2018-05-25-06:35:49)
+    (packageRef "RK73H1JTTD1004F")
+    (pinAssignRef "ECS_715535")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "R")
+    (property "description" "KOA SPEER ELECTRONICS - RK73H1JTTD1004F - RES, THICK FILM, 1M, 1%, 0.1W, 0603")
+    (property "Manufacturer_Name" "KOA Speer")
+    (property "Manufacturer_Part_Number" "RK73H1JTTD1004F")
+    (property "Mouser_Part_Number" "660-RK73H1JTTD1004F")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD1004F")
+    (property "RS_Part_Number" "6317118P")
+    (property "RS_Price/Stock" "http://uk.rs-online.com/web/p/products/6317118P")
+    (property "Datasheet_Link" "http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf")
+    (property "compAreaTopHeight" 0.55)
+)
+
+

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'SDR0805_220ML'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "ALLIED_NUMBER", "ALLIED_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "Bourns", "SDR0805-220ML" (!) = "", "SDR0805-121KL", "Other", "652-SDR0805-220ML", "https://www.mouser.com/Search/Refine.aspx?Keyword=652-SDR0805-220ML", "7361270", "https://uk.rs-online.com/web/p/products/7361270", "70153836", "https://www.alliedelec.com/bourns-sdr0805-220ml/70153836/", "Bourns SDR0805 Series Wire-wound SMD Inductor with a Ferrite Core, 22 uH +/-20% 2.3A Idc Q:20", "http://www.bourns.com/docs/Product-Datasheets/SDR0805.pdf"
+END_PART
+
+END.

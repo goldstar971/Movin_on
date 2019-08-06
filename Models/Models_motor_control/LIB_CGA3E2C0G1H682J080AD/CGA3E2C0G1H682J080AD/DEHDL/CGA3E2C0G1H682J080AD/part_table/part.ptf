@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'CGA3E2C0G1H682J080AD'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "TDK", "CGA3E2C0G1H682J080AD" (!) = "", "CAPC1608X90N", "Capacitor Chip Non-polarised", "810-CGA3E2C0G1H682JD", "https://www.mouser.com/Search/Refine.aspx?Keyword=810-CGA3E2C0G1H682JD", "", "", "Multilayer Ceramic Capacitors MLCC - SMD/SMT 6800pF 50volts C0G 5%", "http://docs-emea.rs-online.com/webdocs/14e9/0900766b814e9125.pdf", "0.9 mm"
+END_PART
+
+END.

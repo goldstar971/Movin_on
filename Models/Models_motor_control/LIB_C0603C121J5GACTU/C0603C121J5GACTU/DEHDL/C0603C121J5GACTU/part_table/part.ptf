@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'C0603C121J5GACTU'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Kemet", "C0603C121J5GACTU" (!) = "", "CAPC1608X87N", "Capacitor Chip Non-polarised", "80-C0603C121J5G", "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0603C121J5G", "0147897P", "http://uk.rs-online.com/web/p/products/0147897P", "Kemet 0603 C 120pF Ceramic Multilayer Capacitor, 50 V dc, +125C, C0G Dielectric, +/-5%", "https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf", "0.87 mm"
+END_PART
+
+END.

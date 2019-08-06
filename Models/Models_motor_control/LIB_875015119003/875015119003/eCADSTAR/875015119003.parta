@@ -1,0 +1,68 @@
+(Japanese_coding: sjis)
+(function "ECS_1902078"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-05-08-12:53:44)
+    (utime 2019-05-09-06:49:23)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "875015119003")
+)
+
+
+(pinAssign "ECS_1902078"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-05-08-12:53:44)
+    (utime 2019-05-09-06:49:23)
+    (interface
+        (port "1" (symbPinId 1) (portName "+") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "-") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_1902078")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "875015119003")
+)
+
+
+(part "875015119003"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-05-08-12:53:44)
+    (utime 2019-05-09-06:49:23)
+    (packageRef "875015119003")
+    (pinAssignRef "ECS_1902078")
+    (interface
+        (port "1" (symbPinId 1) (portName "+") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "-") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "Wurth Elektronik 100uF 6.3V dc Aluminium Polymer Capacitor, Surface Mount 7.3 x 4.3 x 1.9mm +105C 7.3mm")
+    (property "Manufacturer_Name" "Wurth Elektronik")
+    (property "Manufacturer_Part_Number" "875015119003")
+    (property "Mouser_Part_Number" "710-875015119003")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=710-875015119003")
+    (property "RS_Part_Number" "1855760")
+    (property "RS_Price/Stock" "https://uk.rs-online.com/web/p/products/1855760")
+    (property "Datasheet_Link" "https://katalog.we-online.com/pbs/datasheet/875015119003.pdf")
+    (property "compAreaTopHeight" 2)
+)
+
+

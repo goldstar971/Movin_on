@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STM32F765VIT6
+D STMICROELECTRONICS - STM32F765VIT6 - MCU, ARM CORTEX-M7, 216MHZ, LQFP-100
+K
+F https://www.st.com/resource/en/datasheet/stm32f765vi.pdf
+$ENDCMP
+#
+#End Doc Library

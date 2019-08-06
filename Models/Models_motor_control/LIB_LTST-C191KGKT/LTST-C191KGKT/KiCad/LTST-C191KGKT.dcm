@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LTST-C191KGKT
+D LED,SMD,0603,Green,35mcd,130deg Lite-On LTST-C191KGKT Green LED, 571 nm 1608 (0603), Rectangle Lens SMD package
+K
+F http://www.mouser.com/ds/2/239/S_110_LTST-C191KGKT-369560.pdf
+$ENDCMP
+#
+#End Doc Library

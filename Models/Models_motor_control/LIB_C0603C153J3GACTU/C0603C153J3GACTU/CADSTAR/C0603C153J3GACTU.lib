@@ -1,0 +1,20 @@
+.C0603C153J3GACTU :1 ;Capacitor Ceramic C0G 0603 25V 15nF KEMET 15nF Multilayer Ceramic Capacitor (MLCC) 25 V +/-5% C0G dielectric C SMD max op. temp. +125C
+CAPC1608X87N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN C0603C153J3GACTU
+~!Manufacturer_Name (Kemet)
+~!Manufacturer_Part_Number (C0603C153J3GACTU)
+~!Mouser Part Number (80-C0603C153J3G)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0603C153J3G)
+~!RS Part Number (8015233P)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/8015233P)
+~!Allied_Number (70610853)
+~!Link Allied Price/Stock (https://www.alliedelec.com/kemet-c0603c153j3gactu/70610853/)
+~!Link Datasheet (https://content.kemet.com/datasheets/KEM_C1003_C0G_SMD.pdf)
+~!Height (0.87mm)
+~!3D_Model (C0603C153J3GACTU)
+C0603C153J3GACTU
+1.1!U 2.1!U 

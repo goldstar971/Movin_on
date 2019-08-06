@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP WSLP27261L000FEA
+D VISHAY - WSLP27261L000FEA - RES, METAL STRIP, 0.001OHM, 1%, 2726
+K
+F http://www.vishay.com/docs/30179/wslp2726.pdf
+$ENDCMP
+#
+#End Doc Library

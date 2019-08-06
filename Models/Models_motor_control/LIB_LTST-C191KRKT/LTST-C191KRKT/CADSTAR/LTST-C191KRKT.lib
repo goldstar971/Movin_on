@@ -1,0 +1,17 @@
+.LTST-C191KRKT :1 ;Standard LEDs - SMD Red Clear 631nm
+LEDC1608X55N
+*STM LED
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN LTST-C191KRKT
+~!Manufacturer_Name (Lite-On)
+~!Manufacturer_Part_Number (LTST-C191KRKT)
+~!Mouser Part Number (859-LTST-C191KRKT)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=859-LTST-C191KRKT)
+~!RS Part Number (1278415P)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/1278415P)
+~!Link Datasheet (http://www.mouser.com/ds/2/239/S_110_LTST-C191KRKT-539838.pdf)
+~!Height (0.55mm)
+LTST-C191KRKT
+1.1!U 2.1!U 

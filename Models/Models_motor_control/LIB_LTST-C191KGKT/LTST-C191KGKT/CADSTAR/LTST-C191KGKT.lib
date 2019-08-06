@@ -1,0 +1,17 @@
+.LTST-C191KGKT :1 ;LED,SMD,0603,Green,35mcd,130deg Lite-On LTST-C191KGKT Green LED, 571 nm 1608 (0603), Rectangle Lens SMD package
+LEDC1608X55N
+*STM LED
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN LTST-C191KGKT
+~!Manufacturer_Name (Lite-On)
+~!Manufacturer_Part_Number (LTST-C191KGKT)
+~!Mouser Part Number (859-LTST-C191KGKT)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=859-LTST-C191KGKT)
+~!RS Part Number (6921010P)
+~!Link RS Price/Stock (http://uk.rs-online.com/web/p/products/6921010P)
+~!Link Datasheet (http://www.mouser.com/ds/2/239/S_110_LTST-C191KGKT-369560.pdf)
+~!Height (0.55mm)
+LTST-C191KGKT
+1.1!U 2.1!U 

@@ -1,0 +1,20 @@
+.ERA3AEB121V :1 ;Panasonic ERA Series Thin Film Surface Mount Fixed Resistor 0603 Case 120 +/-0.1% 0.1W +/-25ppm/C
+RESC1608X55N
+*STM R
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN ERA3AEB121V
+~!Manufacturer_Name (Panasonic)
+~!Manufacturer_Part_Number (ERA3AEB121V)
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!RS Part Number (7419870)
+~!Link RS Price/Stock (https://uk.rs-online.com/web/p/products/7419870)
+~!Allied_Number (70348670)
+~!Link Allied Price/Stock (https://www.alliedelec.com/panasonic-era3aeb121v/70348670/)
+~!Link Datasheet (https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C237.pdf)
+~!Height (0.55mm)
+~!3D_Model (ERA3AEB121V)
+ERA3AEB121V
+1.1!U 2.1!U 

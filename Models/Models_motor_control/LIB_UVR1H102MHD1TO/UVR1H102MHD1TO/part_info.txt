@@ -1,0 +1,9 @@
+Manufacturer=Nichicon
+PartNumber=UVR1H102MHD1TO
+PartCategory=Capacitor Polarised
+PackageCategory=Capacitor, Polarized Radial Diameter
+PinCount=2
+Version=1.1
+Released=2019-06-14 08:44:03
+Downloaded=2019-08-03 22:03:31
+3D=Y

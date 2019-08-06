@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'RK73H1JTTD3301F'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "KOA Speer", "RK73H1JTTD3301F" (!) = "", "RESC1608X55N", "Resistor Chip", "660-RK73H1JTTD3301F", "https://www.mouser.com/Search/Refine.aspx?Keyword=660-RK73H1JTTD3301F", "6316519P", "http://uk.rs-online.com/web/p/products/6316519P", "Thick Film Resistors - SMD 1/10watt 3.3Kohms 1%", "http://www.koaspeer.com/catimages/Products/RK73-RT/RK73-RT.pdf", "0.55 mm"
+END_PART
+
+END.

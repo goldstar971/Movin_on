@@ -1,0 +1,5 @@
+Manufacturer=Panasonic
+PartNumber=EEE-FT1H331AP
+Version=2.1
+Released=2019-02-28 13:52:06
+3D=Y

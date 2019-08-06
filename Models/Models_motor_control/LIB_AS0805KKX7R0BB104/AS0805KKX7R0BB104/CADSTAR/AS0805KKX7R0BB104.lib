@@ -1,0 +1,18 @@
+.AS0805KKX7R0BB104 :1 ;Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200
+CAPC2012X145N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN AS0805KKX7R0BB104
+~!Manufacturer_Name (YAGEO (PHYCOMP))
+~!Manufacturer_Part_Number (AS0805KKX7R0BB104)
+~!Mouser Part Number (603-AS0805KKX70BB104)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104)
+~!RS Part Number (-)
+~!RS Price/Stock (-)
+~!Link Datasheet (https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf)
+~!Height (1.45mm)
+~!3D_Model (AS0805KKX7R0BB104)
+AS0805KKX7R0BB104
+1.1!U 2.1!U 
