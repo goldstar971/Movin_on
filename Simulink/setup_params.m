@@ -1,8 +1,7 @@
-L=.299; % stator inductance
+L=.0000245; % stator inductance
 R=.065; %rotor resistance
-J=3; %torque coefficient
-P=14; %number of magnetic pole pairs
-phi=3;%permanent magnetic flux
+P=7; %number of magnetic pole pairs
 KV=130; % motor KV rating
-ts=1/20000; % switching frequency
-ob
+sf=35000; % switching frequency
+PWM_EN=1;
+flux_linkage=60/(sqrt(3)*P*KV*pi);

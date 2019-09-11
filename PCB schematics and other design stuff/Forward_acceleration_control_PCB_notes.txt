@@ -98,5 +98,3 @@ CANBUS:
 		1x  connected between pin 2 of Reg1 and the dig GND plane (C2)
 		1x  connected between pin 3 of Reg1 and the dig GND plane (C3) 
 
-assorted decoupling capacitors
-1x IMU

@@ -50,6 +50,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -94,8 +96,6 @@ void Error_Handler(void);
 #define En_Gate_GPIO_Port GPIOE
 #define Fault_Pin GPIO_PIN_15
 #define Fault_GPIO_Port GPIOE
-#define Wakeup_Pin GPIO_PIN_14
-#define Wakeup_GPIO_Port GPIOD
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
