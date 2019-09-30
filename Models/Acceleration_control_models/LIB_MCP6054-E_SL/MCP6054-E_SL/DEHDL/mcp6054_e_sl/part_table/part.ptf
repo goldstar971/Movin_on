@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MCP6054_E_SL'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Microchip", "MCP6054-E/SL" (!) = "", "SOIC127P600X175-14N", "Small Outline Packages", "579-MCP6054-E/SL", "https://www.mouser.com/Search/Refine.aspx?Keyword=579-MCP6054-E%2FSL", "Quad 1.8V 300kHz Op Amp, E temp", "https://componentsearchengine.com/Datasheets/1/MCP6054-E_SL.pdf", "1.75 mm"
+END_PART
+
+END.

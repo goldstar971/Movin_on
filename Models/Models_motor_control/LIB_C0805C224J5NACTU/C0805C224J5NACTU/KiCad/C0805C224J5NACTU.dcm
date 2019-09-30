@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C0805C224J5NACTU
+D KEMET 220nF Multilayer Ceramic Capacitor MLCC 50V dc +/-5% X8L Dielectric 0805 (2012M), Max. Temp. +150C
+K
+F https://componentsearchengine.com/Datasheets/1/C0805C224J5NACTU.pdf
+$ENDCMP
+#
+#End Doc Library

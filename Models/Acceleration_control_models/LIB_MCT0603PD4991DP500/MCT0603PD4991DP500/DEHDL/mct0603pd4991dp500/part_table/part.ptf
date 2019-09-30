@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MCT0603PD4991DP500'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Vishay", "MCT0603PD4991DP500" (!) = "", "RESC1608X55N", "Resistor Chip", "594-MCT0603PD4991DP5", "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5", "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power", "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf", "0.55 mm"
+END_PART
+
+END.

@@ -1,0 +1,9 @@
+Manufacturer=Vishay
+PartNumber=MCT0603PD4991DP500
+PartCategory=Resistor
+PackageCategory=Resistor Chip
+PinCount=2
+Version=1.1
+Released=2017-08-03 11:18:28
+Downloaded=2019-09-11 15:36:42
+3D=Y

@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_360966"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-12-04-06:06:15)
+    (utime 2019-05-18-06:46:06)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "C0805C224J5NACTU")
+)
+
+
+(pinAssign "ECS_360966"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-12-04-06:06:15)
+    (utime 2019-05-18-06:46:06)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_360966")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "C0805C224J5NACTU")
+)
+
+
+(part "C0805C224J5NACTU"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2018-12-04-06:06:15)
+    (utime 2019-05-18-06:46:06)
+    (packageRef "C0805C224J5NACTU")
+    (pinAssignRef "ECS_360966")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "KEMET 220nF Multilayer Ceramic Capacitor MLCC 50V dc +/-5% X8L Dielectric 0805 (2012M), Max. Temp. +150C")
+    (property "Mouser_Part_Number" "80-C0805C224J5N")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805C224J5N")
+    (property "Manufacturer_Name" "Kemet")
+    (property "Manufacturer_Part_Number" "C0805C224J5NACTU")
+    (property "Datasheet_Link" "https://componentsearchengine.com/Datasheets/1/C0805C224J5NACTU.pdf")
+    (property "compAreaTopHeight" 1.4)
+)
+
+

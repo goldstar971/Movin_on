@@ -1,0 +1,16 @@
+.LIS2DTW12TR :1 ;STMICROELECTRONICS - LIS2DTW12TR - MEMS MODULE, TRI-AXIS ACCELEROMETER
+IIS2MDCTR
+*STM AC
+*NGS
+*PLB 1="SCL/SPC" 2="CS" 3="SDO/SA0" 4="SDA/SDI/SDO" 5="NC" 6="GND_1" 7="RES" 8="GND_2" 9="VDD" 10="VDDIO" 11="INT2" 12="INT1"
+*MXP 12
+*DFN LIS2DTW12TR
+~!Mouser Part Number (511-LIS2DTW12TR)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=511-LIS2DTW12TR)
+~!Manufacturer_Name (STMicroelectronics)
+~!Manufacturer_Part_Number (LIS2DTW12TR)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/LIS2DTW12TR.pdf)
+~!Height (0.7mm)
+~!3D_Model (LIS2DTW12TR)
+LIS2DTW12TR
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 

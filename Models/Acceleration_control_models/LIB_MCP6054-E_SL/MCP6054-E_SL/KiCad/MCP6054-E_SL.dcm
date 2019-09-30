@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP6054-E_SL
+D Quad 1.8V 300kHz Op Amp, E temp
+K
+F https://componentsearchengine.com/Datasheets/1/MCP6054-E_SL.pdf
+$ENDCMP
+#
+#End Doc Library

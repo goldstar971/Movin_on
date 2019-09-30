@@ -1,0 +1,9 @@
+Manufacturer=STMicroelectronics
+PartNumber=LIS2DTW12TR
+PartCategory=Accelerometer
+PackageCategory=Other
+PinCount=12
+Version=1.1
+Released=2019-06-04 20:15:46
+Downloaded=2019-09-11 15:41:03
+3D=Y

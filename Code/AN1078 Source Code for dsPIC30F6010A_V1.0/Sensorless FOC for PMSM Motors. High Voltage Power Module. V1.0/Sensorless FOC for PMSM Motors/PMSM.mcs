@@ -1,0 +1,271 @@
+[Header]
+MagicCookie={0b13fe8c-dfe0-40eb-8900-6712719559a7}
+Version=1.0
+[File000]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\bin2dec.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File001]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\CalcRef.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File002]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\clrkpark.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File003]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\config.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File004]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\Int2Ascii.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File005]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\InvClark.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File006]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\InvPark.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File007]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\LCD.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File008]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\openloop.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File009]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\pi.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File010]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\PMSM.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File011]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\ReadADC0.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File012]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\SVGEN.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File013]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\trig.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File014]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\uart.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File015]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\smcpos.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File016]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\MeasCurr.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File017]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\encoder.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File018]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\calcVel.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={DE18EB1A-B46B-486B-B96F-A811A635DFAC}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File019]
+Location=C:\Projects\Sensorless Field Oriented Control for PMSM\Application Note\Software\Sensorless FOC for PMSM Motors. High Voltage Power Module. V1.0\Sensorless FOC for PMSM Motors\init6010a.o
+Folder=Intermediary
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={069BD372-6CA0-40D4-BF2F-5DC806D05083}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=-g
+TraceCmdString=
+[File020]
+Location=PMSM.cof
+Folder=Output
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=--defsym=__ICD2RAM=1 -Map="$(TARGETBASE).map" --report-mem -o"$(TARGETBASE).$(TARGETSUFFIX)"
+TraceCmdString=
+[File021]
+Location=PMSM.hex
+Folder=Output
+DeviceName=dsPIC30F6010A
+LanguageToolSuiteID={479DDE59-4D56-455E-855E-FFF59A3DB57E}
+LanguageToolID={433C3D55-811D-409D-A6BF-159CF9355B42}
+LanguageToolLocation=C:\Program Files\Microchip\MPLAB C30\bin\pic30-ld.exe
+PPAD=$(BINDIR)||$(TMPDIR)||$(AINDIR)||$(INCDIR)||$(LIBDIR)|C:\Program Files\Microchip\MPLAB C30\lib||$(LKRDIR)||
+SOLK=<src>|bin2dec.c|CalcRef.s|clrkpark.s|config.s|Int2Ascii.S|InvClark.s|InvPark.s|LCD.c|openloop.s|pi.s|PMSM.c|ReadADC0.s|SVGEN.S|trig.s|uart.c|smcpos.c|MeasCurr.s|encoder.c|calcVel.s|init6010a.c||<obj>||<lib>||<lkr>|C:\Program Files\Microchip\MPLAB C30\support\gld\p30f6010A.gld||
+SuiteArgsString=
+ToolArgsString=--defsym=__ICD2RAM=1 -Map="$(TARGETBASE).map" --report-mem -o"$(TARGETBASE).$(TARGETSUFFIX)"
+TraceCmdString=
+[TOOL_LOC_STAMPS]
+tool_loc{DE18EB1A-B46B-486B-B96F-A811A635DFAC}=C:\Program Files\Microchip\MPLAB C30\bin\pic30-as.exe
+tool_loc{069BD372-6CA0-40D4-BF2F-5DC806D05083}=C:\Program Files\Microchip\MPLAB C30\bin\pic30-gcc.exe
+tool_loc{433C3D55-811D-409D-A6BF-159CF9355B42}=C:\Program Files\Microchip\MPLAB C30\bin\pic30-ld.exe

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'LIS2DTW12TR'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "STMicroelectronics", "LIS2DTW12TR" (!) = "", "IIS2MDCTR", "Other", "511-LIS2DTW12TR", "https://www.mouser.com/Search/Refine.aspx?Keyword=511-LIS2DTW12TR", "STMICROELECTRONICS - LIS2DTW12TR - MEMS MODULE, TRI-AXIS ACCELEROMETER", "https://componentsearchengine.com/Datasheets/1/LIS2DTW12TR.pdf", "0.7 mm"
+END_PART
+
+END.

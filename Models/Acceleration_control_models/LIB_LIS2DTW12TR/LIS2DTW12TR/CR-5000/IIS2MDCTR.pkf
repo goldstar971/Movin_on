@@ -1,0 +1,10 @@
+(unit MM)
+
+(package "IIS2MDCTR"
+    (type UNDEF)
+    (uver 2)
+    (mountForm default
+        (footprintRef "IIS2MDCTR")
+        (spec "default")
+    )
+)

@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "LIS2DTW12TR"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-03-20-23:28:45)
+    (mountForm default
+        (footprintRef "IIS2MDCTR")
+        (spec "System")
+    )
+)

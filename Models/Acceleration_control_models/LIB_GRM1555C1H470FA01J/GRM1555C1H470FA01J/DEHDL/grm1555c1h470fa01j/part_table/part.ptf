@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'GRM1555C1H470FA01J'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Murata Electronics", "GRM1555C1H470FA01J" (!) = "", "CAPC1005X55N", "Capacitor Chip Non-polarised", "81-GRM1555C1H470FA1J", "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM1555C1H470FA1J", "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 47pF 50volts C0G 1%", "https://componentsearchengine.com/Datasheets/1/GRM1555C1H470FA01J.pdf", "0.55 mm"
+END_PART
+
+END.

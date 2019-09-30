@@ -1,0 +1,16 @@
+.MCP6054-E_SL :1 ;Quad 1.8V 300kHz Op Amp, E temp
+SOIC127P600X175-14N
+*STM IC
+*NGS
+*PLB 1="VOUTA" 2="VINA-" 3="VINA+" 4="VDD" 5="VINB+" 6="VINB-" 7="VOUTB" 8="VOUTC" 9="VINC-" 10="VINC+" 11="VSS" 12="VIND+" 13="VIND-" 14="VOUTD"
+*MXP 14
+*DFN MCP6054-E_SL
+~!Mouser Part Number (579-MCP6054-E/SL)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=579-MCP6054-E%2FSL)
+~!Manufacturer_Name (Microchip)
+~!Manufacturer_Part_Number (MCP6054-E/SL)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/MCP6054-E_SL.pdf)
+~!Height (1.75mm)
+~!3D_Model (MCP6054-E_SL)
+MCP6054-E_SL
+1.1!Y 2.1!I 3.1!I 4.1!P 5.1!I 6.1!I 7.1!Y 14.1!Y 13.1!I 12.1!I 11.1!G 10.1!I 9.1!I 8.1!Y 

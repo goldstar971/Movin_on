@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP4728A1T-E_UN
+D Digital to Analog Converters - DAC Quad, 12-bit NV DAC with I2C interface
+K
+F https://componentsearchengine.com/Datasheets/1/MCP4728A1T-E_UN.pdf
+$ENDCMP
+#
+#End Doc Library

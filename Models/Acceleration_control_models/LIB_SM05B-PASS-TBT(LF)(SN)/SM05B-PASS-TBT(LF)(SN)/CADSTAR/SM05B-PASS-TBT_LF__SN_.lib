@@ -1,0 +1,17 @@
+.SM05B-PASS-TBT_LF__SN_ :1 ;CONN HEADER PA 5POS SIDE SMD
+SM05BPASSTBTLFSN
+*STM J
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4" 5="5"
+*MXP 7
+*DFN SM05B-PASS-TBT_LF__SN_
+~!Manufacturer_Name (JST (JAPAN SOLDERLESS TERMINALS))
+~!Manufacturer_Part_Number (SM05B-PASS-TBT(LF)(SN))
+~!Mouser Part Number (-)
+~!Mouser Price/Stock (-)
+~!RS Part Number (-)
+~!RS Price/Stock (-)
+~!Link Datasheet (http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf)
+~!Height (-)
+SM05B-PASS-TBT_LF__SN_
+1.1!U 3.1!U 5.1!U 2.1!U 4.1!U 

@@ -1,0 +1,16 @@
+.C0805C224J5NACTU :1 ;KEMET 220nF Multilayer Ceramic Capacitor MLCC 50V dc +/-5% X8L Dielectric 0805 (2012M), Max. Temp. +150C
+CAPC2012X140N
+*STM C
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN C0805C224J5NACTU
+~!Mouser Part Number (80-C0805C224J5N)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805C224J5N)
+~!Manufacturer_Name (Kemet)
+~!Manufacturer_Part_Number (C0805C224J5NACTU)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/C0805C224J5NACTU.pdf)
+~!Height (1.4mm)
+~!3D_Model (C0805C224J5NACTU)
+C0805C224J5NACTU
+1.1!U 2.1!U 

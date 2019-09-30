@@ -1,0 +1,16 @@
+.MCP4728A1T-E_UN :1 ;Digital to Analog Converters - DAC Quad, 12-bit NV DAC with I2C interface
+SOP50P490X110-10N
+*STM IC
+*NGS
+*PLB 1="VDD" 2="SCL" 3="SDA" 4="'LDAC'" 5="RDY/'BSY'" 6="VOUTA" 7="VOUTB" 8="VOUTC" 9="VOUTD" 10="VSS"
+*MXP 10
+*DFN MCP4728A1T-E_UN
+~!Mouser Part Number (579-MCP4728A1T-E/UN)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=579-MCP4728A1T-E%2FUN)
+~!Manufacturer_Name (Microchip)
+~!Manufacturer_Part_Number (MCP4728A1T-E/UN)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/MCP4728A1T-E_UN.pdf)
+~!Height (1.1mm)
+~!3D_Model (MCP4728A1T-E_UN)
+MCP4728A1T-E_UN
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 10.1!U 9.1!U 8.1!U 7.1!U 6.1!U 

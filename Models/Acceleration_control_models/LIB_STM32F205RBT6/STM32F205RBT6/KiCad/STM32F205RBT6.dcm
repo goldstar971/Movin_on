@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP STM32F205RBT6
+D 
+K
+F https://componentsearchengine.com/Datasheets/1/STM32F205RBT6.pdf
+$ENDCMP
+#
+#End Doc Library

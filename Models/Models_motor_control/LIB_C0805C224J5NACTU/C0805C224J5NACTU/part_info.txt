@@ -1,0 +1,9 @@
+Manufacturer=Kemet
+PartNumber=C0805C224J5NACTU
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=2.1
+Released=2018-12-04 06:06:15
+Downloaded=2019-09-11 04:50:39
+3D=Y

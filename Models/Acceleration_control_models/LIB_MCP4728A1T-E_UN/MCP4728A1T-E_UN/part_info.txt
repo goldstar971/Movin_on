@@ -1,0 +1,9 @@
+Manufacturer=Microchip
+PartNumber=MCP4728A1T-E/UN
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=10
+Version=2.1
+Released=2018-11-13 05:26:04
+Downloaded=2019-09-11 15:40:27
+3D=Y

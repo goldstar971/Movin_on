@@ -1,0 +1,23 @@
+04:05:03 **** Incremental Build of configuration Debug for project DSC ****
+make -j8 all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+/home/matthew/Senior design/Code/Motor_Controller/DSC/Debug
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DSTM32 -DSTM32F7 -DSTM32F765VITx -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: DSC.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -T"/home/matthew/Senior design/Code/Motor_Controller/DSC/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "DSC.elf" @"objects.list"   -lm
+Finished building target: DSC.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "DSC.elf" "DSC.bin"
+arm-none-eabi-size "DSC.elf"
+   text	   data	    bss	    dec	    hex	filename
+   1004	   1080	   1092	   3176	    c68	DSC.elf
+ 
+
+04:05:04 Build Finished (took 513ms)
+

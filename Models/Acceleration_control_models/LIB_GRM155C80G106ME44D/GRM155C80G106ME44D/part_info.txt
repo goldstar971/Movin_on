@@ -1,0 +1,9 @@
+Manufacturer=Murata Electronics
+PartNumber=GRM155C80G106ME44D
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=1.1
+Released=2019-07-06 00:23:06
+Downloaded=2019-09-11 18:29:58
+3D=Y

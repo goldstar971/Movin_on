@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'GRM155C81C105ME11J'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT", "TJ", "TKNEE", "VALUE", "MTBF", "VOLTAGE", "SUBTYPE", "PACKAGE", "TOLERANCE", "CURRENT", "ESR";
+{========================================================================================}
+ "Murata Electronics", "GRM155C81C105ME11J" (!) = "", "CAPC1005X55N", "Capacitor Chip Non-polarised", "81-GRM155C81C105ME1J", "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM155C81C105ME1J", "", "", "Multilayer Ceramic Capacitors MLCC - SMD/SMT", "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf", "0.55 mm", "105", "", "1u", "", "16", "CERAMIC CHIP SMD", "0402", "20%", "", ""
+END_PART
+
+END.

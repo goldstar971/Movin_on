@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'C0805C224J5NACTU'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Kemet", "C0805C224J5NACTU" (!) = "", "CAPC2012X140N", "Capacitor Chip Non-polarised", "80-C0805C224J5N", "https://www.mouser.com/Search/Refine.aspx?Keyword=80-C0805C224J5N", "KEMET 220nF Multilayer Ceramic Capacitor MLCC 50V dc +/-5% X8L Dielectric 0805 (2012M), Max. Temp. +150C", "https://componentsearchengine.com/Datasheets/1/C0805C224J5NACTU.pdf", "1.4 mm"
+END_PART
+
+END.

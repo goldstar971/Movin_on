@@ -1,38 +1,38 @@
 Item #,*Ref Des,*Qty,Manufacturer,*Mfg Part #,Description / Value,*Package,Type
-1,1,"RECV, BUSCNT",,,,,SMD
-2,10,"C1, C30, C39, C40, C41, C42, C43, C44, C45,C46",,,,,SMD
-5,3,"C10, C11, C12",,,,,SMD
-6,11,"C13, C14, C15, C16, C22, C23, C24, C25, C26, C36, C37",,,,,SMD
-7,2,"C17, C18",,,,,DNS
-8,1,C19,,,,,SMD
-3,3,"C2, C3, C35",,,,,SMD
-9,1,C20,,,,,SMD
-10,1,C21,,,,,SMD
-11,3,"C27, C28, C29",,,,,SMD
-12,1,C31,,,,,SMD
-13,1,C34,,,,,SMD
-4,9,"C4, C5, C6, C7, C8, C9, C32, C33, C38",,,,,SMD
-15,1,CAN_TR,,,,,SMD
-16,3,"CS1, CS2, CS3",,,,,SMD
-17,1,D1,,,,,SMD
-18,1,D2,,,,,SMD
-19,1,D3,,,,,SMD
-20,1,DRV,,,,,SMD
-21,1,DSC,,,,,SMD
-22,1,L1,,,,,SMD
-28,6,"Q1, Q2, Q3, Q4, Q5, Q6",,,,,SMD
-29,5,"R1, R2, R12, R13, R14",,,,,SMD
-32,2,"R15, R21",,,,,SMD
-33,1,R16,,,,,SMD
-34,1,R17,,,,,SMD
-35,1,R18,,,,,SMD
-36,1,R19,,,,,SMD
-37,1,R20,,,,,SMD
-38,4,"R22, R23, R24, R25",,,,,SMD
-39,4,"R26, R27, R28, R29",Panasonic Electrical Components,ERJ-3EKF3902V,39 kohm resistor,0603,SMD
-30,6,"R3, R4, R5, R6, R7, R8",,RK73H1JTTD4R70F,R=4.7 ohms,,SMD
-31,3,"R9, R10, R11",,WSLP27261L000FEA,Shunt with resistance 1 mohm,,SMD
-43,1,Reg,Microchip Technology,TC2117-3.3VDBTR,"Low noise, 3.3 volt, .8A regulator ",SOT-223-3 ,SMD
-41,1,RTEMP,Murata,NCP18XH103F03RB,thermistors 10kohm 1%,0603,SMD
-42,1,RTERM,Panasonic Electrical Components,ERA-3AEB121V ,120 ohm resistor,0603,SMD
-44,1,SWD,JST Sales America Inc., SM05B-PASS-TBT(LF)(SN) ,"5 way, solderless terminal right angle shrouded male header,with 2mm pitch ",N\A,SMD
+1,10,"C1, C30, C39, C40, C41, C42, C43, C44, C45,C46",Yageo,AS0805KKX7R0BB104,100 nF,805,SMD
+2,3,"C10, C11, C12",Murata,GCM155R71H472KA37D ,4.7nF 50V,0402,SMD
+3,11,"C13, C14, C15, C16, C22, C23, C24, C25, C26, C36, C37",TDK ,C3216X7R1H225K160AE ,2.2 uf,1206,SMD
+4,2,"C17, C18", Nichicon,UVR1H102MHD1TO,1mF radial aluminum electrolytic capacitors ,N\a,DNS
+5,1,C19,TDK ,CGA3E2C0G1H682J080AD,6.8 nf,0603,SMD
+6,3,"C2, C3, C35",Murata,GRM155C81C105ME11J,1 uf,0402,SMD
+7,1,C20,KEMET,C0603C121J5GACTU,120 pf,0603,SMD
+8,1,C21,TDK ,CGA3E2X7R1H223K080AA,22 nf,0603,SMD
+9,3,"C27, C28, C29",KEMET,C0805C224J5NACTU ,220 nf,0805,SMD
+10,1,C31,Wurth Electronics,875015119003,100uf aluminum organic polymer,n\a,SMD
+11,1,C34,KEMET,C0603C153J3GACTU ,15 nf,0603,SMD
+12,9,"C4, C5, C6, C7, C8, C9, C32, C33, C38",TDK ,CGA6M3X7S2A475K200AB,4.7 UF 100V ,1210,SMD
+13,1,CAN_TR,Texas Instruments,SN65HVD232DR,"CAN transceiver,",8-SOIC,SMD
+14,3,"CS1, CS2, CS3",Analog Devices Inc.,AD8418ABRMZ ,"current sense amplifier, 100 DB CMRR 20 V/V gain, bidirectional, zero drift ",8-MSOP,SMD
+15,1,D1,Nexperia USA Inc,PMEG6020ER-115 ,"Schottky diode, 60V 2A",SOD-123W,SMD
+16,1,D2,Lite-On Inc.,LTST-C191KGKT,LED Green,0603,SMD
+17,1,D3,Lite-On Inc.,LTST-C191KRKT,LED Red,0603,SMD
+18,1,DRV,Texas Instruments,DRV8302DCAR,"3 Phase Motor Pre-driver, 1.5 amp buck converter, 2 high accuracy current sensors, ",HTSSOP-56,SMD
+19,1,DSC,STMicroelectronics,STM32F765VIT6,"Cortex M7, 2MB FLASH, 216 MHz 32-bit CPU 512KB RAM, 140 GPIO,CAN",LQFP-100,SMD
+20,1,L1,bourns,SDR0805-220ML ,Power inductor with L=22uh and 1.5 A max forward current,n\a,SMD
+21,6,"Q1, Q2, Q3, Q4, Q5, Q6",infineon,IRFS7730TRLPBF,"1 Channel Power NMOS, 75 volt Vds, 195 A drain current ",TO-263-3 ,SMD
+22,5,"R1, R2, R12, R13, R14",KOA Speer ,RK73H1JTTD1000F,100ohm,0603,SMD
+23,2,"R15, R21",KOA Speer ,RK73H1JTTD1002F,10kohm,0603,SMD
+24,1,R16,KOA Speer ,RK73H1JTTD3301F,3.3kohms,0603,SMD
+25,1,R17,KOA Speer ,RK73H1JTTD1802F,18kohm,0603,SMD
+26,1,R18,KOA Speer ,RK73H1JTTD1502F,15kohms,0603,SMD
+27,1,R19,KOA Speer ,RK73H1JTTD2203F,220kohm,0603,SMD
+28,1,R20,KOA Speer ,RK73H1JTTD1004F,1000kohm,0603,SMD
+29,4,"R22, R23, R24, R25",KOA Speer ,RK73H1JTTD2201F,2.2kohms,0603,SMD
+30,4,"R26, R27, R28, R29",Panasonic Electrical Components,ERJ-3EKF3902V,39 kohm resistor,0603,SMD
+31,6,"R3, R4, R5, R6, R7, R8",KOA Speer ,RK73H1JTTD4R70F,R=4.7 ohms,0603,SMD
+32,3,"R9, R10, R11",Vishay/ Dale,WSLP27261L000FEA,Shunt with resistance 1 mohm,n\a,SMD
+33,2,"RECV, BUSCNT",JST Sales America Inc., SM04B-PASS-TBT(LF)(SN) ,"4 way, solderless terminal right angle shrouded male header,with 2mm pitch ",N\A,SMD
+34,1,Reg,Microchip Technology,TC2117-3.3VDBTR,"Low noise, 3.3 volt, .8A regulator ",SOT-223-3 ,SMD
+35,1,RTEMP,Murata,NCP18XH103F03RB,thermistors 10kohm 1%,0603,SMD
+36,1,RTERM,Panasonic Electrical Components,ERA-3AEB121V ,120 ohm resistor,0603,SMD
+37,1,SWD,JST Sales America Inc., SM05B-PASS-TBT(LF)(SN) ,"5 way, solderless terminal right angle shrouded male header,with 2mm pitch ",N\A,SMD

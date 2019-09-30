@@ -1,0 +1,9 @@
+Manufacturer=Microchip
+PartNumber=MCP6054-E/SL
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=14
+Version=2.2
+Released=2015-04-16 09:48:08
+Downloaded=2019-09-11 15:34:38
+3D=Y

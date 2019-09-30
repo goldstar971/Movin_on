@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'SM04B_PASS_TBT(LF)(SN)'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "RS_PART_NUMBER", "RS_PRICE/STOCK", "DESCRIPTION", "DATASHEET";
+{========================================================================================}
+ "JST (JAPAN SOLDERLESS TERMINALS)", "SM04B-PASS-TBT(LF)(SN)" (!) = "", "SM04B-PASS-TBT", "Other", "", "", "", "", "JST (JAPAN SOLDERLESS TERMINALS) - SM04B-PASS-TBT(LF)(SN) - CONNECTOR, HEADER, 4POS, 1ROW, 2MM", "http://www.jst-mfg.com/product/pdf/eng/ePA-F.pdf"
+END_PART
+
+END.

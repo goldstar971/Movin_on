@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "CGA6M3X7S2A475K200AB"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2019-04-24-02:59:19)
+    (mountForm default
+        (footprintRef "CAPC3225X200N")
+        (spec "System")
+    )
+)
