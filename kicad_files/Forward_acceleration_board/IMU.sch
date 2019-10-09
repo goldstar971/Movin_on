@@ -1,0 +1,241 @@
+EESchema Schematic File Version 4
+LIBS:Forward_acceleration_board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LIS2DTW12TR:LIS2DTW12TR IMU1
+U 1 1 5D9EF22B
+P 4550 3500
+F 0 "IMU1" H 5350 2850 50  0000 C CNN
+F 1 "LIS2DTW12TR" H 5300 3674 50  0000 C CNN
+F 2 "LIS2DTW12TR:IIS2MDCTR" H 5900 3600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/LIS2DTW12TR.pdf" H 5900 3500 50  0001 L CNN
+F 4 "STMICROELECTRONICS - LIS2DTW12TR - MEMS MODULE, TRI-AXIS ACCELEROMETER" H 5900 3400 50  0001 L CNN "Description"
+F 5 "0.7" H 5900 3300 50  0001 L CNN "Height"
+F 6 "511-LIS2DTW12TR" H 5900 3200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=511-LIS2DTW12TR" H 5900 3100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "STMicroelectronics" H 5900 3000 50  0001 L CNN "Manufacturer_Name"
+F 9 "LIS2DTW12TR" H 5900 2900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCT0603PD4991DP500:MCT0603PD4991DP500 R33
+U 1 1 5D9EFD57
+P 2750 2750
+F 0 "R33" V 3054 2838 50  0000 L CNN
+F 1 "5k" V 3145 2838 50  0000 L CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 3300 2800 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 3300 2700 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 3300 2600 50  0001 L CNN "Description"
+F 5 "0.55" H 3300 2500 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD4991DP5" H 3300 2400 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 3300 2300 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 3300 2200 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD4991DP500" H 3300 2100 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2750 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L MCT0603PD4991DP500:MCT0603PD4991DP500 R34
+U 1 1 5D9EFE90
+P 3100 2800
+F 0 "R34" V 3404 2888 50  0000 L CNN
+F 1 "5k" V 3495 2888 50  0000 L CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 3650 2850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 3650 2750 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 3650 2650 50  0001 L CNN "Description"
+F 5 "0.55" H 3650 2550 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD4991DP5" H 3650 2450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 3650 2350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 3650 2250 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD4991DP500" H 3650 2150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3100 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 3800 2750 3800
+Wire Wire Line
+	2750 3800 2750 3450
+Wire Wire Line
+	3100 3500 4550 3500
+Text Label 6400 3800 0    50   ~ 0
+VDDIO
+Text Label 4550 3600 2    50   ~ 0
+VDDIO
+NoConn ~ 4550 3900
+$Comp
+L power:GND #PWR0152
+U 1 1 5D9F0090
+P 6050 3600
+F 0 "#PWR0152" H 6050 3350 50  0001 C CNN
+F 1 "GND" V 6055 3472 50  0000 R CNN
+F 2 "" H 6050 3600 50  0001 C CNN
+F 3 "" H 6050 3600 50  0001 C CNN
+	1    6050 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0153
+U 1 1 5D9F00CC
+P 4550 4000
+F 0 "#PWR0153" H 4550 3750 50  0001 C CNN
+F 1 "GND" V 4555 3872 50  0000 R CNN
+F 2 "" H 4550 4000 50  0001 C CNN
+F 3 "" H 4550 4000 50  0001 C CNN
+	1    4550 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 3500 6050 3600
+Connection ~ 6050 3600
+Text Label 6050 3700 0    50   ~ 0
+vdd
+Text HLabel 2750 2750 1    50   Input ~ 0
+SDA
+Text HLabel 3100 2800 1    50   Input ~ 0
+SCL
+NoConn ~ 6050 3900
+Text HLabel 6050 4000 2    50   Input ~ 0
+data_ready
+$Comp
+L power:GND #PWR0154
+U 1 1 5DAEA2FA
+P 4550 3700
+F 0 "#PWR0154" H 4550 3450 50  0001 C CNN
+F 1 "GND" V 4555 3572 50  0000 R CNN
+F 2 "" H 4550 3700 50  0001 C CNN
+F 3 "" H 4550 3700 50  0001 C CNN
+	1    4550 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L GRM155C80G106ME44D:GRM155C80G106ME44D C30
+U 1 1 5DAEA3F4
+P 8050 3600
+F 0 "C30" V 8254 3728 50  0000 L CNN
+F 1 ".1u" V 8345 3728 50  0000 L CNN
+F 2 "GRM155C91C105ME11J:CAPC1005X55N" H 8400 3650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GRM155C80G106ME44D.pdf" H 8400 3550 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 10UF      4V   20%        0402" H 8400 3450 50  0001 L CNN "Description"
+F 5 "0.55" H 8400 3350 50  0001 L CNN "Height"
+F 6 "81-GRM155C80G106ME44" H 8400 3250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM155C80G106ME44" H 8400 3150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 8400 3050 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM155C80G106ME44D" H 8400 2950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8050 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L AS0805KKX7R0BB104:AS0805KKX7R0BB104 C29
+U 1 1 5DAEA659
+P 7700 3600
+F 0 "C29" V 7904 3728 50  0000 L CNN
+F 1 "10u" V 7995 3728 50  0000 L CNN
+F 2 "AS0805KKX7R0BB104:CAPC2012X145N" H 8050 3650 50  0001 L CNN
+F 3 "https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf" H 8050 3550 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200" H 8050 3450 50  0001 L CNN "Description"
+F 5 "1.45" H 8050 3350 50  0001 L CNN "Height"
+F 6 "YAGEO (PHYCOMP)" H 8050 3250 50  0001 L CNN "Manufacturer_Name"
+F 7 "AS0805KKX7R0BB104" H 8050 3150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "603-AS0805KKX70BB104" H 8050 3050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104" H 8050 2950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 8050 2850 50  0001 L CNN "RS Part Number"
+F 11 "" H 8050 2750 50  0001 L CNN "RS Price/Stock"
+	1    7700 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L AS0805KKX7R0BB104:AS0805KKX7R0BB104 C28
+U 1 1 5DAEA791
+P 7300 3600
+F 0 "C28" V 7504 3728 50  0000 L CNN
+F 1 ".1u" V 7595 3728 50  0000 L CNN
+F 2 "AS0805KKX7R0BB104:CAPC2012X145N" H 7650 3650 50  0001 L CNN
+F 3 "https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf" H 7650 3550 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200" H 7650 3450 50  0001 L CNN "Description"
+F 5 "1.45" H 7650 3350 50  0001 L CNN "Height"
+F 6 "YAGEO (PHYCOMP)" H 7650 3250 50  0001 L CNN "Manufacturer_Name"
+F 7 "AS0805KKX7R0BB104" H 7650 3150 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "603-AS0805KKX70BB104" H 7650 3050 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104" H 7650 2950 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 7650 2850 50  0001 L CNN "RS Part Number"
+F 11 "" H 7650 2750 50  0001 L CNN "RS Price/Stock"
+	1    7300 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0155
+U 1 1 5DAEA827
+P 7100 4100
+F 0 "#PWR0155" H 7100 3850 50  0001 C CNN
+F 1 "GND" H 7105 3927 50  0000 C CNN
+F 2 "" H 7100 4100 50  0001 C CNN
+F 3 "" H 7100 4100 50  0001 C CNN
+	1    7100 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4100 7700 4100
+Connection ~ 7700 4100
+Wire Wire Line
+	7700 4100 7300 4100
+Wire Wire Line
+	7100 3600 7100 3800
+Wire Wire Line
+	6050 3800 7100 3800
+Connection ~ 7300 4100
+Wire Wire Line
+	7300 4100 7100 4100
+Wire Wire Line
+	7100 3600 7300 3600
+Wire Wire Line
+	8050 3600 7950 3600
+$Comp
+L power:+3.3V #PWR0156
+U 1 1 5DAEABD2
+P 7950 3600
+F 0 "#PWR0156" H 7950 3450 50  0001 C CNN
+F 1 "+3.3V" H 7965 3773 50  0000 C CNN
+F 2 "" H 7950 3600 50  0001 C CNN
+F 3 "" H 7950 3600 50  0001 C CNN
+	1    7950 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7950 3600
+Wire Wire Line
+	7950 3600 7700 3600
+Wire Wire Line
+	6050 3700 6950 3700
+Wire Wire Line
+	6950 3700 6950 3450
+Wire Wire Line
+	6950 3450 7700 3450
+Wire Wire Line
+	7700 3450 7700 3600
+Connection ~ 7700 3600
+$Comp
+L power:+3.3V #PWR0157
+U 1 1 5DAEAD41
+P 7300 3600
+F 0 "#PWR0157" H 7300 3450 50  0001 C CNN
+F 1 "+3.3V" V 7315 3728 50  0000 L CNN
+F 2 "" H 7300 3600 50  0001 C CNN
+F 3 "" H 7300 3600 50  0001 C CNN
+	1    7300 3600
+	0    1    1    0   
+$EndComp
+Connection ~ 7300 3600
+$EndSCHEMATC

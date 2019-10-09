@@ -17,4 +17,6 @@
   (lib (name C3216X7R1H225K160AE)(type Legacy)(uri "/home/matthew/Senior design/Models/Acceleration_control_models/Kicad_libs/C3216X7R1H225K160AE.lib")(options "")(descr ""))
   (lib (name AS0805KKX7R0BB104)(type Legacy)(uri "/home/matthew/Senior design/Models/Acceleration_control_models/Kicad_libs/AS0805KKX7R0BB104.lib")(options "")(descr ""))
   (lib (name wirepad)(type Legacy)(uri "/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/wirepad.lib")(options "")(descr ""))
+  (lib (name LIS2DTW12TR)(type Legacy)(uri "/home/matthew/Senior design/Models/Acceleration_control_models/Kicad_libs/LIS2DTW12TR.lib")(options "")(descr ""))
+  (lib (name MAX5815BAUD+)(type Legacy)(uri "/home/matthew/Senior design/Models/Acceleration_control_models/Kicad_libs/MAX5815BAUD+.lib")(options "")(descr ""))
 )

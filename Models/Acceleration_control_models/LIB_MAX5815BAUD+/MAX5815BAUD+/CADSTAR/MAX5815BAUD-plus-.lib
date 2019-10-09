@@ -1,0 +1,16 @@
+.MAX5815BAUD-plus- :1 ;Digital to Analog Converters - DAC MAX5815 Eval Kit
+SOP65P640X110-14N
+*STM IC
+*NGS
+*PLB 1="REF" 2="OUTA" 3="OUTB" 4="GND" 5="OUTC" 6="OUTD" 7="VDD" 8="ADDR1" 9="ADDR0" 10="SCL" 11="SDA" 12="'CLR'" 13="VDDIO" 14="'LDAC'"
+*MXP 14
+*DFN MAX5815BAUD-plus-
+~!Mouser Part Number (700-MAX5815BAUD+)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=700-MAX5815BAUD%2B)
+~!Manufacturer_Name (Maxim Integrated)
+~!Manufacturer_Part_Number (MAX5815BAUD+)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/MAX5815BAUD+.pdf)
+~!Height (1.1mm)
+~!3D_Model (MAX5815BAUD+)
+MAX5815BAUD-plus-
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 14.1!U 13.1!U 12.1!U 11.1!U 10.1!U 9.1!U 8.1!U 

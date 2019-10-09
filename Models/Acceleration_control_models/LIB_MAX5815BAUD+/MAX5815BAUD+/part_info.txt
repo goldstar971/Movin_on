@@ -1,0 +1,9 @@
+Manufacturer=Maxim Integrated
+PartNumber=MAX5815BAUD+
+PartCategory=Integrated Circuit
+PackageCategory=Small Outline Packages
+PinCount=14
+Version=1.1
+Released=2019-08-30 12:18:09
+Downloaded=2019-10-08 16:41:04
+3D=Y

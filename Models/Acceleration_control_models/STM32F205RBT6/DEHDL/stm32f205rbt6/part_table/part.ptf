@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'STM32F205RBT6'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "STMicroelectronics", "STM32F205RBT6" (!) = "", "QFP50P1200X1200X160-64N", "Quad Flat Packages", "511-STM32F205RBT6", "https://www.mouser.com/Search/Refine.aspx?Keyword=511-STM32F205RBT6", "", "https://componentsearchengine.com/Datasheets/1/STM32F205RBT6.pdf", "1.6 mm"
+END_PART
+
+END.

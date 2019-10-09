@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'MAX5815BAUD_'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Maxim Integrated", "MAX5815BAUD+" (!) = "", "SOP65P640X110-14N", "Small Outline Packages", "700-MAX5815BAUD+", "https://www.mouser.com/Search/Refine.aspx?Keyword=700-MAX5815BAUD%2B", "Digital to Analog Converters - DAC MAX5815 Eval Kit", "https://componentsearchengine.com/Datasheets/1/MAX5815BAUD+.pdf", "1.1 mm"
+END_PART
+
+END.

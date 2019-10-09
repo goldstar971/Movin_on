@@ -1,0 +1,9 @@
+Manufacturer=STMicroelectronics
+PartNumber=STM32F205RBT6
+PartCategory=Integrated Circuit
+PackageCategory=Quad Flat Packages
+PinCount=64
+Version=1.1
+Released=2015-07-22 11:22:39
+Downloaded=2019-10-09 07:19:21
+3D=Y
