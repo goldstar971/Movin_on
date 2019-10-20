@@ -2,21 +2,32 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="CAN" key="selection"/>
+		<item value="ADC_IND" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
-		<item value="true" key="wholeword"/>
+		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="CAN"/>
+			<item value="ADC_IND"/>
+			<item value="m_conf"/>
+			<item value="map"/>
+			<item value="mcpwm_foc_tim_sample_int_handler"/>
+			<item value="flux"/>
+			<item value="M_PI"/>
+			<item value="mcpwm_foc_get_rpm"/>
+			<item value="mcpwm_foc_get_ts"/>
 		</list>
 		<list key="replacehistory">
+			<item value="gpio"/>
+			<item value=""/>
+			<item value="FOC"/>
+			<item value="FOC_H_"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item value="317" key="DIALOG_WIDTH"/>
-		<item value="1|Noto Sans|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
-		<item value="498" key="DIALOG_HEIGHT"/>
+		<item value="305" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="460" key="DIALOG_HEIGHT"/>
 		<item value="1308" key="DIALOG_X_ORIGIN"/>
 		<item value="312" key="DIALOG_Y_ORIGIN"/>
 	</section>

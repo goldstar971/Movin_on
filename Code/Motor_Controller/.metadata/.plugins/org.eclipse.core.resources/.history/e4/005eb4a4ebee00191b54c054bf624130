@@ -1,0 +1,1 @@
+src/SMC.o: ../src/SMC.c

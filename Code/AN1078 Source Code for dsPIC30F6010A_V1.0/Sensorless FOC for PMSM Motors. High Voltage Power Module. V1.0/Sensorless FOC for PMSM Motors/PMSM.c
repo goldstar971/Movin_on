@@ -393,20 +393,7 @@ short TempAng;
 
 		CtrlParm.qVelRef = ADCBUF3/2; // Initial Torque Reference
 
-        #ifdef	SNAPSHOT
-		// Log data in the snapshot buffers
-       	if( uGF.bit.DoSnap )
-        {
-	     SnapBuf1[SnapCount] = SNAP1;
-	     SnapBuf2[SnapCount] = SNAP2;  
-	     SnapBuf3[SnapCount] = SNAP3;   
-	     SnapCount++;    
-         if(SnapCount == SNAPSIZE)
-            {
-				SnapCount = 0;
-            }
-         }
-       	#endif
+       
 
         if(AccumThetaCnt == 0)
 	    {

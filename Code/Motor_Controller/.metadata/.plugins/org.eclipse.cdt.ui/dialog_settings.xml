@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="/home/matthew/Senior design/Code/Motor_Controller/DSC/CMSIS" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
 	<item value="Default C source template" key="LastUsedSourceTemplate"/>
 	<item value="Default C header template" key="LastUsedHeaderTemplate"/>
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
+		<item value="168" key="size.height"/>
+		<item value="442" key="size.width"/>
+	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="PDOMSearchPage">
+		<item value="false" key="caseSensitive"/>
+		<item value="227191" key="searchFlags"/>
+		<list key="previousPatterns">
+			<item value="ADC_Value"/>
+			<item value="GET_CURRENT3"/>
+			<item value="ADC_IND_CURR1"/>
+			<item value="HW_ADC_NBR_CONV"/>
+			<item value="ADC_curr_norm_value"/>
+			<item value="do_dc_cal"/>
+			<item value="ENABLE_GATE"/>
+			<item value="mc_interface_adc_inj_int_handler"/>
+			<item value="mcpwm_foc_set_pid_speed"/>
+			<item value="m_speed_pid_set_rpm"/>
+			<item value="m_conf"/>
+			<item value="foc_observer_gain_slow"/>
+			<item value="mcpwm_foc_tim_sample_int_handler"/>
+			<item value="M_PI"/>
+			<item value="GPIOE"/>
+			<item value="TIM"/>
+			<item value="RCC_CFGR_PPRE1"/>
+			<item value="CAN1"/>
+		</list>
 	</section>
 	<section name="org.eclipse.cdt.internal.ui.preferences.EditTemplateDialog_dialogBounds">
 		<item value="683" key="DIALOG_WIDTH"/>
@@ -10,6 +39,9 @@
 		<item value="364" key="DIALOG_HEIGHT"/>
 		<item value="11" key="DIALOG_X_ORIGIN"/>
 		<item value="112" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item value="0" key="askReindex.detail"/>
 	</section>
 	<section name="completion_proposal_size">
 	</section>

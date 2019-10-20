@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 14, 2019
+ *      Author: matthew
+ */
+#include "timers.h"
+#include "CAN.h"
+#include "main.h"
+#include "stm32f765xx.h"
+#include "sys_clock.h"
+
+int main(void){
+
+//initialize system clock
+System_Clock_init();
+
+
+}
+

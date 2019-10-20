@@ -1,0 +1,22 @@
+src/sys_clock.o: ../src/sys_clock.c \
+ /home/matthew/Senior\ design/Code/Motor_Controller/DSC/inc/sys_clock.h \
+ /home/matthew/Senior\ design/Code/Motor_Controller/DSC/inc/stm32f765xx.h \
+ /home/matthew/Senior\ design/Code/Motor_Controller/DSC/CMSIS/core_cm7.h \
+ /home/matthew/Senior\ design/Code/Motor_Controller/DSC/CMSIS/cmsis_version.h \
+ /home/matthew/Senior\ design/Code/Motor_Controller/DSC/CMSIS/cmsis_compiler.h \
+ /home/matthew/Senior\ design/Code/Motor_Controller/DSC/CMSIS/cmsis_gcc.h \
+ /home/matthew/Senior\ design/Code/Motor_Controller/DSC/CMSIS/mpu_armv7.h
+
+/home/matthew/Senior\ design/Code/Motor_Controller/DSC/inc/sys_clock.h:
+
+/home/matthew/Senior\ design/Code/Motor_Controller/DSC/inc/stm32f765xx.h:
+
+/home/matthew/Senior\ design/Code/Motor_Controller/DSC/CMSIS/core_cm7.h:
+
+/home/matthew/Senior\ design/Code/Motor_Controller/DSC/CMSIS/cmsis_version.h:
+
+/home/matthew/Senior\ design/Code/Motor_Controller/DSC/CMSIS/cmsis_compiler.h:
+
+/home/matthew/Senior\ design/Code/Motor_Controller/DSC/CMSIS/cmsis_gcc.h:
+
+/home/matthew/Senior\ design/Code/Motor_Controller/DSC/CMSIS/mpu_armv7.h:

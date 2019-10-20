@@ -1,0 +1,16 @@
+/*
+ * CAN.h
+ *
+ *  Created on: Sep 17, 2019
+ *      Author: matthew
+ */
+
+#ifndef CAN_H_
+#define CAN_H_
+
+void CAN1_RX0_IRQHandler(void);
+void init_can(void);
+void can_transmit(void);
+
+
+#endif /* CAN_H_ */

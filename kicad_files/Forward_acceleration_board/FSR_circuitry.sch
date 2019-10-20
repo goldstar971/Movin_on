@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:Forward_acceleration_board-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,23 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCT0603PD4991DP500:MCT0603PD4991DP500 R1
-U 1 1 5D8DB984
-P 1500 1550
-F 0 "R1" H 1850 1335 50  0000 C CNN
-F 1 "5k" H 1850 1426 50  0000 C CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 2050 1600 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 2050 1500 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 2050 1400 50  0001 L CNN "Description"
-F 5 "0.55" H 2050 1300 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD4991DP5" H 2050 1200 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 2050 1100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 2050 1000 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD4991DP500" H 2050 900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    1500 1550
-	-1   0    0    1   
-$EndComp
 $Comp
 L MCT0603PD2002DP500:MCT0603PD2002DP500 R2
 U 1 1 5D8DBD51
@@ -143,19 +126,19 @@ Wire Wire Line
 $Comp
 L MCT0603PD4991DP500:MCT0603PD4991DP500 R5
 U 1 1 5D8DDA42
-P 2850 1550
-F 0 "R5" H 3200 1335 50  0000 C CNN
-F 1 "5k" H 3200 1426 50  0000 C CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 3400 1600 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 3400 1500 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 3400 1400 50  0001 L CNN "Description"
-F 5 "0.55" H 3400 1300 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD4991DP5" H 3400 1200 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 3400 1100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 3400 1000 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD4991DP500" H 3400 900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2850 1550
-	-1   0    0    1   
+P 2150 1550
+F 0 "R5" H 2500 1335 50  0000 C CNN
+F 1 "5k" H 2500 1426 50  0000 C CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 2700 1600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 2700 1500 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 2700 1400 50  0001 L CNN "Description"
+F 5 "0.55" H 2700 1300 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD4991DP5" H 2700 1200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 2700 1100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 2700 1000 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD4991DP500" H 2700 900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2150 1550
+	1    0    0    -1  
 $EndComp
 $Comp
 L MCT0603PD2002DP500:MCT0603PD2002DP500 R6
@@ -235,19 +218,19 @@ Wire Wire Line
 $Comp
 L MCT0603PD4991DP500:MCT0603PD4991DP500 R9
 U 1 1 5D8DDB84
-P 4050 1550
-F 0 "R9" H 4400 1335 50  0000 C CNN
-F 1 "5k" H 4400 1426 50  0000 C CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 4600 1600 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 4600 1500 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 4600 1400 50  0001 L CNN "Description"
-F 5 "0.55" H 4600 1300 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD4991DP5" H 4600 1200 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 4600 1100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 4600 1000 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD4991DP500" H 4600 900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4050 1550
-	-1   0    0    1   
+P 3350 1550
+F 0 "R9" H 3700 1335 50  0000 C CNN
+F 1 "5k" H 3700 1426 50  0000 C CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 3900 1600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 3900 1500 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 3900 1400 50  0001 L CNN "Description"
+F 5 "0.55" H 3900 1300 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD4991DP5" H 3900 1200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 3900 1100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 3900 1000 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD4991DP500" H 3900 900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3350 1550
+	1    0    0    -1  
 $EndComp
 $Comp
 L MCT0603PD2002DP500:MCT0603PD2002DP500 R10
@@ -325,146 +308,20 @@ Connection ~ 4100 1550
 Wire Wire Line
 	4100 1550 4100 1600
 $Comp
-L MCT0603PD4991DP500:MCT0603PD4991DP500 R17
-U 1 1 5D8DDCBC
-P 5250 1550
-F 0 "R17" H 5600 1335 50  0000 C CNN
-F 1 "5k" H 5600 1426 50  0000 C CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 5800 1600 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 5800 1500 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 5800 1400 50  0001 L CNN "Description"
-F 5 "0.55" H 5800 1300 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD4991DP5" H 5800 1200 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 5800 1100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 5800 1000 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD4991DP500" H 5800 900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5250 1550
-	-1   0    0    1   
-$EndComp
-$Comp
-L MCT0603PD2002DP500:MCT0603PD2002DP500 R18
-U 1 1 5D8DDCC9
-P 5300 800
-F 0 "R18" V 5604 888 50  0000 L CNN
-F 1 "20k" V 5695 888 50  0000 L CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 5850 850 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD2002DP500.pdf" H 5850 750 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 20Kohms .5% 0603 25ppm Hi Power" H 5850 650 50  0001 L CNN "Description"
-F 5 "0.55" H 5850 550 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD2002DP5" H 5850 450 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD2002DP5" H 5850 350 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 5850 250 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD2002DP500" H 5850 150 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5300 800 
-	0    1    1    0   
-$EndComp
-$Comp
-L MCT0603PD1003DP500:MCT0603PD1003DP500 R19
-U 1 1 5D8DDCD6
-P 5300 1600
-F 0 "R19" V 5604 1688 50  0000 L CNN
-F 1 "100k" V 5695 1688 50  0000 L CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 5850 1650 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD1003DP500.pdf" H 5850 1550 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 100Kohms .5% 0603 25ppm Hi Power" H 5850 1450 50  0001 L CNN "Description"
-F 5 "0.55" H 5850 1350 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD1003DP5" H 5850 1250 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD1003DP5" H 5850 1150 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 5850 1050 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD1003DP500" H 5850 950 50  0001 L CNN "Manufacturer_Part_Number"
-	1    5300 1600
-	0    1    1    0   
-$EndComp
-$Comp
-L MCT0603PD4992DP500:MCT0603PD4992DP500 R24
-U 1 1 5D8DDCE3
-P 7100 2700
-F 0 "R24" H 7450 2800 50  0000 C CNN
-F 1 "50k" H 7500 2600 50  0000 C CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 7650 2750 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4992DP500.pdf" H 7650 2650 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 49.9Kohms .5% 0603 25ppm Hi Power" H 7650 2550 50  0001 L CNN "Description"
-F 5 "0.55" H 7650 2450 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD4992DP5" H 7650 2350 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4992DP5" H 7650 2250 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 7650 2150 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD4992DP500" H 7650 2050 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7100 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L GRM1555C1H470FA01J:GRM1555C1H470FA01J C14
-U 1 1 5D8DDCF0
-P 7200 3050
-F 0 "C14" H 7450 3200 50  0000 C CNN
-F 1 "47p" H 7450 2900 50  0000 C CNN
-F 2 "GRM155C91C105ME11J:CAPC1005X55N" H 7550 3100 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/GRM1555C1H470FA01J.pdf" H 7550 3000 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 47pF 50volts C0G 1%" H 7550 2900 50  0001 L CNN "Description"
-F 5 "0.55" H 7550 2800 50  0001 L CNN "Height"
-F 6 "81-GRM1555C1H470FA1J" H 7550 2700 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM1555C1H470FA1J" H 7550 2600 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Murata Electronics" H 7550 2500 50  0001 L CNN "Manufacturer_Name"
-F 9 "GRM1555C1H470FA01J" H 7550 2400 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7200 3050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 1500 5300 1550
-Wire Wire Line
-	5250 1550 5300 1550
-Connection ~ 5300 1550
-Wire Wire Line
-	5300 1550 5300 1600
-$Comp
-L MCT0603PD4991DP500:MCT0603PD4991DP500 R21
-U 1 1 5D8DDEF3
-P 6500 1550
-F 0 "R21" H 6850 1335 50  0000 C CNN
-F 1 "5k" H 6850 1426 50  0000 C CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 7050 1600 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 7050 1500 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 7050 1400 50  0001 L CNN "Description"
-F 5 "0.55" H 7050 1300 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD4991DP5" H 7050 1200 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 7050 1100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 7050 1000 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD4991DP500" H 7050 900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    6500 1550
-	-1   0    0    1   
-$EndComp
-$Comp
-L MCT0603PD2002DP500:MCT0603PD2002DP500 R22
-U 1 1 5D8DDF00
-P 6550 800
-F 0 "R22" V 6854 888 50  0000 L CNN
-F 1 "20k" V 6945 888 50  0000 L CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 7100 850 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD2002DP500.pdf" H 7100 750 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 20Kohms .5% 0603 25ppm Hi Power" H 7100 650 50  0001 L CNN "Description"
-F 5 "0.55" H 7100 550 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD2002DP5" H 7100 450 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD2002DP5" H 7100 350 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 7100 250 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD2002DP500" H 7100 150 50  0001 L CNN "Manufacturer_Part_Number"
-	1    6550 800 
-	0    1    1    0   
-$EndComp
-$Comp
 L MCT0603PD1003DP500:MCT0603PD1003DP500 R23
 U 1 1 5D8DDF0D
-P 6550 1600
-F 0 "R23" V 6854 1688 50  0000 L CNN
-F 1 "100k" V 6945 1688 50  0000 L CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 7100 1650 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD1003DP500.pdf" H 7100 1550 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 100Kohms .5% 0603 25ppm Hi Power" H 7100 1450 50  0001 L CNN "Description"
-F 5 "0.55" H 7100 1350 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD1003DP5" H 7100 1250 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD1003DP5" H 7100 1150 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 7100 1050 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD1003DP500" H 7100 950 50  0001 L CNN "Manufacturer_Part_Number"
-	1    6550 1600
+P 6650 1600
+F 0 "R23" V 6954 1688 50  0000 L CNN
+F 1 "100k" V 7045 1688 50  0000 L CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 7200 1650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD1003DP500.pdf" H 7200 1550 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 100Kohms .5% 0603 25ppm Hi Power" H 7200 1450 50  0001 L CNN "Description"
+F 5 "0.55" H 7200 1350 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD1003DP5" H 7200 1250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD1003DP5" H 7200 1150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 7200 1050 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD1003DP500" H 7200 950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6650 1600
 	0    1    1    0   
 $EndComp
 $Comp
@@ -502,61 +359,61 @@ F 9 "GRM1555C1H470FA01J" H 9100 2300 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 1500 6550 1550
+	6650 1500 6650 1550
 Wire Wire Line
-	6500 1550 6550 1550
-Connection ~ 6550 1550
+	6600 1550 6650 1550
+Connection ~ 6650 1550
 Wire Wire Line
-	6550 1550 6550 1600
+	6650 1550 6650 1600
 $Comp
 L MCT0603PD4991DP500:MCT0603PD4991DP500 R25
 U 1 1 5D8DE13E
-P 7800 1550
-F 0 "R25" H 8150 1335 50  0000 C CNN
-F 1 "5k" H 8150 1426 50  0000 C CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 8350 1600 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 8350 1500 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 8350 1400 50  0001 L CNN "Description"
-F 5 "0.55" H 8350 1300 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD4991DP5" H 8350 1200 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 8350 1100 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 8350 1000 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD4991DP500" H 8350 900 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7800 1550
-	-1   0    0    1   
+P 7300 1550
+F 0 "R25" H 7650 1335 50  0000 C CNN
+F 1 "5k" H 7650 1426 50  0000 C CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 7850 1600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 7850 1500 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 7850 1400 50  0001 L CNN "Description"
+F 5 "0.55" H 7850 1300 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD4991DP5" H 7850 1200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 7850 1100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 7850 1000 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD4991DP500" H 7850 900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7300 1550
+	1    0    0    -1  
 $EndComp
 $Comp
 L MCT0603PD2002DP500:MCT0603PD2002DP500 R26
 U 1 1 5D8DE14B
-P 7850 800
-F 0 "R26" V 8154 888 50  0000 L CNN
-F 1 "20k" V 8245 888 50  0000 L CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 8400 850 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD2002DP500.pdf" H 8400 750 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 20Kohms .5% 0603 25ppm Hi Power" H 8400 650 50  0001 L CNN "Description"
-F 5 "0.55" H 8400 550 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD2002DP5" H 8400 450 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD2002DP5" H 8400 350 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 8400 250 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD2002DP500" H 8400 150 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7850 800 
+P 8050 800
+F 0 "R26" V 8354 888 50  0000 L CNN
+F 1 "20k" V 8445 888 50  0000 L CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 8600 850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD2002DP500.pdf" H 8600 750 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 20Kohms .5% 0603 25ppm Hi Power" H 8600 650 50  0001 L CNN "Description"
+F 5 "0.55" H 8600 550 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD2002DP5" H 8600 450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD2002DP5" H 8600 350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 8600 250 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD2002DP500" H 8600 150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8050 800 
 	0    1    1    0   
 $EndComp
 $Comp
 L MCT0603PD1003DP500:MCT0603PD1003DP500 R27
 U 1 1 5D8DE158
-P 7850 1600
-F 0 "R27" V 8154 1688 50  0000 L CNN
-F 1 "100k" V 8245 1688 50  0000 L CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 8400 1650 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD1003DP500.pdf" H 8400 1550 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 100Kohms .5% 0603 25ppm Hi Power" H 8400 1450 50  0001 L CNN "Description"
-F 5 "0.55" H 8400 1350 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD1003DP5" H 8400 1250 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD1003DP5" H 8400 1150 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 8400 1050 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD1003DP500" H 8400 950 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7850 1600
+P 8050 1600
+F 0 "R27" V 8354 1688 50  0000 L CNN
+F 1 "100k" V 8445 1688 50  0000 L CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 8600 1650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD1003DP500.pdf" H 8600 1550 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 100Kohms .5% 0603 25ppm Hi Power" H 8600 1450 50  0001 L CNN "Description"
+F 5 "0.55" H 8600 1350 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD1003DP5" H 8600 1250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD1003DP5" H 8600 1150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 8600 1050 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD1003DP500" H 8600 950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8050 1600
 	0    1    1    0   
 $EndComp
 $Comp
@@ -594,12 +451,12 @@ F 9 "GRM1555C1H470FA01J" H 10500 2400 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 1500 7850 1550
+	8050 1500 8050 1550
 Wire Wire Line
-	7800 1550 7850 1550
-Connection ~ 7850 1550
+	8000 1550 8050 1550
+Connection ~ 8050 1550
 Wire Wire Line
-	7850 1550 7850 1600
+	8050 1550 8050 1600
 $Comp
 L MCT0603PD4991DP500:MCT0603PD4991DP500 R13
 U 1 1 5D8E16BE
@@ -628,25 +485,12 @@ F 3 "" H 3200 5200 50  0001 C CNN
 	1    3200 5200
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 5D8E353F
-P 3600 6750
-F 0 "#PWR0106" H 3600 6500 50  0001 C CNN
-F 1 "GND" V 3605 6622 50  0000 R CNN
-F 2 "" H 3600 6750 50  0001 C CNN
-F 3 "" H 3600 6750 50  0001 C CNN
-	1    3600 6750
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1550 800  2900 800 
 Connection ~ 2900 800 
 Wire Wire Line
 	2900 800  4100 800 
 Connection ~ 4100 800 
-Wire Wire Line
-	4100 800  5300 800 
 $Comp
 L power:+3.3V #PWR0107
 U 1 1 5D8E6EA9
@@ -659,19 +503,15 @@ F 3 "" H 7450 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7450 800 
-Wire Wire Line
-	7450 800  7850 800 
 Text Label 800  1550 2    50   ~ 0
 dac_1
 Text Label 2150 1550 2    50   ~ 0
 dac_2
 Text Label 3350 1550 2    50   ~ 0
 dac_3
-Text Label 4550 1550 2    50   ~ 0
-dac_4
-Text Label 5800 1550 2    50   ~ 0
+Text Label 5900 1550 2    50   ~ 0
 dac_5
-Text Label 7100 1550 2    50   ~ 0
+Text Label 7300 1550 2    50   ~ 0
 dac_6
 Wire Wire Line
 	1550 2300 2900 2300
@@ -679,8 +519,6 @@ Connection ~ 2900 2300
 Wire Wire Line
 	2900 2300 4100 2300
 Connection ~ 4100 2300
-Wire Wire Line
-	4100 2300 5300 2300
 $Comp
 L power:GND #PWR0108
 U 1 1 5D8EB31F
@@ -693,15 +531,13 @@ F 3 "" H 7300 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7300 2300
-Wire Wire Line
-	7300 2300 7850 2300
 Text Label 6150 4100 0    50   ~ 0
 dac_1
 Text Label 6150 4200 0    50   ~ 0
 dac_2
 Text Label 6150 4400 0    50   ~ 0
 dac_3
-Text Label 6150 4500 0    50   ~ 0
+Text Label 6350 6100 0    50   ~ 0
 dac_4
 Text Label 6350 5700 0    50   ~ 0
 dac_5
@@ -798,37 +634,21 @@ Text Label 1550 1550 0    50   ~ 0
 +ref1
 Text Label 2850 1550 0    50   ~ 0
 +ref2
-Connection ~ 5300 800 
-Connection ~ 5300 2300
-Wire Wire Line
-	5300 2300 6550 2300
-Wire Wire Line
-	5300 800  6550 800 
-Connection ~ 6550 800 
-Connection ~ 6550 2300
-Wire Wire Line
-	6550 800  7450 800 
-Wire Wire Line
-	6550 2300 7300 2300
 Text Label 1850 5100 2    50   ~ 0
 +ref1
 Text Label 1850 5300 2    50   ~ 0
 +ref2
 Text Label 3350 5300 0    50   ~ 0
 +ref3
-Text Label 3350 5100 0    50   ~ 0
-+ref4
 Text Label 2250 6650 2    50   ~ 0
 +ref5
 Text Label 2250 6850 2    50   ~ 0
 +ref6
 Text Label 4100 1550 0    50   ~ 0
 +ref3
-Text Label 5300 1550 0    50   ~ 0
-+ref4
-Text Label 6550 1550 0    50   ~ 0
+Text Label 6650 1550 0    50   ~ 0
 +ref5
-Text Label 7850 1550 0    50   ~ 0
+Text Label 8050 1550 0    50   ~ 0
 +ref6
 $Comp
 L MCT0603PD4991DP500:MCT0603PD4991DP500 R16
@@ -954,10 +774,6 @@ Wire Wire Line
 Wire Wire Line
 	8550 2600 8650 2600
 Wire Wire Line
-	7200 3050 7100 3050
-Wire Wire Line
-	7100 3050 7100 2700
-Wire Wire Line
 	6100 3000 6000 3000
 Wire Wire Line
 	6000 3000 6000 2650
@@ -982,10 +798,6 @@ Wire Wire Line
 Wire Wire Line
 	6700 3000 6600 3000
 Wire Wire Line
-	7800 2700 7800 3050
-Wire Wire Line
-	7800 3050 7700 3050
-Wire Wire Line
 	9350 2600 9350 2950
 Wire Wire Line
 	9350 2950 9250 2950
@@ -997,24 +809,16 @@ Text HLabel 2300 6450 0    50   Output ~ 0
 FSR_out5
 Text HLabel 2300 7050 0    50   Input ~ 0
 FSR_out6
-Text Label 2300 6450 0    50   ~ 0
-out6
 Wire Wire Line
 	2400 6450 2300 6450
 Wire Wire Line
 	2400 7050 2300 7050
-Text Label 2300 7050 0    50   ~ 0
-out5
 Wire Wire Line
 	2000 5500 1850 5500
 Wire Wire Line
 	2000 4900 1850 4900
 Wire Wire Line
-	3200 4900 3400 4900
-Wire Wire Line
 	3200 5500 3400 5500
-Text Label 3250 4900 0    50   ~ 0
-out4
 Text Label 3250 5500 0    50   ~ 0
 out3
 Text Label 1900 5500 0    50   ~ 0
@@ -1026,8 +830,6 @@ FSR_out1
 Text HLabel 1850 5500 0    50   Output ~ 0
 FSR_out2
 Connection ~ 1300 5200
-Text HLabel 3400 4900 2    50   Output ~ 0
-FSR_out4
 Text HLabel 3400 5500 2    50   Output ~ 0
 FSR_out3
 Text Label 4400 2950 0    50   ~ 0
@@ -1036,8 +838,6 @@ Text Label 5500 2900 0    50   ~ 0
 out2
 Text Label 6700 2850 0    50   ~ 0
 out3
-Text Label 7800 2850 0    50   ~ 0
-out4
 Text Label 9350 2750 0    50   ~ 0
 out5
 Text Label 10750 2850 0    50   ~ 0
@@ -1048,20 +848,14 @@ Text Label 1850 5400 2    50   ~ 0
 -ref2
 Text Label 3350 5400 0    50   ~ 0
 -ref3
-Text Label 3350 5000 0    50   ~ 0
--ref4
 Text Label 2250 6550 2    50   ~ 0
 -ref5
 Text Label 2250 6950 2    50   ~ 0
 -ref6
 Wire Wire Line
-	3200 5000 3350 5000
-Wire Wire Line
 	3200 5300 3350 5300
 Wire Wire Line
 	3200 5400 3350 5400
-Wire Wire Line
-	3200 5100 3350 5100
 Wire Wire Line
 	2000 5000 1850 5000
 Wire Wire Line
@@ -1084,169 +878,42 @@ Text Label 4800 2900 2    50   ~ 0
 -ref2
 Text Label 6000 2800 2    50   ~ 0
 -ref3
-Text Label 7100 2750 2    50   ~ 0
--ref4
 Text Label 8550 2750 2    50   ~ 0
 -ref5
 Text Label 10050 2800 2    50   ~ 0
 -ref6
 $Comp
-L power:+3.3V #PWR0115
-U 1 1 5D8E3118
-P 3600 6650
-F 0 "#PWR0115" H 3600 6500 50  0001 C CNN
-F 1 "+3.3V" V 3615 6778 50  0000 L CNN
-F 2 "" H 3600 6650 50  0001 C CNN
-F 3 "" H 3600 6650 50  0001 C CNN
-	1    3600 6650
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0116
-U 1 1 5D8E22C7
-P 3600 6550
-F 0 "#PWR0116" H 3600 6300 50  0001 C CNN
-F 1 "GND" V 3605 6422 50  0000 R CNN
-F 2 "" H 3600 6550 50  0001 C CNN
-F 3 "" H 3600 6550 50  0001 C CNN
-	1    3600 6550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L MCT0603PD4991DP500:MCT0603PD4991DP500 R29
-U 1 1 5D9D08A2
-P 9600 1450
-F 0 "R29" H 9950 1235 50  0000 C CNN
-F 1 "5k" H 9950 1326 50  0000 C CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 10150 1500 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 10150 1400 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 10150 1300 50  0001 L CNN "Description"
-F 5 "0.55" H 10150 1200 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD4991DP5" H 10150 1100 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 10150 1000 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 10150 900 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD4991DP500" H 10150 800 50  0001 L CNN "Manufacturer_Part_Number"
-	1    9600 1450
-	-1   0    0    1   
-$EndComp
-$Comp
-L MCT0603PD2002DP500:MCT0603PD2002DP500 R30
-U 1 1 5D9D08AF
-P 9650 700
-F 0 "R30" V 9954 788 50  0000 L CNN
-F 1 "20k" V 10045 788 50  0000 L CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 10200 750 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD2002DP500.pdf" H 10200 650 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 20Kohms .5% 0603 25ppm Hi Power" H 10200 550 50  0001 L CNN "Description"
-F 5 "0.55" H 10200 450 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD2002DP5" H 10200 350 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD2002DP5" H 10200 250 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 10200 150 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD2002DP500" H 10200 50  50  0001 L CNN "Manufacturer_Part_Number"
-	1    9650 700 
-	0    1    1    0   
-$EndComp
-$Comp
 L MCT0603PD1003DP500:MCT0603PD1003DP500 R31
 U 1 1 5D9D08BC
-P 9650 1500
-F 0 "R31" V 9954 1588 50  0000 L CNN
-F 1 "100k" V 10045 1588 50  0000 L CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 10200 1550 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD1003DP500.pdf" H 10200 1450 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 100Kohms .5% 0603 25ppm Hi Power" H 10200 1350 50  0001 L CNN "Description"
-F 5 "0.55" H 10200 1250 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD1003DP5" H 10200 1150 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD1003DP5" H 10200 1050 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 10200 950 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD1003DP500" H 10200 850 50  0001 L CNN "Manufacturer_Part_Number"
-	1    9650 1500
+P 5400 1600
+F 0 "R31" V 5704 1688 50  0000 L CNN
+F 1 "100k" V 5795 1688 50  0000 L CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 5950 1650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD1003DP500.pdf" H 5950 1550 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 100Kohms .5% 0603 25ppm Hi Power" H 5950 1450 50  0001 L CNN "Description"
+F 5 "0.55" H 5950 1350 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD1003DP5" H 5950 1250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD1003DP5" H 5950 1150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 5950 1050 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD1003DP500" H 5950 950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5400 1600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9650 1400 9650 1450
-Wire Wire Line
-	9600 1450 9650 1450
-Connection ~ 9650 1450
-Wire Wire Line
-	9650 1450 9650 1500
-Text Label 9650 1450 0    50   ~ 0
-+break_ref
-Text Label 8900 1450 2    50   ~ 0
-break_DAC
-Wire Wire Line
-	7850 2300 9650 2300
-Wire Wire Line
 	9650 2300 9650 2200
-Connection ~ 7850 2300
-Wire Wire Line
-	7850 800  9400 800 
 Wire Wire Line
 	9400 800  9400 700 
 Wire Wire Line
 	9400 700  9650 700 
-Connection ~ 7850 800 
 Text Label 6350 6000 0    50   ~ 0
 break_DAC
-Text Label 3600 7050 0    50   ~ 0
-FSR_break
-Text Label 3600 6850 0    50   ~ 0
-+break_ref
-$Comp
-L MCT0603PD4992DP500:MCT0603PD4992DP500 R4
-U 1 1 5D9DDD83
-P 2450 2750
-F 0 "R4" H 2800 2850 50  0000 C CNN
-F 1 "50k" H 2850 2650 50  0000 C CNN
-F 2 "ERJ3RQF4R7V:RESC1608X55N" H 3000 2800 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4992DP500.pdf" H 3000 2700 50  0001 L CNN
-F 4 "Thin Film Resistors - SMD .250W 49.9Kohms .5% 0603 25ppm Hi Power" H 3000 2600 50  0001 L CNN "Description"
-F 5 "0.55" H 3000 2500 50  0001 L CNN "Height"
-F 6 "594-MCT0603PD4992DP5" H 3000 2400 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4992DP5" H 3000 2300 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Vishay" H 3000 2200 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCT0603PD4992DP500" H 3000 2100 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2450 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L GRM1555C1H470FA01J:GRM1555C1H470FA01J C5
-U 1 1 5D9DDD90
-P 2550 3100
-F 0 "C5" H 2800 3250 50  0000 C CNN
-F 1 "47p" H 2800 2950 50  0000 C CNN
-F 2 "GRM155C91C105ME11J:CAPC1005X55N" H 2900 3150 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/GRM1555C1H470FA01J.pdf" H 2900 3050 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 47pF 50volts C0G 1%" H 2900 2950 50  0001 L CNN "Description"
-F 5 "0.55" H 2900 2850 50  0001 L CNN "Height"
-F 6 "81-GRM1555C1H470FA1J" H 2900 2750 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM1555C1H470FA1J" H 2900 2650 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Murata Electronics" H 2900 2550 50  0001 L CNN "Manufacturer_Name"
-F 9 "GRM1555C1H470FA01J" H 2900 2450 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2550 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 3100 2450 3100
-Wire Wire Line
-	2450 3100 2450 2750
-Wire Wire Line
-	3150 2750 3150 3100
-Wire Wire Line
-	3150 3100 3050 3100
-Text Label 3150 2900 0    50   ~ 0
-FSR_break
-Text Label 2450 2950 2    50   ~ 0
--break_ref
-Text Label 3600 6950 0    50   ~ 0
--break_ref
 $Comp
 L Connector:Conn_01x01_Male J3
 U 1 1 5D9E5847
 P 8850 4150
 F 0 "J3" H 8956 4237 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 8956 4237 50  0001 C CNN
-F 2 "" H 8850 4150 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 8850 4150 50  0001 C CNN
 F 3 "~" H 8850 4150 50  0001 C CNN
 	1    8850 4150
 	1    0    0    -1  
@@ -1257,7 +924,7 @@ U 1 1 5D9E58E5
 P 8850 4250
 F 0 "J4" H 8956 4337 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 8956 4337 50  0001 C CNN
-F 2 "" H 8850 4250 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 8850 4250 50  0001 C CNN
 F 3 "~" H 8850 4250 50  0001 C CNN
 	1    8850 4250
 	1    0    0    -1  
@@ -1268,7 +935,7 @@ U 1 1 5D9E59AA
 P 8850 4450
 F 0 "J6" H 8956 4537 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 8956 4537 50  0001 C CNN
-F 2 "" H 8850 4450 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 8850 4450 50  0001 C CNN
 F 3 "~" H 8850 4450 50  0001 C CNN
 	1    8850 4450
 	1    0    0    -1  
@@ -1279,7 +946,7 @@ U 1 1 5D9E5A72
 P 8850 4350
 F 0 "J5" H 8956 4437 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 8956 4437 50  0001 C CNN
-F 2 "" H 8850 4350 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 8850 4350 50  0001 C CNN
 F 3 "~" H 8850 4350 50  0001 C CNN
 	1    8850 4350
 	1    0    0    -1  
@@ -1290,7 +957,7 @@ U 1 1 5D9E5CB8
 P 8850 4550
 F 0 "J7" H 8956 4637 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 8956 4637 50  0001 C CNN
-F 2 "" H 8850 4550 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 8850 4550 50  0001 C CNN
 F 3 "~" H 8850 4550 50  0001 C CNN
 	1    8850 4550
 	1    0    0    -1  
@@ -1301,7 +968,7 @@ U 1 1 5D9E5D3A
 P 8850 4650
 F 0 "J8" H 8956 4737 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 8956 4737 50  0001 C CNN
-F 2 "" H 8850 4650 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 8850 4650 50  0001 C CNN
 F 3 "~" H 8850 4650 50  0001 C CNN
 	1    8850 4650
 	1    0    0    -1  
@@ -1312,7 +979,7 @@ U 1 1 5D9E5DC8
 P 8850 4750
 F 0 "J9" H 8956 4837 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 8956 4837 50  0001 C CNN
-F 2 "" H 8850 4750 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 8850 4750 50  0001 C CNN
 F 3 "~" H 8850 4750 50  0001 C CNN
 	1    8850 4750
 	1    0    0    -1  
@@ -1323,7 +990,7 @@ U 1 1 5D9E5F6F
 P 10300 4050
 F 0 "J10" H 10406 4137 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 10406 4137 50  0001 C CNN
-F 2 "" H 10300 4050 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 10300 4050 50  0001 C CNN
 F 3 "~" H 10300 4050 50  0001 C CNN
 	1    10300 4050
 	1    0    0    -1  
@@ -1334,7 +1001,7 @@ U 1 1 5D9E5F76
 P 10400 4250
 F 0 "J11" H 10506 4337 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 10506 4337 50  0001 C CNN
-F 2 "" H 10400 4250 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 10400 4250 50  0001 C CNN
 F 3 "~" H 10400 4250 50  0001 C CNN
 	1    10400 4250
 	1    0    0    -1  
@@ -1345,7 +1012,7 @@ U 1 1 5D9E5F7D
 P 10400 4500
 F 0 "J12" H 10506 4587 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 10506 4587 50  0001 C CNN
-F 2 "" H 10400 4500 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 10400 4500 50  0001 C CNN
 F 3 "~" H 10400 4500 50  0001 C CNN
 	1    10400 4500
 	1    0    0    -1  
@@ -1356,7 +1023,7 @@ U 1 1 5D9E5F84
 P 10400 4700
 F 0 "J13" H 10506 4787 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 10506 4787 50  0001 C CNN
-F 2 "" H 10400 4700 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 10400 4700 50  0001 C CNN
 F 3 "~" H 10400 4700 50  0001 C CNN
 	1    10400 4700
 	1    0    0    -1  
@@ -1367,7 +1034,7 @@ U 1 1 5D9E5F8B
 P 10400 4950
 F 0 "J14" H 10506 5037 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 10506 5037 50  0001 C CNN
-F 2 "" H 10400 4950 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 10400 4950 50  0001 C CNN
 F 3 "~" H 10400 4950 50  0001 C CNN
 	1    10400 4950
 	1    0    0    -1  
@@ -1378,7 +1045,7 @@ U 1 1 5D9E5F92
 P 10400 5150
 F 0 "J15" H 10506 5237 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 10506 5237 50  0001 C CNN
-F 2 "" H 10400 5150 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 10400 5150 50  0001 C CNN
 F 3 "~" H 10400 5150 50  0001 C CNN
 	1    10400 5150
 	1    0    0    -1  
@@ -1389,7 +1056,7 @@ U 1 1 5D9E5F99
 P 10400 5450
 F 0 "J16" H 10506 5537 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 10506 5537 50  0001 C CNN
-F 2 "" H 10400 5450 50  0001 C CNN
+F 2 "Wire_Pads:SolderWirePad_1x01_SMD_1.27x2.54mm" H 10400 5450 50  0001 C CNN
 F 3 "~" H 10400 5450 50  0001 C CNN
 	1    10400 5450
 	1    0    0    -1  
@@ -1748,7 +1415,6 @@ F 3 "" H 6350 6700 50  0001 C CNN
 	1    6350 6700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 6350 6100
 Connection ~ 6350 6200
 $Comp
 L power:GND #PWR0134
@@ -1763,11 +1429,6 @@ F 3 "" H 6750 5900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6350 5900 6750 5900
-Wire Wire Line
-	3600 7050 4200 7050
-Text HLabel 4200 7050 2    50   Input ~ 0
-FSR_outbreak
-NoConn ~ 3600 6450
 NoConn ~ 5300 6400
 $Comp
 L power:+3.3V #PWR0158
@@ -1811,4 +1472,342 @@ F 3 "" H 6150 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 6150 4600
+$Comp
+L MCT0603PD4991DP500:MCT0603PD4991DP500 R1
+U 1 1 5D8DB984
+P 800 1550
+F 0 "R1" H 1150 1335 50  0000 C CNN
+F 1 "5k" H 1150 1426 50  0000 C CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 1350 1600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 1350 1500 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 1350 1400 50  0001 L CNN "Description"
+F 5 "0.55" H 1350 1300 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD4991DP5" H 1350 1200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 1350 1100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 1350 1000 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD4991DP500" H 1350 900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    800  1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCT0603PD2002DP500:MCT0603PD2002DP500 R22
+U 1 1 5D8DDF00
+P 6650 800
+F 0 "R22" V 6954 888 50  0000 L CNN
+F 1 "20k" V 7045 888 50  0000 L CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 7200 850 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD2002DP500.pdf" H 7200 750 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 20Kohms .5% 0603 25ppm Hi Power" H 7200 650 50  0001 L CNN "Description"
+F 5 "0.55" H 7200 550 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD2002DP5" H 7200 450 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD2002DP5" H 7200 350 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 7200 250 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD2002DP500" H 7200 150 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6650 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L MCT0603PD4991DP500:MCT0603PD4991DP500 R21
+U 1 1 5D8DDEF3
+P 5900 1550
+F 0 "R21" H 6250 1335 50  0000 C CNN
+F 1 "5k" H 6250 1426 50  0000 C CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 6450 1600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 6450 1500 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 6450 1400 50  0001 L CNN "Description"
+F 5 "0.55" H 6450 1300 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD4991DP5" H 6450 1200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 6450 1100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 6450 1000 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD4991DP500" H 6450 900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5900 1550
+	1    0    0    -1  
+$EndComp
+Text Label 2350 7050 0    50   ~ 0
+out6
+Text Label 2350 6450 0    50   ~ 0
+out5
+Wire Wire Line
+	3150 3100 3050 3100
+Wire Wire Line
+	3150 2750 3150 3100
+Wire Wire Line
+	2450 3100 2450 2750
+Wire Wire Line
+	2550 3100 2450 3100
+$Comp
+L GRM1555C1H470FA01J:GRM1555C1H470FA01J C5
+U 1 1 5D9DDD90
+P 2550 3100
+F 0 "C5" H 2800 3250 50  0000 C CNN
+F 1 "47p" H 2800 2950 50  0000 C CNN
+F 2 "GRM155C91C105ME11J:CAPC1005X55N" H 2900 3150 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GRM1555C1H470FA01J.pdf" H 2900 3050 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 47pF 50volts C0G 1%" H 2900 2950 50  0001 L CNN "Description"
+F 5 "0.55" H 2900 2850 50  0001 L CNN "Height"
+F 6 "81-GRM1555C1H470FA1J" H 2900 2750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM1555C1H470FA1J" H 2900 2650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 2900 2550 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM1555C1H470FA01J" H 2900 2450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCT0603PD4992DP500:MCT0603PD4992DP500 R4
+U 1 1 5D9DDD83
+P 2450 2750
+F 0 "R4" H 2800 2850 50  0000 C CNN
+F 1 "50k" H 2850 2650 50  0000 C CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 3000 2800 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4992DP500.pdf" H 3000 2700 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 49.9Kohms .5% 0603 25ppm Hi Power" H 3000 2600 50  0001 L CNN "Description"
+F 5 "0.55" H 3000 2500 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD4992DP5" H 3000 2400 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4992DP5" H 3000 2300 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 3000 2200 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD4992DP500" H 3000 2100 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2450 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3250 1550 3250
+Wire Wire Line
+	1650 2900 1650 3250
+Wire Wire Line
+	950  3250 950  2900
+Wire Wire Line
+	1050 3250 950  3250
+$Comp
+L GRM1555C1H470FA01J:GRM1555C1H470FA01J C14
+U 1 1 5D8DDCF0
+P 1050 3250
+F 0 "C14" H 1300 3400 50  0000 C CNN
+F 1 "47p" H 1300 3100 50  0000 C CNN
+F 2 "GRM155C91C105ME11J:CAPC1005X55N" H 1400 3300 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GRM1555C1H470FA01J.pdf" H 1400 3200 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 47pF 50volts C0G 1%" H 1400 3100 50  0001 L CNN "Description"
+F 5 "0.55" H 1400 3000 50  0001 L CNN "Height"
+F 6 "81-GRM1555C1H470FA1J" H 1400 2900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM1555C1H470FA1J" H 1400 2800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 1400 2700 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM1555C1H470FA01J" H 1400 2600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1050 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCT0603PD4992DP500:MCT0603PD4992DP500 R24
+U 1 1 5D8DDCE3
+P 950 2900
+F 0 "R24" H 1300 3000 50  0000 C CNN
+F 1 "50k" H 1350 2800 50  0000 C CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 1500 2950 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4992DP500.pdf" H 1500 2850 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 49.9Kohms .5% 0603 25ppm Hi Power" H 1500 2750 50  0001 L CNN "Description"
+F 5 "0.55" H 1500 2650 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD4992DP5" H 1500 2550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4992DP5" H 1500 2450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 1500 2350 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD4992DP500" H 1500 2250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    950  2900
+	1    0    0    -1  
+$EndComp
+Text Label 1650 3050 0    50   ~ 0
+FSR_break
+Text Label 950  3100 2    50   ~ 0
+-break_ref
+Wire Wire Line
+	3200 5100 3350 5100
+Wire Wire Line
+	3200 5000 3350 5000
+Text Label 3600 6550 0    50   ~ 0
+-ref4
+Text HLabel 4200 7050 2    50   Input ~ 0
+FSR_outbreak
+Wire Wire Line
+	3600 7050 4200 7050
+Text Label 3600 6950 0    50   ~ 0
+-break_ref
+Text Label 3600 6850 0    50   ~ 0
++break_ref
+Text Label 3600 7050 0    50   ~ 0
+FSR_break
+Text Label 2450 2950 2    50   ~ 0
+-ref4
+Text Label 3150 2950 0    50   ~ 0
+out4
+$Comp
+L MCT0603PD4991DP500:MCT0603PD4991DP500 R17
+U 1 1 5D8DDCBC
+P 8900 1450
+F 0 "R17" H 9250 1235 50  0000 C CNN
+F 1 "5k" H 9250 1326 50  0000 C CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 9450 1500 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 9450 1400 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 9450 1300 50  0001 L CNN "Description"
+F 5 "0.55" H 9450 1200 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD4991DP5" H 9450 1100 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 9450 1000 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 9450 900 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD4991DP500" H 9450 800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8900 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 1450 9650 1500
+Connection ~ 9650 1450
+Wire Wire Line
+	9600 1450 9650 1450
+Wire Wire Line
+	9650 1400 9650 1450
+$Comp
+L MCT0603PD1003DP500:MCT0603PD1003DP500 R19
+U 1 1 5D8DDCD6
+P 9650 1500
+F 0 "R19" V 9954 1588 50  0000 L CNN
+F 1 "100k" V 10045 1588 50  0000 L CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 10200 1550 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD1003DP500.pdf" H 10200 1450 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 100Kohms .5% 0603 25ppm Hi Power" H 10200 1350 50  0001 L CNN "Description"
+F 5 "0.55" H 10200 1250 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD1003DP5" H 10200 1150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD1003DP5" H 10200 1050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 10200 950 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD1003DP500" H 10200 850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9650 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L MCT0603PD2002DP500:MCT0603PD2002DP500 R18
+U 1 1 5D8DDCC9
+P 9650 700
+F 0 "R18" V 9954 788 50  0000 L CNN
+F 1 "20k" V 10045 788 50  0000 L CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 10200 750 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD2002DP500.pdf" H 10200 650 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 20Kohms .5% 0603 25ppm Hi Power" H 10200 550 50  0001 L CNN "Description"
+F 5 "0.55" H 10200 450 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD2002DP5" H 10200 350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD2002DP5" H 10200 250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 10200 150 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD2002DP500" H 10200 50  50  0001 L CNN "Manufacturer_Part_Number"
+	1    9650 700 
+	0    1    1    0   
+$EndComp
+Text Label 4650 1550 2    50   ~ 0
+dac_4
+Text HLabel 3800 6450 2    50   Output ~ 0
+FSR_out4
+Text Label 3650 6450 0    50   ~ 0
+out4
+Wire Wire Line
+	3600 6450 3800 6450
+NoConn ~ 3200 4900
+$Comp
+L power:+3.3V #PWR0115
+U 1 1 5D8E3118
+P 3350 5100
+F 0 "#PWR0115" H 3350 4950 50  0001 C CNN
+F 1 "+3.3V" V 3365 5228 50  0000 L CNN
+F 2 "" H 3350 5100 50  0001 C CNN
+F 3 "" H 3350 5100 50  0001 C CNN
+	1    3350 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5D8E22C7
+P 3350 5000
+F 0 "#PWR0116" H 3350 4750 50  0001 C CNN
+F 1 "GND" V 3355 4872 50  0000 R CNN
+F 2 "" H 3350 5000 50  0001 C CNN
+F 3 "" H 3350 5000 50  0001 C CNN
+	1    3350 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5D8E353F
+P 3600 6750
+F 0 "#PWR0106" H 3600 6500 50  0001 C CNN
+F 1 "GND" V 3605 6622 50  0000 R CNN
+F 2 "" H 3600 6750 50  0001 C CNN
+F 3 "" H 3600 6750 50  0001 C CNN
+	1    3600 6750
+	0    -1   -1   0   
+$EndComp
+Text Label 3600 6650 0    50   ~ 0
++ref4
+Connection ~ 5400 2300
+Wire Wire Line
+	4100 2300 5400 2300
+Connection ~ 6650 800 
+Wire Wire Line
+	6650 800  7450 800 
+Connection ~ 6650 2300
+Wire Wire Line
+	6650 2300 7300 2300
+Wire Wire Line
+	5400 2300 6650 2300
+Connection ~ 5400 800 
+Wire Wire Line
+	4100 800  5400 800 
+Wire Wire Line
+	5400 800  6650 800 
+$Comp
+L MCT0603PD4991DP500:MCT0603PD4991DP500 R29
+U 1 1 5D9D08A2
+P 5400 1500
+F 0 "R29" H 5750 1285 50  0000 C CNN
+F 1 "5k" H 5750 1376 50  0000 C CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 5950 1550 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD4991DP500.pdf" H 5950 1450 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 4.99Kohms .5% 0603 25ppm Hi Power" H 5950 1350 50  0001 L CNN "Description"
+F 5 "0.55" H 5950 1250 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD4991DP5" H 5950 1150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD4991DP5" H 5950 1050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 5950 950 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD4991DP500" H 5950 850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5400 1500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 1550 5400 1600
+Connection ~ 5400 1550
+Wire Wire Line
+	5350 1550 5400 1550
+Wire Wire Line
+	5400 1500 5400 1550
+$Comp
+L MCT0603PD2002DP500:MCT0603PD2002DP500 R30
+U 1 1 5D9D08AF
+P 5350 1550
+F 0 "R30" V 5654 1638 50  0000 L CNN
+F 1 "20k" V 5745 1638 50  0000 L CNN
+F 2 "ERJ3RQF4R7V:RESC1608X55N" H 5900 1600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/MCT0603PD2002DP500.pdf" H 5900 1500 50  0001 L CNN
+F 4 "Thin Film Resistors - SMD .250W 20Kohms .5% 0603 25ppm Hi Power" H 5900 1400 50  0001 L CNN "Description"
+F 5 "0.55" H 5900 1300 50  0001 L CNN "Height"
+F 6 "594-MCT0603PD2002DP5" H 5900 1200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=594-MCT0603PD2002DP5" H 5900 1100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Vishay" H 5900 1000 50  0001 L CNN "Manufacturer_Name"
+F 9 "MCT0603PD2002DP500" H 5900 900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    5350 1550
+	-1   0    0    1   
+$EndComp
+Text Label 5400 1550 0    50   ~ 0
++ref4
+Connection ~ 8050 800 
+Wire Wire Line
+	8050 800  9400 800 
+Connection ~ 8050 2300
+Wire Wire Line
+	8050 2300 9650 2300
+Wire Wire Line
+	7450 800  8050 800 
+Wire Wire Line
+	7300 2300 8050 2300
+Text Label 9650 1450 0    50   ~ 0
++break_ref
+Text Label 8900 1450 2    50   ~ 0
+break_DAC
 $EndSCHEMATC

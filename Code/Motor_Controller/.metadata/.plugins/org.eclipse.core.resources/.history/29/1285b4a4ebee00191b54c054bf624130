@@ -1,0 +1,49 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../src/CAN.c \
+../src/PI.c \
+../src/PWM.c \
+../src/SMC.c \
+../src/adc.c \
+../src/main.c \
+../src/sys_clock.c \
+../src/timers.c \
+../src/transforms_modulations.c 
+
+OBJS += \
+./src/CAN.o \
+./src/PI.o \
+./src/PWM.o \
+./src/SMC.o \
+./src/adc.o \
+./src/main.o \
+./src/sys_clock.o \
+./src/timers.o \
+./src/transforms_modulations.o 
+
+C_DEPS += \
+./src/CAN.d \
+./src/PI.d \
+./src/PWM.d \
+./src/SMC.d \
+./src/adc.d \
+./src/main.d \
+./src/sys_clock.d \
+./src/timers.d \
+./src/transforms_modulations.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+src/%.o: ../src/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: MCU GCC Compiler'
+	@echo $(PWD)
+	arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DSTM32 -DSTM32F7 -DSTM32F765VITx -DDEBUG -I"/home/matthew/Senior design/Code/Motor_Controller/DSC/src/" -I"/home/matthew/Senior design/Code/Motor_Controller/DSC/CMSIS" -I"/home/matthew/Senior design/Code/Motor_Controller/DSC/startup/" -I"/home/matthew/Senior design/Code/Motor_Controller/DSC/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+
