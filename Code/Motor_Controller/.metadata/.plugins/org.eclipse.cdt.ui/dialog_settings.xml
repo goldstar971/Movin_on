@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="/home/matthew/Senior design/Code/Motor_Controller/DSC/CMSIS" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
+	<item value="" key="org.eclipse.cdt.utils.ui.controls.FileListControl"/>
 	<item value="Default C source template" key="LastUsedSourceTemplate"/>
 	<item value="Default C header template" key="LastUsedHeaderTemplate"/>
+	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
+		<item value="444" key="DIALOG_WIDTH"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<item value="505" key="DIALOG_HEIGHT"/>
+		<item value="738" key="DIALOG_X_ORIGIN"/>
+		<item value="204" key="DIALOG_Y_ORIGIN"/>
+	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration.internal">
-		<item value="168" key="size.height"/>
-		<item value="442" key="size.width"/>
+		<item value="156" key="size.height"/>
+		<item value="557" key="size.width"/>
 	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
@@ -13,6 +20,23 @@
 		<item value="false" key="caseSensitive"/>
 		<item value="227191" key="searchFlags"/>
 		<list key="previousPatterns">
+			<item value="l_max_duty"/>
+			<item value="mc_interface_temp_motor_filtered"/>
+			<item value="MCCONF_FOC_TEMP_COMP"/>
+			<item value="control_current"/>
+			<item value="HW_USE_LINE_TO_LINE"/>
+			<item value="mcpwm_foc_set_current"/>
+			<item value="p_pid_ang_div"/>
+			<item value="MCCONF_L_CURRENT_MAX"/>
+			<item value="MCCONF_M_NTC_MOTOR_BETA"/>
+			<item value="*configuration"/>
+			<item value="defineV_REG"/>
+			<item value="MCCONF_SI_WHEEL_DIAMETER"/>
+			<item value="configuration"/>
+			<item value="IS_DRV_FAULT"/>
+			<item value="sys_lock_cnt"/>
+			<item value="Vrefint"/>
+			<item value="ADC_CCr"/>
 			<item value="ADC_Value"/>
 			<item value="GET_CURRENT3"/>
 			<item value="ADC_IND_CURR1"/>
@@ -44,5 +68,7 @@
 		<item value="0" key="askReindex.detail"/>
 	</section>
 	<section name="completion_proposal_size">
+		<item value="260" key="size.y"/>
+		<item value="434" key="size.x"/>
 	</section>
 </section>

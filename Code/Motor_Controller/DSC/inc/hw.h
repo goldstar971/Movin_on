@@ -21,6 +21,7 @@
 #define HW_H_
 
 #include "conf_general.h"
+#include "hw_75_300.h"
 
 #include HW_HEADER
 
@@ -67,9 +68,7 @@
 #endif
 
 // VCC net voltage
-#ifndef V_REG
-#define V_REG				3.3
-#endif
+
 
 // Individual MOSFET temperature sensors. Override if available.
 #ifndef NTC_TEMP_MOS1

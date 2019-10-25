@@ -21,13 +21,16 @@
 #define _GNU_SOURCE
 #endif
 
-#include "mcpwm_foc.h"
-#include "utils.h"
-#include "gpio.h"
 #include <math.h>
 #include <stdlib.h>
+#include <string.h>
+#include "mcpwm_foc.h"
+#include "utils.h"
+#include <GPIO.h>
 #include "stm32f765xx.h"
 #include "hw_75_300.h"
+#include "conf_general.h"
+#include "timers.h"
 
 // Private types
 typedef struct {
@@ -111,6 +114,7 @@ static volatile int m_curr2_offset;
 volatile int ADC_curr_norm_value[3];
 volatile uint16_t ADC_Value[HW_ADC_CHANNELS];
 
+
 // Private functions
 static void do_dc_cal(void);
 void observer_update(float v_alpha, float v_beta, float i_alpha, float i_beta,
@@ -161,13 +165,10 @@ static void start_pwm_hw(void);
 
 
 void mcpwm_foc_init(volatile mc_configuration *configuration) {
-	utils_sys_lock_cnt();
+
 
 	m_init_done = false;
 
-//	TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
-//	TIM_OCInitTypeDef  TIM_OCInitStructure;
-//	TIM_BDTRInitTypeDef TIM_BDTRInitStructure;
 
 	m_conf = configuration;
 
@@ -217,98 +218,73 @@ void mcpwm_foc_init(volatile mc_configuration *configuration) {
 	TIM1->CR1|=0x20; //set to center aligned mode 1 (events only triggered on down counting)
 	//set idle states, set output trigger to be update event
 	TIM1->CR2|=0x3F20;
-	TIM1->ARR|=0x1518; //set period for 20khz-> 216mhz/20khz=10800/2=0x1518
+	TIM1->ARR|=0x2A30; //set period for 20khz-> 216mhz/20khz=10800
 	//configure channels 1,2,3 in PWM mode
 	TIM1->CCMR1|=0x6868;
 	TIM1->CCMR2|=0x68;
-	TIM1->CCER|=0x444;
+	TIM1->CCER|=0x555;
 	//initalize duty cycle
 	TIM1->CCR1|=TIM1->ARR/2;
 	TIM1->CCR2|=TIM1->ARR/2;
 	TIM1->CCR3|=TIM1->ARR/2;
 	//Break, dead time, lock configuration
-	TIM1->BDTR|=0xAC4E;
+	TIM1->BDTR|=0x2C87;
 	TIM1->CR2|=0x1;//preload capture and control regs
 	TIM1->CR1|=0x80;//enable Auto-reload preload
-	TIM1->EGR|=0x1;//load all registers with their values
 	//enable master slave mode : timer synchronization
 	TIM1->SMCR|=0x80;
+	TIM1->EGR|=0x1;//load all registers with their values
+
 	/*
 	* ADC!
 	 */
-	ADC_CommonInitTypeDef ADC_CommonInitStructure;
-	DMA_InitTypeDef DMA_InitStructure;
-	ADC_InitTypeDef ADC_InitStructure;
-
-
-	dmaStreamAllocate(STM32_DMA_STREAM(STM32_DMA_STREAM_ID(2, 4)),
-			3,
-			(stm32_dmaisr_t)mcpwm_foc_adc_int_handler,
-			(void *)0);
-
 	// DMA for the ADC
-	DMA_InitStructure.DMA_Channel = DMA_Channel_0;
-	DMA_InitStructure.DMA_Memory0BaseAddr = (uint32_t)&ADC_Value;
-	DMA_InitStructure.DMA_PeripheralBaseAddr = (uint32_t)&ADC->CDR;
-	DMA_InitStructure.DMA_DIR = DMA_DIR_PeripheralToMemory;
-	DMA_InitStructure.DMA_BufferSize = HW_ADC_CHANNELS;
-	DMA_InitStructure.DMA_PeripheralInc = DMA_PeripheralInc_Disable;
-	DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;
-	DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_HalfWord;
-	DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_HalfWord;
-	DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;
-	DMA_InitStructure.DMA_Priority = DMA_Priority_High;
-	DMA_InitStructure.DMA_FIFOMode = DMA_FIFOMode_Disable;
-	DMA_InitStructure.DMA_FIFOThreshold = DMA_FIFOThreshold_1QuarterFull;
-	DMA_InitStructure.DMA_MemoryBurst = DMA_MemoryBurst_Single;
-	DMA_InitStructure.DMA_PeripheralBurst = DMA_PeripheralBurst_Single;
-	DMA_Init(DMA2_Stream4, &DMA_InitStructure);
+	//configure for channel zero with single peripheral and memory burst
+	//no double buffer mode, priority level high, peripheralINC mode disabled,
+	//peripheral and memory data size as half word, Memory increment enabled
+	//circular mode, peripheral to memory data direction,transfer complete interrupt
+	//enabled.
 
-	// DMA2_Stream0 enable
-	DMA_Cmd(DMA2_Stream4, ENABLE);
+	//give the address of the peripheral data register and the memory to write to
+	//as well as the number of data items to transfer
+	DMA2_Stream4->CR|=0x00022D10;
+	DMA2_Stream4->NDTR|=HW_ADC_CHANNELS;
+	DMA2_Stream4->PAR=(uint32_t)&ADC->CDR;
+	DMA2_Stream4->M0AR=(uint32_t)&ADC_Value;
+	//disable fifo mode/enable direct mode
+	DMA2_Stream4->FCR&=~0x4;
+	DMA2_Stream4->CR|=0x1; //enable stream
 
-	// Enable transfer complete interrupt
-	DMA_ITConfig(DMA2_Stream4, DMA_IT_TC, ENABLE);
-
-	// ADC Common Init
-	// Note that the ADC is running at 42MHz, which is higher than the
-	// specified 36MHz in the data sheet, but it works.
-	ADC_CommonInitStructure.ADC_Mode = ADC_TripleMode_RegSimult;
-	ADC_CommonInitStructure.ADC_Prescaler = ADC_Prescaler_Div2;
-	ADC_CommonInitStructure.ADC_DMAAccessMode = ADC_DMAAccessMode_1;
-	ADC_CommonInitStructure.ADC_TwoSamplingDelay = ADC_TwoSamplingDelay_5Cycles;
-	ADC_CommonInit(&ADC_CommonInitStructure);
-
+	//common init
+	//enable internal voltage and temperature sensor
+	//triple regular simultaneous mode, Dma access mode 1, 5 ADCclk cycles between sampling phases.
+	//DMA requests after last transfer enabled
+	ADC->CCR|=0x806016;
 	// Channel-specific settings
 	//set to scan mode with 12bit resolution
-	ADC1->CR1|=100;
+	ADC1->CR1|=0x100;
+	//continous conversion mode disabled, external triggered on falling edge
+	//External trigger is T8_TRG0(2)
+	//DataAlign is right
+	ADC1->CR2|=0x2800000;
+	//same initization for ADC2 and ADC3, as for ADC1 except no triggers
+	ADC2->CR1|=0x100;
+	ADC3->CR1|=0x100;
 
-	ADC_InitStructure.ADC_ContinuousConvMode = DISABLE;
-	ADC_InitStructure.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_Falling;
-	ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_T8_CC1;
-	ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;
-	ADC_InitStructure.ADC_NbrOfConversion = HW_ADC_NBR_CONV;
 
-	ADC_Init(ADC1, &ADC_InitStructure);
-	ADC_InitStructure.ADC_ExternalTrigConvEdge = ADC_ExternalTrigConvEdge_None;
-	ADC_InitStructure.ADC_ExternalTrigConv = 0;
-	ADC_Init(ADC2, &ADC_InitStructure);
-	ADC_Init(ADC3, &ADC_InitStructure);
+	//setup channel groups for ADC
+	ADC1->SQR1|=(HW_ADC_NBR_CONV-1)<<20;
+	ADC2->SQR1|=(HW_ADC_NBR_CONV-1)<<20;
+	ADC3->SQR1|=(HW_ADC_NBR_CONV-1)<<20;
+	ADC3->SQR3|=((14<<15)|(5<<10)|(3<<5)|12);
+	ADC2->SQR3|=((15<<15)|(13<<10)|(2<<5)|11);
+	ADC1->SQR3|=((17<<15)|(18<<10)|(1<<5)|10);
 
-	// Enable Vrefint channel
-	ADC_TempSensorVrefintCmd(ENABLE);
 
-	// Enable DMA request after last transfer (Multi-ADC mode)
-	ADC_MultiModeDMARequestAfterLastTransferCmd(ENABLE);
-
-	// Enable ADC1
-	ADC_Cmd(ADC1, ENABLE);
-
-	// Enable ADC2
-	ADC_Cmd(ADC2, ENABLE);
-
-	// Enable ADC3
-	ADC_Cmd(ADC3, ENABLE);
+	// Enable ADC1, ADC2, ADC3
+	ADC1->CR1|=0x1;
+	ADC2->CR1|=0x1;
+	ADC3->CR1|=0x1;
 
 	// ------------- Timer8 for ADC sampling ------------- //
 
@@ -319,19 +295,20 @@ void mcpwm_foc_init(volatile mc_configuration *configuration) {
 	TIM8->CCER|=0x1;
 	TIM8->CCR1|=500;
 	//set pulse upon TRG02 when cnt=ccr1
-	//set OC and ocn idle to hight
-	TIM8->CR2|=0x300300;
+	//set OC and ocn idle to high
+	TIM8->CR2|=0x400300;
 	// PWM outputs have to be enabled in order to trigger ADC on CCx
 	TIM8->BDTR|=0x8000;
 	//set slave mode as reset with ITR0 as input trigger
 	TIM8->SMCR|=0x04;
-
+	TIM1->EGR|=0x1;//load all registers with their values
 
 	// Enable TIM1 and TIM8
-	TIM_Cmd(TIM1, ENABLE);
-	TIM_Cmd(TIM8, ENABLE);
+	TIM1->CR1|=0x01;
+	TIM8->CR1|=0x01;
 
-
+	//enable main outputs on TIM1
+	TIM1->BDTR|=0x8000;
 
 	// ADC sampling locations
 	stop_pwm_hw();
@@ -341,35 +318,18 @@ void mcpwm_foc_init(volatile mc_configuration *configuration) {
 	TIMER_UPDATE_SAMP(MCPWM_FOC_CURRENT_SAMP_OFFSET);
 
 	// Enable CC1 interrupt, which will be fired in V0 and V7
-	TIM_ITConfig(TIM8, TIM_IT_CC1, ENABLE);
-	nvicEnableVector(TIM8_CC_IRQn, 6);
+	TIM8->DIER|=0x2;
 
-	utils_sys_unlock_cnt();
+
+	//Send Engate high
+	GPIOE->ODR|=0x4000;
 	// Calibrate current offset
 	do_dc_cal();
-
-	// Check if the system has resumed from IWDG reset
-	if (timeout_had_IWDG_reset()) {
-		mc_interface_fault_stop(FAULT_CODE_BOOTING_FROM_WATCHDOG_RESET);
-	}
 
 	m_init_done = true;
 }
 
-void mcpwm_foc_deinit(void) {
-	if (!m_init_done) {
-		return;
-	}
 
-	m_init_done = false;
-
-	TIM_DeInit(TIM1);
-	TIM_DeInit(TIM8);
-	ADC_DeInit();
-	DMA_DeInit(DMA2_Stream4);
-	nvicDisableVector(ADC_IRQn);
-	dmaStreamRelease(STM32_DMA_STREAM(STM32_DMA_STREAM_ID(2, 4)));
-}
 
 bool mcpwm_foc_init_done(void) {
 	return m_init_done;
@@ -418,11 +378,7 @@ void mcpwm_foc_set_pid_speed(float rpm) {
 	}
 }
 
-/**
- * Use PID position control. Note that this only works when encoder support
- * is enabled.
-
-/**
+/*
  * Brake the motor with a desired current. Absolute values less than
  * conf->cc_min_current will release the motor.
  *
@@ -534,8 +490,8 @@ void mcpwm_foc_set_openloop_phase(float current, float phase) {
  * when it is disconnected
  */
 void mcpwm_foc_set_current_offsets(volatile int curr0_offset,
-									volatile int curr1_offset,
-									volatile int curr2_offset){
+		volatile int curr1_offset,
+		volatile int curr2_offset){
 	m_curr0_offset = curr0_offset;
 	m_curr1_offset = curr1_offset;
 	m_curr2_offset = curr2_offset;
@@ -873,16 +829,9 @@ float mcpwm_foc_get_last_adc_isr_duration(void) {
 	return m_last_adc_isr_duration;
 }
 
-void mcpwm_foc_tim_sample_int_handler(void) {
-	if (m_init_done) {
-		// Generate COM event here for synchronization
-		TIM_GenerateEvent(TIM1, TIM_EventSource_COM);
 
-		virtual_motor_int_handler(m_motor_state.v_alpha, m_motor_state.v_beta);
-	}
-}
 
-void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
+void DMA2_Stream4_IRQHandler(void *p, uint32_t flags) {
 	(void)p;
 	(void)flags;
 
@@ -893,29 +842,8 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 		return;
 	}
 
-	uint32_t t_start = timer_time_now();
-
-	bool is_v7 = !(TIM1->CR1 & TIM_CR1_DIR);
-
-	if (!m_samples.measure_inductance_now) {
-#ifdef HW_HAS_PHASE_SHUNTS
-		if (!m_conf->foc_sample_v0_v7 && is_v7) {
-			return;
-		}
-#else
-		if (is_v7) {
-			return;
-		}
-#endif
-	}
-
 	// Reset the watchdog
-	timeout_feed_WDT(THREAD_MCPWM);
-
-#ifdef AD2S1205_SAMPLE_GPIO
-	// force a position sample in the AD2S1205 resolver IC (falling edge)
-	palClearPad(AD2S1205_SAMPLE_GPIO, AD2S1205_SAMPLE_PIN);
-#endif
+	kick_hard_watchdog();
 
 	int curr0 = GET_CURRENT1();
 	int curr1 = GET_CURRENT2();
@@ -1086,28 +1014,7 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 					&m_observer_x1, &m_observer_x2, &m_phase_now_observer);
 		}
 
-		switch (m_conf->foc_sensor_mode) {
-		case FOC_SENSOR_MODE_ENCODER:
-			if (encoder_index_found()) {
-				m_motor_state.phase = correct_encoder(m_phase_now_observer, m_phase_now_encoder, m_pll_speed);
-			} else {
-				// Rotate the motor in open loop if the index isn't found.
-				m_motor_state.phase = m_phase_now_encoder_no_index;
-			}
 
-			if (!m_phase_override) {
-				id_set_tmp = 0.0;
-			}
-			break;
-		case FOC_SENSOR_MODE_HALL:
-			m_phase_now_observer = correct_hall(m_phase_now_observer, m_pll_speed, dt);
-			m_motor_state.phase = m_phase_now_observer;
-
-			if (!m_phase_override) {
-				id_set_tmp = 0.0;
-			}
-			break;
-		case FOC_SENSOR_MODE_SENSORLESS:
 			if (m_phase_observer_override) {
 				m_motor_state.phase = m_phase_now_observer_override;
 			} else {
@@ -1126,8 +1033,7 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 					id_set_tmp = 0.0;
 				}
 			}
-			break;
-		}
+
 
 		if (m_control_mode == CONTROL_MODE_HANDBRAKE) {
 			// Force the phase to 0 in handbrake mode so that the current simply locks the rotor.
@@ -1182,18 +1088,6 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 		float c, s;
 		utils_fast_sincos_better(m_motor_state.phase, &s, &c);
 
-#ifdef HW_USE_LINE_TO_LINE
-		// rotate alpha-beta 30 degrees to compensate for line-to-line phase voltage sensing
-		float x_tmp = m_motor_state.v_alpha;
-		float y_tmp = m_motor_state.v_beta;
-
-		m_motor_state.v_alpha = x_tmp * COS_MINUS_30_DEG - y_tmp * SIN_MINUS_30_DEG;
-		m_motor_state.v_beta = x_tmp * SIN_MINUS_30_DEG + y_tmp * COS_MINUS_30_DEG;
-
-		// compensate voltage amplitude
-		m_motor_state.v_alpha *= ONE_BY_SQRT3;
-		m_motor_state.v_beta *= ONE_BY_SQRT3;
-#endif
 
 		// Park transform
 		float vd_tmp = c * m_motor_state.v_alpha + s * m_motor_state.v_beta;
@@ -1228,19 +1122,9 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 				m_motor_state.i_alpha, m_motor_state.i_beta, dt, &m_observer_x1,
 				&m_observer_x2, &m_phase_now_observer);
 
-		switch (m_conf->foc_sensor_mode) {
-		case FOC_SENSOR_MODE_ENCODER:
-			m_motor_state.phase = correct_encoder(m_phase_now_observer, m_phase_now_encoder, m_pll_speed);
-			break;
-		case FOC_SENSOR_MODE_HALL:
-			m_phase_now_observer = correct_hall(m_phase_now_observer, m_pll_speed, dt);
 			m_motor_state.phase = m_phase_now_observer;
-			break;
-		case FOC_SENSOR_MODE_SENSORLESS:
-			m_motor_state.phase = m_phase_now_observer;
-			break;
 		}
-	}
+
 
 	// Calculate duty cycle
 	m_motor_state.duty_now = SIGN(m_motor_state.vq) *
@@ -1268,39 +1152,8 @@ void mcpwm_foc_adc_int_handler(void *p, uint32_t flags) {
 	m_tachometer += diff;
 	m_tachometer_abs += abs(diff);
 
-	// Track position control angle
-	// TODO: Have another look at this.
-	float angle_now = 0.0;
-	if (encoder_is_configured()) {
-		angle_now = enc_ang;
-	} else {
-		angle_now = m_motor_state.phase * (180.0 / M_PI);
-	}
-
-	if (m_conf->p_pid_ang_div > 0.98 && m_conf->p_pid_ang_div < 1.02) {
-		m_pos_pid_now = angle_now;
-	} else {
-		static float angle_last = 0.0;
-		float diff_f = utils_angle_difference(angle_now, angle_last);
-		angle_last = angle_now;
-		m_pos_pid_now += diff_f / m_conf->p_pid_ang_div;
-		utils_norm_angle((float*)&m_pos_pid_now);
-	}
-
-	// Run position control
-	if (m_state == MC_STATE_RUNNING) {
-		run_pid_control_pos(m_pos_pid_now, m_pos_pid_set, dt);
-	}
-
-#ifdef AD2S1205_SAMPLE_GPIO
-	// Release sample in the AD2S1205 resolver IC.
-	palSetPad(AD2S1205_SAMPLE_GPIO, AD2S1205_SAMPLE_PIN);
-#endif
-
 	// MCIF handler
-	mc_interface_mc_timer_isr();
-
-	m_last_adc_isr_duration = timer_seconds_elapsed_since(t_start);
+	//mc_interface_mc_timer_isr();
 }
 
 // Private functions
@@ -1390,29 +1243,22 @@ void speed_control_and_open_loop(void) {
 }
 
 static void do_dc_cal(void) {
-	DCCAL_ON();
 
-	// Wait max 5 seconds
-	int cnt = 0;
-	while(IS_DRV_FAULT()){
-		chThdSleepMilliseconds(1);
-		cnt++;
-		if (cnt > 5000) {
-			break;
-		}
+
+
+	//if fault pin has not gone high, indicating that PWM output is ready
+	while(!(GPIOE->IDR&0x8000)){
 	};
 
-	chThdSleepMilliseconds(1000);
 	m_curr0_sum = 0;
 	m_curr1_sum = 0;
-
 	m_curr2_sum = 0;
 	m_curr_samples = 0;
 	while(m_curr_samples < 4000) {};
 	m_curr0_offset = m_curr0_sum / m_curr_samples;
 	m_curr1_offset = m_curr1_sum / m_curr_samples;
 	m_curr2_offset = m_curr2_sum / m_curr_samples;
-	DCCAL_OFF();
+
 	m_dccal_done = true;
 }
 
@@ -1427,12 +1273,6 @@ void observer_update(float v_alpha, float v_beta, float i_alpha, float i_beta,
 	// Saturation compensation
 	const float sign = (m_motor_state.iq * m_motor_state.vq) >= 0.0 ? 1.0 : -1.0;
 	R -= R * sign * m_conf->foc_sat_comp * (m_motor_state.i_abs_filter / m_conf->l_current_max);
-
-	// Temperature compensation
-	const float t = mc_interface_temp_motor_filtered();
-	if (m_conf->foc_temp_comp && t > -5.0) {
-		R += R * 0.00386 * (t - m_conf->foc_temp_comp_base_temp);
-	}
 
 	const float L_ia = L * i_alpha;
 	const float L_ib = L * i_beta;
@@ -1546,12 +1386,9 @@ static void control_current(volatile motor_state_t *state_m, float dt) {
 	state_m->vd = state_m->vd_int + Ierr_d * m_conf->foc_current_kp;
 	state_m->vq = state_m->vq_int + Ierr_q * m_conf->foc_current_kp;
 
-	// Temperature compensation
-	const float t = mc_interface_temp_motor_filtered();
+
 	float ki = m_conf->foc_current_ki;
-	if (m_conf->foc_temp_comp && t > -5.0) {
-		ki += ki * 0.00386 * (t - m_conf->foc_temp_comp_base_temp);
-	}
+
 
 	state_m->vd_int += Ierr_d * (ki * dt);
 	state_m->vq_int += Ierr_q * (ki * dt);
@@ -1598,12 +1435,9 @@ static void control_current(volatile motor_state_t *state_m, float dt) {
 	top = TIM1->ARR;
 	svm(-mod_alpha, -mod_beta, top, &duty1, &duty2, &duty3, (uint32_t*)&state_m->svm_sector);
 	TIMER_UPDATE_DUTY(duty1, duty2, duty3);
+	start_pwm_hw();
 
-	if(virtual_motor_is_connected() == false){//do not allow to turn on PWM outputs if virtual motor is used
-		if (!m_output_on) {
-			start_pwm_hw();
-		}
-	}
+
 }
 
 // Magnitude must not be larger than sqrt(3)/2, or 0.866
@@ -1801,19 +1635,14 @@ static void run_pid_control_speed(float dt) {
 }
 
 static void stop_pwm_hw(void) {
-	TIM_SelectOCxM(TIM1, TIM_Channel_1, TIM_ForcedAction_InActive);
-	TIM_CCxCmd(TIM1, TIM_Channel_1, TIM_CCx_Enable);
-	TIM_CCxNCmd(TIM1, TIM_Channel_1, TIM_CCxN_Disable);
+	TIM1->CCMR1&=~0x7070;
+	TIM1->CCMR2&=~0x70;
+	TIM1->CCMR1|=0x4040;
+	TIM1->CCMR2|=0x40;
+	TIM1->CCER&=~0x555;
+	TIM1->CCER|=0x111;
+	TIM1->EGR|=0x20;
 
-	TIM_SelectOCxM(TIM1, TIM_Channel_2, TIM_ForcedAction_InActive);
-	TIM_CCxCmd(TIM1, TIM_Channel_2, TIM_CCx_Enable);
-	TIM_CCxNCmd(TIM1, TIM_Channel_2, TIM_CCxN_Disable);
-
-	TIM_SelectOCxM(TIM1, TIM_Channel_3, TIM_ForcedAction_InActive);
-	TIM_CCxCmd(TIM1, TIM_Channel_3, TIM_CCx_Enable);
-	TIM_CCxNCmd(TIM1, TIM_Channel_3, TIM_CCxN_Disable);
-
-	TIM_GenerateEvent(TIM1, TIM_EventSource_COM);
 
 #ifdef HW_HAS_DRV8313
 	DISABLE_BR();
@@ -1822,24 +1651,16 @@ static void stop_pwm_hw(void) {
 }
 
 static void start_pwm_hw(void) {
-	TIM_SelectOCxM(TIM1, TIM_Channel_1, TIM_OCMode_PWM1);
-	TIM_CCxCmd(TIM1, TIM_Channel_1, TIM_CCx_Enable);
-	TIM_CCxNCmd(TIM1, TIM_Channel_1, TIM_CCxN_Enable);
 
-	TIM_SelectOCxM(TIM1, TIM_Channel_2, TIM_OCMode_PWM1);
-	TIM_CCxCmd(TIM1, TIM_Channel_2, TIM_CCx_Enable);
-	TIM_CCxNCmd(TIM1, TIM_Channel_2, TIM_CCxN_Enable);
 
-	TIM_SelectOCxM(TIM1, TIM_Channel_3, TIM_OCMode_PWM1);
-	TIM_CCxCmd(TIM1, TIM_Channel_3, TIM_CCx_Enable);
-	TIM_CCxNCmd(TIM1, TIM_Channel_3, TIM_CCxN_Enable);
-
+	TIM1->CCMR1&=~0x7070;
+	TIM1->CCMR1|=0x6060;
+	TIM1->CCMR2&=~0x60;
+	TIM1->CCMR2|=0x60;
+	TIM1->CCER|=0x555;
 	// Generate COM event in ADC interrupt to get better synchronization
 //	TIM_GenerateEvent(TIM1, TIM_EventSource_COM);
 
-#ifdef HW_HAS_DRV8313
-	ENABLE_BR();
-#endif
 	m_output_on = true;
 }
 

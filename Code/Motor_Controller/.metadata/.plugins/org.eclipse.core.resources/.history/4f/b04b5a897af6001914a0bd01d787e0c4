@@ -1,0 +1,20 @@
+/*
+ * timers.c
+ *
+ *  Created on: Sep 17, 2019
+ *      Author: matthew
+ */
+#include "timers.h"
+
+
+
+
+//initalize timer
+int soft_watchdog_init(TIM_TypeDef* timx){
+		timx->CR1|=0x80
+		timx->PSC=0x215; //set to 1 MHZ
+		timx->CCR1=0xc350; // trigger interupt after 50 ms
+		timx->EGR|=0x1; //generate update event to load registers
+		timx->DIER|=0x1; //enable event update event interrupt
+
+}

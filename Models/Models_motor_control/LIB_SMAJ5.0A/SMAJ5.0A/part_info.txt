@@ -1,0 +1,9 @@
+Manufacturer=LITTELFUSE
+PartNumber=SMAJ5.0A
+PartCategory=TVS Diode (Uni-directional)
+PackageCategory=Diodes Moulded
+PinCount=2
+Version=1.1
+Released=2019-01-13 03:10:47
+Downloaded=2019-10-22 21:01:40
+3D=Y

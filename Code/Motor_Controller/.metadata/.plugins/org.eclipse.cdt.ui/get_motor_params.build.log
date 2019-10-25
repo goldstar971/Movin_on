@@ -1,0 +1,12 @@
+10:42:12 **** Incremental Build of configuration Debug for project get_motor_params ****
+make -j8 all 
+Building target: get_motor_params.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -T"/home/matthew/Senior design/Code/Motor_Controller/get_motor_params/LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "get_motor_params.elf" @"objects.list"   -lm
+startup/startup_stm32.o: In function `LoopFillZerobss':
+/home/matthew/Senior design/Code/Motor_Controller/get_motor_params/Debug/../startup/startup_stm32.s:83: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:35: get_motor_params.elf] Error 1
+
+10:42:12 Build Finished (took 316ms)
+

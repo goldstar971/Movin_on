@@ -22,13 +22,12 @@
 
 #include "datatypes.h"
 #include <stdbool.h>
+//external variablesv
 
-//external variables
 extern volatile int ADC_curr_norm_value[];
 extern volatile uint16_t ADC_Value[];
 // Functions
 void mcpwm_foc_init(volatile mc_configuration *configuration);
-void mcpwm_foc_deinit(void);
 bool mcpwm_foc_init_done(void);
 void mcpwm_foc_set_configuration(volatile mc_configuration *configuration);
 mc_state mcpwm_foc_get_state(void);
@@ -88,7 +87,7 @@ void speed_control_and_open_loop(void);
 
 // Interrupt handlers
 void mcpwm_foc_tim_sample_int_handler(void);
-void mcpwm_foc_adc_int_handler(void *p, uint32_t flags);
+void DMA2_Stream4_IRQHandler(void *p, uint32_t flags);
 
 // Defines
 #define MCPWM_FOC_INDUCTANCE_SAMPLE_CNT_OFFSET		10 // Offset for the inductance measurement sample time in timer ticks

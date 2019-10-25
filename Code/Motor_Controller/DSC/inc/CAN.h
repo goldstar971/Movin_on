@@ -7,6 +7,9 @@
 
 #ifndef CAN_H_
 #define CAN_H_
+
+#include <stdint.h>
+#include "stm32f765xx.h"
 typedef struct
 {
 	uint8_t data[8];
@@ -16,8 +19,17 @@ typedef struct
 
 
 void CAN1_RX0_IRQHandler(void);
-void init_can(CAN_TypeDef * CANx);
+
+
+
+
+
+
+void init_can(CAN_TypeDef *CANx);
 void can_transmit(CAN_Message *msg);
+
+
+
 
 
 

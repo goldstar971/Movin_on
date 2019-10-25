@@ -7,8 +7,13 @@
 #include "CAN.h"
 #include "stm32f765xx.h"
 
+extern int handshaking_complete[];
+extern
+void CAN1_RX0_IRQHandler(void){
 
-void CAN1_RX0_IRQHandler(void);
+
+
+}
 
 
 
@@ -20,6 +25,7 @@ void init_can(CAN_TypeDef * CANx){
 	CANx->BTR |= 0x1e0001; //set for 1 Mb/s
 	CANx->MCR&=~CAN_MCR_INRQ;
 	while(CANx->MSR&CAN_MSR_INAK){;}//wait until normal mode
+
 }
 
 

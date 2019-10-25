@@ -1,0 +1,28 @@
+/*
+ * timers.h
+ *
+ *  Created on: Sep 17, 2019
+ *      Author: matthew
+ */
+
+#ifndef TIMERS_H_
+#define TIMERS_H_
+#include "stm32f765xx.h"
+
+
+
+//init
+int soft_watchdog_init(TIM_TypeDef* timx){
+
+
+
+
+}
+//wait is in milliseconds
+void wait_for(int wait,TIM_TypeDef* timx);
+
+
+
+
+
+#endif /* TIMERS_H_ */

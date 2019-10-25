@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SMAJ5.0A
+D Littelfuse SMAJ5.0A, Uni-Directional TVS Diode, 400W, 2-Pin DO-214AC
+K
+F https://componentsearchengine.com/Datasheets/1/SMAJ5.0A.pdf
+$ENDCMP
+#
+#End Doc Library

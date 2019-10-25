@@ -20,6 +20,7 @@
 #ifndef HW_75_300_H_
 #define HW_75_300_H_
 
+
 #ifdef HW75_300_REV_2
 #define HW_NAME					"75_300_R2"
 #else
@@ -31,68 +32,14 @@
 #define HW_HAS_PHASE_SHUNTS
 //#define HW_HAS_PHASE_FILTERS
 
-// Macros
-#ifdef HW75_300_VEDDER_FIRST_PCB
-#define LED_GREEN_GPIO			GPIOB
-#define LED_GREEN_PIN			0
-#define LED_RED_GPIO			GPIOB
-#define LED_RED_PIN				1
-#else
-#define LED_GREEN_GPIO			GPIOB
-#define LED_GREEN_PIN			5
-#define LED_RED_GPIO			GPIOB
-#define LED_RED_PIN				7
-#endif
 
-#define LED_GREEN_ON()			palSetPad(LED_GREEN_GPIO, LED_GREEN_PIN)
-#define LED_GREEN_OFF()			palClearPad(LED_GREEN_GPIO, LED_GREEN_PIN)
-#define LED_RED_ON()			palSetPad(LED_RED_GPIO, LED_RED_PIN)
-#define LED_RED_OFF()			palClearPad(LED_RED_GPIO, LED_RED_PIN)
 
-#ifdef HW75_300_REV_2
-#define PHASE_FILTER_GPIO		GPIOC
-#define PHASE_FILTER_PIN		9
-#else
-#define PHASE_FILTER_GPIO		GPIOC
-#define PHASE_FILTER_PIN		11
-#endif
-#define PHASE_FILTER_ON()		palSetPad(PHASE_FILTER_GPIO, PHASE_FILTER_PIN)
-#define PHASE_FILTER_OFF()		palClearPad(PHASE_FILTER_GPIO, PHASE_FILTER_PIN)
+#define HW_ADC_CHANNELS			12
+#define HW_ADC_NBR_CONV			4
 
-#define AUX_GPIO				GPIOC
-#define AUX_PIN					12
-#define AUX_ON()				palSetPad(AUX_GPIO, AUX_PIN)
-#define AUX_OFF()				palClearPad(AUX_GPIO, AUX_PIN)
 
-#define CURRENT_FILTER_ON()		palSetPad(GPIOD, 2)
-#define CURRENT_FILTER_OFF()	palClearPad(GPIOD, 2)
 
-/*
- * ADC Vector
- *
- * 0  (1):	IN0		SENS1
- * 1  (2):	IN1		SENS2
- * 2  (3):	IN2		SENS3
- * 3  (1):	IN10	CURR1
- * 4  (2):	IN11	CURR2
- * 5  (3):	IN12	CURR3
- * 6  (1):	IN5		ADC_EXT1
- * 7  (2):	IN6		ADC_EXT2
- * 8  (3):	IN3		TEMP_MOS
- * 9  (1):	IN14	TEMP_MOTOR
- * 10 (2):	IN15	ADC_EXT3
- * 11 (3):	IN13	AN_IN
- * 12 (1):	Vrefint
- * 13 (2):	IN0		SENS1
- * 14 (3):	IN1		SENS2
- * 15 (1):  IN8		TEMP_MOS_2
- * 16 (2):  IN9		TEMP_MOS_3
- * 17 (3):  IN3		SENS3
- */
 
-#define HW_ADC_CHANNELS			18
-#define HW_ADC_INJ_CHANNELS		3
-#define HW_ADC_NBR_CONV			6
 
 // ADC Indexes
 #define ADC_IND_SENS1			0
@@ -101,29 +48,17 @@
 #define ADC_IND_CURR1			3
 #define ADC_IND_CURR2			4
 #define ADC_IND_CURR3			5
-#define ADC_IND_VIN_SENS		11
-#define ADC_IND_EXT				6
-#define ADC_IND_EXT2			7
-#ifdef HW75_300_VEDDER_FIRST_PCB
-#define ADC_IND_TEMP_MOS		8
-#define ADC_IND_TEMP_MOS_2		8
-#define ADC_IND_TEMP_MOS_3		8
-#else
-#define ADC_IND_TEMP_MOS		8
-#define ADC_IND_TEMP_MOS_2		15
-#define ADC_IND_TEMP_MOS_3		16
-#endif
-#define ADC_IND_TEMP_MOTOR		9
-#define ADC_IND_VREFINT			12
+#define ADC_IND_TEMP_MCU        6
+#define ADC_IND_VIN_SENS		7
+#define ADC_IND_TEMP_MOSFETs	8
+#define ADC_IND_VREFINT			9
 
 // ADC macros and settings
 
 // Component parameters (can be overridden)
-#ifndef V_REG
-#define V_REG					3.44
-#endif
+
 #ifndef VIN_R1
-#define VIN_R1					56000.0
+#define VIN_R1					39000
 #endif
 #ifndef VIN_R2
 #define VIN_R2					2200.0
@@ -132,7 +67,7 @@
 #define CURRENT_AMP_GAIN		20.0
 #endif
 #ifndef CURRENT_SHUNT_RES
-#define CURRENT_SHUNT_RES		(0.0005 / 3.0)
+#define CURRENT_SHUNT_RES		(0.001)
 #endif
 
 // Input voltage

@@ -1,3 +1,6 @@
-01:21:01 **** Incremental Build of configuration Debug for project DSC ****
+14:59:00 **** Incremental Build of configuration Debug for project DSC ****
 Info: Internal Builder is used for build
-Info: Parallel threads used: 0
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DSTM32 -DSTM32F7 -DSTM32F765VITx -DDEBUG -I/home/matthew/Senior design/Code/Motor_Controller/DSC/src/ -I/home/matthew/Senior design/Code/Motor_Controller/DSC/CMSIS -I/home/matthew/Senior design/Code/Motor_Controller/DSC/startup/ -I/home/matthew/Senior design/Code/Motor_Controller/DSC/inc -I/home/matthew/opt/gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.7-20190524-0603/arm-none-eabi/include -O0 -g3 -Wall -Wextra -Wconversion -fmessage-length=0 -ffunction-sections -c -o src/main.o ../src/main.c 
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -DSTM32 -DSTM32F7 -DSTM32F765VITx -DDEBUG -I/home/matthew/Senior design/Code/Motor_Controller/DSC/src/ -I/home/matthew/Senior design/Code/Motor_Controller/DSC/CMSIS -I/home/matthew/Senior design/Code/Motor_Controller/DSC/startup/ -I/home/matthew/Senior design/Code/Motor_Controller/DSC/inc -I/home/matthew/opt/gnu-mcu-eclipse/arm-none-eabi-gcc/8.2.1-1.7-20190524-0603/arm-none-eabi/include -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -o src/CAN.o ../src/CAN.c 
+arm-none-eabi-gcc -mcpu=cortex-m7 -mthumb -mfloat-abi=hard -mfpu=fpv5-d16 -T/home/matthew/Senior design/Code/Motor_Controller/DSC/STM32F765VITx_FLASH.ld -Wl,-Map=output.map -Wl,--gc-sections -lm -o DSC.elf src/CAN.o src/GPIO.o src/PI.o src/Sys_funcs.o src/confgenerator.o src/hw_75_300.o src/main.o src/mcpwm_foc.o src/timers.o src/utils.o startup/startup_stm32.o startup/sysmem.o 
+Info: Parallel threads used: 2

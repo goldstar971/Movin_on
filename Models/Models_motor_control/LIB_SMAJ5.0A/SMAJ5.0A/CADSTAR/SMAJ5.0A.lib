@@ -1,0 +1,16 @@
+.SMAJ5.0A :1 ;Littelfuse SMAJ5.0A, Uni-Directional TVS Diode, 400W, 2-Pin DO-214AC
+DIOM5026X229N
+*STM D
+*NGS
+*PLB 1="K" 2="A"
+*MXP 2
+*DFN SMAJ5.0A
+~!Mouser Part Number (576-SMAJ5.0A)
+~!Link Mouser Price/Stock (https://www.mouser.com/Search/Refine.aspx?Keyword=576-SMAJ5.0A)
+~!Manufacturer_Name (LITTELFUSE)
+~!Manufacturer_Part_Number (SMAJ5.0A)
+~!Link Datasheet (https://componentsearchengine.com/Datasheets/1/SMAJ5.0A.pdf)
+~!Height (2.29mm)
+~!3D_Model (SMAJ5.0A)
+SMAJ5.0A
+1.1!U 2.1!U 

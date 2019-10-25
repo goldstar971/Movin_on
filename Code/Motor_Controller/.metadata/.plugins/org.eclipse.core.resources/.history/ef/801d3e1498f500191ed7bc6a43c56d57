@@ -1,0 +1,20 @@
+/*
+ * timers.c
+ *
+ *  Created on: Sep 17, 2019
+ *      Author: matthew
+ */
+#include "timers.h"
+
+
+
+
+//initalize timer
+int timer_init(TIM_TypeDef* timx){
+timx->PSC=215;
+return (1);
+}
+void wait_for(int wait){
+
+
+}

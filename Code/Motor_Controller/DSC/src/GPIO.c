@@ -4,7 +4,7 @@
  *  Created on: Oct 16, 2019
  *      Author: matthew
  */
-#include "gpio.h"
+#include <GPIO.h>
 #include <string.h>
 
 void gpio_init(void){

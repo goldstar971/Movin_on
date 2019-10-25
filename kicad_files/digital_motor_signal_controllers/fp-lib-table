@@ -23,4 +23,5 @@
   (lib (name TC2117)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/TC2117.pretty")(options "")(descr ""))
   (lib (name UVR1H102MHD1TO)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/UVR1H102MHD1TO.pretty")(options "")(descr ""))
   (lib (name WSLP@7261L000FEA)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/WSLP@7261L000FEA.pretty")(options "")(descr ""))
+  (lib (name SMAJ5.0A)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/SMAJ5.0A.pretty")(options "")(descr ""))
 )

@@ -18,13 +18,11 @@
     */
 
 #include "utils.h"
-#include "ch.h"
-#include "hal.h"
 #include <math.h>
 #include <string.h>
 
 // Private variables
-static volatile int sys_lock_cnt = 0;
+
 
 void utils_step_towards(float *value, float goal, float step) {
     if (*value < goal) {
@@ -595,46 +593,3 @@ float utils_throttle_curve(float val, float curve_acc, float curve_brake, int mo
 	return ret;
 }
 
-/**
- * A system locking function with a counter. For every lock, a corresponding unlock must
- * exist to unlock the system. That means, if lock is called five times, unlock has to
- * be called five times as well. Note that chSysLock and chSysLockFromIsr are the same
- * for this port.
- */
-void utils_sys_lock_cnt(void) {
-	if (!sys_lock_cnt) {
-		chSysLock();
-	}
-	sys_lock_cnt++;
-}
-
-/**
- * A system unlocking function with a counter. For every lock, a corresponding unlock must
- * exist to unlock the system. That means, if lock is called five times, unlock has to
- * be called five times as well. Note that chSysUnlock and chSysUnlockFromIsr are the same
- * for this port.
- */
-void utils_sys_unlock_cnt(void) {
-	if (sys_lock_cnt) {
-		sys_lock_cnt--;
-		if (!sys_lock_cnt) {
-			chSysUnlock();
-		}
-	}
-}
-
-uint32_t utils_crc32c(uint8_t *data, uint32_t len) {
-	uint32_t crc = 0xFFFFFFFF;
-
-	for (uint32_t i = 0; i < len;i++) {
-		uint32_t byte = data[i];
-		crc = crc ^ byte;
-
-		for (int j = 7;j >= 0;j--) {
-			uint32_t mask = -(crc & 1);
-			crc = (crc >> 1) ^ (0x82F63B78 & mask);
-		}
-	}
-
-	return ~crc;
-}

@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'SMAJ5.0A'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "LITTELFUSE", "SMAJ5.0A" (!) = "", "DIOM5026X229N", "Diodes Moulded", "576-SMAJ5.0A", "https://www.mouser.com/Search/Refine.aspx?Keyword=576-SMAJ5.0A", "Littelfuse SMAJ5.0A, Uni-Directional TVS Diode, 400W, 2-Pin DO-214AC", "https://componentsearchengine.com/Datasheets/1/SMAJ5.0A.pdf", "2.29 mm"
+END_PART
+
+END.
