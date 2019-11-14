@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.4-e60b266~84~ubuntu19.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.4+dfsg1-1)
 
   (general
     (thickness 1.6)
@@ -829,7 +829,7 @@
     )
   )
 
-  (module ERJ3RQF4R7V:RESC1608X55N (layer B.Cu) (tedit 5D471568) (tstamp 5D9F5AEA)
+  (module ERJ3RQF4R7V:RESC1608X55N (layer B.Cu) (tedit 5D471568) (tstamp 5DCDB214)
     (at 220.1 72.35 180)
     (descr ERJ3RBD)
     (tags Resistor)
@@ -922,7 +922,7 @@
     (tags Resistor)
     (path /5D8CBEA0/5D8DBD51)
     (attr smd)
-    (fp_text reference R2 (at 0 0) (layer F.SilkS)
+    (fp_text reference R2 (at -4.157013 -0.004995) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 20k (at 0 0) (layer F.SilkS) hide
@@ -1427,7 +1427,7 @@
     (tags Resistor)
     (path /5D8CBEA0/5D8E16BE)
     (attr smd)
-    (fp_text reference R13 (at 0 0) (layer F.SilkS)
+    (fp_text reference R13 (at -0.047 1.485) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 5k (at 0 0) (layer F.SilkS) hide
@@ -1639,7 +1639,7 @@
     (tags Resistor)
     (path /5D8CBEA0/5D8DB984)
     (attr smd)
-    (fp_text reference R1 (at 0 0) (layer F.SilkS)
+    (fp_text reference R1 (at -2.877 -0.03) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 5k (at 0 0) (layer F.SilkS) hide
@@ -1726,7 +1726,7 @@
     (tags Resistor)
     (path /5D8CBEA0/5D8DBFE8)
     (attr smd)
-    (fp_text reference R3 (at 0 0) (layer F.SilkS)
+    (fp_text reference R3 (at 3.512 0) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 100k (at 0 0) (layer F.SilkS) hide
@@ -1845,7 +1845,7 @@
     (tags Resistor)
     (path /5D8CBEA0/5D901473)
     (attr smd)
-    (fp_text reference R16 (at 0 0) (layer F.SilkS)
+    (fp_text reference R16 (at 4.797989 0.245007) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 5k (at 0 0) (layer F.SilkS) hide
@@ -1932,7 +1932,7 @@
     (tags Capacitor)
     (path /5D8DA570/5D8DA8C1)
     (attr smd)
-    (fp_text reference C2 (at 0 0 90) (layer F.SilkS)
+    (fp_text reference C2 (at 0.3 2.137 90) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 1u (at 0 0 90) (layer F.SilkS) hide
@@ -2590,7 +2590,7 @@
     (tags Capacitor)
     (path /5D8CBEA0/5D8F1D82)
     (attr smd)
-    (fp_text reference C3 (at 0.055 -2.9) (layer F.SilkS)
+    (fp_text reference C3 (at 0.407 -2) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value .1u (at 0 0) (layer F.SilkS) hide
@@ -2892,7 +2892,7 @@
     (tags "Power Supply")
     (path /5D8DA570/5D8DA77D)
     (attr smd)
-    (fp_text reference Reg1 (at 0 0) (layer F.SilkS)
+    (fp_text reference Reg1 (at 0.278 -4.705) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value TC2117 (at 0 0) (layer F.SilkS) hide
@@ -3369,7 +3369,7 @@
     (tags Capacitor)
     (path /5D8DA570/5D8DA9F0)
     (attr smd)
-    (fp_text reference C1 (at 0 0) (layer F.SilkS)
+    (fp_text reference C1 (at 2.152 -0.12) (layer F.SilkS)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
     )
     (fp_text value 1u (at 0 0) (layer F.SilkS) hide

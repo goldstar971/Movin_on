@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:DSC_motor_controller-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -46,7 +46,7 @@ F25 "SWDIO" B L 4200 4950 50
 F26 "SWCLK" I L 4200 4850 50 
 $EndSheet
 $Comp
-L power:PWR_FLAG #FLG0101
+L DSC_motor_controller-rescue:PWR_FLAG-power #FLG0101
 U 1 1 5D33E0D2
 P 1750 6900
 F 0 "#FLG0101" H 1750 6995 50  0001 C CNN
@@ -57,7 +57,7 @@ F 3 "" H 1750 6900 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0102
+L DSC_motor_controller-rescue:PWR_FLAG-power #FLG0102
 U 1 1 5D33E0E2
 P 1750 7100
 F 0 "#FLG0102" H 1750 7195 50  0001 C CNN
@@ -68,7 +68,7 @@ F 3 "" H 1750 7100 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0103
+L DSC_motor_controller-rescue:PWR_FLAG-power #FLG0103
 U 1 1 5D33E15E
 P 1750 6500
 F 0 "#FLG0103" H 1750 6595 50  0001 C CNN
@@ -79,7 +79,7 @@ F 3 "" H 1750 6500 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0104
+L DSC_motor_controller-rescue:PWR_FLAG-power #FLG0104
 U 1 1 5D33E164
 P 1750 6700
 F 0 "#FLG0104" H 1750 6795 50  0001 C CNN
@@ -100,7 +100,7 @@ Wire Wire Line
 Text GLabel 2050 6500 2    50   BiDi ~ 0
 SUPPLY
 $Comp
-L power:+5V #PWR0101
+L DSC_motor_controller-rescue:+5V-power #PWR0101
 U 1 1 5D33F726
 P 2050 6700
 F 0 "#PWR0101" H 2050 6550 50  0001 C CNN
@@ -111,7 +111,7 @@ F 3 "" H 2050 6700 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3.3V #PWR0102
+L DSC_motor_controller-rescue:+3.3V-power #PWR0102
 U 1 1 5D33F828
 P 2050 6900
 F 0 "#PWR0102" H 2050 6750 50  0001 C CNN
@@ -122,7 +122,7 @@ F 3 "" H 2050 6900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0103
+L DSC_motor_controller-rescue:GND-power #PWR0103
 U 1 1 5D33F889
 P 2050 7100
 F 0 "#PWR0103" H 2050 6850 50  0001 C CNN
@@ -181,7 +181,7 @@ Wire Wire Line
 Wire Wire Line
 	1950 1850 1950 2050
 $Comp
-L power:GND #PWR0104
+L DSC_motor_controller-rescue:GND-power #PWR0104
 U 1 1 5D34191A
 P 1950 2050
 F 0 "#PWR0104" H 1950 1800 50  0001 C CNN
@@ -272,7 +272,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 4950 4200 4950
 $Comp
-L power:+5V #PWR0105
+L DSC_motor_controller-rescue:+5V-power #PWR0105
 U 1 1 5D343360
 P 1850 3850
 F 0 "#PWR0105" H 1850 3700 50  0001 C CNN
@@ -283,7 +283,7 @@ F 3 "" H 1850 3850 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0106
+L DSC_motor_controller-rescue:GND-power #PWR0106
 U 1 1 5D3439D1
 P 1850 4650
 F 0 "#PWR0106" H 1850 4400 50  0001 C CNN
@@ -294,7 +294,7 @@ F 3 "" H 1850 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3.3V #PWR0107
+L DSC_motor_controller-rescue:+3.3V-power #PWR0107
 U 1 1 5D343A75
 P 1850 5650
 F 0 "#PWR0107" H 1850 5500 50  0001 C CNN
@@ -305,7 +305,7 @@ F 3 "" H 1850 5650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0108
+L DSC_motor_controller-rescue:GND-power #PWR0108
 U 1 1 5D343A95
 P 1950 5650
 F 0 "#PWR0108" H 1950 5400 50  0001 C CNN
@@ -316,7 +316,7 @@ F 3 "" H 1950 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0109
+L DSC_motor_controller-rescue:+5V-power #PWR0109
 U 1 1 5D343BC3
 P 950 2850
 F 0 "#PWR0109" H 950 2700 50  0001 C CNN
@@ -327,7 +327,7 @@ F 3 "" H 950 2850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0110
+L DSC_motor_controller-rescue:GND-power #PWR0110
 U 1 1 5D343BC9
 P 950 3650
 F 0 "#PWR0110" H 950 3400 50  0001 C CNN
@@ -550,7 +550,7 @@ Connection ~ 3200 4750
 Wire Wire Line
 	3200 4750 2550 4750
 $Comp
-L power:GND #PWR0160
+L DSC_motor_controller-rescue:GND-power #PWR0160
 U 1 1 5D47C819
 P 3200 5600
 F 0 "#PWR0160" H 3200 5350 50  0001 C CNN

@@ -40,6 +40,7 @@
   (lib (name PMEG6020ER_115)(type Legacy)(uri "/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/PMEG6020ER_115.lib")(options "")(descr ""))
   (lib (name 875015119003)(type Legacy)(uri "/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/875015119003.lib")(options "")(descr ""))
   (lib (name wirepad)(type Legacy)(uri "/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/wirepad.lib")(options "")(descr ""))
-  (lib (name C0805C224J5NACTU)(type Legacy)(uri "/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/C0805C224J5NACTU.lib")(options "")(descr ""))
   (lib (name SMAJ5.0A)(type Legacy)(uri "/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/SMAJ5.0A.lib")(options "")(descr ""))
+  (lib (name DSC_motor_controller-rescue)(type Legacy)(uri ${KIPRJMOD}/DSC_motor_controller-rescue.lib)(options "")(descr ""))
+  (lib (name GRM033R61E224KE01D)(type Legacy)(uri "/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/GRM033R61E224KE01D.lib")(options "")(descr ""))
 )

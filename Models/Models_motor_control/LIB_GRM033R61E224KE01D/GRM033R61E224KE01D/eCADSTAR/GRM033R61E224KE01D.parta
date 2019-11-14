@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_2236986"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-06-20-08:30:05)
+    (utime 2019-10-01-11:56:11)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "GRM033R61E224KE01D")
+)
+
+
+(pinAssign "ECS_2236986"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-06-20-08:30:05)
+    (utime 2019-10-01-11:56:11)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_2236986")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "GRM033R61E224KE01D")
+)
+
+
+(part "GRM033R61E224KE01D"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2019-06-20-08:30:05)
+    (utime 2019-10-01-11:56:11)
+    (packageRef "GRM033R61E224KE01D")
+    (pinAssignRef "ECS_2236986")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "NO")
+    (property "refDesPrefix" "C")
+    (property "description" "Capacitor GRM03_0.03 L=0.6mm W=0.3mm T=0.3mm")
+    (property "Mouser_Part_Number" "81-GRM033R61E224KE1D")
+    (property "Mouser_Price/Stock" "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM033R61E224KE1D")
+    (property "Manufacturer_Name" "Murata Electronics")
+    (property "Manufacturer_Part_Number" "GRM033R61E224KE01D")
+    (property "Datasheet_Link" "https://componentsearchengine.com/Datasheets/1/GRM033R61E224KE01D.pdf")
+    (property "compAreaTopHeight" 0.33)
+)
+
+

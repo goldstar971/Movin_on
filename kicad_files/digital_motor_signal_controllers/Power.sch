@@ -194,9 +194,11 @@ Wire Wire Line
 Wire Wire Line
 	9850 4250 9750 4250
 $Comp
-L power:+3.3V #PWR0147
+L DSC_motor_controller-rescue:+3.3V-power #PWR0147
 U 1 1 5D35BD9F
 P 9550 3300
+AR Path="/5D35BD9F" Ref="#PWR0147"  Part="1" 
+AR Path="/5D34E5C0/5D35BD9F" Ref="#PWR0147"  Part="1" 
 F 0 "#PWR0147" H 9550 3150 50  0001 C CNN
 F 1 "+3.3V" H 9565 3473 50  0000 C CNN
 F 2 "" H 9550 3300 50  0001 C CNN
@@ -243,7 +245,7 @@ Wire Wire Line
 	7650 3350 7850 3350
 Connection ~ 7650 3450
 $Comp
-L power:GND #PWR0148
+L DSC_motor_controller-rescue:GND-power #PWR0148
 U 1 1 5D35D44A
 P 7650 3950
 F 0 "#PWR0148" H 7650 3700 50  0001 C CNN
@@ -474,9 +476,11 @@ Wire Wire Line
 Wire Wire Line
 	6300 4200 6200 4200
 $Comp
-L power:+3.3V #PWR0149
+L DSC_motor_controller-rescue:+3.3V-power #PWR0149
 U 1 1 5D36E8E8
 P 6000 3250
+AR Path="/5D36E8E8" Ref="#PWR0149"  Part="1" 
+AR Path="/5D34E5C0/5D36E8E8" Ref="#PWR0149"  Part="1" 
 F 0 "#PWR0149" H 6000 3100 50  0001 C CNN
 F 1 "+3.3V" H 6000 3400 50  0000 C CNN
 F 2 "" H 6000 3250 50  0001 C CNN
@@ -523,7 +527,7 @@ Wire Wire Line
 	4100 3300 4300 3300
 Connection ~ 4100 3400
 $Comp
-L power:GND #PWR0150
+L DSC_motor_controller-rescue:GND-power #PWR0150
 U 1 1 5D36E908
 P 4100 3900
 F 0 "#PWR0150" H 4100 3650 50  0001 C CNN
@@ -752,9 +756,11 @@ Wire Wire Line
 Wire Wire Line
 	2850 4250 2750 4250
 $Comp
-L power:+3.3V #PWR0151
+L DSC_motor_controller-rescue:+3.3V-power #PWR0151
 U 1 1 5D370707
 P 2550 3300
+AR Path="/5D370707" Ref="#PWR0151"  Part="1" 
+AR Path="/5D34E5C0/5D370707" Ref="#PWR0151"  Part="1" 
 F 0 "#PWR0151" H 2550 3150 50  0001 C CNN
 F 1 "+3.3V" H 2565 3473 50  0000 C CNN
 F 2 "" H 2550 3300 50  0001 C CNN
@@ -799,7 +805,7 @@ Wire Wire Line
 	650  3350 850  3350
 Connection ~ 650  3450
 $Comp
-L power:GND #PWR0152
+L DSC_motor_controller-rescue:GND-power #PWR0152
 U 1 1 5D370727
 P 650 3950
 F 0 "#PWR0152" H 650 3700 50  0001 C CNN
@@ -1076,9 +1082,11 @@ F 11 "http://uk.rs-online.com/web/p/products/6316632P" H 5800 5700 50  0001 L CN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3.3V #PWR0153
+L DSC_motor_controller-rescue:+3.3V-power #PWR0153
 U 1 1 5D46C0A2
 P 5000 5550
+AR Path="/5D46C0A2" Ref="#PWR0153"  Part="1" 
+AR Path="/5D34E5C0/5D46C0A2" Ref="#PWR0153"  Part="1" 
 F 0 "#PWR0153" H 5000 5400 50  0001 C CNN
 F 1 "+3.3V" H 5000 5700 50  0000 C CNN
 F 2 "" H 5000 5550 50  0001 C CNN
@@ -1103,7 +1111,7 @@ Connection ~ 5250 6500
 Wire Wire Line
 	4800 7250 4800 7100
 $Comp
-L power:GND #PWR0154
+L DSC_motor_controller-rescue:GND-power #PWR0154
 U 1 1 5D493A27
 P 8700 5250
 F 0 "#PWR0154" H 8700 5000 50  0001 C CNN
@@ -1191,7 +1199,7 @@ C_B
 Text Label 2150 4850 0    50   ~ 0
 C_A
 $Comp
-L power:GND #PWR0155
+L DSC_motor_controller-rescue:GND-power #PWR0155
 U 1 1 5D58BED4
 P 7500 6250
 F 0 "#PWR0155" H 7500 6000 50  0001 C CNN
@@ -1275,7 +1283,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 5250 10150 5250
 $Comp
-L power:GND #PWR0156
+L DSC_motor_controller-rescue:GND-power #PWR0156
 U 1 1 5D493A40
 P 1200 5500
 F 0 "#PWR0156" H 1200 5250 50  0001 C CNN
@@ -1286,7 +1294,7 @@ F 3 "" H 1200 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0157
+L DSC_motor_controller-rescue:GND-power #PWR0157
 U 1 1 5D493AA1
 P 1250 6550
 F 0 "#PWR0157" H 1250 6300 50  0001 C CNN
@@ -1297,7 +1305,7 @@ F 3 "" H 1250 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0158
+L DSC_motor_controller-rescue:GND-power #PWR0158
 U 1 1 5D493B02
 P 1250 7550
 F 0 "#PWR0158" H 1250 7300 50  0001 C CNN
@@ -1308,7 +1316,7 @@ F 3 "" H 1250 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0159
+L DSC_motor_controller-rescue:GND-power #PWR0159
 U 1 1 5D493B63
 P 5000 7250
 F 0 "#PWR0159" H 5000 7000 50  0001 C CNN

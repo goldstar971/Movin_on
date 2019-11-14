@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GRM033R61E224KE01D
+D Capacitor GRM03_0.03 L=0.6mm W=0.3mm T=0.3mm
+K
+F https://componentsearchengine.com/Datasheets/1/GRM033R61E224KE01D.pdf
+$ENDCMP
+#
+#End Doc Library

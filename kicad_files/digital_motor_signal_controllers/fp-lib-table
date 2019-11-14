@@ -3,7 +3,6 @@
   (lib (name AD8418ABRMZ)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/AD8418ABRMZ.pretty")(options "")(descr ""))
   (lib (name AS0805KKX7R0BB104)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/AS0805KKX7R0BB104.pretty")(options "")(descr ""))
   (lib (name C0603C121J5GACTU)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/C0603C121J5GACTU.pretty")(options "")(descr ""))
-  (lib (name C0805C224J5NACTU)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/C0805C224J5NACTU.pretty")(options "")(descr ""))
   (lib (name C3216X7R1H225K160AE)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/C3216X7R1H225K160AE.pretty")(options "")(descr ""))
   (lib (name CGA3E2C7R1H223K080AA)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/CGA3E2C7R1H223K080AA.pretty")(options "")(descr ""))
   (lib (name CGA5M3X7S2A475K200AB)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/CGA5M3X7S2A475K200AB.pretty")(options "")(descr ""))
@@ -24,4 +23,5 @@
   (lib (name UVR1H102MHD1TO)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/UVR1H102MHD1TO.pretty")(options "")(descr ""))
   (lib (name WSLP@7261L000FEA)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/WSLP@7261L000FEA.pretty")(options "")(descr ""))
   (lib (name SMAJ5.0A)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/SMAJ5.0A.pretty")(options "")(descr ""))
+  (lib (name GRM033R61E224KE01D)(type KiCad)(uri "/home/matthew/Senior design/Models/Models_motor_control/footprint_libraries/GRM033R61E224KE01D.pretty")(options "")(descr ""))
 )
