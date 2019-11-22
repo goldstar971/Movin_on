@@ -19,4 +19,7 @@
   (lib (name wirepad)(type Legacy)(uri "/home/matthew/Senior design/Models/Models_motor_control/Kicad_libs/wirepad.lib")(options "")(descr ""))
   (lib (name LIS2DTW12TR)(type Legacy)(uri "/home/matthew/Senior design/Models/Acceleration_control_models/Kicad_libs/LIS2DTW12TR.lib")(options "")(descr ""))
   (lib (name MAX5815BAUD+)(type Legacy)(uri "/home/matthew/Senior design/Models/Acceleration_control_models/Kicad_libs/MAX5815BAUD+.lib")(options "")(descr ""))
+  (lib (name Forward_acceleration_board-rescue)(type Legacy)(uri ${KIPRJMOD}/Forward_acceleration_board-rescue.lib)(options "")(descr ""))
+  (lib (name GRM155R62A104KE14D)(type Legacy)(uri "/home/matthew/Senior design/Models/Acceleration_control_models/Kicad_libs/GRM155R62A104KE14D.lib")(options "")(descr ""))
+  (lib (name GRM21BR61E106KA73K)(type Legacy)(uri "/home/matthew/Senior design/Models/Acceleration_control_models/Kicad_libs/GRM21BR61E106KA73K.lib")(options "")(descr ""))
 )

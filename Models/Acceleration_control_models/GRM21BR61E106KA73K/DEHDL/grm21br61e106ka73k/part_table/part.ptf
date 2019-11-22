@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'GRM21BR61E106KA73K'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Murata Electronics", "GRM21BR61E106KA73K" (!) = "", "CAPC2012X145N", "Capacitor Chip Non-polarised", "81-GRM21BR61E106KA3K", "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM21BR61E106KA3K", "Capacitor GRM21_0.15 L=2.0mm W=1.25mm T=1.25mm", "https://componentsearchengine.com/Datasheets/1/GRM21BR61E106KA73K.pdf", "1.45 mm"
+END_PART
+
+END.

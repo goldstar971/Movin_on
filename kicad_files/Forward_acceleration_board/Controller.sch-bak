@@ -32,7 +32,7 @@ F 9 "STM32F205RBT6" H 6200 2650 50  0001 L CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR0139
+L Forward_acceleration_board-rescue:+3.3V-power #PWR0139
 U 1 1 5DAEB2E4
 P 5000 5750
 F 0 "#PWR0139" H 5000 5600 50  0001 C CNN
@@ -258,7 +258,7 @@ $EndComp
 Wire Wire Line
 	4250 2850 4100 2850
 $Comp
-L power:GND #PWR0140
+L Forward_acceleration_board-rescue:GND-power #PWR0140
 U 1 1 5DAEC2EE
 P 3400 2850
 F 0 "#PWR0140" H 3400 2600 50  0001 C CNN
@@ -269,7 +269,7 @@ F 3 "" H 3400 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0141
+L Forward_acceleration_board-rescue:GND-power #PWR0141
 U 1 1 5DAEC344
 P 2800 4050
 F 0 "#PWR0141" H 2800 3800 50  0001 C CNN
@@ -293,7 +293,7 @@ Wire Wire Line
 	3800 4500 3400 4500
 Connection ~ 3800 4500
 $Comp
-L power:GND #PWR0142
+L Forward_acceleration_board-rescue:GND-power #PWR0142
 U 1 1 5DAEC7F0
 P 3650 5000
 F 0 "#PWR0142" H 3650 4750 50  0001 C CNN
@@ -308,7 +308,7 @@ NRST
 Wire Wire Line
 	4650 6250 4650 5050
 $Comp
-L power:GND #PWR0143
+L Forward_acceleration_board-rescue:GND-power #PWR0143
 U 1 1 5DAED4B8
 P 4700 6250
 F 0 "#PWR0143" H 4700 6000 50  0001 C CNN
@@ -323,7 +323,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 5050 5950 5200
 $Comp
-L power:GND #PWR0144
+L Forward_acceleration_board-rescue:GND-power #PWR0144
 U 1 1 5DAED74A
 P 5950 5750
 F 0 "#PWR0144" H 5950 5500 50  0001 C CNN
@@ -349,7 +349,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 2850 6450 2600
 $Comp
-L power:GND #PWR0145
+L Forward_acceleration_board-rescue:GND-power #PWR0145
 U 1 1 5DAEF041
 P 7150 2750
 F 0 "#PWR0145" H 7150 2500 50  0001 C CNN
@@ -383,7 +383,7 @@ Wire Wire Line
 	4300 1300 4550 1300
 Connection ~ 4550 1300
 $Comp
-L power:GND #PWR0146
+L Forward_acceleration_board-rescue:GND-power #PWR0146
 U 1 1 5DAF0B67
 P 4750 1300
 F 0 "#PWR0146" H 4750 1050 50  0001 C CNN
@@ -429,7 +429,7 @@ Wire Wire Line
 	4750 5750 5000 5750
 Connection ~ 5000 5750
 $Comp
-L power:+3.3V #PWR0147
+L Forward_acceleration_board-rescue:+3.3V-power #PWR0147
 U 1 1 5DAF867A
 P 6250 5050
 F 0 "#PWR0147" H 6250 4900 50  0001 C CNN
@@ -441,7 +441,7 @@ F 3 "" H 6250 5050 50  0001 C CNN
 $EndComp
 Connection ~ 6250 5050
 $Comp
-L power:+3.3V #PWR0148
+L Forward_acceleration_board-rescue:+3.3V-power #PWR0148
 U 1 1 5DAF86B5
 P 3400 4500
 F 0 "#PWR0148" H 3400 4350 50  0001 C CNN
@@ -453,7 +453,7 @@ F 3 "" H 3400 4500 50  0001 C CNN
 $EndComp
 Connection ~ 3400 4500
 $Comp
-L power:+3.3V #PWR0149
+L Forward_acceleration_board-rescue:+3.3V-power #PWR0149
 U 1 1 5DAF87A4
 P 4100 2850
 F 0 "#PWR0149" H 4100 2700 50  0001 C CNN
@@ -467,7 +467,7 @@ Connection ~ 4100 2850
 Wire Wire Line
 	4100 2850 3900 2850
 $Comp
-L power:+3.3V #PWR0150
+L Forward_acceleration_board-rescue:+3.3V-power #PWR0150
 U 1 1 5DAF8835
 P 6400 2850
 F 0 "#PWR0150" H 6400 2700 50  0001 C CNN
@@ -481,7 +481,7 @@ Connection ~ 6400 2850
 Wire Wire Line
 	6400 2850 6450 2850
 $Comp
-L power:+3.3V #PWR0151
+L Forward_acceleration_board-rescue:+3.3V-power #PWR0151
 U 1 1 5DAF88C6
 P 4550 2050
 F 0 "#PWR0151" H 4550 1900 50  0001 C CNN

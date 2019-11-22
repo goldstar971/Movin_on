@@ -75,7 +75,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 3300 6450 3300
 $Comp
-L power:GND #PWR0123
+L Forward_acceleration_board-rescue:GND-power #PWR0123
 U 1 1 5D348036
 P 6950 3700
 F 0 "#PWR0123" H 6950 3450 50  0001 C CNN
@@ -89,7 +89,7 @@ Connection ~ 6950 3700
 Wire Wire Line
 	6950 3700 6900 3700
 $Comp
-L power:+3.3V #PWR0124
+L Forward_acceleration_board-rescue:+3.3V-power #PWR0124
 U 1 1 5D34806A
 P 7300 3100
 F 0 "#PWR0124" H 7300 2950 50  0001 C CNN

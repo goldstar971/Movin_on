@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name battery_stuff)(type Legacy)(uri ${KIPRJMOD}/battery_stuff.lib)(options "")(descr ""))
+)

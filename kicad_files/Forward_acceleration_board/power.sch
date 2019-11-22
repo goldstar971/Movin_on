@@ -71,7 +71,7 @@ F 11 "" H 4600 3050 50  0001 L CNN "RS Price/Stock"
 $EndComp
 NoConn ~ 5800 3350
 $Comp
-L power:GND #PWR0135
+L Forward_acceleration_board-rescue:GND-power #PWR0135
 U 1 1 5D8DABF4
 P 6300 4100
 F 0 "#PWR0135" H 6300 3850 50  0001 C CNN
@@ -96,7 +96,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 3900 4500 3350
 $Comp
-L power:GND #PWR0136
+L Forward_acceleration_board-rescue:GND-power #PWR0136
 U 1 1 5D8DAFBB
 P 4250 3250
 F 0 "#PWR0136" H 4250 3000 50  0001 C CNN
@@ -108,7 +108,7 @@ F 3 "" H 4250 3250 50  0001 C CNN
 $EndComp
 Connection ~ 4250 3250
 $Comp
-L power:+3.3V #PWR0137
+L Forward_acceleration_board-rescue:+3.3V-power #PWR0137
 U 1 1 5D8DB052
 P 4350 3900
 F 0 "#PWR0137" H 4350 3750 50  0001 C CNN
@@ -122,7 +122,7 @@ Connection ~ 4350 3900
 Wire Wire Line
 	4350 3900 4500 3900
 $Comp
-L power:+5V #PWR0138
+L Forward_acceleration_board-rescue:+5V-power #PWR0138
 U 1 1 5D8DB134
 P 6300 3250
 F 0 "#PWR0138" H 6300 3100 50  0001 C CNN

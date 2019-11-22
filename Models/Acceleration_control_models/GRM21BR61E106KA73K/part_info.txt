@@ -1,0 +1,9 @@
+Manufacturer=Murata Electronics
+PartNumber=GRM21BR61E106KA73K
+PartCategory=Capacitor
+PackageCategory=Capacitor Chip Non-polarised
+PinCount=2
+Version=3.1
+Released=2017-08-06 04:18:13
+Downloaded=2019-11-20 03:14:03
+3D=Y

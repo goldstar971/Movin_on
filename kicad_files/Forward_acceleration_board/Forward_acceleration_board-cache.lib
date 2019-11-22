@@ -72,11 +72,41 @@ X ~ 2 500 0 200 L 50 50 0 0 B
 ENDDRAW
 ENDDEF
 #
-# Connector_Conn_01x01_Male
+# Forward_acceleration_board-rescue_+3.3V-power
 #
-DEF Connector_Conn_01x01_Male J 0 40 Y N 1 F N
+DEF Forward_acceleration_board-rescue_+3.3V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "Forward_acceleration_board-rescue_+3.3V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Forward_acceleration_board-rescue_+5V-power
+#
+DEF Forward_acceleration_board-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "Forward_acceleration_board-rescue_+5V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Forward_acceleration_board-rescue_Conn_01x01_Male-Connector
+#
+DEF Forward_acceleration_board-rescue_Conn_01x01_Male-Connector J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Connector_Conn_01x01_Male" 0 -100 50 H V C CNN
+F1 "Forward_acceleration_board-rescue_Conn_01x01_Male-Connector" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -86,6 +116,19 @@ DRAW
 S 34 5 0 -5 1 1 6 F
 P 2 1 1 6 50 0 34 0 N
 X Pin_1 1 200 0 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Forward_acceleration_board-rescue_GND-power
+#
+DEF Forward_acceleration_board-rescue_GND-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "Forward_acceleration_board-rescue_GND-power" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
@@ -102,29 +145,6 @@ F6 "81-GRM1555C1H470FA1J" 350 -350 50 H I L CNN "Mouser Part Number"
 F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM1555C1H470FA1J" 350 -450 50 H I L CNN "Mouser Price/Stock"
 F8 "Murata Electronics" 350 -550 50 H I L CNN "Manufacturer_Name"
 F9 "GRM1555C1H470FA01J" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
-DRAW
-P 2 0 1 6 200 0 220 0 N
-P 2 0 1 6 220 100 220 -100 N
-P 2 0 1 6 280 0 300 0 N
-P 2 0 1 6 280 100 280 -100 N
-X ~ 1 0 0 200 R 50 50 0 0 B
-X ~ 2 500 0 200 L 50 50 0 0 B
-ENDDRAW
-ENDDEF
-#
-# GRM155C80G106ME44D_GRM155C80G106ME44D
-#
-DEF GRM155C80G106ME44D_GRM155C80G106ME44D C 0 30 Y Y 1 F N
-F0 "C" 350 250 50 H V L CNN
-F1 "GRM155C80G106ME44D_GRM155C80G106ME44D" 350 150 50 H V L CNN
-F2 "CAPC1005X55N" 350 50 50 H I L CNN
-F3 "https://componentsearchengine.com/Datasheets/1/GRM155C80G106ME44D.pdf" 350 -50 50 H I L CNN
-F4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 10UF      4V   20%        0402" 350 -150 50 H I L CNN "Description"
-F5 "0.55" 350 -250 50 H I L CNN "Height"
-F6 "81-GRM155C80G106ME44" 350 -350 50 H I L CNN "Mouser Part Number"
-F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM155C80G106ME44" 350 -450 50 H I L CNN "Mouser Price/Stock"
-F8 "Murata Electronics" 350 -550 50 H I L CNN "Manufacturer_Name"
-F9 "GRM155C80G106ME44D" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
 DRAW
 P 2 0 1 6 200 0 220 0 N
 P 2 0 1 6 220 100 220 -100 N
@@ -155,6 +175,52 @@ P 2 0 1 6 280 0 300 0 N
 P 2 0 1 6 280 100 280 -100 N
 X ~ 1 0 0 200 R 50 50 0 0 B
 X ~ 2 500 0 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+# GRM155R62A104KE14D_GRM155R62A104KE14D
+#
+DEF GRM155R62A104KE14D_GRM155R62A104KE14D C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "GRM155R62A104KE14D_GRM155R62A104KE14D" 350 150 50 H V L CNN
+F2 "CAPC1005X55N" 350 50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/GRM155R62A104KE14D.pdf" 350 -50 50 H I L CNN
+F4 "MURATA - GRM155R62A104KE14D - CAP, MLCC, X5R, 0.1UF, 100V, 0402" 350 -150 50 H I L CNN "Description"
+F5 "0.55" 350 -250 50 H I L CNN "Height"
+F6 "81-GRM155R62A104KE4D" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM155R62A104KE4D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Murata Electronics" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "GRM155R62A104KE14D" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 0 300 0 N
+P 2 0 1 6 280 100 280 -100 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
+ENDDRAW
+ENDDEF
+#
+# GRM21BR61E106KA73K_GRM21BR61E106KA73K
+#
+DEF GRM21BR61E106KA73K_GRM21BR61E106KA73K C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "GRM21BR61E106KA73K_GRM21BR61E106KA73K" 350 150 50 H V L CNN
+F2 "CAPC2012X145N" 350 50 50 H I L CNN
+F3 "https://componentsearchengine.com/Datasheets/1/GRM21BR61E106KA73K.pdf" 350 -50 50 H I L CNN
+F4 "Capacitor GRM21_0.15 L=2.0mm W=1.25mm T=1.25mm" 350 -150 50 H I L CNN "Description"
+F5 "1.45" 350 -250 50 H I L CNN "Height"
+F6 "81-GRM21BR61E106KA3K" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM21BR61E106KA3K" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Murata Electronics" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "GRM21BR61E106KA73K" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+P 2 0 1 6 200 0 220 0 N
+P 2 0 1 6 220 100 220 -100 N
+P 2 0 1 6 280 0 300 0 N
+P 2 0 1 6 280 100 280 -100 N
+X ~ 1 0 0 200 R 50 50 0 0 P
+X ~ 2 500 0 200 L 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
@@ -499,50 +565,6 @@ X GND 1 0 0 200 R 50 50 0 0 B
 X VOUT_1 2 0 -100 200 R 50 50 0 0 B
 X VIN 3 1300 0 200 L 50 50 0 0 B
 X VOUT_2 4 1300 -100 200 L 50 50 0 0 B
-ENDDRAW
-ENDDEF
-#
-# power_+3.3V
-#
-DEF power_+3.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+5V
-#
-DEF power_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

@@ -77,7 +77,7 @@ Text Label 4550 3600 2    50   ~ 0
 VDDIO
 NoConn ~ 4550 3900
 $Comp
-L power:GND #PWR0152
+L Forward_acceleration_board-rescue:GND-power #PWR0152
 U 1 1 5D9F0090
 P 6050 3600
 F 0 "#PWR0152" H 6050 3350 50  0001 C CNN
@@ -88,7 +88,7 @@ F 3 "" H 6050 3600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0153
+L Forward_acceleration_board-rescue:GND-power #PWR0153
 U 1 1 5D9F00CC
 P 4550 4000
 F 0 "#PWR0153" H 4550 3750 50  0001 C CNN
@@ -111,7 +111,7 @@ NoConn ~ 6050 3900
 Text HLabel 6050 4000 2    50   Input ~ 0
 data_ready
 $Comp
-L power:GND #PWR0154
+L Forward_acceleration_board-rescue:GND-power #PWR0154
 U 1 1 5DAEA2FA
 P 4550 3700
 F 0 "#PWR0154" H 4550 3450 50  0001 C CNN
@@ -122,43 +122,7 @@ F 3 "" H 4550 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GRM155C80G106ME44D:GRM155C80G106ME44D C30
-U 1 1 5DAEA3F4
-P 8050 3600
-F 0 "C30" V 8254 3728 50  0000 L CNN
-F 1 ".1u" V 8345 3728 50  0000 L CNN
-F 2 "GRM155C91C105ME11J:CAPC1005X55N" H 8400 3650 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/GRM155C80G106ME44D.pdf" H 8400 3550 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 10UF      4V   20%        0402" H 8400 3450 50  0001 L CNN "Description"
-F 5 "0.55" H 8400 3350 50  0001 L CNN "Height"
-F 6 "81-GRM155C80G106ME44" H 8400 3250 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM155C80G106ME44" H 8400 3150 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Murata Electronics" H 8400 3050 50  0001 L CNN "Manufacturer_Name"
-F 9 "GRM155C80G106ME44D" H 8400 2950 50  0001 L CNN "Manufacturer_Part_Number"
-	1    8050 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L AS0805KKX7R0BB104:AS0805KKX7R0BB104 C29
-U 1 1 5DAEA659
-P 7700 3600
-F 0 "C29" V 7904 3728 50  0000 L CNN
-F 1 "10u" V 7995 3728 50  0000 L CNN
-F 2 "AS0805KKX7R0BB104:CAPC2012X145N" H 8050 3650 50  0001 L CNN
-F 3 "https://mouser.componentsearchengine.com/Datasheets/1/AS0805KKX7R0BB104.pdf" H 8050 3550 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0.1uF 10% 100V AEC-Q200" H 8050 3450 50  0001 L CNN "Description"
-F 5 "1.45" H 8050 3350 50  0001 L CNN "Height"
-F 6 "YAGEO (PHYCOMP)" H 8050 3250 50  0001 L CNN "Manufacturer_Name"
-F 7 "AS0805KKX7R0BB104" H 8050 3150 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "603-AS0805KKX70BB104" H 8050 3050 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.com/Search/Refine.aspx?Keyword=603-AS0805KKX70BB104" H 8050 2950 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 8050 2850 50  0001 L CNN "RS Part Number"
-F 11 "" H 8050 2750 50  0001 L CNN "RS Price/Stock"
-	1    7700 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0155
+L Forward_acceleration_board-rescue:GND-power #PWR0155
 U 1 1 5DAEA827
 P 7100 4100
 F 0 "#PWR0155" H 7100 3850 50  0001 C CNN
@@ -169,18 +133,15 @@ F 3 "" H 7100 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8050 4100 7700 4100
-Connection ~ 7700 4100
-Wire Wire Line
 	7100 3600 7100 3800
 Wire Wire Line
 	6050 3800 7100 3800
 Wire Wire Line
-	7100 3600 7300 3600
+	7100 3600 7240 3600
 Wire Wire Line
 	8050 3600 7950 3600
 $Comp
-L power:+3.3V #PWR0156
+L Forward_acceleration_board-rescue:+3.3V-power #PWR0156
 U 1 1 5DAEABD2
 P 7950 3600
 F 0 "#PWR0156" H 7950 3450 50  0001 C CNN
@@ -201,9 +162,8 @@ Wire Wire Line
 	6950 3450 7700 3450
 Wire Wire Line
 	7700 3450 7700 3600
-Connection ~ 7700 3600
 $Comp
-L power:+3.3V #PWR0157
+L Forward_acceleration_board-rescue:+3.3V-power #PWR0157
 U 1 1 5DAEAD41
 P 7300 3600
 F 0 "#PWR0157" H 7300 3450 50  0001 C CNN
@@ -214,26 +174,66 @@ F 3 "" H 7300 3600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7100 4100 7300 4100
+	7100 4100 7240 4100
 $Comp
-L GRM155C80G106ME44D:GRM155C80G106ME44D C28
-U 1 1 5D9EBE90
-P 7300 3600
-F 0 "C28" V 7504 3728 50  0000 L CNN
-F 1 ".1u" V 7595 3728 50  0000 L CNN
-F 2 "GRM155C91C105ME11J:CAPC1005X55N" H 7650 3650 50  0001 L CNN
-F 3 "https://componentsearchengine.com/Datasheets/1/GRM155C80G106ME44D.pdf" H 7650 3550 50  0001 L CNN
-F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 10UF      4V   20%        0402" H 7650 3450 50  0001 L CNN "Description"
-F 5 "0.55" H 7650 3350 50  0001 L CNN "Height"
-F 6 "81-GRM155C80G106ME44" H 7650 3250 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM155C80G106ME44" H 7650 3150 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Murata Electronics" H 7650 3050 50  0001 L CNN "Manufacturer_Name"
-F 9 "GRM155C80G106ME44D" H 7650 2950 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7300 3600
+L GRM155R62A104KE14D:GRM155R62A104KE14D C30
+U 1 1 5DD4DCA5
+P 8050 3600
+F 0 "C30" V 8254 3728 50  0000 L CNN
+F 1 ".1uf" V 8345 3728 50  0000 L CNN
+F 2 "GRM155C91C105ME11J:CAPC1005X55N" H 8400 3650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GRM155R62A104KE14D.pdf" H 8400 3550 50  0001 L CNN
+F 4 "MURATA - GRM155R62A104KE14D - CAP, MLCC, X5R, 0.1UF, 100V, 0402" H 8400 3450 50  0001 L CNN "Description"
+F 5 "0.55" H 8400 3350 50  0001 L CNN "Height"
+F 6 "81-GRM155R62A104KE4D" H 8400 3250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM155R62A104KE4D" H 8400 3150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 8400 3050 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM155R62A104KE14D" H 8400 2950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8050 3600
 	0    1    1    0   
 $EndComp
-Connection ~ 7300 3600
-Connection ~ 7300 4100
+$Comp
+L GRM155R62A104KE14D:GRM155R62A104KE14D C28
+U 1 1 5DD4F3C8
+P 7240 3600
+F 0 "C28" V 7444 3728 50  0000 L CNN
+F 1 ".1uf" V 7535 3728 50  0000 L CNN
+F 2 "GRM155C91C105ME11J:CAPC1005X55N" H 7590 3650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GRM155R62A104KE14D.pdf" H 7590 3550 50  0001 L CNN
+F 4 "MURATA - GRM155R62A104KE14D - CAP, MLCC, X5R, 0.1UF, 100V, 0402" H 7590 3450 50  0001 L CNN "Description"
+F 5 "0.55" H 7590 3350 50  0001 L CNN "Height"
+F 6 "81-GRM155R62A104KE4D" H 7590 3250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM155R62A104KE4D" H 7590 3150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 7590 3050 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM155R62A104KE14D" H 7590 2950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7240 3600
+	0    1    1    0   
+$EndComp
+Connection ~ 7240 3600
 Wire Wire Line
-	7300 4100 7700 4100
+	7240 3600 7300 3600
+Connection ~ 7240 4100
+Wire Wire Line
+	7240 4100 7700 4100
+$Comp
+L GRM21BR61E106KA73K:GRM21BR61E106KA73K C29
+U 1 1 5DD50833
+P 7700 3600
+F 0 "C29" V 7904 3728 50  0000 L CNN
+F 1 "10uf" V 7995 3728 50  0000 L CNN
+F 2 "AS0805KKX7R0BB104:CAPC2012X145N" H 8050 3650 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GRM21BR61E106KA73K.pdf" H 8050 3550 50  0001 L CNN
+F 4 "Capacitor GRM21_0.15 L=2.0mm W=1.25mm T=1.25mm" H 8050 3450 50  0001 L CNN "Description"
+F 5 "1.45" H 8050 3350 50  0001 L CNN "Height"
+F 6 "81-GRM21BR61E106KA3K" H 8050 3250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM21BR61E106KA3K" H 8050 3150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 8050 3050 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM21BR61E106KA73K" H 8050 2950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7700 3600
+	0    1    1    0   
+$EndComp
+Connection ~ 7700 3600
+Connection ~ 7700 4100
+Wire Wire Line
+	7700 4100 8050 4100
 $EndSCHEMATC

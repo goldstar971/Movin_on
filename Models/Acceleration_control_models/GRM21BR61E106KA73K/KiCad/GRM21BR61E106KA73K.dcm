@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP GRM21BR61E106KA73K
+D Capacitor GRM21_0.15 L=2.0mm W=1.25mm T=1.25mm
+K
+F https://componentsearchengine.com/Datasheets/1/GRM21BR61E106KA73K.pdf
+$ENDCMP
+#
+#End Doc Library

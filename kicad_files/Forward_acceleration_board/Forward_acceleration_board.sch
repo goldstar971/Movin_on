@@ -93,7 +93,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 4800 2500 4800
 $Comp
-L power:+5V #PWR0101
+L Forward_acceleration_board-rescue:+5V-power #PWR0101
 U 1 1 5D9DC2E8
 P 950 3450
 F 0 "#PWR0101" H 950 3300 50  0001 C CNN
@@ -104,7 +104,7 @@ F 3 "" H 950 3450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0102
+L Forward_acceleration_board-rescue:GND-power #PWR0102
 U 1 1 5D9DC35B
 P 1750 3450
 F 0 "#PWR0102" H 1750 3200 50  0001 C CNN
@@ -121,7 +121,7 @@ Wire Wire Line
 Wire Wire Line
 	1000 2750 1000 2450
 $Comp
-L power:+3.3V #PWR0103
+L Forward_acceleration_board-rescue:+3.3V-power #PWR0103
 U 1 1 5D9DC45A
 P 1000 2250
 F 0 "#PWR0103" H 1000 2100 50  0001 C CNN
@@ -218,7 +218,7 @@ Wire Wire Line
 Wire Wire Line
 	4800 5150 2500 5150
 $Comp
-L power:GND #PWR0104
+L Forward_acceleration_board-rescue:GND-power #PWR0104
 U 1 1 5DAFEC73
 P 1000 2350
 F 0 "#PWR0104" H 1000 2100 50  0001 C CNN
